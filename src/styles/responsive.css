@@ -1,4 +1,140 @@
 /* mobile screen */
 @media only screen and (max-width: 768px) {
- 
+  .web-view {
+    display: none;
+  }
+
+  /* homepage second section */
+  .faster-stats-section .stats-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* web vitals third section */
+  .faster-stats-section .stats {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  /* homepage fifth section */
+  .superfast-title {
+    font-size: 32px/97px;
+  }
+
+  /* sixxth section */
+  .plans-section .cards-container {
+    display: grid;
+    grid-template-columns: 330px;
+    margin: initial;
+    width: "initial";
+  }
+
+  .high-performance .cards-container {
+    display: grid;
+    grid-template-columns: 350px;
+    margin: initial;
+    width: "initial";
+  }
+
+  .currency-option-container {
+    flex-direction: column;
+    width: 90%;
+    margin-left: initial;
+  }
+
+  .price-tab-container {
+    width: 343px;
+  }
+
+  .search-webpage .search-box {
+    width: 90%;
+  }
+
+  .web-vitals-section .search-box input {
+    width: 60%;
+    padding: 15px 30px;
+  }
+
+  .web-vitals-section .search-box button {
+    width: 40%;
+    padding: 15px 30px;
+  }
+
+  .stats-card {
+    width: 318px;
+    height: 333px;
+    box-shadow: 6px 4px 24px #00000029;
+    border-radius: 32px;
+    text-align: bottom;
+    padding: 100px 20px;
+    margin: 10px;
+    background: white;
+  }
+
+  .stats-card h3 {
+    font: normal normal 900 62px/73px "Montserrat";
+    color: #1db954;
+  }
+
+  .stats-card p {
+    font: normal normal medium 34px/46px "Montserrat";
+    width: 70%;
+    color: #1e2323;
+  }
+
+  .thunderbolt-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .framework-statistics .section-title {
+    font: normal normal 800 32px/40px "Montserrat";
+  }
+
+  .web-vitals-section {
+    /* min-height: 733px; */
+    background-image: url("../images/vector1-mob.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+  }
+
+  .framework-statistics {
+    min-height: 870px;
+    background-image: url("../images/vector2-mob.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .banner-img img {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-section .title {
+    width: 90%;
+    margin-top: 30px;
+    font: normal normal 800 54px/65px "Montserrat";
+  }
+  .hero-section .sub-title {
+    font: normal normal normal 18px/28px "Montserrat";
+  }
+
+  .clients-img img {
+    width: 60px;
+  }
+
+  .why-you-need-content .content-section .hero-img {
+    width: 332px;
+  }
 }

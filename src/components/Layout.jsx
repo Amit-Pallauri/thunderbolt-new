@@ -5,8 +5,8 @@ import Footer from "../components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
-import "../styles/responsive.css";
 import "../styles/style.css";
+import "../styles/responsive.css";
 
 const Layout = ({ children }) => {
   SwiperCore.use([Autoplay]);

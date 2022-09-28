@@ -4,9 +4,8 @@ body {
   font-family: "Montserrat";
 }
 
-/* common */
-.commontitle {
-  font: normal normal bold 38px/54px Montserrat;
+.mob-view {
+  display: none;
 }
 
 /* header */
@@ -55,7 +54,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 
 .footer-content {
@@ -131,8 +130,115 @@ body {
 }
 
 /* home */
+.hero-section {
+  min-height: 608px;
+  margin-top: 70px;
+}
+
+.hero-section .title {
+  color: #1b03a3;
+  font: normal normal 800 74px/82px "Montserrat";
+}
+
+.hero-section .sub-title {
+  color: #1e2323;
+  font: normal normal normal 20px/28px "Montserrat";
+  margin: 10px 0;
+}
+
+.hero-section .get-started {
+  margin-top: 20px;
+}
+
+.clients-img {
+  margin-top: 50px;
+}
+
+.clients-img img {
+  width: 80px;
+  filter: grayscale(100%);
+}
+
+.clients-img img:hover {
+  filter: unset;
+}
+
+.about-accoudian {
+  margin-top: 40px;
+}
+
+.about-accoudian .accordion-item {
+  border: unset;
+  border-bottom: 1px solid #707070;
+  padding: 30px 0;
+}
+
+.about-accoudian .accordion-button {
+  background: #fff !important;
+  font-size: 26px;
+  color: #2e3652;
+  font-family: "Montserrat";
+}
+
+.about-accoudian .accordion-button:focus {
+  box-shadow: unset;
+}
+
+.about-accoudian .accordion-button svg {
+  margin-right: 20px;
+}
+
+.about-accoudian .accordion-body p {
+  font-size: 18px;
+  color: #2e3652;
+}
+
+.about-accoudian .accordion-body {
+  padding-left: 90px;
+}
+
+.banner-img img {
+  width: 550px;
+}
+
+.homeskillslider {
+  padding-left: 60px;
+}
+
+.homeskillslider .swiper-wrapper {
+  align-items: flex-end !important;
+  padding-right: 30px;
+}
+
+.homeskillslider img {
+  filter: grayscale(100%);
+  width: 100%;
+}
+
+.homeskillslider img:hover {
+  filter: unset;
+}
+
 .accordion-button {
-  font: normal normal medium 26px/68px "Montserrat" !important;
+  font: normal normal medium 26px/68px "Montserrat";
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .accordion-item {
@@ -141,12 +247,519 @@ body {
 }
 
 .plans-section {
+  padding-top: 50px;
   text-align: center;
   background: #1b03a3;
   color: white;
+  min-height: 1250px;
 }
 
 .plans-title {
   font: normal normal bold 38px/54px "Montserrat";
   text-align: center;
+}
+
+.plans-card-container {
+  background: white;
+  color: black;
+  width: 100%;
+  height: 366px;
+  border-radius: 24px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.plans-card-container .tag {
+  background: #1b03a3;
+  color: white;
+  width: 120px;
+  border-radius: 20px;
+  padding: 5px 5px;
+}
+
+.plans-info {
+  color: #1b03a3;
+  font: normal normal normal 14px/19px "Montserrat";
+  text-align: left;
+}
+
+.plan-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-price .price {
+  font: normal normal bold 52px/93px "Montserrat";
+  color: #1db954;
+  margin-right: 10px;
+  position: relative;
+}
+
+.price .price-symbol {
+  position: absolute;
+  top: -20%;
+  left: -25%;
+  font-size: 30px;
+}
+
+.price-info {
+  color: #191414;
+}
+
+.price-info-bold {
+  font: normal normal bold 16px/19px "Montserrat";
+}
+
+.get-started {
+  padding: 10px 60px;
+  border-radius: 34px;
+  border: 0;
+  background: #1db954;
+  color: white;
+  font: normal normal medium 24px/29px "Montserrat";
+}
+
+.pricing-read-more {
+  margin-top: 20px;
+  color: #1db954;
+  font: normal normal bold 16px/19px "Montserrat";
+}
+
+.plans-section .cards-container {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  row-gap: 30px;
+  gap: 30px;
+  grid-template-columns: repeat(2, 411px);
+}
+
+.price-footer-info {
+  font: normal normal bold 16px/26px "Montserrat";
+  background: #1b03a3;
+  width: 70%;
+  margin: auto;
+}
+
+.currency-option-container {
+  width: 70%;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-tab-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  border-radius: 34px;
+  /* padding: 10px 60px; */
+  border: 1px solid white;
+  width: 381px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-currency-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-currency-container .form-select {
+  width: 30%;
+}
+
+.select-currency-container p {
+  font: normal normal medium 18px/38px "Montserrat";
+  margin-right: 20px;
+}
+
+.price-tab {
+  width: 214px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: normal normal normal 20px/24px "Montserrat";
+  margin: 0;
+  cursor: pointer;
+}
+
+.price-tab-active {
+  cursor: pointer;
+  margin: 0;
+  background: white;
+  font: normal normal normal 20px/24px "Montserrat";
+  color: #1b03a3;
+  border-radius: 34px;
+}
+
+.high-performance {
+  background: #f7df00;
+  min-height: 729px;
+}
+
+.high-performance h1 {
+  font: normal normal bold 38px/54px "Montserrat";
+  text-align: center;
+  padding-top: 70px;
+}
+
+.high-performance .sub-title {
+  font: normal normal normal 20px/28px "Montserrat";
+  text-align: center;
+}
+
+.high-performance .cards-container {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 296px);
+  gap: 30px;
+}
+
+.high-performance .cards-container .plans-card-container {
+  text-align: center;
+}
+
+.high-performance-footer p {
+  font: normal normal normal 20px/28px "Montserrat";
+  text-align: center;
+  padding: 40px 0;
+  width: 50%;
+  margin: auto;
+}
+
+.frequently-asked-title {
+  font: normal normal bold 38px/54px "Montserrat";
+  text-align: center;
+  margin: 50px 0;
+}
+
+.why-you-need {
+  min-height: 676px;
+  background-image: url("../images/path-img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.superfast-title {
+  font: normal normal 800 42px/97px "Montserrat";
+  text-align: center;
+}
+
+.why-you-need-content {
+  min-height: 500px;
+  width: 80%;
+  margin: auto;
+}
+.techs-we-use {
+  margin: 80px 0;
+}
+.techs-we-use .title {
+  font: normal normal 800 42px "Montserrat";
+  text-align: center;
+  margin-top: 50px;
+}
+
+.techs-we-use .subtitle {
+  font: normal normal medium 16px/26px "Montserrat";
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.techs-img {
+  width: max-content;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.techs-img .picture-big {
+  width: 161px;
+  height: 42px;
+  margin-right: 30px;
+}
+
+.techs-img .picture-small {
+  width: 62px;
+  height: 37px;
+}
+
+.why-you-need-content .content-section {
+  position: relative;
+}
+.why-you-need-content .content-section .hero-img {
+  width: 400px;
+}
+
+.why-you-need-content .content-section .icon {
+  width: 70px;
+  position: absolute;
+  right: 27%;
+}
+
+.content-section .section-info {
+  width: 440px;
+  height: 163px;
+  border-radius: 26px;
+  box-shadow: 6px 4px 24px #00000029;
+  background-color: white;
+  position: absolute;
+  bottom: -10%;
+  right: 15%;
+  padding: 30px;
+}
+
+.content-section .section-info p {
+  font: normal normal medium 18px/28px "Montserrat";
+}
+
+.list-section ul {
+  list-style: none;
+}
+
+.list-section ul li {
+  font: normal normal normal 28px/68px "Montserrat";
+  cursor: pointer;
+}
+
+.list-option-active {
+  font: normal normal bolder 28px/68px "Montserrat";
+  color: #1db954;
+}
+
+.accordin-header {
+  font: normal normal medium 26px/68px "Montserrat" !important;
+}
+
+.how-it-works {
+  background: #f8f7ff;
+  min-height: 666px;
+  /* padding-top: 50px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.how-it-works .section-title {
+  text-align: center;
+  font: normal normal 800 42px/97px "Montserrat";
+  /* margin-bottom: 60px; */
+}
+
+.how-it-works-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-it-works-card img {
+  width: 86px;
+}
+
+.how-it-works-card h3 {
+  margin-top: 20px;
+  width: 80%;
+  text-align: center;
+  font: normal normal bold 32px/36px "Montserrat";
+}
+
+.how-it-works-card p {
+  width: 306px;
+  text-align: center;
+  font: normal normal medium 16px/26px "Montserrat";
+}
+
+.how-it-works button {
+  border: 0;
+  border-radius: 34px;
+  padding: 10px 40px;
+  background-color: #1db954;
+  color: white;
+  font: normal normal bold 20px/24px "Montserrat";
+  margin-bottom: 30px;
+}
+
+.framework-statistics {
+  min-height: 1125px;
+  background-image: url("../images/vector2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.framework-statistics .section-title {
+  font: normal normal 800 42px/62px "Montserrat";
+  text-align: center;
+  width: 80%;
+  margin: 2em auto;
+}
+
+.stats-card {
+  width: 298px;
+  height: 333px;
+  box-shadow: 6px 4px 24px #00000029;
+  border-radius: 32px;
+  text-align: left;
+  padding: 129px 9px 2px 56px;
+  margin: auto;
+  background: white;
+}
+
+.stats-card h3 {
+  font: normal normal 900 62px/73px "Montserrat";
+  color: #1db954;
+}
+
+.stats-card p {
+  font: normal normal medium 34px/46px "Montserrat";
+  width: 60%;
+  color: #1e2323;
+}
+
+.middle-col .icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8em;
+}
+
+.web-vitals-section {
+  min-height: 733px;
+  background-image: url("../images/vector1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.web-vitals-section .search-box {
+  width: 934px;
+}
+
+.search-webpage h3 {
+  font: normal normal 600 24px/62px "Montserrat";
+  text-align: center;
+}
+.web-vitals-section .title {
+  font: normal normal 800 42px/62px "Montserrat";
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.web-vitals-section .search-box {
+  margin: auto;
+}
+
+.web-vitals-section .search-box input {
+  width: 80%;
+  box-shadow: 4px 6px 12px #00000027;
+  border: 1px solid #e4e4e4;
+  padding: 30px 40px;
+  border-radius: 44px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.web-vitals-section .search-box button {
+  width: 20%;
+  background-color: #1b03a3;
+  padding: 30px;
+  color: white;
+  border: 1px solid #e4e4e4;
+
+  border-top-right-radius: 44px;
+  border-bottom-right-radius: 44px;
+}
+
+.stats .stats-container {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.circle-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-info {
+  font: normal normal medium 20px/32px "Montserrat";
+  margin-top: 10px;
+}
+
+/* .circle-contain .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position-y: grey;
+  border-radius: 50%;
+  width: 97px;
+  height: 97px;
+  border: 1px solid red;
+} */
+
+.circle-contain .circle {
+  position: relative;
+  width: 112px;
+}
+
+.circle-contain .circle img {
+  width: 100%;
+}
+
+.circle-contain .circle p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: normal normal medium 42px/62px "Montserrat";
+}
+
+.faster-stats-section {
+  min-height: 299px;
+  background: #f8f7ff;
+}
+
+.faster-stats-section .stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faster-stats-section .stats h3 {
+  font: normal normal 800 68px/97px "Montserrat";
+}
+
+.faster-stats-section .stats h4 {
+  font: normal normal bold 34px/32px "Montserrat";
+}
+
+.faster-stats-section .stats p {
+  font: normal normal medium 24px/32px "Montserrat";
+}
+
+.stats-container {
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-home .title {
+  font: normal normal 800 42px/72px "Montserrat";
+  text-align: center;
+  margin-top: 50px;
+}
+
+.they-trust-us-section {
+  margin-bottom: 100px;
 }

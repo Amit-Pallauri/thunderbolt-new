@@ -68,3 +68,11 @@ export const homeSkillSlider = {
     },
   },
 };
+
+export const statsSlider = {
+  observer: true,
+  observeParents: true,
+  slidesPerView: 1.2,
+  spaceBetween: 10,
+  loop: false,
+};
