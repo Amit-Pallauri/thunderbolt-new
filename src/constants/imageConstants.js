@@ -65,3 +65,4 @@ export const ImageConstants = {
   hero2Bg,
   Smile,
 };
+export default ImageConstants
