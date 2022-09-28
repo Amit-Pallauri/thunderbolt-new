@@ -137,4 +137,78 @@
   .why-you-need-content .content-section .hero-img {
     width: 332px;
   }
+  .pricing-selector {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pricing-h1 {
+    font-size: 2.5rem;
+  }
+  .pricing-p {
+    margin-top: 20px;
+    color: #1e2323 !important;
+  }
+  .pricing-selector {
+    right: 100px;
+    margin-top: 20px;
+  }
+  .pricing-switch-btn {
+    width: 300px;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  .monthly-card-title {
+    margin-top: 15px;
+  }
+  .monthly-card {
+    width: 100% !important;
+  }
+  .round-borders {
+    padding: 1px;
+  }
+  .monthly-card-description {
+    color: #160091;
+    font-size: 10px;
+    padding-left: 53px !important;
+    padding-right: 53px !important;
+  }
+
+  .vat-box p {
+    font-size: 14px !important;
+  }
+  .vat-text {
+    font-size: 16px !important;
+    padding-left: 21px !important;
+    padding-right: 21px !important;
+  }
+  .pricing-hero-section-two {
+    font-size: 22px !important;
+  }
+  .pricing-hero-section-two-h2 {
+    font-size: 30px;
+  }
+  .pricing-p2 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .smile-card {
+    width: 200px;
+    height: 250px;
+  }
+  .hero-two {
+    padding: 2rem !important;
+  }
+  .pricing-selector label {
+    color: #1b03a3;
+    font-weight: bolder;
+  }
+  .pricing--main-box {
+    /* background-color: #ecf9f1 !important; */
+  }
+  .mb-100 {
+    margin-bottom: 100px;
+  }
 }

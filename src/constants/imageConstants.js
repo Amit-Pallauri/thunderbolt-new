@@ -1,4 +1,3 @@
-import clientCastrol from "../../src/images/logos/client-castrol.png";
 import clientToi from "../../src/images/logos/client-toi.webp";
 import clientGoeres from "../../src/images/logos/client-goeres.jpeg";
 import clientFirstpost from "../../src/images/logos/client-firstpost.png";
@@ -27,6 +26,9 @@ import clientChronicle from "../../src/images/logos/client-chronicle.jpg";
 import clientEy from "../../src/images/logos/client-ey.png";
 import clientMpay from "../../src/images/logos/client-mpay.png";
 import clientWikiStage from "../../src/images/logos/client-WikiStage.jpg";
+import pricingBg from "../images/logos/pricing-bg.svg";
+import hero2Bg from "../images/logos/hero-2-bg.svg";
+import Smile from "../images/logos/smile.svg";
 
 export const ImageConstants = {
   clientCastrol,
@@ -58,4 +60,8 @@ export const ImageConstants = {
   clientEy,
   clientMpay,
   clientWikiStage,
+  pricingBg,
+  featureIcon,
+  hero2Bg,
+  Smile,
 };

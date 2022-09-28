@@ -1,7 +1,7 @@
 export const homeSlider = {
   observer: true,
   observeParents: true,
-  slidesPerView: 1,
+  slidesPerView: 4,
   spaceBetween: 30,
   loop: true,
   autoplay: {
@@ -75,4 +75,29 @@ export const statsSlider = {
   slidesPerView: 1.2,
   spaceBetween: 10,
   loop: false,
+};
+export const pricingSlider = {
+  observer: true,
+  observeParents: true,
+  slidesPerView: 7,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 7,
+      spaceBetween: 10,
+    },
+  },
 };
