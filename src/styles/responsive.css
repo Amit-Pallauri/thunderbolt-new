@@ -1,4 +1,6 @@
 /* mobile screen */
 @media only screen and (max-width: 768px) {
- 
+  .pricing-selector {
+    position: relative;
+  }
 }
