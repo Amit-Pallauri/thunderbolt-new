@@ -1,4 +1,5 @@
 import React from "react";
+import routes from "../constants/routes";
 import logo from "../images//logos/logo.svg";
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href={routes.pricing}>
                 Pricing
               </a>
             </li>
