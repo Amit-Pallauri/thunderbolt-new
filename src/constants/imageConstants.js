@@ -35,6 +35,7 @@ import featureIcon from "../../src/images/logos/feature-icon.svg";
 
 export const ImageConstants = {
   faviconImage,
+
   clientCastrol,
   clientToi,
   clientGoeres,
