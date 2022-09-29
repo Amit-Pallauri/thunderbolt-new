@@ -13,7 +13,7 @@ const MonthlyCards = ({
     {
       title: "Economy",
       description: "Launch your online platform, your way, with ease",
-      cost: "£50",
+      cost: "50",
       features: [
         "Standard Performance",
         " 1 website",
@@ -39,7 +39,7 @@ const MonthlyCards = ({
     {
       title: "Economy",
       description: "Launch your online platform, your way, with ease",
-      cost: "£50",
+      cost: "50",
       features: [
         "Standard Performance",
         " 1 website",
@@ -65,7 +65,33 @@ const MonthlyCards = ({
     {
       title: "Economy",
       description: "Launch your online platform, your way, with ease",
-      cost: "£50",
+      cost: "50",
+      features: [
+        "Standard Performance",
+        " 1 website",
+        "Up to 10 Pages HTML Website",
+        " 100 GB storage",
+        "10 Databases",
+        " 4 GB RAM ",
+        "100 GB Bandwidth",
+        "Up to 5M Server Request",
+        "Up to 3 Built Concurrency ",
+        "2 CPUs",
+        "Free SSL for your websites",
+        " Server Type AWS with 99%",
+        "Guarantee Uptime",
+        "Daily Back",
+        "Up Up to 5000 Optimised Images",
+        "Onboarding & Migration Assistance",
+        "Data Centre Global",
+        "Email Support",
+        "Dedicated Account Rep",
+      ],
+    },
+    {
+      title: "Economy",
+      description: "Launch your online platform, your way, with ease",
+      cost: "50",
       features: [
         "Standard Performance",
         " 1 website",
@@ -117,43 +143,47 @@ const MonthlyCards = ({
   ];
   return (
     <>
-      <div className="d-md-flex ">
+      <div className="d-md-flex  ">
         {cards?.map((d, key) => {
           return (
             <>
-              <div className="monthly-card m-md-2 mb-5 mb-md-0  text-center  flex-fill">
-                <div className="bg-white round-borders ">
-                  <p className="monthly-card-title  ">{d.title}</p>
-                  {showDescription && (
-                    <p className="monthly-card-description px-4">
-                      {d.description}
-                    </p>
-                  )}
-                  <p className="monthly-cost px-5 ">
-                    <strong>{d.cost}</strong>
-                    {showFeaturs && <span> per month</span>}
-                    <br />
-                    {showSub && <span className="monthly-cost-sub-description">
-                      One-off Cost. Works with all Plans
-                    </span>}
+              <div className="monthly-card m-md-2 mt-2 mb-5 mb-md-0  text-center  flex-fill">
+              <div className="bg-white rounded-lg ">
+                <div className="mb-2 space">{"s"}</div>
+              <p className="monthly-card-title  ">{d.title}</p>
+                {showDescription && (
+                  <p className="monthly-card-description px-4">
+                    {d.description}
                   </p>
-                  {showSub && (
-                    <p
-                      className={
-                        isExtraAddOn
-                          ? "text-black monthly-card-description mt-4 px-4"
-                          : "monthly-card-description mt-4 px-4"
-                      }
-                    >
-                      We set up and add a newsletter subscription form to your
-                      website from any 3rd party provider such as Mailchimp.
-                    </p>
-                  )}
+                )}
+                <p className="monthly-cost px-5 ">
+                  <strong className="price-symbol">&#x20b9;</strong>
+                  <strong>{d.cost}</strong>
+                  {showFeaturs && <span> per month</span>}
                   <br />
-                  <button className="get-started-btn mt-0 mb-5">
-                    Get started
-                  </button>
-                </div>
+                  {showSub && (
+                    <span className="monthly-cost-sub-description">
+                      One-off Cost. Works with all Plans
+                    </span>
+                  )}
+                </p>
+                {showSub && (
+                  <p
+                    className={
+                      isExtraAddOn
+                        ? "text-black monthly-card-description mt-4 px-4"
+                        : "monthly-card-description mt-4 px-4"
+                    }
+                  >
+                    We set up and add a newsletter subscription form to your
+                    website from any 3rd party provider such as Mailchimp.
+                  </p>
+                )}
+                <br />
+                <button className="get-started-btn mt-0 mb-5">
+                  Get started
+                </button>
+              </div>
                 {showFeaturs && (
                   <div className="points p-3 mb-5 ">
                     {d.features.map((f, i) => {

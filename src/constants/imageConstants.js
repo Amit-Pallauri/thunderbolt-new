@@ -28,10 +28,12 @@ import clientMpay from "../../src/images/logos/client-mpay.png";
 import clientWikiStage from "../../src/images/logos/client-WikiStage.jpg";
 import pricingBg from "../images/logos/pricing-bg.svg";
 import hero2Bg from "../images/logos/hero-2-bg.svg";
+import hero1Bg from "../images/logos/hero-1-bg.svg";
 import Smile from "../images/logos/smile.svg";
 import featureIcon from "../images/logos/feature-icon.svg"
 import clientCastrol from "../images/logos/client-castrol.png"
 export const ImageConstants = {
+  hero1Bg,
   clientCastrol,
   clientToi,
   clientGoeres,

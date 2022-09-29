@@ -1,37 +1,57 @@
 import React from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Layout from "../components/Layout";
 import MonthlyCards from "../components/Pricing/MonthlyCards";
 import imageConstants from "../constants/imageConstants";
 import homeSlider from "../constants/swiperConstants";
 const Home = () => {
+  const [isMonthly, setMonthly] = useState(true);
   return (
     <Layout>
       <div className="pricing--main-box bg-white p-md-5 p-4 ">
-        <div className="h-100 d- align-items-center justify-content-center">
-          <div class="p-md-5  mb-5 jumbotron text-center jumbotron-fluid">
+        <div className=" d- align-items-center justify-content-center">
+          <div class="p-md-5  mb-2 jumbotron text-center jumbotron-fluid">
             <div class="container ">
-              <h1 class="display-4 pricing-h1">
+              <h1 class="display-4  pricing-h1">
                 <strong>
                   Plans to suit your needs -<br /> <span>Save upto 20%</span>{" "}
                   when billed annually
                 </strong>
               </h1>{" "}
-              <p class="lead pricing-p px-5 ">
+              <p class="lead pricing-p  px-5 ">
                 With Built-in Security and speed Optimzations for <br /> your
                 site performance.
               </p>
             </div>
           </div>
         </div>
-        <div className="d-md-flex mb-100  align-items-center justify-content-center">
+        {/* <div className="d-md-flex mb-100 position-relative  align-items-center justify-content-center">
           <div className="pricing-switch-btn bd-highlight col-example">
             <div class="container">
               <div class="row">
-                <button class="col-6   pricing-monthly">
+                <button
+                  onClick={() => {
+                    setIsMonthly(true);
+                  }}
+                  className={
+                    isMonthly
+                      ? "col-6   pricing-monthly"
+                      : "col-6 pricing-yearly"
+                  }
+                >
                   <span>Monthly</span>
                 </button>
-                <button class="col-6  pricing-yearly">
+                <button
+                  onClick={() => {
+                    setIsMonthly(false);
+                  }}
+                  className={
+                    !isMonthly
+                      ? "col-6 pricing-yearly"
+                      : "col-6   pricing-monthly"
+                  }
+                >
                   <span>Yearly</span>
                 </button>
               </div>
@@ -45,12 +65,46 @@ const Home = () => {
               <option value="3">Three</option>
             </select>
           </div>
+        </div> */}
+        <div className="tab-btn d-md-flex  mb-100 position-relative  align-items-center justify-content-center  position-realtive">
+          <div className="price-tab-container  pricing-switch-btn">
+            <p
+              className={`${
+                isMonthly
+                  ? "price-tab price-tab-active pricing-monthly"
+                  : "price-tab text-white"
+              }`}
+              onClick={() => setMonthly(true)}
+            >
+              Monthly
+            </p>
+            <p
+              className={`${
+                !isMonthly
+                  ? "price-tab price-tab-active "
+                  : "price-tab pricing-yearly"
+              }`}
+              onClick={() => setMonthly(false)}
+            >
+              Yearly
+            </p>
+          </div>
+          <div className="pricing-selector px-5 d-flex">
+            <label className="form-label mx-3 ">Select Currency</label>
+            <select class="" aria-label=".form-select-sm example">
+              <option value="1">£</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+         
         </div>
-
-        <MonthlyCards showSub={false} />
       </div>
+     <div className="hero-1-card-container px-4">
+     <MonthlyCards showSub={false} />
+     </div>
 
-      <div className="h-100 d- align-items-center justify-content-center">
+      <div className="hero-2 d- align-items-center justify-content-center">
         <div class="p-md-5 p-sm-3 jumbotron text-center jumbotron-fluid">
           <div class="container  ">
             <h1 className="pricing-hero-section-two">
