@@ -17,34 +17,34 @@ export const FrameworkStatistics = () => {
         <div className="stats">
           <div className="container">
             <div className="row stats-container">
-              <div className="col-sm-3 circle-contain">
+              <div className="col-md-3 col-6 circle-contain">
                 <div className="circle">
                   <img src={orangeClrcle} alt="" />
-                  <p>63</p>
+                  <p className="circle-text-red">63</p>
                 </div>
                 <p className="circle-info">Performance</p>
               </div>
-              <div className="col-sm-3 circle-contain">
+              <div className="col-md-3 col-6 circle-contain">
                 {" "}
                 <div className="circle">
                   <img src={greenCircle} alt="" />
-                  <p>63</p>
+                  <p className="circle-text-green">93</p>
                 </div>
                 <p className="circle-info">Accessibiity</p>
               </div>
-              <div className="col-sm-3 circle-contain">
+              <div className="col-md-3 col-6 circle-contain">
                 {" "}
                 <div className="circle">
                   <img src={orangeClrcle} alt="" />
-                  <p>63</p>
+                  <p className="circle-text-red">83</p>
                 </div>
                 <p className="circle-info">Best Practices</p>
               </div>
-              <div className="col-sm-3 circle-contain">
+              <div className="col-md-3 col-6 circle-contain">
                 {" "}
                 <div className="circle">
                   <img src={orangeClrcle} alt="" />
-                  <p>8</p>
+                  <p className="circle-text-red">83</p>
                 </div>
                 <p className="circle-info">SEO</p>
               </div>
@@ -67,7 +67,7 @@ export const FrameworkStatistics = () => {
             A lightning fast framework which loads your website in
             <span style={{ color: "#1DB954" }}> less than 2 seconds.</span>
           </h1>
-          <div className="row web-view">
+          <div className="row web-view-flex">
             <div className="col-4">
               <div className="stats-card mb-5">
                 <h3>60%</h3>

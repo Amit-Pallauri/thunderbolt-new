@@ -16,12 +16,12 @@ const HowItWorks = () => {
           </div>
           <div className="col-md-4 how-it-works-card">
             <img src={customiseIcon} alt="" />
-            <h3>Customise on the fly</h3>
+            <h3 className="w-50">Customise on the fly</h3>
             <p>Easy and quick design customisations on the go…</p>
           </div>
           <div className="col-md-4 how-it-works-card">
             <img src={buildIcon} alt="" />
-            <h3>Build & Launch</h3>
+            <h3 className="w-50">Build & Launch</h3>
             <p>We will share a review link for your website before…</p>
           </div>
         </div>

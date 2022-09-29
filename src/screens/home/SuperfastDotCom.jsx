@@ -80,6 +80,7 @@ const SuperfastDotCom = () => {
                   return (
                     <li
                       onClick={() => setActiveTab(el.id)}
+                      onMouseOver={() => setActiveTab(el.id)}
                       className={`${
                         el.id === activeTab
                           ? "list-option-active"

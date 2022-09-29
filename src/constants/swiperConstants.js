@@ -104,14 +104,14 @@ export const pricingSlider = {
   observer: true,
   spaceBetween: 20,
   slidesPerView: 6,
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  loop: false,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   breakpoints: {
     640: {
-      slidesPerView: 1.5,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     768: {

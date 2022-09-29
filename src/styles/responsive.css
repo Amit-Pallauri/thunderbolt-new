@@ -1,7 +1,30 @@
 /* mobile screen */
 @media only screen and (max-width: 768px) {
-  .web-view {
+  .web-view-flex {
     display: none;
+  }
+
+  .mob-view {
+    display: block;
+  }
+
+  /* header */
+  .navbar-brand img {
+    margin-left: 10px;
+  }
+
+  /* slider */
+  .about-accoudian .accordion-button {
+    font-size: 20px;
+    color: #1d1d1d;
+  }
+
+  .about-accoudian .accordion-item {
+    padding: 15px 0;
+  }
+
+  .about-accoudian .accordion-body p {
+    font-size: 14px;
   }
 
   /* homepage second section */
@@ -13,12 +36,176 @@
   /* web vitals third section */
   .faster-stats-section .stats {
     width: 70%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+  }
+
+  .faster-stats-section .stats h3 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 800;
+  }
+
+  .faster-stats-section .stats h4 {
+    margin: 5px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .faster-stats-section .stats p {
+    font-size: 18px;
+    font-weight: medium;
+  }
+
+  .stats .stats-container {
+    width: 100%;
+  }
+
+  .how-it-works .section-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-top: 80px;
+  }
+
+  .how-it-works-card {
+    margin: 40px 0;
+  }
+
+  .how-it-works-card img {
+    width: 86px;
+    height: 86px;
+  }
+
+  .how-it-works-card h3 {
+    width: 90%;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .how-it-works-card p {
+    width: 80%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: medium;
+  }
+
+  .how-it-works button {
+    margin-bottom: 80px;
   }
 
   /* homepage fifth section */
   .superfast-title {
-    font-size: 32px/97px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .price-tab-container {
+    width: 280px;
+    height: 45px;
+    margin-left: auto;
+  }
+
+  .price-tab {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .select-currency-container {
+    margin: 10px 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .select-currency-container .form-select {
+    width: 20%;
+    color: white;
+  }
+
+  .price-footer-info {
+    font-size: 16px/19px;
+    width: 90%;
+    padding-bottom: 40px;
+  }
+
+  .content-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-section .section-info {
+    width: 331px;
+    min-height: 162px;
+    border-radius: 26px;
+    box-shadow: 6px 4px 24px #00000029;
+    background-color: white;
+    position: absolute;
+    bottom: -25%;
+    right: -5%;
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+
+  .section-info p {
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  .list-section {
+    width: 100%;
+    margin-top: 120px;
+  }
+
+  .list-section ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .list-section .list-option {
+    width: 100%;
+    margin: 15px 0;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+  }
+
+  .list-option-active {
+    margin: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1db954;
+  }
+
+  .techs-we-use .title {
+    margin: 20px 10px;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .techs-we-use .subtitle {
+    font-size: 16px;
+    font-weight: medium;
+    width: 90%;
+    margin: initial auto;
+  }
+
+  .techs-img {
+    width: 95%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .techs-img .picture-big {
+    margin-right: 35px;
+    margin-bottom: 25px;
+    width: 125px;
+    height: 32px;
+  }
+
+  .techs-img .picture-small {
+    width: 52px;
+    height: 30px;
   }
 
   /* sixxth section */
@@ -29,6 +216,29 @@
     width: "initial";
   }
 
+  .plans-section .plans-title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .plans-section .plans-subtitle {
+    width: 100%;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .high-performance h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .high-performance .sub-title {
+    width: 90%;
+    margin: 30px auto;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
   .high-performance .cards-container {
     display: grid;
     grid-template-columns: 350px;
@@ -36,14 +246,16 @@
     width: "initial";
   }
 
+  .high-performance-footer p {
+    font-size: 16px;
+    font-weight: normal;
+    width: 95%;
+  }
+
   .currency-option-container {
     flex-direction: column;
     width: 90%;
     margin-left: initial;
-  }
-
-  .price-tab-container {
-    width: 343px;
   }
 
   .search-webpage .search-box {
@@ -53,10 +265,12 @@
   .web-vitals-section .search-box input {
     width: 60%;
     padding: 15px 30px;
+    font-size: 14px;
   }
 
   .web-vitals-section .search-box button {
     width: 40%;
+    font-size: 14px;
     padding: 15px 30px;
   }
 
@@ -66,19 +280,29 @@
     box-shadow: 6px 4px 24px #00000029;
     border-radius: 32px;
     text-align: bottom;
-    padding: 100px 20px;
+    padding: 70px 20px;
     margin: 10px;
     background: white;
   }
 
+  .circle-contain {
+    margin-bottom: 30px;
+  }
+
+  .circle-info {
+    font-size: 20px;
+  }
+
   .stats-card h3 {
-    font: normal normal 900 62px/73px "Montserrat";
+    font-size: 63px;
+    font-weight: 900;
     color: #1db954;
   }
 
   .stats-card p {
-    font: normal normal medium 34px/46px "Montserrat";
-    width: 70%;
+    font-size: 34px;
+    font-weight: medium;
+    width: 100%;
     color: #1e2323;
   }
 
@@ -90,7 +314,9 @@
   }
 
   .framework-statistics .section-title {
-    font: normal normal 800 32px/40px "Montserrat";
+    width: 95%;
+    font-size: 32px;
+    font-weight: 800;
   }
 
   .web-vitals-section {
@@ -99,6 +325,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
+  }
+
+  .web-vitals-section .title {
+    width: 80%;
+    margin: auto;
+    font-size: 32px;
+    font-weight: 900;
   }
 
   .framework-statistics {
@@ -123,22 +356,71 @@
 
   .hero-section .title {
     width: 90%;
+    margin: auto;
     margin-top: 30px;
-    font: normal normal 800 54px/65px "Montserrat";
+    font-size: 54px;
+    font-weight: 800;
   }
   .hero-section .sub-title {
-    font: normal normal normal 18px/28px "Montserrat";
+    width: 90%;
+    margin: 10px auto;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+  }
+
+  .hero-section button {
+    margin-left: 20px;
+  }
+
+  .clients-img {
+    width: 100%;
+    overflow-x: scroll;
+    display: -webkit-box;
+    flex-wrap: nowrap;
   }
 
   .clients-img img {
-    width: 60px;
+    width: 100px;
   }
 
   .why-you-need-content .content-section .hero-img {
     width: 332px;
   }
+
+  .why-you-need-content .content-section .icon {
+    width: 46px;
+    position: absolute;
+    right: 0%;
+    top: -8%;
+  }
+
   .pricing-selector {
     position: relative;
+  }
+
+  .they-trust-us-section {
+    margin-bottom: 100px 0;
+  }
+
+  .skill-home .title {
+    margin-bottom: 40px;
+  }
+
+  .footer-container {
+    margin: 0;
+  }
+
+  .links-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
   }
 }
 
@@ -151,6 +433,7 @@
     color: #1e2323 !important;
   }
   .tab-btn .pricing-selector {
+    right: auto;
     margin-top: 90px;
     position: absolute;
     margin-bottom: 10px;
@@ -201,12 +484,14 @@
     width: 240px;
     height: 250px;
   }
-  .swiper-slide {
-    margin-right: 0px !important;
-    margin-left: 5px !important;
-  }
+
   .hero-two {
-    padding: 2rem !important;
+    padding-right: 20px !important;
+    padding-left: 36px !important;
+  }
+  .extra-addon-div{
+    padding-right: 20px !important;
+    padding-left: 36px !important;
   }
   .pricing-selector label {
     color: #1b03a3;
@@ -214,7 +499,7 @@
   }
   .pricing--main-box {
     /* background-color: #ecf9f1 !important; */
-    padding-left: 44px !important;
+    /* padding-left: 44px !important; */
   }
   .mb-100 {
     margin-bottom: 100px;
@@ -242,14 +527,20 @@
   .monthly-cost span {
     font-size: 16px !important;
   }
-  .monthly-cost .price-symbol{
+  .monthly-cost .price-symbol {
     font-size: 20px !important;
     position: absolute;
     margin-top: 8px;
     margin-left: -15px;
   }
-  .hero-1-card-container{
+  .hero-1-card-container {
     margin-top: -180px;
     padding-left: 2.5rem !important;
+  }
+  .pricing-monthly{
+    height: 44px !important;
+  }
+  .pricing-yearly{
+    height: 44px !important;
   }
 }
