@@ -31,6 +31,7 @@ import hero2Bg from "../../src/images/logos/hero-2-bg.svg";
 import Smile from "../../src/images/logos/smile.svg";
 import clientCastrol from "../../src/images/logos/client-castrol.png";
 import faviconImage from "../../src/images/logos/favicon.png";
+import featureIcon from "../../src/images/logos/feature-icon.svg";
 
 export const ImageConstants = {
   faviconImage,
@@ -64,7 +65,8 @@ export const ImageConstants = {
   clientMpay,
   clientWikiStage,
   pricingBg,
-  // featureIcon,
+  featureIcon,
   hero2Bg,
   Smile,
 };
+export default ImageConstants;
