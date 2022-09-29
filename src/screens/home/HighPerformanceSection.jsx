@@ -1,7 +1,7 @@
 import React from "react";
 import PlansCard from "../../components/PlansCard";
 
-const HighPerformancceSection = () => {
+const HighPerformanceSection = ({ isMonthly, data }) => {
   return (
     <section className="high-performance">
       <h1>High Performing Pay Monthly Managed Websites</h1>
@@ -10,8 +10,8 @@ const HighPerformancceSection = () => {
         deploy and managed your business sites.
       </p>
       <div className="cards-container">
-        {[1, 2, 3].map(() => {
-          return <PlansCard />;
+        {data.map((el) => {
+          return <PlansCard data={el} isMonthly={isMonthly} />;
         })}
       </div>
       <div className="high-performance-footer">
@@ -24,4 +24,4 @@ const HighPerformancceSection = () => {
   );
 };
 
-export default HighPerformancceSection;
+export default HighPerformanceSection;

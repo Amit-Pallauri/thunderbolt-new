@@ -16,75 +16,139 @@ const FAQs = () => {
               <Accordion defaultActiveKey={"0"}>
                 <Accordion.Item eventKey="0">
                   <AccordionButton id="headingOne">
-                    Leadership Is A Behavior, Not A Position
+                    What exactly is thunderboltJS{" "}
                   </AccordionButton>
 
                   <AccordionBody>
                     <p>
-                      Leaders are the ones who take responsibility for making
-                      decisions and bringing change. Leaders are the ones who
-                      empower people to discover and use their greatest
-                      potential. The position on someone’s business card won’t
-                      do all of these. People are the ones to choose their
-                      leader. And how will they do that? They will judge by
-                      behavior, attitude and actions. If you want to be a
-                      leader, then act like a leader and shape a better reality.
+                      ThunderboltJS is a framework, a compiler that improves
+                      your core web vitals which results in your site loading
+                      superfast. A new way of rendering websites basically.
                     </p>
                   </AccordionBody>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                   <AccordionButton id="headingTwo">
-                    The Best Way of Influence Is By Setting An Example
+                    What are core web vitals?
                   </AccordionButton>
-
                   <AccordionBody>
                     <p>
-                      Each leader wants to get the best out of their team.
-                      Excellence orientation is great, as there is always need
-                      for development. But here is the simple truth. Instead of
-                      telling your team members what to do, lead by example.
-                      They are following your each and every moment. Practice
-                      what you preach, and the results will astonish you.
-                      Especially during challenging times, don’t give in, you
-                      should be the one who faces obstacles with confidence and
-                      strives for success.
+                      Core web vitals are the 4 parameters namely accessibility,
+                      performance, SEO & best practices,(mobile first etc) by
+                      which your site is ranked by google & other search
+                      engines. You can check your core web vitals here
                     </p>
                   </AccordionBody>
                 </Accordion.Item>
                 <AccordionItem eventKey="2">
                   <AccordionButton id="headingThree">
-                    Leading Means Making An Impact
+                    I already have a website, what can I do?
                   </AccordionButton>
-
                   <AccordionBody>
                     <p>
-                      Think about the greatest leaders in history. What was the
-                      one thing they had in common? Yes , they all made an
-                      impact. Leadership is not just setting goals and
-                      effectively achieving them with your team. Leadership is
-                      not just brilliant public speaking and great communication
-                      skills. If you want to be a true leader, you should work
-                      towards contributing to create a better society. You
-                      should make a positive change.
+                      If you are fine with your design, simply dump your HTML
+                      via a zip file or add us to your GitLab/GitHub for us to
+                      convert it to a lightning fast dot com
                     </p>
                   </AccordionBody>
                 </AccordionItem>
                 <AccordionItem eventKey="3">
                   <AccordionButton id="headingfour">
-                    Leadership is Chasing Vision
+                    What about my CMS?
                   </AccordionButton>
-
                   <AccordionBody>
                     <p>
-                      Without a vision, your actions won’t make a lasting
-                      impact. The key is devoting your efforts and time towards
-                      achieving your vision. Vision is what inspires people to
-                      take action and go forward. Identify your goal and
-                      coordinate all your activities towards reaching it. Let
-                      your vision and your ambition inspire your team.
+                      We work with industry-leading CMSes like wordpress,
+                      Strapi, sanity & many others to stitch your design to your
+                      existing CMS or if we build it, we will use Strapi as our
+                      preferred CMS.
                     </p>
                   </AccordionBody>
                 </AccordionItem>
+                <AccordionItem eventKey="4">
+                  <AccordionButton id="headingfive">
+                    What about hosting & deployment?
+                  </AccordionButton>
+                  <AccordionBody>
+                    <p>
+                      We use a combination of services like thunderboltJS,AWS,
+                      gatsby cloud, fastly to host & deploy your CMS & static
+                      frontend.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem eventKey="5">
+                  <AccordionButton id="headingSix">
+                    Can I use my hosting?
+                  </AccordionButton>
+                  <AccordionBody>
+                    <p>
+                      No, you can't use your own hosting provider, you will need
+                      to use thunderboltJS as your hosting provider.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem eventKey="6">
+                  <AccordionButton id="headingSeven">
+                    Ok, I have my test link, how should we take the website
+                    LIVE?
+                  </AccordionButton>
+                  <AccordionBody>
+                    <p>
+                      Once your site is ready, our team will send you domains to
+                      be pointed out in simple, easy to understand & secure
+                      steps. Don't worry, our customer success team will be with
+                      you every step of the way.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem eventKey="7">
+                  <AccordionButton id="headingEight">
+                    How much time does all this take?
+                  </AccordionButton>
+                  <AccordionBody>
+                    <p>
+                      Sites with no cms & 10-15 pages take less than 3 days or
+                      even before. Sites with CMS & 10-15 pages take
+                      approximately 10 days including testing & deployment.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem eventKey="8">
+                  <AccordionButton id="headingNine">
+                    Can I cancel anytime?
+                  </AccordionButton>
+
+                  <AccordionBody>
+                    <p>Yes, you can cancel anytime</p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem eventKey="10">
+                  <AccordionButton id="headingTen">
+                    I want to change my provider, do I have access to my source
+                    code?
+                  </AccordionButton>
+                  <AccordionBody>
+                    <p>
+                      Yes, after a period of 12 months, you will have access to
+                      everything deployed with us including all updates
+                      delivered via gitlab/github.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>
+                <AccordionItem eventKey="11">
+                  <AccordionButton id="headingEleven">
+                    Do i really need thunderboltJS?
+                  </AccordionButton>
+                  <AccordionBody>
+                    <p>
+                      If you engage in digital marketing or work towards getting
+                      discovered on google via seo, YES a 50Euro/month will be a
+                      small charge compared to the results you will be getting.
+                      You will thank us later.
+                    </p>
+                  </AccordionBody>
+                </AccordionItem>{" "}
               </Accordion>{" "}
             </div>
           </div>

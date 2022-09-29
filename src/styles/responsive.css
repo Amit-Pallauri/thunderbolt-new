@@ -166,11 +166,12 @@
     width: 100%;
     margin: 15px 0;
     font-weight: normal;
-    font-size: 24px;
     line-height: normal;
+    font-size: 24px;
   }
 
   .list-option-active {
+    margin: 15px 0;
     font-size: 24px;
     font-weight: bold;
     color: #1db954;
