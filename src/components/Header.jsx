@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import routes from "../constants/routes";
 import logo from "../images//logos/logo.svg";
@@ -6,9 +7,9 @@ const Header = () => {
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-light container">
-        <a className="navbar-brand" href="#">
+        <Link to={routes.home} className="navbar-brand">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
         <div
           className="collapse navbar-collapse nav-items-container"
           id="navbarTogglerDemo02"

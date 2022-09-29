@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
 import TheyTrustUs from "../components/TheyTrustUs";
-
 import PlansSection from "../screens/home/PlansSection";
 import HighPerformancceSection from "../screens/home/HighPerformancceSection";
 import FAQs from "../screens/home/FAQs";

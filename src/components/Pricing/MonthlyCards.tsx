@@ -1,6 +1,6 @@
 import { features } from "process";
 import React from "react";
-import imageConstants from "../../constants/imageConstants";
+import {ImageConstants} from "../../constants/imageConstants";
 
 const MonthlyCards = ({
   showBootom = true,
@@ -160,7 +160,7 @@ const MonthlyCards = ({
                       return (
                         <>
                           <div className={i === 0 ? "mt-0" : "mt-2"}>
-                            <img src={imageConstants.featureIcon} />
+                            <img src={ImageConstants.featureIcon} />
                             <span>{f}</span>
                           </div>
                         </>

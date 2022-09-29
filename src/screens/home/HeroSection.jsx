@@ -15,26 +15,28 @@ const HeroSection = () => {
               seconds.
             </h2>
             <button className="get-started">Get Started</button>
-            <div className="row clients-img">
-              <div className="col-2">
-                <img src={ImageConstants.clientVodafone} alt="" />
-              </div>
-              <div className="col-2">
-                <img src={ImageConstants.clientMpay} alt="" />
-              </div>
-              <div className="col-2">
-                <img src={ImageConstants.clientTomorrowStreet} alt="" />
-              </div>
-              <div className="col-2">
-                <img src={ImageConstants.clientAudi} alt="" />
-              </div>
-              <div className="col-2">
-                <img src={ImageConstants.clientGeMoney} alt="" />
-              </div>
-            </div>
           </div>
           <div className="col-sm-12 col-lg-6 banner-img">
             <img src={HomeBanner} alt="" />
+          </div>
+        </div>
+        <div className="container">
+          <div className="row clients-img">
+            <div className="col-lg-2 col-4">
+              <img src={ImageConstants.clientVodafone} alt="" />
+            </div>
+            <div className="col-lg-2 col-4">
+              <img src={ImageConstants.clientMpay} alt="" />
+            </div>
+            <div className="col-lg-2 col-4">
+              <img src={ImageConstants.clientTomorrowStreet} alt="" />
+            </div>
+            <div className="col-lg-2 col-4">
+              <img src={ImageConstants.clientAudi} alt="" />
+            </div>
+            <div className="col-lg-2 col-4">
+              <img src={ImageConstants.clientGeMoney} alt="" />
+            </div>
           </div>
         </div>
       </div>

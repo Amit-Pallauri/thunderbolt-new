@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Layout from "../components/Layout";
 import MonthlyCards from "../components/Pricing/MonthlyCards";
-import imageConstants from "../constants/imageConstants";
+import { ImageConstants } from "../constants/imageConstants";
 import homeSlider from "../constants/swiperConstants";
 const Home = () => {
   return (
@@ -73,7 +73,7 @@ const Home = () => {
         <div className="">
           <p className="stand ">Standard website features</p>
         </div>
-        <Swiper
+      <Swiper
           observeParents={true}
           observer={true}
           slidesPerView={5.5}
@@ -98,61 +98,61 @@ const Home = () => {
         >
           <SwiperSlide>
             <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
+              <img className="mt-md-3" src={ImageConstants.Smile} />
               <p>Save thousands on upfront traditional design fee</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
+              <img className="mt-md-3" src={ImageConstants.Smile} />
               <p>Save thousands on upfront traditional design fee</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
+              <img className="mt-md-3" src={ImageConstants.Smile} />
               <p>Save thousands on upfront traditional design fee</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
+              <img className="mt-md-3" src={ImageConstants.Smile} />
               <p>Save thousands on upfront traditional design fee</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
+              <img className="mt-md-3" src={ImageConstants.Smile} />
               <p>Save thousands on upfront traditional design fee</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
+              <img className="mt-md-3" src={ImageConstants.Smile} />
               <p>Save thousands on upfront traditional design fee</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
+              <img className="mt-md-3" src={ImageConstants.Smile} />
               <p>Save thousands on upfront traditional design fee</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
+              <img className="mt-md-3" src={ImageConstants.Smile} />
               <p>Save thousands on upfront traditional design fee</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
+              <img className="mt-md-3" src={ImageConstants.Smile} />
               <p>Save thousands on upfront traditional design fee</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="smile-card mb-5 p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
+              <img className="mt-md-3" src={ImageConstants.Smile} />
               <p>Save thousands on upfront traditional design fee</p>
             </div>
           </SwiperSlide>

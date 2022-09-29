@@ -11,7 +11,7 @@ const PlansSection = () => {
             <h1 className="plans-title">
               Plans for delivering super fast websites
             </h1>
-            <p>
+            <p className="plans-subtitle">
               Simple pricing no hidden costs - we maintain, host and provide
               technical support
             </p>
@@ -38,15 +38,11 @@ const PlansSection = () => {
           </div>
           <div className="select-currency-container">
             <p>Select Currency</p>
-            <select
-              className="form-select"
-              aria-label="Default select example"
-            >
+            <select className="form-select" aria-label="Default select example">
+              <option value="pound">£</option>
               <option selected value="euro">
                 €
               </option>
-              <option value="pound">£</option>
-              <option value="inr">₹</option>
             </select>
           </div>
         </div>

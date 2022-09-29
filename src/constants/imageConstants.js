@@ -26,11 +26,14 @@ import clientChronicle from "../../src/images/logos/client-chronicle.jpg";
 import clientEy from "../../src/images/logos/client-ey.png";
 import clientMpay from "../../src/images/logos/client-mpay.png";
 import clientWikiStage from "../../src/images/logos/client-WikiStage.jpg";
-import pricingBg from "../images/logos/pricing-bg.svg";
-import hero2Bg from "../images/logos/hero-2-bg.svg";
-import Smile from "../images/logos/smile.svg";
+import pricingBg from "../../src/images/logos/pricing-bg.svg";
+import hero2Bg from "../../src/images/logos/hero-2-bg.svg";
+import Smile from "../../src/images/logos/smile.svg";
+import clientCastrol from "../../src/images/logos/client-castrol.png";
+import faviconImage from "../../src/images/logos/favicon.png";
 
 export const ImageConstants = {
+  faviconImage,
   clientCastrol,
   clientToi,
   clientGoeres,
@@ -61,7 +64,7 @@ export const ImageConstants = {
   clientMpay,
   clientWikiStage,
   pricingBg,
-  featureIcon,
+  // featureIcon,
   hero2Bg,
   Smile,
 };

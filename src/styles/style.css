@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-@import url("../styles/responsive.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27");
 
 body {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
+}
+
+.web-view-flex {
+  display: flex;
 }
 
 .mob-view {
@@ -16,7 +19,7 @@ body {
 }
 
 .nav-items {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -32,7 +35,8 @@ body {
 }
 
 .nav-link {
-  font-weight: 600;
+  font-weight: medium;
+  font-size: 16px;
 }
 
 .nav-btn button {
@@ -127,7 +131,8 @@ body {
 
 .footer-bottom p {
   color: #f8f7ff;
-  font: normal normal normal 14px/20px "Montserrat";
+  font-size: 14px;
+  font-weight: normal;
 }
 
 /* home */
@@ -138,12 +143,14 @@ body {
 
 .hero-section .title {
   color: #1b03a3;
-  font: normal normal 800 74px/82px "Montserrat";
+  font-size: 74px;
+  font-weight: 800;
 }
 
 .hero-section .sub-title {
   color: #1e2323;
-  font: normal normal normal 20px/28px "Montserrat";
+  font-size: 20px;
+  font-weight: normal;
   margin: 10px 0;
 }
 
@@ -152,11 +159,14 @@ body {
 }
 
 .clients-img {
-  margin-top: 50px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
 }
 
 .clients-img img {
-  width: 80px;
+  width: 130px;
   filter: grayscale(100%);
 }
 
@@ -171,18 +181,20 @@ body {
 .about-accoudian .accordion-item {
   border: unset;
   border-bottom: 1px solid #707070;
+  border-radius: 0;
   padding: 30px 0;
 }
 
 .about-accoudian .accordion-button {
   background: #fff !important;
   font-size: 26px;
-  color: #2e3652;
-  font-family: "Montserrat";
+  color: #1d1d1d;
+  font-weight: 600;
 }
 
 .about-accoudian .accordion-button:focus {
   box-shadow: unset;
+  color: #1db954;
 }
 
 .about-accoudian .accordion-button svg {
@@ -191,11 +203,7 @@ body {
 
 .about-accoudian .accordion-body p {
   font-size: 18px;
-  color: #2e3652;
-}
-
-.about-accoudian .accordion-body {
-  padding-left: 90px;
+  color: #1d1d1d;
 }
 
 .banner-img img {
@@ -221,7 +229,8 @@ body {
 }
 
 .accordion-button {
-  font: normal normal medium 26px/68px "Montserrat";
+  font-size: 26px;
+  font-weight: medium;
 }
 
 .swiper-slide {
@@ -256,7 +265,8 @@ body {
 }
 
 .plans-title {
-  font: normal normal bold 38px/54px "Montserrat";
+  font-size: 38px;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -280,7 +290,8 @@ body {
 
 .plans-info {
   color: #1b03a3;
-  font: normal normal normal 14px/19px "Montserrat";
+  font-size: 14px;
+  font-weight: normal;
   text-align: left;
 }
 
@@ -288,10 +299,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80px;
 }
 
 .plan-price .price {
-  font: normal normal bold 52px/93px "Montserrat";
+  font-size: 52px;
+  font-weight: bold;
   color: #1db954;
   margin-right: 10px;
   position: relative;
@@ -299,32 +312,42 @@ body {
 
 .price .price-symbol {
   position: absolute;
-  top: -20%;
-  left: -25%;
-  font-size: 30px;
+  top: -5%;
+  left: -30%;
+  font-size: 35px;
 }
 
 .price-info {
   color: #191414;
+  font-size: 18px;
 }
 
 .price-info-bold {
-  font: normal normal bold 16px/19px "Montserrat";
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .get-started {
-  padding: 10px 60px;
+  padding: 8px 60px;
   border-radius: 34px;
   border: 0;
   background: #1db954;
   color: white;
-  font: normal normal medium 24px/29px "Montserrat";
+  font-size: 24px;
+  font-weight: medium;
 }
 
 .pricing-read-more {
   margin-top: 20px;
   color: #1db954;
-  font: normal normal bold 16px/19px "Montserrat";
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pricing-read-more a {
+  color: #1db954;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .plans-section .cards-container {
@@ -336,8 +359,16 @@ body {
   grid-template-columns: repeat(2, 411px);
 }
 
+.plans-section .plans-subtitle {
+  width: 100%;
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
 .price-footer-info {
-  font: normal normal bold 16px/26px "Montserrat";
+  font-size: 16px;
+  font-weight: bold;
   background: #1b03a3;
   width: 70%;
   margin: auto;
@@ -365,17 +396,23 @@ body {
 }
 
 .select-currency-container {
+  margin: 30px 0;
+  height: 100%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .select-currency-container .form-select {
-  width: 30%;
+  width: 25%;
+  background: #1b03a3;
+  color: white;
 }
 
 .select-currency-container p {
-  font: normal normal medium 18px/38px "Montserrat";
+  font-size: 18px;
+  font-weight: medium;
   margin-right: 20px;
 }
 
@@ -386,7 +423,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font: normal normal normal 20px/24px "Montserrat";
+  font-size: 20px;
+  font-weight: normal;
   margin: 0;
   cursor: pointer;
 }
@@ -395,7 +433,8 @@ body {
   cursor: pointer;
   margin: 0;
   background: white;
-  font: normal normal normal 20px/24px "Montserrat";
+  font-size: 20px;
+  font-weight: normal;
   color: #1b03a3;
   border-radius: 34px;
 }
@@ -406,13 +445,17 @@ body {
 }
 
 .high-performance h1 {
-  font: normal normal bold 38px/54px "Montserrat";
+  font-size: 38px;
+  font-weight: bold;
+  font-weight: 900;
   text-align: center;
   padding-top: 70px;
 }
 
 .high-performance .sub-title {
-  font: normal normal normal 20px/28px "Montserrat";
+  font-size: 20px;
+  font-weight: normal;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -429,7 +472,8 @@ body {
 }
 
 .high-performance-footer p {
-  font: normal normal normal 20px/28px "Montserrat";
+  font-size: 20px;
+  font-weight: normal;
   text-align: center;
   padding: 40px 0;
   width: 50%;
@@ -437,7 +481,8 @@ body {
 }
 
 .frequently-asked-title {
-  font: normal normal bold 38px/54px "Montserrat";
+  font-size: 38px;
+  font-weight: bold;
   text-align: center;
   margin: 50px 0;
 }
@@ -451,8 +496,10 @@ body {
 }
 
 .superfast-title {
-  font: normal normal 800 42px/97px "Montserrat";
+  font-size: 42px;
+  font-weight: 800;
   text-align: center;
+  margin: 30px 0;
 }
 
 .why-you-need-content {
@@ -464,20 +511,23 @@ body {
   margin: 80px 0;
 }
 .techs-we-use .title {
-  font: normal normal 800 42px "Montserrat";
+  font-size: 42px;
+  font-weight: 800;
   text-align: center;
   margin-top: 50px;
 }
 
 .techs-we-use .subtitle {
-  font: normal normal medium 16px/26px "Montserrat";
+  font-size: 16px;
+  font-weight: medium;
   text-align: center;
   margin-bottom: 40px;
 }
 
 .techs-img {
-  width: max-content;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 60px;
 }
 
@@ -506,8 +556,8 @@ body {
 }
 
 .content-section .section-info {
-  width: 440px;
-  height: 163px;
+  width: 400px;
+  min-height: 163px;
   border-radius: 26px;
   box-shadow: 6px 4px 24px #00000029;
   background-color: white;
@@ -515,28 +565,31 @@ body {
   bottom: -10%;
   right: 15%;
   padding: 30px;
+  padding-bottom: 10px;
 }
 
 .content-section .section-info p {
-  font: normal normal medium 18px/28px "Montserrat";
+  font-size: 18px;
+  font-weight: medium;
+  font-weight: 600;
 }
 
 .list-section ul {
   list-style: none;
 }
 
-.list-section ul li {
-  font: normal normal normal 28px/68px "Montserrat";
+.list-section .list-option {
+  font-size: 28px;
+  font-weight: normal;
+  font-size: 28px;
   cursor: pointer;
+  line-height: 68px;
 }
 
 .list-option-active {
-  font: normal normal bolder 28px/68px "Montserrat";
+  font-size: 28px;
+  font-weight: bolder;
   color: #1db954;
-}
-
-.accordin-header {
-  font: normal normal medium 26px/68px "Montserrat" !important;
 }
 
 .how-it-works {
@@ -551,7 +604,8 @@ body {
 
 .how-it-works .section-title {
   text-align: center;
-  font: normal normal 800 42px/97px "Montserrat";
+  font-size: 42px;
+  font-weight: 900;
   /* margin-bottom: 60px; */
 }
 
@@ -559,6 +613,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .how-it-works-card img {
@@ -566,16 +621,20 @@ body {
 }
 
 .how-it-works-card h3 {
-  margin-top: 20px;
+  margin-top: 30px;
   width: 80%;
   text-align: center;
-  font: normal normal bold 32px/36px "Montserrat";
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .how-it-works-card p {
   width: 306px;
   text-align: center;
-  font: normal normal medium 16px/26px "Montserrat";
+  font-size: 16px;
+  font-weight: medium;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 .how-it-works button {
@@ -584,7 +643,8 @@ body {
   padding: 10px 40px;
   background-color: #1db954;
   color: white;
-  font: normal normal bold 20px/24px "Montserrat";
+  font-size: 20px;
+  font-weight: bold;
   margin-bottom: 30px;
 }
 
@@ -597,7 +657,8 @@ body {
 }
 
 .framework-statistics .section-title {
-  font: normal normal 800 42px/62px "Montserrat";
+  font-size: 42px;
+  font-weight: 800;
   text-align: center;
   width: 80%;
   margin: 2em auto;
@@ -609,19 +670,21 @@ body {
   box-shadow: 6px 4px 24px #00000029;
   border-radius: 32px;
   text-align: left;
-  padding: 129px 9px 2px 56px;
+  padding: 75px 8px 2px 36px;
   margin: auto;
   background: white;
 }
 
 .stats-card h3 {
-  font: normal normal 900 62px/73px "Montserrat";
+  font-size: 63px;
+  font-weight: 900;
   color: #1db954;
 }
 
 .stats-card p {
-  font: normal normal medium 34px/46px "Montserrat";
-  width: 60%;
+  font-size: 34px;
+  font-weight: medium;
+  width: 100%;
   color: #1e2323;
 }
 
@@ -644,11 +707,13 @@ body {
 }
 
 .search-webpage h3 {
-  font: normal normal 600 24px/62px "Montserrat";
+  font-size: 24px;
+  font-weight: 600;
   text-align: center;
 }
 .web-vitals-section .title {
-  font: normal normal 800 42px/62px "Montserrat";
+  font-size: 42px;
+  font-weight: 800;
   padding-top: 50px;
   text-align: center;
   margin-bottom: 40px;
@@ -656,24 +721,28 @@ body {
 
 .web-vitals-section .search-box {
   margin: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .web-vitals-section .search-box input {
   width: 80%;
   box-shadow: 4px 6px 12px #00000027;
   border: 1px solid #e4e4e4;
-  padding: 30px 40px;
+  padding: 20px 40px;
   border-radius: 44px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  font-size: 24px;
 }
 
 .web-vitals-section .search-box button {
   width: 20%;
   background-color: #1b03a3;
-  padding: 30px;
+  padding: 20px 30px;
   color: white;
   border: 1px solid #e4e4e4;
+  font-size: 24px;
 
   border-top-right-radius: 44px;
   border-bottom-right-radius: 44px;
@@ -693,20 +762,10 @@ body {
 }
 
 .circle-info {
-  font: normal normal medium 20px/32px "Montserrat";
+  font-weight: medium;
+  font-size: 20px;
   margin-top: 10px;
 }
-
-/* .circle-contain .circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position-y: grey;
-  border-radius: 50%;
-  width: 97px;
-  height: 97px;
-  border: 1px solid red;
-} */
 
 .circle-contain .circle {
   position: relative;
@@ -722,7 +781,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font: normal normal medium 42px/62px "Montserrat";
+  font-size: 42px;
+  font-weight: 600;
+  font-size: 42px;
+  font-weight: medium;
+}
+
+.circle-text-red {
+  color: #d30303;
+}
+
+.circle-text-green {
+  color: #049204;
 }
 
 .faster-stats-section {
@@ -738,15 +808,18 @@ body {
 }
 
 .faster-stats-section .stats h3 {
-  font: normal normal 800 68px/97px "Montserrat";
+  font-size: 68px;
+  font-weight: 800;
 }
 
 .faster-stats-section .stats h4 {
-  font: normal normal bold 34px/32px "Montserrat";
+  font-size: 34px;
+  font-weight: bold;
 }
 
 .faster-stats-section .stats p {
-  font: normal normal medium 24px/32px "Montserrat";
+  font-size: 24px;
+  font-weight: medium;
 }
 
 .stats-container {
@@ -756,9 +829,10 @@ body {
 }
 
 .skill-home .title {
-  font: normal normal 800 42px/72px "Montserrat";
+  font-size: 42px;
+  font-weight: 800;
   text-align: center;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .they-trust-us-section {
