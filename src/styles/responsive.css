@@ -11,6 +11,56 @@
   /* header */
   .navbar-brand img {
     margin-left: 10px;
+    width: 144px;
+  }
+
+  .hambar img {
+    width: 36px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  /* canvas */
+  .offcanvas-body {
+    flex-direction: column;
+  }
+
+  .home-button {
+    width: 37px;
+    top: 2%;
+  }
+
+  .close-btn-section {
+    right: 7%;
+  }
+
+  .close-btn-section img {
+    width: 25px;
+  }
+
+  .left-sidebar,
+  .right-sidebar {
+    width: 100%;
+  }
+
+  .left-sidebar {
+    height: 50%;
+    margin-top: 6em;
+    margin-bottom: 2em;
+  }
+
+  .left-sidebar p {
+    font-size: 26px;
+  }
+
+  .sidebar-content {
+    margin-left: 40px;
+  }
+
+  .sidebar-content .title {
+    width: 95%;
+    font-size: 30px;
+    margin: 20px 0;
   }
 
   /* slider */
