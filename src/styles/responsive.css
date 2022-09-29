@@ -432,9 +432,11 @@
     margin-top: 20px;
     color: #1e2323 !important;
   }
-  .pricing-selector {
-    right: 100px;
-    margin-top: 20px;
+  .tab-btn .pricing-selector {
+    right: auto;
+    margin-top: 90px;
+    position: absolute;
+    margin-bottom: 10px;
   }
   .pricing-switch-btn {
     width: 300px;
@@ -443,10 +445,11 @@
     margin-bottom: 15px;
   }
   .monthly-card-title {
-    margin-top: 15px;
+    margin-top: 0px;
   }
   .monthly-card {
-    width: 100% !important;
+    width: 95% !important;
+    margin-top: 5px;
   }
   .round-borders {
     padding: 1px;
@@ -454,8 +457,9 @@
   .monthly-card-description {
     color: #160091;
     font-size: 10px;
-    padding-left: 53px !important;
-    padding-right: 53px !important;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    margin-top: -10px;
   }
 
   .vat-box p {
@@ -477,11 +481,17 @@
     padding-right: 5px !important;
   }
   .smile-card {
-    width: 200px;
+    width: 240px;
     height: 250px;
   }
+
   .hero-two {
-    padding: 2rem !important;
+    padding-right: 20px !important;
+    padding-left: 36px !important;
+  }
+  .extra-addon-div{
+    padding-right: 20px !important;
+    padding-left: 36px !important;
   }
   .pricing-selector label {
     color: #1b03a3;
@@ -489,8 +499,48 @@
   }
   .pricing--main-box {
     /* background-color: #ecf9f1 !important; */
+    /* padding-left: 44px !important; */
   }
   .mb-100 {
     margin-bottom: 100px;
+  }
+  .tab-btn {
+    margin-top: 40px;
+    margin-bottom: 120px;
+  }
+  .points {
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 32px !important;
+    padding-bottom: 56px !important;
+    font-size: 12px;
+  }
+  .get-started-btn {
+    width: 80%;
+    margin-bottom: 40px !important;
+  }
+  .monthly-cost strong {
+    font-size: 36px;
+  }
+  .monthly-cost span {
+    font-size: 16px !important;
+  }
+  .monthly-cost .price-symbol {
+    font-size: 20px !important;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: -15px;
+  }
+  .hero-1-card-container {
+    margin-top: -180px;
+    padding-left: 2.5rem !important;
+  }
+  .pricing-monthly{
+    height: 44px !important;
+  }
+  .pricing-yearly{
+    height: 44px !important;
   }
 }

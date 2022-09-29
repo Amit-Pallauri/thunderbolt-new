@@ -3,11 +3,6 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-
-.web-view-flex {
-  display: flex;
-}
-
 .mob-view {
   display: none;
 }
@@ -859,10 +854,11 @@ body {
 /* Pricing */
 
 .pricing-h1 {
-  color: #1b03a3;
-
+  text-align: center;
+  font-size: 56px;
   letter-spacing: -0.52px;
-  font-weight: 800;
+  color: #1b03a3;
+  font-weight: 900;
 }
 .pricing-h1 span {
   color: #1db954;
@@ -875,6 +871,7 @@ body {
   text-align: center;
   font-size: 16px;
   font-weight: 900 !important;
+  margin-top: 30px;
 }
 .pricing--main-box {
   justify-content: center;
@@ -883,8 +880,10 @@ body {
   position: relative;
   text-align: center;
   background-repeat: no-repeat;
-  background-image: url("../images/logos/pricing-bg.svg");
-  background-color: #ecf9f1;
+  background-image: url("../images/logos/hero-1-bg.svg");
+  background-color: #ecf9f1 !important;
+  height: 730px !important;
+  z-index: -1;
 }
 .pricing-switch-btn {
   width: 381px;
@@ -894,7 +893,7 @@ body {
   opacity: 1;
   border-radius: 4rem;
   padding: 0px;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 30px;
   border: 1px solid #160091;
 }
@@ -934,9 +933,14 @@ body {
 }
 
 .pricing-selector {
+  top: 5px;
   position: absolute;
-  right: 5%;
+  right: -0%;
   text-align: center;
+  font-weight: 600;
+}
+.pricing-selector:focus {
+  border: none;
 }
 .pricing-selector label {
   text-align: center;
@@ -954,14 +958,45 @@ body {
 }
 
 /* Mothlycard */
-
+.rounded-lg {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.space {
+  margin-top: -10px !important;
+  color: white;
+}
 .monthly-card {
   text-align: center;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px !important;
+  border-bottom-right-radius: 24px;
+  background: #f8f7ff 0% 0% no-repeat padding-box;
   box-shadow: 6px 4px 24px #00000038;
-  border-radius: 24px;
   opacity: 1;
   width: 296px !important;
+}
+.pay-monthly-card {
+  text-align: center;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px !important;
+  border-bottom-right-radius: 24px;
+  background: #f8f7ff 0% 0% no-repeat padding-box;
+  box-shadow: 6px 4px 24px #00000038;
+  opacity: 1;
+  width: 380px !important;
+}
+.pay-monthly-card .points {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #1B03A3;
+  font-weight: 500;
+  letter-spacing: 2px !important;
+  opacity: 1;
+  background-color: #F8F7FF !important;
+  padding-left: 34px !important;
 }
 .monthly-card h1 {
   text-align: center;
@@ -972,7 +1007,6 @@ body {
   opacity: 1;
 }
 .monthly-card-title {
-  margin-top: 2rem;
   text-align: center;
   letter-spacing: 0px;
   color: #1b03a3;
@@ -982,8 +1016,21 @@ body {
 }
 
 .monthly-card-description {
-  font-size: 13px;
+  font-size: 10px;
   line-height: -5px;
+  color: #160091;
+  margin-top: -10px;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+.contact-align {
+  margin-bottom: 50px;
+  font-size: 10px;
+  line-height: -5px;
+  color: #160091;
+  margin-top: -10px;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
 }
 .monthly-cost {
   text-align: left;
@@ -997,13 +1044,31 @@ body {
   padding-left: 4rem;
   position: relative;
 }
+.contact-sales {
+  margin-top: -10px !important;
+  margin-bottom: 20px !important;
+  text-align: left;
+  letter-spacing: -0.38px;
+  color: #1db954;
+  opacity: 1;
+  font-weight: 900;
+  font-size: 25px;
+  display: contents;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  position: relative;
+}
+.monthly-cost strong {
+  font-size: 40px;
+  font-weight: 900;
+}
 .monthly-cost span {
   text-align: left;
   letter-spacing: 0px;
   color: #191414;
   font-weight: 400 !important;
   opacity: 1;
-  font-size: 12px !important;
+  font-size: 16px !important;
 }
 .get-started-btn {
   background: #1db954 0% 0% no-repeat padding-box;
@@ -1011,18 +1076,18 @@ body {
   opacity: 1;
   color: white;
   border: none;
-  width: 180px;
-  height: 40px;
+  width: 222px;
+  height: 46px;
   font-weight: 600;
   margin-top: 2rem;
 }
 .points-box {
   /* UI Properties */
   background: #f8f7ff 0% 0% no-repeat padding-box;
-  border-radius: 24px;
+
   opacity: 1;
   margin-top: -10px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   width: 92%;
 }
 .s {
@@ -1035,6 +1100,9 @@ body {
   text-align: left !important;
   background: #f8f7ff;
   justify-content: space-around;
+  max-height: max-content;
+  min-height: 43rem !important;
+  border-radius: 24px !important;
 }
 .points span {
   color: #1b03a3;
@@ -1062,6 +1130,8 @@ body {
   color: #1e2323;
   opacity: 1;
   font-weight: 900;
+  padding-left: 15rem !important;
+  padding-right: 15rem !important;
 }
 .pricing-hero-section-two {
   text-align: center;
@@ -1076,15 +1146,20 @@ body {
   font-weight: 800;
 }
 .pricing-p2 {
-  color: #1e2323;
-  opacity: 1;
-  letter-spacing: 0px;
+  font: normal normal normal 16px/28px Montserrat;
   text-align: center;
   font-size: 16px;
-  font-weight: 400 !important;
+  letter-spacing: 0.5px;
+  color: #1e2323;
+  opacity: 1;
+  padding-right: 10rem !important;
+  padding-left: 10rem !important;
 }
 .hero-two {
   background-image: url("../images/logos/hero-2-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 550px;
 }
 .stand {
   text-align: center;
@@ -1099,8 +1174,10 @@ body {
   box-shadow: 6px 4px 24px #00000029;
   border-radius: 12px;
   opacity: 1;
-  height: 280px;
+  height: 250px;
+  width: 220px;
 }
+
 .smile-card p {
   margin-top: 15px;
   display: flex;
@@ -1162,4 +1239,43 @@ body {
 }
 .mySwiper {
   align-items: flex-end !important;
+}
+.tab-btn {
+  margin: 0;
+  z-index: 111 !important;
+}
+.monthly-cost .price-symbol {
+  font-size: 22px !important;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -15px;
+}
+.hero-1-card-container {
+  margin-top: -240px;
+  z-index: 111 !important;
+}
+.hero-2 {
+  margin-top: 10rem;
+}
+.extra-card-width {
+  width: 380px !important;
+  height: 370px !important;
+  background-color: white !important;
+}
+.extra-card-width .get-started-btn {
+  width: 250px !important;
+}
+.extra-card-width .monthly-cost-sub-description {
+  font: 12px !important;
+}
+.disbale-text span {
+  letter-spacing: 0px;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline;
+  margin-left: 6px !important;
+  color: #d0d0d0 !important;
+  opacity: 0.5 !important;
+  margin-top: 12px !important;
 }
