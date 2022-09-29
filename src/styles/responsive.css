@@ -198,8 +198,12 @@
     padding-right: 5px !important;
   }
   .smile-card {
-    width: 200px;
+    width: 240px;
     height: 250px;
+  }
+  .swiper-slide {
+    margin-right: 0px !important;
+    margin-left: 5px !important;
   }
   .hero-two {
     padding: 2rem !important;

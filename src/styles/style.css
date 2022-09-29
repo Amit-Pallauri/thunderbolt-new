@@ -1033,8 +1033,11 @@ body {
   box-shadow: 6px 4px 24px #00000029;
   border-radius: 12px;
   opacity: 1;
-  height: 280px;
+  height: 250px;
+  width: 220px;
+ 
 }
+
 .smile-card p {
   margin-top: 15px;
   display: flex;
@@ -1098,8 +1101,9 @@ body {
   align-items: flex-end !important;
 }
 .tab-btn {
-  position: absolute;
+  
   margin: 0;
+  z-index: 111 !important;
 }
 .monthly-cost .price-symbol {
   font-size: 22px !important;
@@ -1113,4 +1117,16 @@ body {
 }
 .hero-2 {
   margin-top: 10rem;
+}
+.extra-card-width{
+  width: 380px !important;
+  height: 370px !important;
+  background-color: white !important;
+}
+.extra-card-width .get-started-btn{
+  width: 250px !important;
+ 
+}
+.extra-card-width .monthly-cost-sub-description{
+  font: 12px !important;
 }

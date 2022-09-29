@@ -30,9 +30,23 @@ import pricingBg from "../images/logos/pricing-bg.svg";
 import hero2Bg from "../images/logos/hero-2-bg.svg";
 import hero1Bg from "../images/logos/hero-1-bg.svg";
 import Smile from "../images/logos/smile.svg";
-import featureIcon from "../images/logos/feature-icon.svg"
-import clientCastrol from "../images/logos/client-castrol.png"
+import featureIcon from "../images/logos/feature-icon.svg";
+import clientCastrol from "../images/logos/client-castrol.png";
+import Bulb from "../images/logos/bulb.svg";
+import EditIcon from "../images/logos/edit.svg";
+import Secure from "../images/logos/secure.svg";
+import DeskstopIcon from "../images/logos/deskstop.svg";
+import flashIcon from "../images/logos/flash.svg";
+import SearchIcon from "../images/logos/search.svg";
+import lockIcon from "../images/logos/lock.svg";
 export const ImageConstants = {
+  EditIcon,
+  Secure,
+  DeskstopIcon,
+  flashIcon,
+  SearchIcon,
+  lockIcon,
+  Bulb,
   hero1Bg,
   clientCastrol,
   clientToi,

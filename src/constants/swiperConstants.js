@@ -68,7 +68,30 @@ export const homeSkillSlider = {
     },
   },
 };
-
+export const PricingSkillSlider = {
+  observer: true,
+  observeParents: true,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2.2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 6.5,
+      spaceBetween: 10,
+    },
+  },
+};
 export const statsSlider = {
   observer: true,
   observeParents: true,
@@ -77,10 +100,10 @@ export const statsSlider = {
   loop: false,
 };
 export const pricingSlider = {
-  observer: true,
   observeParents: true,
-  slidesPerView: 7,
-  spaceBetween: 10,
+  observer: true,
+  spaceBetween: 20,
+  slidesPerView: 6,
   loop: true,
   autoplay: {
     delay: 2500,
@@ -88,11 +111,11 @@ export const pricingSlider = {
   },
   breakpoints: {
     640: {
-      slidesPerView: 1,
+      slidesPerView: 1.5,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 1,
+      slidesPerView: 3,
       spaceBetween: 40,
     },
     1024: {

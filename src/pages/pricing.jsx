@@ -2,11 +2,14 @@ import React from "react";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Layout from "../components/Layout";
+import ExtraAddOnsCards from "../components/Pricing/ExtraAddOnsCards";
 import MonthlyCards from "../components/Pricing/MonthlyCards";
+import StandaredFeaturesSlider from "../components/StandaredFeaturesSlider";
 import imageConstants from "../constants/imageConstants";
-import homeSlider from "../constants/swiperConstants";
+import homeSlider, { PricingSkillSlider } from "../constants/swiperConstants";
 const Home = () => {
   const [isMonthly, setMonthly] = useState(true);
+
   return (
     <Layout>
       <div className="pricing--main-box bg-white p-md-5 p-4 ">
@@ -25,6 +28,38 @@ const Home = () => {
               </p>
             </div>
           </div>
+          <div className="tab-btn d-md-flex  mb-100 position-relative  align-items-center justify-content-center  position-realtive">
+            <div className="price-tab-container  pricing-switch-btn">
+              <p
+                className={`${
+                  isMonthly
+                    ? "price-tab price-tab-active pricing-monthly"
+                    : "price-tab text-white"
+                }`}
+                onClick={() => setMonthly(true)}
+              >
+                Monthly
+              </p>
+              <p
+                className={`${
+                  !isMonthly
+                    ? "price-tab price-tab-active "
+                    : "price-tab pricing-yearly"
+                }`}
+                onClick={() => setMonthly(false)}
+              >
+                Yearly
+              </p>
+            </div>
+            <div className="pricing-selector px-5 d-flex">
+              <label className="form-label mx-3 ">Select Currency</label>
+              <select class="" aria-label=".form-select-sm example">
+                <option value="1">£</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
         </div>
         {/* <div className="d-md-flex mb-100 position-relative  align-items-center justify-content-center">
           <div className="pricing-switch-btn bd-highlight col-example">
@@ -32,7 +67,7 @@ const Home = () => {
               <div class="row">
                 <button
                   onClick={() => {
-                    setIsMonthly(true);
+                    setMonthly(true);
                   }}
                   className={
                     isMonthly
@@ -44,7 +79,7 @@ const Home = () => {
                 </button>
                 <button
                   onClick={() => {
-                    setIsMonthly(false);
+                    setMonthly(false);
                   }}
                   className={
                     !isMonthly
@@ -65,8 +100,8 @@ const Home = () => {
               <option value="3">Three</option>
             </select>
           </div>
-        </div> */}
-        <div className="tab-btn d-md-flex  mb-100 position-relative  align-items-center justify-content-center  position-realtive">
+        </div>  
+        {/* <div className="tab-btn d-md-flex  mb-100 position-relative  align-items-center justify-content-center  position-realtive">
           <div className="price-tab-container  pricing-switch-btn">
             <p
               className={`${
@@ -97,14 +132,13 @@ const Home = () => {
               <option value="3">Three</option>
             </select>
           </div>
-         
-        </div>
+        </div> */}
       </div>
-     <div className="hero-1-card-container px-4">
-     <MonthlyCards showSub={false} />
-     </div>
+      {/* <div className="hero-1-card-container px-4">
+        <MonthlyCards showSub={false} />
+      </div> */}
 
-      <div className="hero-2 d- align-items-center justify-content-center">
+      {/* <div className="hero-2 d- align-items-center justify-content-center">
         <div class="p-md-5 p-sm-3 jumbotron text-center jumbotron-fluid">
           <div class="container  ">
             <h1 className="pricing-hero-section-two">
@@ -122,99 +156,17 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="p-md-5 p-3 mb-5 card-container hero-two text-center">
+      <div className=" p-3 mb-5 card-container hero-two text-center">
         <MonthlyCards showBootom={false} showDescription={false} />
         <div className="">
           <p className="stand ">Standard website features</p>
+          <StandaredFeaturesSlider/>
         </div>
-        <Swiper
-          observeParents={true}
-          observer={true}
-          slidesPerView={5.5}
-          spaceBetween={10}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 1,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 5.5,
-              spaceBetween: 10,
-            },
-          }}
-        >
-          <SwiperSlide>
-            <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
-              <p>Save thousands on upfront traditional design fee</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
-              <p>Save thousands on upfront traditional design fee</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
-              <p>Save thousands on upfront traditional design fee</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
-              <p>Save thousands on upfront traditional design fee</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
-              <p>Save thousands on upfront traditional design fee</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
-              <p>Save thousands on upfront traditional design fee</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
-              <p>Save thousands on upfront traditional design fee</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
-              <p>Save thousands on upfront traditional design fee</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="smile-card p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
-              <p>Save thousands on upfront traditional design fee</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="smile-card mb-5 p-5">
-              <img className="mt-md-3" src={imageConstants.Smile} />
-              <p>Save thousands on upfront traditional design fee</p>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
+       
+      </div> */}
       <div className="text-center p-md-5 mb-5 px-4">
         <h2 className="extra mb-5">Extra Add-Ons</h2>
-        <MonthlyCards
+        <ExtraAddOnsCards
           showFeaturs={false}
           showSub={true}
           showBootom={false}
