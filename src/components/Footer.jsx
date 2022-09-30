@@ -1,5 +1,5 @@
 import React from "react";
-import footerLogo from "../images/logos/footer-logo.svg";
+import footerLogo from "../images/logos/footer-logo.png";
 import InstaIcon from "../images/icons/insta-icon.png";
 import linkedInIcon from "../images/icons/linkedin-icon.png";
 import callIcon from "../images/icons/call-icon.png";
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-content col-md-6">
-          <img loading="lazy" src={footerLogo} alt="" />
+          <img className="footer-logo" loading="lazy" src={footerLogo} alt="" />
           <div className="d-flex flex-column align-items-center mt-5">
             <p style={{ color: "#1DB954", fontSize: "20px" }}>Quick Links</p>
             <div className="links-container">

@@ -249,6 +249,10 @@ body {
   display: none;
 }
 
+.footer-logo {
+  width: 183px;
+}
+
 /* home */
 .hero-section {
   min-height: 608px;
@@ -303,14 +307,14 @@ body {
   border: unset;
   border-bottom: 1px solid #707070;
   border-radius: 0;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .about-accoudian .accordion-button {
   background: #fff !important;
   font-size: 26px;
   color: #1d1d1d;
-  font-weight: 600;
+  font-weight: medium;
 }
 
 .about-accoudian .accordion-button:focus {
