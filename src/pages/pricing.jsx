@@ -95,8 +95,9 @@ const Home = () => {
           <StandaredFeaturesSlider />
         </div>
       </div>
-      <div className="text-center extra-addon-div mt-2 p-md-5 mb-5 px-4">
-        <h2 className="extra mb-5  mb-3">Extra Add-Ons</h2>
+
+      <div className=" extra-addon-conatiner  text-center">
+        <h2 className="extra  mb-5">Extra Add-Ons</h2>
         <ExtraAddOnsCards
           showFeaturs={false}
           showSub={true}

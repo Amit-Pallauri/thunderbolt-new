@@ -58,10 +58,10 @@ const ExtraAddOnsCards = (
     },
   ];
   return (
-    <div className="row mx-0">
+    <div className="row  ">
       {slides.map((s, index) => {
         return (
-          <div key={index} className="col-md-4 mt-3 p-0 m-0 mb-5">
+          <div key={index} className="col-md-4   mt-3 p-0 mb-5">
             <div className="extra-card-width ">
               <div className=" rounded-lg ">
                 <div className="mb-2 space">{"s"}</div>
