@@ -135,7 +135,6 @@ const PayMonthlyWebsite = ({
                 {showFeaturs && (
                   <div className="points p-3  mb-5 ">
                     {d.features.map((f, i) => {
-                      console.log("sagar", f.garyAfter);
                       const isDisable =
                         d.garyAfter === false ? false : i >= d.garyAfter + 1;
                       return (

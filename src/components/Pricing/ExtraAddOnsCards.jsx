@@ -74,7 +74,7 @@ const ExtraAddOnsCards = (
                   <br />
                   <span className="monthly-cost-sub-description">{s.sub}</span>
                 </p>
-                <p className={"text-black monthly-card-description mt-4 px-4"}>
+                <p className={"text-black extra-card-description mt-4 px-4"}>
                   {s.des}
                 </p>
                 <br />

@@ -1147,10 +1147,18 @@ body {
 }
 
 .monthly-card-description {
+  font-size: 12px;
+  line-height: -5px;
+  color: #160091;
+  margin-top: -10px;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+.extra-card-description {
   opacity: 0.9;
   font-size: 12px;
   line-height: -5px;
-  color:#1E2323 !important;
+  color: #1e2323 !important;
   margin-top: -10px;
   padding-left: 30px !important;
   padding-right: 30px !important;
@@ -1235,6 +1243,7 @@ body {
   max-height: max-content;
   min-height: 43rem !important;
   border-radius: 24px !important;
+  font-size: 12px;
 }
 .points span {
   color: #1b03a3;
@@ -1247,7 +1256,7 @@ body {
 }
 .card-container {
   margin-left: 20px !important;
- background-color: white;
+  background-color: white;
 }
 .vat-box {
   text-align: center;
@@ -1392,7 +1401,7 @@ body {
 .hero-2 {
   margin-top: 10rem;
 }
-.extra-addon-conatiner{
+.extra-addon-conatiner {
   margin-left: 60px;
 }
 .extra-card-width {
@@ -1419,9 +1428,12 @@ body {
   opacity: 0.5 !important;
   margin-top: 12px !important;
 }
-.hero-1-card-container{
-  margin-left: 10px ;
+.hero-1-card-container {
+  margin-left: 10px;
 }
-.hero-one{
+.hero-one {
   z-index: 111 !important;
+}
+.s{
+  margin-top: 20px;
 }

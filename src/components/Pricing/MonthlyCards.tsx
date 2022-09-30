@@ -72,7 +72,7 @@ const MonthlyCards = ({
     },
     {
       title: "Ultimate",
-      des: "Perfect for growing your high traffic sites",
+      des: "Perfect for growing your high traffic sites    ",
       price: convertPrice(200),
       features: [
         "Standard Performance ",
@@ -140,6 +140,8 @@ const MonthlyCards = ({
                           className={
                             d.symbol === false
                               ? "contact-align"
+                              : key === 2
+                              ? "monthly-card-description  "
                               : "monthly-card-description px-4"
                           }
                         >
