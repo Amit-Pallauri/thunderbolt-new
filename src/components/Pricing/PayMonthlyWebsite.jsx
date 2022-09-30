@@ -8,6 +8,7 @@ const PayMonthlyWebsite = ({
   showDescription = true,
   showSub = false,
   currency,
+  isMonthly
 }) => {
   const convertPrice = (price) => {
     return {
@@ -119,7 +120,7 @@ const PayMonthlyWebsite = ({
                     )}
                     <strong>{d.price.price}</strong>
 
-                    <span> per month</span>
+                    <span> per {isMonthly ? "month":"year"}</span>
 
                     <br />
                   </p>

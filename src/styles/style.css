@@ -1014,7 +1014,7 @@ body {
   background-image: url("../images/logos/hero-1-bg.svg");
   background-color: #ecf9f1 !important;
   height: 730px !important;
-  z-index: -1;
+  z-index: auto;
 }
 .pricing-switch-btn {
   width: 381px;
@@ -1385,7 +1385,7 @@ body {
 }
 .hero-1-card-container {
   margin-top: -240px;
-  z-index: 111 !important;
+  z-index: auto !important;
 }
 .hero-2 {
   margin-top: 10rem;
@@ -1419,4 +1419,7 @@ body {
 }
 .hero-1-card-container{
   margin-left: 10px ;
+}
+.hero-one{
+  z-index: 111 !important;
 }

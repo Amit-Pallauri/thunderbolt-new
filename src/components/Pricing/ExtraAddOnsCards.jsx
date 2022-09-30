@@ -5,7 +5,8 @@ const ExtraAddOnsCards = (
   showFeaturs = false,
   showSub = true,
   isExtraAddOn,
-  showDescription
+  showDescription,
+  isMonthly
 ) => {
   const slides = [
     {
@@ -69,7 +70,7 @@ const ExtraAddOnsCards = (
                 <p className="monthly-cost px-5 ">
                   <strong className="price-symbol">{s.symbol}</strong>
                   <strong>{s.cost}</strong>
-                  <span> per month</span>
+                  {/* <span> per {isMonthly ? "month":"year"}</span> */}
                   <br />
                   <span className="monthly-cost-sub-description">{s.sub}</span>
                 </p>
