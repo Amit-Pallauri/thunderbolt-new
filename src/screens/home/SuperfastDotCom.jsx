@@ -64,8 +64,14 @@ const SuperfastDotCom = () => {
         <div className="why-you-need-content">
           <div className="row">
             <div className="col-md-6 content-section">
-              <img className="icon" src={thunderboltIcon} alt="" />
               <img
+                loading="lazy"
+                className="icon"
+                src={thunderboltIcon}
+                alt=""
+              />
+              <img
+                loading="lazy"
                 className="hero-img"
                 src={data.find((el) => el.id === activeTab).image}
                 alt=""
@@ -104,9 +110,9 @@ const SuperfastDotCom = () => {
           modern web
         </p>
         <div className="techs-img">
-          <img className="picture-big" src={gatsbyLogo} alt="" />
-          <img className="picture-big" src={strapiLogo} alt="" />
-          <img className="picture-small" src={awsLogo} alt="" />
+          <img loading="lazy" className="picture-big" src={gatsbyLogo} alt="" />
+          <img loading="lazy" className="picture-big" src={strapiLogo} alt="" />
+          <img loading="lazy" className="picture-small" src={awsLogo} alt="" />
         </div>
       </div>
     </section>

@@ -19,7 +19,7 @@ export const FrameworkStatistics = () => {
             <div className="row stats-container">
               <div className="col-md-3 col-6 circle-contain">
                 <div className="circle">
-                  <img src={orangeClrcle} alt="" />
+                  <img loading="lazy" src={orangeClrcle} alt="" />
                   <p className="circle-text-red">63</p>
                 </div>
                 <p className="circle-info">Performance</p>
@@ -27,7 +27,7 @@ export const FrameworkStatistics = () => {
               <div className="col-md-3 col-6 circle-contain">
                 {" "}
                 <div className="circle">
-                  <img src={greenCircle} alt="" />
+                  <img loading="lazy" src={greenCircle} alt="" />
                   <p className="circle-text-green">93</p>
                 </div>
                 <p className="circle-info">Accessibiity</p>
@@ -35,7 +35,7 @@ export const FrameworkStatistics = () => {
               <div className="col-md-3 col-6 circle-contain">
                 {" "}
                 <div className="circle">
-                  <img src={orangeClrcle} alt="" />
+                  <img loading="lazy" src={orangeClrcle} alt="" />
                   <p className="circle-text-red">83</p>
                 </div>
                 <p className="circle-info">Best Practices</p>
@@ -43,7 +43,7 @@ export const FrameworkStatistics = () => {
               <div className="col-md-3 col-6 circle-contain">
                 {" "}
                 <div className="circle">
-                  <img src={orangeClrcle} alt="" />
+                  <img loading="lazy" src={orangeClrcle} alt="" />
                   <p className="circle-text-red">83</p>
                 </div>
                 <p className="circle-info">SEO</p>
@@ -80,7 +80,12 @@ export const FrameworkStatistics = () => {
             </div>
             <div className="col-4 middle-col">
               <div className="icon">
-                <img width={"70px"} src={thunderboltIcon} alt="" />
+                <img
+                  loading="lazy"
+                  width={"70px"}
+                  src={thunderboltIcon}
+                  alt=""
+                />
               </div>
               <div className="stats-card">
                 <h3>50%</h3>
@@ -101,7 +106,7 @@ export const FrameworkStatistics = () => {
 
           <div className="mob-view">
             <div className="thunderbolt-icon">
-              <img width={"70px"} src={thunderboltIcon} alt="" />
+              <img loading="lazy" width={"70px"} src={thunderboltIcon} alt="" />
             </div>
             <Swiper className="workslider pl-3" {...statsSlider}>
               <div className="swiper-wrapper">

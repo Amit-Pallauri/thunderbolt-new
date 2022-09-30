@@ -143,7 +143,10 @@ const PayMonthlyWebsite = ({
                                 : "mt-2"
                             }
                           >
-                            <img src={ImageConstants.featureIcon} />
+                            <img
+                              loading="lazy"
+                              src={ImageConstants.featureIcon}
+                            />
                             <span>{f}</span>
                           </div>
                         </>

@@ -17,25 +17,29 @@ const HeroSection = () => {
             <button className="get-started">Get Started</button>
           </div>
           <div className="col-sm-12 col-lg-6 banner-img">
-            <img src={HomeBanner} alt="" />
+            <img loading="lazy" src={HomeBanner} alt="" />
           </div>
         </div>
         <div className="container">
           <div className="row clients-img">
             <div className="col-lg-2 col-4">
-              <img src={ImageConstants.clientVodafone} alt="" />
+              <img loading="lazy" src={ImageConstants.clientVodafone} alt="" />
             </div>
             <div className="col-lg-2 col-4">
-              <img src={ImageConstants.clientMpay} alt="" />
+              <img loading="lazy" src={ImageConstants.clientMpay} alt="" />
             </div>
             <div className="col-lg-2 col-4">
-              <img src={ImageConstants.clientTomorrowStreet} alt="" />
+              <img
+                loading="lazy"
+                src={ImageConstants.clientTomorrowStreet}
+                alt=""
+              />
             </div>
             <div className="col-lg-2 col-4">
-              <img src={ImageConstants.clientAudi} alt="" />
+              <img loading="lazy" src={ImageConstants.clientAudi} alt="" />
             </div>
             <div className="col-lg-2 col-4">
-              <img src={ImageConstants.clientGeMoney} alt="" />
+              <img loading="lazy" src={ImageConstants.clientGeMoney} alt="" />
             </div>
           </div>
         </div>

@@ -237,7 +237,7 @@
     font-size: 16px;
     font-weight: medium;
     width: 90%;
-    margin: initial auto;
+    margin: 20px auto;
   }
 
   .techs-img {
@@ -260,10 +260,16 @@
 
   /* sixxth section */
   .plans-section .cards-container {
+    width: 100%;
     display: grid;
-    grid-template-columns: 330px;
+    grid-template-columns: auto;
     margin: initial;
     width: "initial";
+  }
+
+  .plans-section .plans-card-container {
+    width: 90%;
+    margin: auto;
   }
 
   .plans-section .plans-title {
@@ -275,6 +281,10 @@
     width: 100%;
     font-size: 16px;
     font-weight: normal;
+  }
+
+  .custom-text {
+    white-space: nowrap;
   }
 
   .high-performance h1 {
@@ -291,9 +301,15 @@
 
   .high-performance .cards-container {
     display: grid;
-    grid-template-columns: 350px;
+    width: 100%;
+    grid-template-columns: auto;
     margin: initial;
     width: "initial";
+  }
+
+  .high-performance .plans-card-container {
+    width: 80%;
+    margin: auto;
   }
 
   .high-performance-footer p {
@@ -459,6 +475,7 @@
 
   .footer-container {
     margin: 0;
+    padding: 10px;
   }
 
   .links-container {
@@ -470,7 +487,40 @@
   .social-links {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+  }
+
+  .footer-web {
+    display: none;
+  }
+
+  .footer-mob {
+    display: flex;
+  }
+
+  .footer-navs {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .book-call-btn {
+    background-color: transparent;
+    color: white;
+    border-color: #f7df00;
+    padding: 4px 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .book-call-btn span {
+    font-size: 16px;
+  }
+
+  .book-call-btn img {
+    width: 18px;
+    margin-right: 10px;
   }
 }
 
@@ -539,7 +589,7 @@
     padding-right: 20px !important;
     padding-left: 36px !important;
   }
-  .extra-addon-div{
+  .extra-addon-div {
     padding-right: 20px !important;
     padding-left: 36px !important;
   }
@@ -587,10 +637,10 @@
     margin-top: -180px;
     padding-left: 2.5rem !important;
   }
-  .pricing-monthly{
+  .pricing-monthly {
     height: 44px !important;
   }
-  .pricing-yearly{
+  .pricing-yearly {
     height: 44px !important;
   }
 }

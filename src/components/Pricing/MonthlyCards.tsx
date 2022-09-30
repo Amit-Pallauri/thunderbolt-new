@@ -177,7 +177,7 @@ const MonthlyCards = ({
                           return (
                             <>
                               <div className={i === 0 ? "mt-0" : "mt-2"}>
-                                <img src={ImageConstants.featureIcon} />
+                                <img loading="lazy" src={ImageConstants.featureIcon} alt="" />
                                 <span>{f}</span>
                               </div>
                             </>

@@ -12,7 +12,7 @@ const Header = () => {
     <header>
       <nav className="navbar navbar-expand-lg navbar-light container">
         <Link to={routes.home} className="navbar-brand">
-          <img src={logo} alt="logo" />
+          <img loading="lazy" src={logo} alt="logo" />
         </Link>
         <div
           className="collapse navbar-collapse nav-items-container"
@@ -37,13 +37,13 @@ const Header = () => {
             <li className="nav-item">
               <div className="nav-btn">
                 <button>Get Started</button>
-                <img src="" />
+                <img loading="lazy" src="" alt="" />
               </div>
             </li>
           </ul>
         </div>
         <div className="hambar" onClick={() => setOpen(true)}>
-          <img src={hambarIcon} alt="" />
+          <img loading="lazy" src={hambarIcon} alt="" />
         </div>
       </nav>
 
@@ -56,10 +56,10 @@ const Header = () => {
         aria-labelledby="offcanvasTopLabel"
       >
         <div className="home-button" onClick={() => setOpen(false)}>
-          <img src={headerHome} alt="" />
+          <img loading="lazy" src={headerHome} alt="" />
         </div>
         <div className="close-btn-section" onClick={() => setOpen(false)}>
-          <img src={closeIcon} alt="" />
+          <img loading="lazy" src={closeIcon} alt="" />
         </div>
 
         <div className="offcanvas-body">

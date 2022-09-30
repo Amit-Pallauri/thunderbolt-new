@@ -45,7 +45,12 @@ const StandaredFeaturesSlider = () => {
           return (
             <SwiperSlide>
               <div className="smile-card mt-5 mt-md-0 text-center mb-5 p-3">
-                <img className="mt-md-4 mt-4" src={s.logo} />
+                <img
+                  loading="lazy"
+                  className="mt-md-4 mt-4"
+                  src={s.logo}
+                  alt=""
+                />
                 <p className="mb-5 px-2">{s.title}</p>
               </div>
             </SwiperSlide>

@@ -11,16 +11,33 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="footer-container row">
-        <div className="social-links col-md-3 mt-3">
+        <div className="social-links col-md-3 mt-3 footer-web">
           <div className="social-container">
-            <img src={InstaIcon} alt="" />
+            <img loading="lazy" src={InstaIcon} alt="" />
           </div>
           <div className="social-container">
-            <img src={linkedInIcon} alt="" />
+            <img loading="lazy" src={linkedInIcon} alt="" />
+          </div>
+        </div>
+
+        <div className="footer-mob footer-navs">
+          <div className="social-links col-md-3 mt-3">
+            <div className="social-container">
+              <img loading="lazy" src={InstaIcon} alt="" />
+            </div>
+            <div className="social-container">
+              <img loading="lazy" src={linkedInIcon} alt="" />
+            </div>
+          </div>
+          <div className="call-btn footer-call-btn col-md-3 mt-3">
+            <button className="book-call-btn">
+              <img loading="lazy" src={callIcon} alt="" />
+              <span>Book a Call</span>
+            </button>
           </div>
         </div>
         <div className="footer-content col-md-6">
-          <img src={footerLogo} alt="" />
+          <img loading="lazy" src={footerLogo} alt="" />
           <div className="d-flex flex-column align-items-center mt-5">
             <p style={{ color: "#1DB954", fontSize: "20px" }}>Quick Links</p>
             <div className="links-container">
@@ -30,14 +47,14 @@ const Footer = () => {
             </div>
           </div>
           <div className="flags d-flex">
-            <img src={indianIcon} />
-            <img src={luxFlagIcon} />
-            <img src={ukFLagIcon} />
+            <img loading="lazy" src={indianIcon} alt="" />
+            <img loading="lazy" src={luxFlagIcon} alt="" />
+            <img loading="lazy" src={ukFLagIcon} alt="" />
           </div>
         </div>
-        <div className="call-btn col-md-3 d-flex justify-content-center mt-3">
+        <div className="call-btn footer-call-btn col-md-3 mt-3 footer-web">
           <button className="book-call-btn">
-            <img src={callIcon} />
+            <img loading="lazy" src={callIcon} alt="" />
             <span>Book a Call</span>
           </button>
         </div>
