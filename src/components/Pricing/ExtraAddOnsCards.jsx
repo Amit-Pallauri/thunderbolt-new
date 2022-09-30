@@ -61,9 +61,9 @@ const ExtraAddOnsCards = (
     <div className="row mx-0">
       {slides.map((s, index) => {
         return (
-          <div key={index} className="col-md-4 mt-3 p-0 m-0 mb-3 gy-5">
-            <div className="extra-card-width monthly-card">
-              <div className="bg-white rounded-lg ">
+          <div key={index} className="col-md-4 mt-3 p-0 m-0 mb-5">
+            <div className="extra-card-width ">
+              <div className=" rounded-lg ">
                 <div className="mb-2 space">{"s"}</div>
                 <p className="monthly-card-title  ">{s.title}</p>
                 <p className="monthly-cost px-5 ">
@@ -77,7 +77,7 @@ const ExtraAddOnsCards = (
                   {s.des}
                 </p>
                 <br />
-                <button className="get-started-btn mt-0 mb-5">
+                <button className="get-started-btn mt-0 mb-3">
                   {s.buttonText}
                 </button>
               </div>
