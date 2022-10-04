@@ -356,6 +356,7 @@ body {
 
 .banner-img img {
   width: 550px;
+  max-width: 100%;
 }
 
 .homeskillslider {
@@ -760,6 +761,7 @@ body {
 }
 
 .list-option-active {
+  white-space: pre;
   cursor: pointer;
   font-weight: bolder;
   color: #1db954;
@@ -1469,6 +1471,6 @@ body {
 .hero-one {
   z-index: 111 !important;
 }
-.s{
+.s {
   margin-top: 20px;
 }

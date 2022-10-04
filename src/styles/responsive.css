@@ -455,6 +455,10 @@
     width: 100px;
   }
 
+  .why-you-need {
+    background-image: none;
+  }
+
   .why-you-need-content .content-section .hero-img {
     width: 332px;
   }
@@ -642,7 +646,6 @@
     margin-left: -15px;
   }
   .hero-1-card-container {
-    
     margin-top: -180px;
     padding-left: 2.5rem !important;
   }
@@ -652,21 +655,19 @@
   .pricing-yearly {
     height: 44px !important;
   }
-  .extra-addon-conatiner{
-    margin:0px 10px;  
+  .extra-addon-conatiner {
+    margin: 0px 10px;
     padding-left: 40px;
     padding-right: 40px;
   }
   .extra-card-width {
-   
     width: 100% !important;
   }
-  .extra{
+  .extra {
     margin: auto !important;
     margin-bottom: 40px !important;
   }
   .stand {
     margin-left: -20px;
   }
-  
 }
