@@ -1,4 +1,5 @@
 import React from "react";
+import ClientsImages from "../../components/ClientsImages";
 import { ImageConstants } from "../../constants/imageConstants";
 import HomeBanner from "../../images/home-banner.png";
 
@@ -15,32 +16,10 @@ const HeroSection = () => {
               seconds.
             </h2>
             <button className="get-started">Get Started</button>
+            <ClientsImages />
           </div>
           <div className="col-sm-12 col-lg-6 banner-img">
             <img loading="lazy" src={HomeBanner} alt="" />
-          </div>
-        </div>
-        <div className="container">
-          <div className="row clients-img">
-            <div className="col-lg-2 col-4">
-              <img loading="lazy" src={ImageConstants.clientVodafone} alt="" />
-            </div>
-            <div className="col-lg-2 col-4">
-              <img loading="lazy" src={ImageConstants.clientMpay} alt="" />
-            </div>
-            <div className="col-lg-2 col-4">
-              <img
-                loading="lazy"
-                src={ImageConstants.clientTomorrowStreet}
-                alt=""
-              />
-            </div>
-            <div className="col-lg-2 col-4">
-              <img loading="lazy" src={ImageConstants.clientAudi} alt="" />
-            </div>
-            <div className="col-lg-2 col-4">
-              <img loading="lazy" src={ImageConstants.clientGeMoney} alt="" />
-            </div>
           </div>
         </div>
       </div>

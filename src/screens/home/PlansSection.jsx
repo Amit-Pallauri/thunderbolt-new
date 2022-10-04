@@ -4,7 +4,7 @@ import HighPerformanceSection from "./HighPerformanceSection";
 
 const PlansSection = () => {
   const [isMonthly, setMonthly] = useState(true);
-  const [currency, setCurrency] = useState("euro");
+  const [currency, setCurrency] = useState("pounds");
 
   const convertPrice = (price) => {
     return {

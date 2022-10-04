@@ -5,6 +5,7 @@ import logo from "../images/logos/thunderbolt-logo.png";
 import hambarIcon from "../images/icons/hambar.png";
 import headerHome from "../images/icons/header-home.png";
 import closeIcon from "../images/icons/close-icon.png";
+import rightArrow from "../images/icons/right-arrow.svg";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -37,7 +38,7 @@ const Header = () => {
             <li className="nav-item">
               <div className="nav-btn">
                 <button>Get Started</button>
-                <img loading="lazy" src="" alt="" />
+                <img loading="lazy" src={rightArrow} alt="" />
               </div>
             </li>
           </ul>
@@ -86,8 +87,14 @@ const Header = () => {
               </h2>
 
               <div className="buttons">
-                <button className="get-started">Get Started</button>
-                <button>Book a Call</button>
+                <div className="btn-container active-btn">
+                  <button>Get Started</button>
+                  <img loading="lazy" src={rightArrow} alt="" />
+                </div>
+                <div className="btn-container">
+                  <button>Book a Call</button>
+                  <img loading="lazy" src={rightArrow} alt="" />
+                </div>
               </div>
 
               <div className="sidebar-footer">

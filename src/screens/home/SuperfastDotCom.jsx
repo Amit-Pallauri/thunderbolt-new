@@ -110,8 +110,20 @@ const SuperfastDotCom = () => {
           modern web
         </p>
         <div className="techs-img">
-          <img loading="lazy" className="picture-big" src={gatsbyLogo} alt="" />
-          <img loading="lazy" className="picture-big" src={strapiLogo} alt="" />
+          <div className="big-imgs">
+            <img
+              loading="lazy"
+              className="picture-big"
+              src={gatsbyLogo}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              className="picture-big"
+              src={strapiLogo}
+              alt=""
+            />
+          </div>
           <img loading="lazy" className="picture-small" src={awsLogo} alt="" />
         </div>
       </div>
