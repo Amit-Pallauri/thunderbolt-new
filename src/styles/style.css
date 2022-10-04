@@ -44,12 +44,22 @@ body {
   font-size: 16px;
 }
 
-.nav-btn button {
+.nav-btn {
   padding: 5px 14px;
   background: green;
   color: white;
   border: 0;
   border-radius: 20px;
+}
+
+.nav-btn button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.nav-btn img {
+  width: 18px;
 }
 
 /* canvas */
@@ -133,18 +143,23 @@ body {
   margin-bottom: 40px;
 }
 
-.sidebar-content .buttons button {
+.sidebar-content .buttons .btn-container {
   margin-top: 20px;
-  background: none;
   border-radius: 30px;
   padding: 8px 30px;
   color: white;
   border: 1px solid white;
 }
 
-.sidebar-content .buttons .get-started {
-  background: #1db954;
-  border: 0;
+.sidebar-content .active-btn {
+  background-color: #1db954;
+}
+
+.buttons button {
+  margin-right: 10px;
+  background: none;
+  border: none;
+  color: white;
 }
 
 .sidebar-footer p {
@@ -262,6 +277,7 @@ body {
 .hero-section .title {
   color: #1b03a3;
   font-size: 74px;
+  /* font-size: 64px; */
   font-weight: 800;
 }
 
@@ -284,14 +300,14 @@ body {
 }
 
 .clients-img {
-  margin: 50px auto;
+  margin: 50px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 80%;
 }
 
 .clients-img img {
-  width: 130px;
+  width: 80px;
   filter: grayscale(100%);
 }
 
@@ -308,6 +324,13 @@ body {
   border-bottom: 1px solid #707070;
   border-radius: 0;
   padding: 10px 0;
+  background-image: url("../images/icons/right-arrow.svg");
+}
+
+.about-accoudian #headingOne {
+  border-top: 1px solid #707070;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .about-accoudian .accordion-button {
@@ -333,6 +356,7 @@ body {
 
 .banner-img img {
   width: 550px;
+  max-width: 100%;
 }
 
 .homeskillslider {
@@ -494,8 +518,9 @@ body {
 }
 
 .plans-section .cards-container {
-  width: 70%;
-  margin: auto;
+  /* width: 70%;
+  margin: auto; */
+  justify-content: center;
   display: grid;
   row-gap: 30px;
   gap: 30px;
@@ -547,9 +572,16 @@ body {
   justify-content: center;
 }
 
+/* .select-currency-container select {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+} */
+
 .select-currency-container .form-select {
   width: 25%;
-  background: #1b03a3;
+  background-image: url("../images/icons/down-arrow.svg");
+  background-color: #1b03a3;
   color: white;
 }
 
@@ -598,13 +630,13 @@ body {
 .high-performance .sub-title {
   font-size: 20px;
   font-weight: normal;
-  font-weight: 600;
   text-align: center;
 }
 
 .high-performance .cards-container {
-  width: 70%;
-  margin: auto;
+  /* width: 70%;
+  margin: auto; */
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(3, 296px);
   gap: 30px;
@@ -729,6 +761,7 @@ body {
 }
 
 .list-option-active {
+  white-space: pre;
   cursor: pointer;
   font-weight: bolder;
   color: #1db954;
@@ -757,7 +790,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .how-it-works-card img {
@@ -765,8 +798,8 @@ body {
 }
 
 .how-it-works-card h3 {
-  margin-top: 30px;
-  width: 80%;
+  margin-top: 15px;
+  width: 90%;
   text-align: center;
   font-size: 32px;
   font-weight: bold;
@@ -814,7 +847,11 @@ body {
   box-shadow: 6px 4px 24px #00000029;
   border-radius: 32px;
   text-align: left;
-  padding: 75px 8px 2px 36px;
+  /* padding: 75px 8px 2px 36px; */
+  padding: 5px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   margin: auto;
   background: white;
 }

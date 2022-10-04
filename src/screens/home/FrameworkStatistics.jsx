@@ -118,8 +118,8 @@ export const FrameworkStatistics = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="stats-card">
-                    <h3>3x</h3>
-                    <p>ROI of marketing campaigns</p>
+                    <h3>50%</h3>
+                    <p>More Time Spent</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -130,8 +130,8 @@ export const FrameworkStatistics = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="stats-card">
-                    <h3>50%</h3>
-                    <p>More Time Spent</p>
+                    <h3>3x</h3>
+                    <p>ROI of marketing campaigns</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>

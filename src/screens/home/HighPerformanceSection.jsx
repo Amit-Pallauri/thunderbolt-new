@@ -6,7 +6,7 @@ const HighPerformanceSection = ({ isMonthly, data }) => {
     <section className="high-performance">
       <h1>High Performing Pay Monthly Managed Websites</h1>
       <p className="sub-title">
-        We provides affordable digital solution for one monthly fees to design,
+        We provide affordable digital solution for one monthly fees to design,
         deploy and managed your business sites.
       </p>
       <div className="cards-container">

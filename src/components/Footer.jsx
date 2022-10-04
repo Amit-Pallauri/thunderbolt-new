@@ -47,9 +47,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="flags d-flex">
-            <img loading="lazy" src={indianIcon} alt="" />
-            <img loading="lazy" src={luxFlagIcon} alt="" />
             <img loading="lazy" src={ukFLagIcon} alt="" />
+            <img loading="lazy" src={luxFlagIcon} alt="" />
+            <img loading="lazy" src={indianIcon} alt="" />
           </div>
         </div>
         <div className="call-btn footer-call-btn col-md-3 mt-3 footer-web">

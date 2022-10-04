@@ -241,19 +241,24 @@
   }
 
   .techs-img {
-    width: 95%;
-    margin: auto;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .techs-img .big-imgs {
+    margin: 20px 0;
   }
 
   .techs-img .picture-big {
-    margin-right: 35px;
-    margin-bottom: 25px;
     width: 125px;
     height: 32px;
+    margin: 0 10px;
   }
 
   .techs-img .picture-small {
+    margin: 10px 0;
     width: 52px;
     height: 30px;
   }
@@ -346,7 +351,7 @@
     box-shadow: 6px 4px 24px #00000029;
     border-radius: 32px;
     text-align: bottom;
-    padding: 70px 20px;
+    /* padding: 70px 20px; */
     margin: 10px;
     background: white;
   }
@@ -448,6 +453,10 @@
 
   .clients-img img {
     width: 100px;
+  }
+
+  .why-you-need {
+    background-image: none;
   }
 
   .why-you-need-content .content-section .hero-img {
@@ -641,7 +650,6 @@
     margin-left: -15px;
   }
   .hero-1-card-container {
-    
     margin-top: -180px;
     padding-left: 2.5rem !important;
   }
@@ -651,21 +659,19 @@
   .pricing-yearly {
     height: 44px !important;
   }
-  .extra-addon-conatiner{
-    margin:0px 10px;  
+  .extra-addon-conatiner {
+    margin: 0px 10px;
     padding-left: 40px;
     padding-right: 40px;
   }
   .extra-card-width {
-   
     width: 100% !important;
   }
-  .extra{
+  .extra {
     margin: auto !important;
     margin-bottom: 40px !important;
   }
   .stand {
     margin-left: -20px;
   }
-  
 }

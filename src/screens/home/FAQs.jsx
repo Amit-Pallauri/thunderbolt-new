@@ -13,12 +13,10 @@ const FAQs = () => {
               Frequently asked questions
             </h1>
             <div className="about-accoudian">
-              <Accordion
-              // defaultActiveKey={"0"}
-              >
+              <Accordion defaultActiveKey={"0"}>
                 <Accordion.Item eventKey="0">
                   <AccordionButton id="headingOne">
-                    What exactly is thunderboltJS{" "}
+                    What exactly is thunderboltJS?{" "}
                   </AccordionButton>
 
                   <AccordionBody>
