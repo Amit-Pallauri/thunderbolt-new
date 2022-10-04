@@ -13,7 +13,7 @@ const Home = () => {
       <div className="pricing--main-box bg-white p-md-5 p-4 ">
         <div className=" d- align-items-center justify-content-center">
           <div class="p-md-5 p-0 m-0  mb-2 jumbotron text-center jumbotron-fluid">
-            <div class="container p-0 m-0 ">
+            <div class="container  p-0 m-0 ">
               <span class="display-4  pricing-h1">
                 Plans to suit your needs -<br /> <span>Save upto 20%</span> when
                 billed annually
@@ -66,8 +66,12 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="hero-1-card-container px-4">
-        <MonthlyCards showSub={false} currency={currency} />
+      <div className="hero-1-card-container  px-4">
+        <MonthlyCards
+          showSub={false}
+          currency={currency}
+          isMonthly={isMonthly}
+        />
       </div>
 
       <div className="hero-2 d- align-items-center justify-content-center">
@@ -89,15 +93,21 @@ const Home = () => {
         </div>
       </div>
       <div className=" p-3 mb-3 card-container hero-two text-center">
-        <PayMonthlyWebsite showBootom={false} showDescription={false} />
+        <PayMonthlyWebsite
+          showBootom={false}
+          showDescription={false}
+          isMonthly={isMonthly}
+        />
         <div className="">
           <p className="stand ">Standard website features</p>
           <StandaredFeaturesSlider />
         </div>
       </div>
-      <div className="text-center extra-addon-div mt-2 p-md-5 mb-5 px-4">
-        <h2 className="extra mb-5  mb-3">Extra Add-Ons</h2>
+
+      <div className=" extra-addon-conatiner  text-center">
+        <h2 className="extra  mb-5">Extra Add-Ons</h2>
         <ExtraAddOnsCards
+          isMonthly={isMonthly}
           showFeaturs={false}
           showSub={true}
           showBootom={false}

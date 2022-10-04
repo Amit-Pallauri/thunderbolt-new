@@ -9,6 +9,7 @@ const MonthlyCards = ({
   showDescription = true,
   showSub = false,
   currency,
+  isMonthly,
 }) => {
   const convertPrice = (price) => {
     return {
@@ -29,8 +30,8 @@ const MonthlyCards = ({
         " 10 Databases ",
         "4 GB RAM ",
         "100 GB Bandwidth ",
-        " Up to 5M Server Request ",
         " Up to 3 Built Concurrency ",
+        " Up to 5M Server Request ",
         "2 CPUs ",
         "Free SSL for your websites ",
         "Server Type AWS with 99%  ",
@@ -48,51 +49,50 @@ const MonthlyCards = ({
       des: "The complete solution for your business growth",
       price: convertPrice(80),
       features: [
-        "Standard Performance ",
-        "  1 website",
-        "Up to 10 Pages HTML Website",
-        " 100 GB storage ",
-        " 10 Databases ",
-        "4 GB RAM ",
-        "100 GB Bandwidth ",
-        " Up to 5M Server Request ",
-        " Up to 3 Built Concurrency ",
-        "2 CPUs ",
-        "Free SSL for your websites ",
-        "Server Type AWS with 99%  ",
+        "Standard Performance",
+        " 1 website",
+        "Up to 20 Pages HTML Website",
+        "200 GB storage",
+        "25 Databases",
+        "8 GB RAM",
+        " Up to 1 TB Bandwidth",
+        "Up to 10M Server Request ",
+        "Up to 3 Built Concurrency",
+        "4 CPUs",
+        "Free, unlimited SSL for all your websites",
+        " Server Type AWS with 99% ",
         "Guarantee Uptime",
-        " Daily Back Up  ",
-        " Up to 5000 Optimised Images ",
-        "Onboarding & Migration Assistance ",
+        " Daily Back Up ",
+        "Up to 10000 Optimised Images",
+        " Onboarding & Migration Assistance",
         " Data Centre Global",
-        "   Email Support",
+        " Email Support",
         "Dedicated Account Rep",
       ],
     },
     {
       title: "Ultimate",
-      des: "Perfect for growing your high traffic sites",
+      des: "Perfect for growing your high traffic sites    ",
       price: convertPrice(200),
       features: [
         "Standard Performance ",
-        "  1 website",
-        "Up to 10 Pages HTML Website",
-        " 100 GB storage ",
-        " 10 Databases ",
-        "4 GB RAM ",
-        "100 GB Bandwidth ",
-        " Up to 5M Server Request ",
-        " Up to 3 Built Concurrency ",
-        "2 CPUs ",
-        "Free SSL for your websites ",
-        "Server Type AWS with 99%  ",
-        "Guarantee Uptime",
-        " Daily Back Up  ",
-        " Up to 5000 Optimised Images ",
-        "Onboarding & Migration Assistance ",
+        "1 website",
+        " Upto 35 Pages HTML Website**",
+        " 500 GB storage",
+        "50 Databases",
+        "8 GB RAM ",
+        "Upto 2 TB Bandwidth ",
+        "Up to 20M Server Request",
+        " Upto 3 Built Concurrency ",
+        "8 CPUs ",
+        "Unlimited SSL for all your websites",
+        " Server Type AWS with 99% Guarantee Uptime",
+        " Daily back Up ",
+        "Upto 10000 OptimiSed Images",
+        " Onboarding & Migration Assistance**",
         " Data Centre Global",
-        "   Email Support",
-        "Dedicated Account Rep",
+        " Email Support",
+        " Dedicated Account Rep",
       ],
     },
     {
@@ -101,50 +101,68 @@ const MonthlyCards = ({
       symbol: false,
       price: convertPrice("Contact Sales"),
       features: [
-        "Standard Performance ",
-        "  1 website",
-        "Up to 10 Pages HTML Website",
-        " 100 GB storage ",
-        " 10 Databases ",
-        "4 GB RAM ",
-        "100 GB Bandwidth ",
-        " Up to 5M Server Request ",
-        " Up to 3 Built Concurrency ",
-        "2 CPUs ",
-        "Free SSL for your websites ",
-        "Server Type AWS with 99%  ",
-        "Guarantee Uptime",
-        " Daily Back Up  ",
-        " Up to 5000 Optimised Images ",
-        "Onboarding & Migration Assistance ",
-        " Data Centre Global",
-        "   Email Support",
-        "Dedicated Account Rep",
+        "High Processing power",
+        "1 website ",
+        "Custom ",
+        "1 TB+ storage",
+        " 100 Databases ",
+        "8+ GB RAM",
+        " Custom ",
+        "Custom",
+        "Custom",
+        "Custom",
+        "Free SSL for your websites",
+        " Server Type AWS with 99% Guarantee",
+        " Uptime",
+        " Daily back Up",
+        " Custom ",
+        "Onboarding & Migration Assistance**",
+        "Data Centre Global",
+        "Email Support ",
+        " Dedicated Account Rep",
       ],
     },
   ];
   return (
     <>
       <div className="row">
-        <div className="d-md-flex  ">
+        <div className="d-md-flex   " style={{ zIndex: "1111" }}>
           {cards?.map((d, key) => {
             return (
               <>
-                <div className="col-md-3 ">
+                <div className="col-md-3  ">
                   <div className="monthly-card m-md-2 mt-2 mb-5 mb-md-0  text-center  flex-fill">
                     <div className="bg-white rounded-lg ">
                       <div className="mb-2 space">{"s"}</div>
                       <p className="monthly-card-title  ">{d.title}</p>
                       {showDescription && (
-                        <p className={d.symbol === false ? "contact-align":"monthly-card-description px-4"}>{d.des}</p>
+                        <p
+                          className={
+                            d.symbol === false
+                              ? "contact-align"
+                              : key === 2
+                              ? "monthly-card-description  "
+                              : "monthly-card-description px-4"
+                          }
+                        >
+                          {d.des}
+                        </p>
                       )}
-                      <p className={d?.symbol === false ? "contact-sales ":"monthly-cost px-5 "}>
-                        {d?.symbol !== false && <strong className="price-symbol">
-                          {d?.price.currency === "euro" ? "€" : "£"}
-                        </strong>}
+                      <p
+                        className={
+                          d?.symbol === false
+                            ? "contact-sales "
+                            : "monthly-cost px-5 "
+                        }
+                      >
+                        {d?.symbol !== false && (
+                          <strong className="price-symbol">
+                            {d?.price.currency === "euro" ? "€" : "£"}
+                          </strong>
+                        )}
                         <strong>{d.price.price}</strong>
                         {showFeaturs && d?.symbol !== false && (
-                          <span> per month</span>
+                          <span> per {isMonthly ? "month" : "year"}</span>
                         )}
                         <br />
                         {showSub && (
@@ -177,7 +195,11 @@ const MonthlyCards = ({
                           return (
                             <>
                               <div className={i === 0 ? "mt-0" : "mt-2"}>
-                                <img loading="lazy" src={ImageConstants.featureIcon} alt="" />
+                                <img
+                                  loading="lazy"
+                                  src={ImageConstants.featureIcon}
+                                  alt=""
+                                />
                                 <span>{f}</span>
                               </div>
                             </>

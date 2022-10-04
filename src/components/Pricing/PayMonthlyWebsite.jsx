@@ -8,6 +8,7 @@ const PayMonthlyWebsite = ({
   showDescription = true,
   showSub = false,
   currency,
+  isMonthly,
 }) => {
   const convertPrice = (price) => {
     return {
@@ -26,72 +27,75 @@ const PayMonthlyWebsite = ({
         "Unlimited pages/Content",
         "Contact forms and gallaries",
         "Includes CMS Backend (Content Management System)",
-
+        "Free Custom Design 1-5 Pages, additional pages at extra cost",
         "Basic on-page SEO",
-        " Google Search Console Index ",
-        " Up to 3 Built Concurrency ",
-        "Google Analytics ",
-        "30 Minutes of our Monthly Time ",
-        " Monthly Updates, Backups, Reporting ",
-
+        "Google Search Console Index",
+        "Google Analytics",
+        "30 Minutes of our Monthly Time",
+        "Monthly Updates, Backups, Reporting",
         "Blog/News",
         "Newsletter Subscription",
         "Live Chat",
         "Event Calendar",
         "Booking/Appointment system",
+        "Sell Products/Services",
+        "Payment Gateway integration",
+        ,
       ],
+      garyAfter: 10,
     },
     {
       title: "Standard",
       des: "The complete solution for your business growth",
       price: convertPrice(80),
       features: [
-        "Standard Performance ",
-        "  1 website",
-        "Up to 10 Pages HTML Website",
-        " 100 GB storage ",
-        " 10 Databases ",
-        "4 GB RAM ",
-        "100 GB Bandwidth ",
-        " Up to 5M Server Request ",
-        " Up to 3 Built Concurrency ",
-        "2 CPUs ",
-        "Free SSL for your websites ",
-        "Server Type AWS with 99%  ",
-        "Guarantee Uptime",
-        " Daily Back Up  ",
-        " Up to 5000 Optimised Images ",
-        "Onboarding & Migration Assistance ",
-        " Data Centre Global",
+        "Free Custom Design 1-8 Pages, additional pages at extra cost",
+        " Terms and Privacy Pages Included",
+        "Unlimited pages/Content",
+        " Contact forms and gallaries ",
+        " Includes CMS Backend (Content Management System) ",
+        "Mobile and tablet Optimized",
+        "Basic on-page SEO ",
+        " Google Search Console Index ",
+        " Google Analytics ",
+        "30 Minutes of our Monthly Time",
+        "Monthly Updates, Backups, Reporting ",
+        "Blog/News  ",
+        "Newsletter Subscription",
+        "Live Chat",
+        "Event Calendar",
+        "Booking/Appointment system",
+        "Sell Products/Services",
         "   Email Support",
-        "Dedicated Account Rep",
+        "Payment Gateway integration",
       ],
+      garyAfter: 15,
     },
     {
       title: "Ultimate",
       des: "Perfect for growing your high traffic sites",
       price: convertPrice(200),
       features: [
-        "Standard Performance ",
-        "  1 website",
-        "Up to 10 Pages HTML Website",
-        " 100 GB storage ",
-        " 10 Databases ",
-        "4 GB RAM ",
-        "100 GB Bandwidth ",
-        " Up to 5M Server Request ",
-        " Up to 3 Built Concurrency ",
-        "2 CPUs ",
-        "Free SSL for your websites ",
-        "Server Type AWS with 99%  ",
-        "Guarantee Uptime",
-        " Daily Back Up  ",
-        " Up to 5000 Optimised Images ",
-        "Onboarding & Migration Assistance ",
-        " Data Centre Global",
-        "   Email Support",
-        "Dedicated Account Rep",
+        "Free Custom Design 1-10 Pages, additional pages at extra cost ",
+        "Terms and Privacy Pages Included",
+        "Unlimited pages/Content",
+        "Contact forms and gallaries",
+        "Includes CMS Backend (Content Management System)",
+        "Mobile and tablet Optimized",
+        "Basic on-page SEO",
+        "Google Search Console Index",
+        "Google Analytics",
+        "30 Minutes of our Monthly Time",
+        "Monthly Updates, Backups, Reporting",
+        "Blog/News",
+        "Newsletter Subscription",
+        "Live Chat",
+        "Event Calendar",
+        "Booking/Appointment system",
+        "Sell Products/Services",
+        "Payment Gateway integration",
       ],
+      garyAfter: false,
     },
   ];
   return (
@@ -119,7 +123,7 @@ const PayMonthlyWebsite = ({
                     )}
                     <strong>{d.price.price}</strong>
 
-                    <span> per month</span>
+                    <span> per {isMonthly ? "month" : "year"}</span>
 
                     <br />
                   </p>
@@ -131,13 +135,14 @@ const PayMonthlyWebsite = ({
                 {showFeaturs && (
                   <div className="points p-3  mb-5 ">
                     {d.features.map((f, i) => {
-                      const isDisable = i >= 10;
+                      const isDisable =
+                        d.garyAfter === false ? false : i >= d.garyAfter + 1;
                       return (
                         <>
                           <div
                             className={
                               i === 0
-                                ? "mt-0"
+                                ? "mt-0 "
                                 : isDisable
                                 ? "disbale-text mt-2"
                                 : "mt-2"
@@ -147,7 +152,7 @@ const PayMonthlyWebsite = ({
                               loading="lazy"
                               src={ImageConstants.featureIcon}
                             />
-                            <span>{f}</span>
+                            <span className="text-start ">{f}</span>
                           </div>
                         </>
                       );

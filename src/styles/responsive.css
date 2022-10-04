@@ -542,6 +542,7 @@
     margin-top: 90px;
     position: absolute;
     margin-bottom: 10px;
+    z-index: 1111111 !important;
   }
   .pricing-switch-btn {
     width: 300px;
@@ -555,6 +556,7 @@
   .monthly-card {
     width: 95% !important;
     margin-top: 5px;
+    margin-left: -5px !important;
   }
   .round-borders {
     padding: 1px;
@@ -588,6 +590,7 @@
   .smile-card {
     width: 240px;
     height: 250px;
+    margin-left: -40px !important;
   }
 
   .hero-two {
@@ -639,6 +642,7 @@
     margin-left: -15px;
   }
   .hero-1-card-container {
+    
     margin-top: -180px;
     padding-left: 2.5rem !important;
   }
@@ -648,4 +652,21 @@
   .pricing-yearly {
     height: 44px !important;
   }
+  .extra-addon-conatiner{
+    margin:0px 10px;  
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .extra-card-width {
+   
+    width: 100% !important;
+  }
+  .extra{
+    margin: auto !important;
+    margin-bottom: 40px !important;
+  }
+  .stand {
+    margin-left: -20px;
+  }
+  
 }
