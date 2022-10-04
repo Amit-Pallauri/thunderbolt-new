@@ -20,7 +20,7 @@ const PayMonthlyWebsite = ({
     {
       title: "Brochure Style Website",
       des: "Launch your online platform, your way, with ease",
-      price: convertPrice(60),
+      price: convertPrice(isMonthly ? 75:60),
       features: [
         "Free Custom Design 1-5 Pages, additional pages at extra cost",
         "Terms and Privacy Pages Included",
@@ -47,7 +47,7 @@ const PayMonthlyWebsite = ({
     {
       title: "Booking Style Website",
       des: "The complete solution for your business growth",
-      price: convertPrice(100),
+      price: convertPrice(isMonthly? 125:100),
       features: [
         "Free Custom Design 1-8 Pages, additional pages at extra cost",
         " Terms and Privacy Pages Included",
@@ -74,7 +74,7 @@ const PayMonthlyWebsite = ({
     {
       title: "E-commerce Website",
       des: "Perfect for growing your high traffic sites",
-      price: convertPrice(120),
+      price: convertPrice(isMonthly?150 :120),
       features: [
         "Free Custom Design 1-10 Pages, additional pages at extra cost ",
         "Terms and Privacy Pages Included",

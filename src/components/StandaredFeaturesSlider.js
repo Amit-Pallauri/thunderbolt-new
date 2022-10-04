@@ -43,13 +43,14 @@ const StandaredFeaturesSlider = () => {
     },
   ];
   return (
-    <section className="ml-md-5 py-md-5 px-md-5 they-trust-us-section">
+    <section className="ml-md-5 py-md-1 px-md-5 they-trust-us-section">
       <Swiper {...PricingSkillSlider}>
         {slides.map((s, key) => {
           const isBigTitle = s?.title?.length < 13;
+          const isGreen = s?.title.includes("free")
           return (
             <SwiperSlide>
-              <div className="smile-card   mt-5 mt-md-0  mb-5 p-3">
+              <div className="smile-card   mt-5 mt-md-0  mb-5 ">
                 <img
                   loading="lazy"
                   className="mt-md-4 mt-4"

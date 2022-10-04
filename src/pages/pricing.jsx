@@ -92,14 +92,16 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className=" p-3 mb-3 card-container hero-two text-center">
-        <PayMonthlyWebsite
-          showBootom={false}
-          showDescription={false}
-          isMonthly={isMonthly}
-        />
+      <div className="card-container hero-two text-center">
+        <div className="p-md-3">
+          <PayMonthlyWebsite
+            showBootom={false}
+            showDescription={false}
+            isMonthly={isMonthly}
+          />
+        </div>
         <div className="">
-          <p className="stand ">Standard website features</p>
+          <p className="stand text-center">Standard website features</p>
           <StandaredFeaturesSlider />
         </div>
       </div>
@@ -113,6 +115,7 @@ const Home = () => {
           showBootom={false}
           isExtraAddOn={true}
           showDescription={false}
+          currency={currency}
         />
       </div>
     </Layout>

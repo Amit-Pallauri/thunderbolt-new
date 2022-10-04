@@ -71,15 +71,9 @@ export const homeSkillSlider = {
 export const PricingSkillSlider = {
   observer: true,
   observeParents: true,
-  spaceBetween: 20,
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
   breakpoints: {
     640: {
-      slidesPerView: 2.2,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
     768: {

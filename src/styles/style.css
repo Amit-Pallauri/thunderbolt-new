@@ -1305,16 +1305,16 @@ body {
   text-align: center;
   letter-spacing: -0.26px;
   color: #1db954;
-  opacity: 1;
+  opacity: 1; 
   font-size: 25px;
-  margin-top: 130px;
+  margin-top: 100px;
 }
 .smile-card {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 6px 4px 24px #00000029;
   border-radius: 12px;
   opacity: 1;
-  height: 250px;
+  height: 200px;
   width: 220px;
   text-align: center !important;
 }
@@ -1407,7 +1407,7 @@ body {
   border-radius: 24px;
   box-shadow: 6px 4px 24px #00000038;
   width: 380px !important;
-  height: 350px !important;
+  height: 360px !important;
   background-color: white !important;
 }
 .extra-card-width .get-started-btn {

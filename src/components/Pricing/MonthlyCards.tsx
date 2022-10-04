@@ -21,7 +21,7 @@ const MonthlyCards = ({
     {
       title: "Economy",
       des: "Launch your online platform, your way, with ease",
-      price: convertPrice(50),
+      price: convertPrice(isMonthly ? 50 : 40),
       features: [
         "Standard Performance ",
         "  1 website",
@@ -46,7 +46,7 @@ const MonthlyCards = ({
     {
       title: "Standard",
       des: "The complete solution for your business growth",
-      price: convertPrice(100),
+      price: convertPrice(isMonthly ? 100 : 80),
       features: [
         "Standard Performance",
         " 1 website",
@@ -71,7 +71,7 @@ const MonthlyCards = ({
     {
       title: "Ultimate",
       des: "Perfect for growing your high traffic sites    ",
-      price: convertPrice(250),
+      price: convertPrice(isMonthly ? 250 : 200),
       features: [
         "Standard Performance ",
         "1 website",
@@ -124,7 +124,7 @@ const MonthlyCards = ({
   return (
     <>
       <div className="row">
-        <div className="d-md-flex   " style={{ zIndex: "1111" }}>
+        <div className="d-md-flex   " style={{ zIndex: "111" }}>
           {cards?.map((d, key) => {
             return (
               <>
