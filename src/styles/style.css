@@ -1206,7 +1206,7 @@ body {
   color: #191414;
   font-weight: 400 !important;
   opacity: 1;
-  font-size: 12px !important;
+  font-size: 16px !important;
 }
 .get-started-btn {
   background: #1db954 0% 0% no-repeat padding-box;
@@ -1316,6 +1316,7 @@ body {
   opacity: 1;
   height: 250px;
   width: 220px;
+  text-align: center !important;
 }
 
 .smile-card p {
@@ -1451,4 +1452,8 @@ body {
 }
 .contact-sales-btn {
   margin-bottom: 3.5rem !important;
+}
+.padding-three{
+padding-left: 40px !important;
+
 }
