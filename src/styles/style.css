@@ -1001,7 +1001,7 @@ body {
   letter-spacing: 0px;
   text-align: center;
   font-size: 16px;
-  font-weight: 900 !important;
+  font-weight: 500 !important;
   margin-top: 30px;
 }
 .pricing--main-box {
@@ -1429,11 +1429,28 @@ body {
   margin-top: 12px !important;
 }
 .hero-1-card-container {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .hero-one {
   z-index: 111 !important;
 }
-.s{
+.s {
   margin-top: 20px;
+}
+.active-link > a {
+  color: #049204 !important;
+}
+.point-text {
+  font-family: Montserrat sans-serif !important;
+  font-size: 12px;
+  line-height: 18px;
+  color: #1b03a3;
+  padding-left: 15px;
+}
+.point-img {
+  margin-left: -3px !important;
+  margin-top: 3px;
+}
+.contact-sales-btn {
+  margin-bottom: 3.5rem !important;
 }

@@ -7,7 +7,7 @@ import StandaredFeaturesSlider from "../components/StandaredFeaturesSlider";
 import PayMonthlyWebsite from "../components/Pricing/PayMonthlyWebsite";
 const Home = () => {
   const [isMonthly, setMonthly] = useState(true);
-  const [currency, setCurrency] = useState("euro");
+  const [currency, setCurrency] = useState("pounds");
   return (
     <Layout>
       <div className="pricing--main-box bg-white p-md-5 p-4 ">
@@ -56,8 +56,8 @@ const Home = () => {
                   setCurrency(e.target.value);
                 }}
               >
-                <option value="pound">£</option>
-                <option selected value="euro">
+                <option selected value="pound">£</option>
+                <option  value="euro">
                   €
                 </option>
               </select>

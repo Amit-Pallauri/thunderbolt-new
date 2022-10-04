@@ -139,21 +139,21 @@ const PayMonthlyWebsite = ({
                         d.garyAfter === false ? false : i >= d.garyAfter + 1;
                       return (
                         <>
-                          <div
-                            className={
-                              i === 0
-                                ? "mt-0 "
-                                : isDisable
-                                ? "disbale-text mt-2"
-                                : "mt-2"
-                            }
-                          >
+                           <div className="d-flex px-2 position-realtive">
                             <img
+                              className="position-absolute point-img"
+                              src={ImageConstants.featureIcon}
+                            />
+                            <p className="text-start point-text ">{f}</p>
+                          </div> 
+                          {/* <div className={"d-flex px-2 position-realtive"}>
+                            <img
+                              className="position-absolute point-img"
                               loading="lazy"
                               src={ImageConstants.featureIcon}
                             />
-                            <span className="text-start ">{f}</span>
-                          </div>
+                            <p className="text-start ">{f}</p>
+                          </div> */}
                         </>
                       );
                     })}

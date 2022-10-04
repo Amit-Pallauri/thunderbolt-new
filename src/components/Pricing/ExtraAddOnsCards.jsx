@@ -59,7 +59,7 @@ const ExtraAddOnsCards = (
     },
   ];
   return (
-    <div className="row  ">
+    <div className="row  m-0 p-0 ">
       {slides.map((s, index) => {
         return (
           <div key={index} className="col-md-4   mt-3 p-0 mb-5">
