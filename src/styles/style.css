@@ -1118,14 +1118,12 @@ body {
   box-shadow: 6px 4px 24px #00000038;
   opacity: 1;
   width: 380px !important;
+  height: 60rem !important;
 }
 .pay-monthly-card .points {
   text-align: left;
-  letter-spacing: 0px;
   color: #1b03a3;
   font-weight: 500;
-  letter-spacing: 2px !important;
-  opacity: 1;
   background-color: #f8f7ff !important;
   padding-left: 34px !important;
 }
@@ -1442,10 +1440,10 @@ body {
 }
 .point-text {
   font-family: Montserrat sans-serif !important;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #1b03a3;
-  padding-left: 15px;
+  padding-left: 17px;
 }
 .point-img {
   margin-left: -3px !important;

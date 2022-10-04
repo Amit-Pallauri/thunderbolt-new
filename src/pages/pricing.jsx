@@ -19,7 +19,7 @@ const Home = () => {
                 billed annually
               </span>{" "}
               <p class="lead pricing-p  px-5 ">
-                With Built-in Security and speed Optimzations for <br /> your
+                With Built-in Security and speed Optimizations for <br /> your
                 site performance.
               </p>
             </div>
@@ -56,10 +56,10 @@ const Home = () => {
                   setCurrency(e.target.value);
                 }}
               >
-                <option selected value="pound">£</option>
-                <option  value="euro">
-                  €
+                <option selected value="pound">
+                  £
                 </option>
+                <option value="euro">€</option>
               </select>
             </div>
           </div>
@@ -84,9 +84,9 @@ const Home = () => {
               <strong>Pay Monthly Websites</strong>
             </p>{" "}
             <p class="lead pricing-p2 px-5 ">
-              No Contracts and all plans include unlimited website pages and
               Modern Website with flexible payment options to suit your
               business, pay monthly or pay yearly with 20% off, No Set Up feesm
+              No Contracts and all plans include unlimited website pages and
               unlimited content updates
             </p>
           </div>
