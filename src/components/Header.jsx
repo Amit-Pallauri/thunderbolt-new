@@ -25,7 +25,7 @@ const Header = () => {
                 How It Works
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item active-link">
               <Link className="nav-link" to={routes.pricing}>
                 Pricing
               </Link>
@@ -69,8 +69,8 @@ const Header = () => {
               <p>
                 <Link>How it works</Link>
               </p>
-              <p>
-                <Link to={routes.pricing}>Pricing</Link>
+              <p className="active-link">
+                <Link  to={routes.pricing}>Pricing</Link>
               </p>
               <p>
                 <Link>Advantages</Link>

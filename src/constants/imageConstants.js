@@ -40,9 +40,10 @@ import flashIcon from "../images/logos/flash.svg";
 import SearchIcon from "../images/logos/search.svg";
 import lockIcon from "../images/logos/lock.svg";
 import faviconImage from "../../src/images/logos/favicon.png";
-  
+import techSupport from "../../src/images/logos/techSupport.svg"  
 
 export const ImageConstants = {
+  techSupport,
   faviconImage,
   EditIcon,
   Secure,

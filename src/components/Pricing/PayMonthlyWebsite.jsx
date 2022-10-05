@@ -20,7 +20,7 @@ const PayMonthlyWebsite = ({
     {
       title: "Brochure Style Website",
       des: "Launch your online platform, your way, with ease",
-      price: convertPrice(60),
+      price: convertPrice(isMonthly ? 75:60),
       features: [
         "Free Custom Design 1-5 Pages, additional pages at extra cost",
         "Terms and Privacy Pages Included",
@@ -45,9 +45,9 @@ const PayMonthlyWebsite = ({
       garyAfter: 10,
     },
     {
-      title: "Standard",
+      title: "Booking Style Website",
       des: "The complete solution for your business growth",
-      price: convertPrice(80),
+      price: convertPrice(isMonthly? 125:100),
       features: [
         "Free Custom Design 1-8 Pages, additional pages at extra cost",
         " Terms and Privacy Pages Included",
@@ -72,9 +72,9 @@ const PayMonthlyWebsite = ({
       garyAfter: 15,
     },
     {
-      title: "Ultimate",
+      title: "E-commerce Website",
       des: "Perfect for growing your high traffic sites",
-      price: convertPrice(200),
+      price: convertPrice(isMonthly?150 :120),
       features: [
         "Free Custom Design 1-10 Pages, additional pages at extra cost ",
         "Terms and Privacy Pages Included",
@@ -139,21 +139,21 @@ const PayMonthlyWebsite = ({
                         d.garyAfter === false ? false : i >= d.garyAfter + 1;
                       return (
                         <>
-                          <div
-                            className={
-                              i === 0
-                                ? "mt-0 "
-                                : isDisable
-                                ? "disbale-text mt-2"
-                                : "mt-2"
-                            }
-                          >
+                           <div className="d-flex px-2 position-realtive">
                             <img
+                              className="position-absolute  point-img"
+                              src={ImageConstants.featureIcon}
+                            />
+                            <p className="text-start point-text ">{f}</p>
+                          </div> 
+                          {/* <div className={"d-flex px-2 position-realtive"}>
+                            <img
+                              className="position-absolute point-img"
                               loading="lazy"
                               src={ImageConstants.featureIcon}
                             />
-                            <span className="text-start ">{f}</span>
-                          </div>
+                            <p className="text-start ">{f}</p>
+                          </div> */}
                         </>
                       );
                     })}

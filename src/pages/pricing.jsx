@@ -7,7 +7,7 @@ import StandaredFeaturesSlider from "../components/StandaredFeaturesSlider";
 import PayMonthlyWebsite from "../components/Pricing/PayMonthlyWebsite";
 const Home = () => {
   const [isMonthly, setMonthly] = useState(true);
-  const [currency, setCurrency] = useState("euro");
+  const [currency, setCurrency] = useState("pounds");
   return (
     <Layout>
       <div className="pricing--main-box bg-white p-md-5 p-4 ">
@@ -19,7 +19,7 @@ const Home = () => {
                 billed annually
               </span>{" "}
               <p class="lead pricing-p  px-5 ">
-                With Built-in Security and speed Optimzations for <br /> your
+                With Built-in Security and speed Optimizations for <br /> your
                 site performance.
               </p>
             </div>
@@ -56,10 +56,10 @@ const Home = () => {
                   setCurrency(e.target.value);
                 }}
               >
-                <option value="pound">£</option>
-                <option selected value="euro">
-                  €
+                <option selected value="pound">
+                  £
                 </option>
+                <option value="euro">€</option>
               </select>
             </div>
           </div>
@@ -84,22 +84,24 @@ const Home = () => {
               <strong>Pay Monthly Websites</strong>
             </p>{" "}
             <p class="lead pricing-p2 px-5 ">
-              No Contracts and all plans include unlimited website pages and
               Modern Website with flexible payment options to suit your
               business, pay monthly or pay yearly with 20% off, No Set Up feesm
+              No Contracts and all plans include unlimited website pages and
               unlimited content updates
             </p>
           </div>
         </div>
       </div>
-      <div className=" p-3 mb-3 card-container hero-two text-center">
-        <PayMonthlyWebsite
-          showBootom={false}
-          showDescription={false}
-          isMonthly={isMonthly}
-        />
+      <div className="card-container hero-two text-center">
+        <div className="p-md-3">
+          <PayMonthlyWebsite
+            showBootom={false}
+            showDescription={false}
+            isMonthly={isMonthly}
+          />
+        </div>
         <div className="">
-          <p className="stand ">Standard website features</p>
+          <p className="stand text-center">Standard website features</p>
           <StandaredFeaturesSlider />
         </div>
       </div>
@@ -113,6 +115,7 @@ const Home = () => {
           showBootom={false}
           isExtraAddOn={true}
           showDescription={false}
+          currency={currency}
         />
       </div>
     </Layout>
