@@ -558,8 +558,9 @@
     margin-top: 0px;
   }
   .monthly-card {
+    height: auto !important;
     width: 95% !important;
-    margin-top: 5px;
+    margin-top: 15px !important;
     margin-left: -5px !important;
   }
   .round-borders {
@@ -591,8 +592,11 @@
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
+  .swiper-slide {
+    width: 200px !important;
+  }
   .smile-card {
-    width: 240px;
+    width: 180px;
     height: 250px;
     margin-left: -40px !important;
   }
@@ -600,6 +604,11 @@
   .hero-two {
     padding-right: 20px !important;
     padding-left: 36px !important;
+    background-image: url("../images/logos/mobile-bg-standerd.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 186rem;
+    background-position-x: -5rem;
   }
   .extra-addon-div {
     padding-right: 20px !important;

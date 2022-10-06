@@ -37,21 +37,29 @@ const StandaredFeaturesSlider = () => {
       title: "Free SSL",
       logo: ImageConstants.lockIcon,
     },
+    {
+      title: "Tech Support",
+      logo: ImageConstants.techSupport,
+    },
   ];
   return (
-    <section className="ml-md-5 py-md-5 px-md-5 they-trust-us-section">
+    <section className="ml-md-5 py-md-1 px-md-5 they-trust-us-section">
       <Swiper {...PricingSkillSlider}>
         {slides.map((s, key) => {
+          const isBigTitle = s?.title?.length < 13;
+          const isGreen = s?.title.includes("free")
           return (
-            <SwiperSlide>
-              <div className="smile-card mt-5 mt-md-0 text-center mb-5 p-3">
+            <SwiperSlide style={{background:"transparent"}}>
+              <div  className="smile-card   mt-5 mt-md-5  mb-5 ">
                 <img
                   loading="lazy"
                   className="mt-md-4 mt-4"
                   src={s.logo}
                   alt=""
                 />
-                <p className="mb-5 px-2">{s.title}</p>
+                <p className={isBigTitle ? "mb-5 padding-three" : "mb-5 px-4"}>
+                  {s.title}
+                </p>
               </div>
             </SwiperSlide>
           );

@@ -21,7 +21,7 @@ const MonthlyCards = ({
     {
       title: "Economy",
       des: "Launch your online platform, your way, with ease",
-      price: convertPrice(40),
+      price: convertPrice(isMonthly ? 50 : 40),
       features: [
         "Standard Performance ",
         "  1 website",
@@ -34,8 +34,7 @@ const MonthlyCards = ({
         " Up to 5M Server Request ",
         "2 CPUs ",
         "Free SSL for your websites ",
-        "Server Type AWS with 99%  ",
-        "Guarantee Uptime",
+        "Server Type AWS with 99% Guarantee Uptime",
         " Daily Back Up  ",
         " Up to 5000 Optimised Images ",
         "Onboarding & Migration Assistance ",
@@ -47,7 +46,7 @@ const MonthlyCards = ({
     {
       title: "Standard",
       des: "The complete solution for your business growth",
-      price: convertPrice(80),
+      price: convertPrice(isMonthly ? 100 : 80),
       features: [
         "Standard Performance",
         " 1 website",
@@ -60,8 +59,7 @@ const MonthlyCards = ({
         "Up to 3 Built Concurrency",
         "4 CPUs",
         "Free, unlimited SSL for all your websites",
-        " Server Type AWS with 99% ",
-        "Guarantee Uptime",
+        " Server Type AWS with 99% Guarantee Uptime ",
         " Daily Back Up ",
         "Up to 10000 Optimised Images",
         " Onboarding & Migration Assistance",
@@ -73,7 +71,7 @@ const MonthlyCards = ({
     {
       title: "Ultimate",
       des: "Perfect for growing your high traffic sites    ",
-      price: convertPrice(200),
+      price: convertPrice(isMonthly ? 250 : 200),
       features: [
         "Standard Performance ",
         "1 website",
@@ -112,8 +110,7 @@ const MonthlyCards = ({
         "Custom",
         "Custom",
         "Free SSL for your websites",
-        " Server Type AWS with 99% Guarantee",
-        " Uptime",
+        " Server Type AWS with 99% Guarantee Uptime",
         " Daily back Up",
         " Custom ",
         "Onboarding & Migration Assistance**",
@@ -126,7 +123,7 @@ const MonthlyCards = ({
   return (
     <>
       <div className="row">
-        <div className="d-md-flex   " style={{ zIndex: "1111" }}>
+        <div className="d-md-flex   " style={{ zIndex: "111" }}>
           {cards?.map((d, key) => {
             return (
               <>
@@ -185,7 +182,13 @@ const MonthlyCards = ({
                         </p>
                       )}
                       <br />
-                      <button className="get-started-btn mt-0 mb-5">
+                      <button
+                        className={
+                          d.symbol === false
+                            ? "get-started-btn mt-0 mb-5 contact-sales-btn"
+                            : "get-started-btn mt-0 mb-5 "
+                        }
+                      >
                         Get started
                       </button>
                     </div>
@@ -194,14 +197,21 @@ const MonthlyCards = ({
                         {d.features.map((f, i) => {
                           return (
                             <>
-                              <div className={i === 0 ? "mt-0" : "mt-2"}>
+                              <div className="d-flex px-2 position-realtive">
+                                <img
+                                  className="position-absolute point-img"
+                                  src={ImageConstants.featureIcon}
+                                />
+                                <p className="text-start point-text ">{f}</p>
+                              </div>
+                              {/* <div className={i === 0 ? "mt-0" : "mt-2"}>
                                 <img
                                   loading="lazy"
                                   src={ImageConstants.featureIcon}
                                   alt=""
                                 />
                                 <span>{f}</span>
-                              </div>
+                              </div> */}
                             </>
                           );
                         })}
