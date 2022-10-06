@@ -1,9 +1,10 @@
-import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { ImageConstants } from "../constants/imageConstants";
 import { homeSkillSlider } from "../constants/swiperConstants";
 
 const TheyTrustUs = () => {
+  const slides = [];
   return (
     <section className="they-trust-us-section">
       <div className="container">
@@ -19,261 +20,233 @@ const TheyTrustUs = () => {
         <div className="swiper-wrapper">
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/client-castrol.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientCastrol}
                 alt="castrol"
-                placeholder="tracedSVG"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/client-toi.png"}
-                alt="Toi"
-                placeholder="tracedSVG"
-              />
+              <img loading="lazy" src={ImageConstants.clientToi} alt="toi" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/client-goeres.jpeg"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientGoeres}
                 alt="goeres"
-                placeholder="tracedSVG"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/client-firstpost.png"}
-                alt="first-post"
-                placeholder="tracedSVG"
+              <img
+                loading="lazy"
+                src={ImageConstants.clientFirstpost}
+                alt="firstpost"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/client-l-t.jpeg"}
-                alt="l-t"
-                placeholder="tracedSVG"
-              />
+              <img loading="lazy" src={ImageConstants.clientLt} alt="l-t" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/client-flipkart.jpeg"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientFlipkart}
                 alt="flipkart"
-                placeholder="tracedSVG"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/client-latestly.jpeg"}
-                alt="client-latestly"
-                placeholder="tracedSVG"
+              <img
+                loading="lazy"
+                src={ImageConstants.clientLatestly}
+                alt="latestly"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/client-teamup.jpeg"}
-                alt="client-teamup"
-                placeholder="tracedSVG"
+              <img
+                loading="lazy"
+                src={ImageConstants.clientTeamup}
+                alt="teamup"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/client-ironman.jpg"}
-                alt="client-ironman"
-                placeholder="tracedSVG"
+              <img
+                loading="lazy"
+                src={ImageConstants.clientIronman}
+                alt="ironman"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/5_Ring.png"}
-                alt="5_Ring"
-                placeholder="tracedSVG"
-              />
+              <img loading="lazy" src={ImageConstants.fiveRing} alt="5_Ring" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/2_Emirates.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.twoImirates}
                 alt="2_Emirates"
-                placeholder="tracedSVG"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/3_MG.png"}
-                alt="3_MG"
-                placeholder="tracedSVG"
-              />
+              <img loading="lazy" src={ImageConstants.threeMgs} alt="3_MG" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                src={"../images/logos/7_GMC.png"}
-                alt="7_GMC"
-                placeholder="tracedSVG"
-              />
+              <img loading="lazy" src={ImageConstants.sevenGMC} alt="7_GMC" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/7_Chevrolet.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.sevenChevrolet}
                 alt="7_Chevrolet"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/1_Isuzu.png"}
-                alt="1_Isuzu"
-              />
+              <img loading="lazy" src={ImageConstants.oneIsuzu} alt="1_Isuzu" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/6_Royal-Enfield.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.sixRoyalEnfield}
                 alt="6_Royal-Enfield"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/4_Loreal.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.fourLoreal}
                 alt="4_Loreal"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/9_bp.png"}
-                alt="9_bp"
-              />
+              <img loading="lazy" src={ImageConstants.nineBp} alt="9_bp" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/client-vodafone.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientVodafone}
                 alt="client-vodafone"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/client-ge-money.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientGeMoney}
                 alt="client-ge-money"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/client-audi.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientAudi}
                 alt="client-audi"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/client-arcelor.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientArcelor}
                 alt="client-arcelor"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/client-tomorrow-street.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientTomorrowStreet}
                 alt="tomorrow-street"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/client-cna.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientCna}
                 alt="client-cna"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/client-technoport.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientTechnoport}
                 alt="client-technoport"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/client-chronicle.jpg"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientChronicle}
                 alt="client-chronicle"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/client-ey.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientEy}
                 alt="client-ey"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/client-mpay.png"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientMpay}
                 alt="client-mpay"
               />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <StaticImage
-                placeholder="tracedSVG"
-                src={"../images/logos/client-WikiStage.jpg"}
+              <img
+                loading="lazy"
+                src={ImageConstants.clientWikiStage}
                 alt="client-WikiStage"
               />
             </div>

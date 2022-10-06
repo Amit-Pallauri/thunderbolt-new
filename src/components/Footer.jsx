@@ -6,7 +6,6 @@ import callIcon from "../images/icons/call-icon.png";
 import indianIcon from "../images/icons/ind-flag.png";
 import luxFlagIcon from "../images/icons/lux-flag.png";
 import ukFLagIcon from "../images/icons/uk-flag.png";
-import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = () => {
   return (
@@ -14,36 +13,20 @@ const Footer = () => {
       <div className="footer-container row">
         <div className="social-links col-md-3 mt-3 footer-web">
           <div className="social-container">
-            <StaticImage
-              src="../images/icons/insta-icon.png"
-              placeholder="tracedSVG"
-              alt="insta icon"
-            />
+            <img loading="lazy" src={InstaIcon} alt="" />
           </div>
           <div className="social-container">
-            <StaticImage
-              src="../images/icons/linkedin-icon.png"
-              placeholder="tracedSVG"
-              alt="linkedin icon"
-            />
+            <img loading="lazy" src={linkedInIcon} alt="" />
           </div>
         </div>
 
         <div className="footer-mob footer-navs">
           <div className="social-links col-md-3 mt-3">
             <div className="social-container">
-              <StaticImage
-                src="../images/icons/insta-icon.png"
-                placeholder="tracedSVG"
-                alt="insta icon"
-              />
+              <img loading="lazy" src={InstaIcon} alt="" />
             </div>
             <div className="social-container">
-              <StaticImage
-                src="../images/icons/linkedin-icon.png"
-                placeholder="tracedSVG"
-                alt="linkedin icon"
-              />
+              <img loading="lazy" src={linkedInIcon} alt="" />
             </div>
           </div>
           <div className="call-btn footer-call-btn col-md-3 mt-3">
@@ -54,12 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-content col-md-6">
-          <StaticImage
-            className="footer-logo"
-            src="../images/logos/footer-logo.png"
-            placeholder="tracedSVG"
-            alt="insta icon"
-          />
+          <img className="footer-logo" loading="lazy" src={footerLogo} alt="" />
           <div className="d-flex flex-column align-items-center mt-5">
             <p style={{ color: "#1DB954", fontSize: "20px" }}>Quick Links</p>
             <div className="links-container">
@@ -69,21 +47,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="flags d-flex">
-            <StaticImage
-              src="../images/icons/uk-flag.png"
-              placeholder="tracedSVG"
-              alt="india"
-            />
-            <StaticImage
-              src="../images/icons/lux-flag.png"
-              placeholder="tracedSVG"
-              alt="india"
-            />
-            <StaticImage
-              src="../images/icons/ind-flag.png"
-              placeholder="tracedSVG"
-              alt="india"
-            />
+            <img loading="lazy" src={ukFLagIcon} alt="" />
+            <img loading="lazy" src={luxFlagIcon} alt="" />
+            <img loading="lazy" src={indianIcon} alt="" />
           </div>
         </div>
         <div className="call-btn footer-call-btn col-md-3 mt-3 footer-web">
