@@ -251,13 +251,13 @@
     margin: 20px 0;
   }
 
-  .techs-img .picture-big {
+  .techs-img .picture-big img {
     width: 125px;
     height: 32px;
     margin: 0 10px;
   }
 
-  .techs-img .picture-small {
+  .techs-img .picture-small img {
     margin: 10px 0;
     width: 52px;
     height: 30px;

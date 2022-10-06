@@ -52,10 +52,11 @@ body {
   border-radius: 20px;
 }
 
-.nav-btn button {
+.nav-btn a {
   background: none;
   border: none;
   color: white;
+  text-decoration: none;
 }
 
 .nav-btn img {
@@ -264,7 +265,7 @@ body {
   display: none;
 }
 
-.footer-logo {
+.footer-logo img {
   width: 183px;
 }
 
@@ -706,13 +707,13 @@ body {
   margin-bottom: 60px;
 }
 
-.techs-img .picture-big {
+.techs-img .picture-big img {
   width: 161px;
   height: 42px;
   margin-right: 30px;
 }
 
-.techs-img .picture-small {
+.techs-img .picture-small img {
   width: 62px;
   height: 37px;
 }

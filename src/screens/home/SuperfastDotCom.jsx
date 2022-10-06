@@ -1,14 +1,12 @@
+import { StaticImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
-import gatsbyLogo from "../../images/logos/gatsby-logo.png";
-import strapiLogo from "../../images/logos/strapi-logo.png";
-import awsLogo from "../../images/logos/aws-logo.png";
-import worldClassUserExperience from "../../images/superfast-dot-com/world-class-user-experience.jpg";
+import thunderboltIcon from "../../images/icons/thunderbolt-icon.png";
 import betterGoogleRanking from "../../images/superfast-dot-com/better-google-ranking.jpg";
 import improvedCustomerRetention from "../../images/superfast-dot-com/improved-customer-retention-rate.jpg";
 import increasedWebsiteConversion from "../../images/superfast-dot-com/increase-website-conversions.jpg";
 import lessBounceRate from "../../images/superfast-dot-com/less-bounce-rate.jpg";
 import scaleEffortlessly from "../../images/superfast-dot-com/scale-effortlessly.jpg";
-import thunderboltIcon from "../../images/icons/thunderbolt-icon.png";
+import worldClassUserExperience from "../../images/superfast-dot-com/world-class-user-experience.jpg";
 
 const SuperfastDotCom = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -82,9 +80,10 @@ const SuperfastDotCom = () => {
             </div>
             <div className="col-md-6 list-section">
               <ul>
-                {data.map((el) => {
+                {data.map((el, i) => {
                   return (
                     <li
+                      key={i}
                       onClick={() => setActiveTab(el.id)}
                       onMouseOver={() => setActiveTab(el.id)}
                       className={`${
@@ -111,20 +110,25 @@ const SuperfastDotCom = () => {
         </p>
         <div className="techs-img">
           <div className="big-imgs">
-            <img
-              loading="lazy"
+            <StaticImage
+              src={"../../images/logos/gatsby-logo.png"}
+              alt="Gatsby"
+              placeholder="tracedSVG"
               className="picture-big"
-              src={gatsbyLogo}
-              alt=""
             />
-            <img
-              loading="lazy"
+            <StaticImage
+              src={"../../images/logos/strapi-logo.png"}
+              alt="Strapi"
+              placeholder="tracedSVG"
               className="picture-big"
-              src={strapiLogo}
-              alt=""
             />
           </div>
-          <img loading="lazy" className="picture-small" src={awsLogo} alt="" />
+          <StaticImage
+            className="picture-small"
+            src={"../../images/logos/aws-logo.png"}
+            alt="Gatsby"
+            placeholder="tracedSVG"
+          />
         </div>
       </div>
     </section>

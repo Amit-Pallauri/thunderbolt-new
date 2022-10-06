@@ -1,13 +1,10 @@
 import React from "react";
-import thunderboltIcon from "../../images/icons/thunderbolt-icon.png";
-import orangeClrcle from "../../images/orange-circle.png";
-import greenCircle from "../../images/green-circle.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  homeSkillSlider,
-  statsSlider,
-  workSlider,
-} from "../../constants/swiperConstants";
+import { statsSlider } from "../../constants/swiperConstants";
+import greenCircle from "../../images/green-circle.png";
+import thunderboltIcon from "../../images/icons/thunderbolt-icon.png";
+// import orangeClrcle from "../../images/orange-circle.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 export const FrameworkStatistics = () => {
   return (
@@ -19,7 +16,12 @@ export const FrameworkStatistics = () => {
             <div className="row stats-container">
               <div className="col-md-3 col-6 circle-contain">
                 <div className="circle">
-                  <img loading="lazy" src={orangeClrcle} alt="" />
+                  <StaticImage
+                    src={"../../images/orange-circle.png"}
+                    alt="circle"
+                    placeholder="tracedSVG"
+                  />
+                  {/* <img loading="lazy" src={orangeClrcle} alt="" /> */}
                   <p className="circle-text-red">63</p>
                 </div>
                 <p className="circle-info">Performance</p>
@@ -35,7 +37,12 @@ export const FrameworkStatistics = () => {
               <div className="col-md-3 col-6 circle-contain">
                 {" "}
                 <div className="circle">
-                  <img loading="lazy" src={orangeClrcle} alt="" />
+                  <StaticImage
+                    src={"../../images/orange-circle.png"}
+                    alt="circle"
+                    placeholder="tracedSVG"
+                  />
+                  {/* <img loading="lazy" src={orangeClrcle} alt="" /> */}
                   <p className="circle-text-red">83</p>
                 </div>
                 <p className="circle-info">Best Practices</p>
@@ -43,7 +50,12 @@ export const FrameworkStatistics = () => {
               <div className="col-md-3 col-6 circle-contain">
                 {" "}
                 <div className="circle">
-                  <img loading="lazy" src={orangeClrcle} alt="" />
+                  <StaticImage
+                    src={"../../images/orange-circle.png"}
+                    alt="circle"
+                    placeholder="tracedSVG"
+                  />
+                  {/* <img loading="lazy" src={orangeClrcle} alt="" /> */}
                   <p className="circle-text-red">83</p>
                 </div>
                 <p className="circle-info">SEO</p>
