@@ -166,7 +166,11 @@ body {
   font-size: 20px;
   color: #ffffff;
 }
-
+.sidebar-footer a {
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
 /* footer */
 .site-footer {
   background: #1b03a3;
@@ -385,7 +389,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: white;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1018,6 +1022,7 @@ body {
 
 .they-trust-us-section {
   margin-bottom: 100px;
+  z-index: 11111;
 }
 /* Pricing */
 
@@ -1342,16 +1347,17 @@ body {
   text-align: center;
   letter-spacing: -0.26px;
   color: #1db954;
-  opacity: 1; 
+  opacity: 1;
   font-size: 25px;
   margin-top: 100px;
 }
 .smile-card {
-  background: #ffffff 0% 0% no-repeat padding-box;
+  z-index: 111;
+  background: white;
   box-shadow: 6px 4px 24px #00000029;
   border-radius: 12px;
   opacity: 1;
-  height: 200px;
+  height: 220px;
   width: 220px;
   text-align: center !important;
 }
@@ -1483,6 +1489,13 @@ body {
   color: #1b03a3;
   padding-left: 17px;
 }
+.point-text-muted {
+  font-size: 14px;
+padding-left: 17px;
+  letter-spacing: 0px;
+  color: #d0d0d0;
+  opacity: 1;
+}
 .point-img {
   margin-left: -3px !important;
   margin-top: 3px;
@@ -1490,7 +1503,10 @@ body {
 .contact-sales-btn {
   margin-bottom: 3.5rem !important;
 }
-.padding-three{
-padding-left: 40px !important;
-
+.padding-three {
+  padding-left: 40px !important;
+}
+.features-slider-container{
+  z-index: 111111 !important;
+  margin-top: -50px !important;
 }

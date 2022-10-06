@@ -1,16 +1,14 @@
 import React from "react";
 import ImageConstants from "../../constants/imageConstants";
 
-const ExtraAddOnsCards = (
-  isMonthly,
-  currency
-) => {
+const ExtraAddOnsCards = ({ isMonthly, currency }) => {
   const convertPrice = (price) => {
     return {
       currency,
       price,
     };
   };
+  console.log("isMonth", isMonthly);
   const slides = [
     {
       title: "Subscription Services",
@@ -60,13 +58,12 @@ const ExtraAddOnsCards = (
       cost: convertPrice(isMonthly ? 150 : 12),
       symbol: "£",
       buttonText: "Get Started",
-      
     },
   ];
   return (
     <div className="row  m-0 p-0 ">
       {slides.map((s, index) => {
-       const isLast = index === slides?.length -1
+        const isLast = index === slides?.length - 1;
         return (
           <div key={index} className="col-md-4   mt-3 p-0 mb-5">
             <div className="extra-card-width ">
@@ -86,7 +83,13 @@ const ExtraAddOnsCards = (
                   {s.des}
                 </p>
                 <br />
-                <button className={isLast ? "get-started-btn mt-0 mb-5":"get-started-btn mt-0 mb-3"}>
+                <button
+                  className={
+                    isLast
+                      ? "get-started-btn mt-0 mb-5"
+                      : "get-started-btn mt-0 mb-3"
+                  }
+                >
                   {s.buttonText}
                 </button>
               </div>

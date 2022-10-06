@@ -6,9 +6,15 @@ import hambarIcon from "../images/icons/hambar.png";
 import headerHome from "../images/icons/header-home.png";
 import closeIcon from "../images/icons/close-icon.png";
 import rightArrow from "../images/icons/right-arrow.svg";
-
+import { useLocation } from "@reach/router";
+import { useEffect } from "react";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+  const [pathName , setPathName]= useState()
+  const location = useLocation();
+  useEffect(()=>{
+    setPathName(location?.pathname)
+  },[location?.pathname])
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-light container">
@@ -25,7 +31,13 @@ const Header = () => {
                 How It Works
               </a>
             </li>
-            <li className="nav-item active-link">
+            <li
+              className={
+                pathName === "/pricing"
+                  ? "nav-item active-link"
+                  : "nav-item "
+              }
+            >
               <Link className="nav-link" to={routes.pricing}>
                 Pricing
               </Link>
@@ -69,8 +81,14 @@ const Header = () => {
               <p>
                 <Link>How it works</Link>
               </p>
-              <p className="active-link">
-                <Link  to={routes.pricing}>Pricing</Link>
+              <p
+                className={
+                  pathName === "/pricing/"
+                    ? "nav-item active-link"
+                    : "nav-item "
+                }
+              >
+                <Link to={routes.pricing}>Pricing</Link>
               </p>
               <p>
                 <Link>Advantages</Link>
@@ -100,7 +118,7 @@ const Header = () => {
               <div className="sidebar-footer">
                 <p>Privacy Policy</p>
                 <p>Terms</p>
-                <p>Login</p>
+                <a href="#">Login</a>
               </div>
             </div>
           </div>

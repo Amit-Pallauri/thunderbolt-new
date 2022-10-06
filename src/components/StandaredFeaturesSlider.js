@@ -49,8 +49,8 @@ const StandaredFeaturesSlider = () => {
           const isBigTitle = s?.title?.length < 13;
           const isGreen = s?.title.includes("free")
           return (
-            <SwiperSlide>
-              <div className="smile-card   mt-5 mt-md-0  mb-5 ">
+            <SwiperSlide style={{background:"transparent"}}>
+              <div  className="smile-card   mt-5 mt-md-5  mb-5 ">
                 <img
                   loading="lazy"
                   className="mt-md-4 mt-4"
