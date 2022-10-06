@@ -100,7 +100,7 @@ const Home = () => {
             isMonthly={isMonthly}
           />
         </div>
-        <div className="">
+        <div className=" features-slider-container">
           <p className="stand text-center">Standard website features</p>
           <StandaredFeaturesSlider />
         </div>

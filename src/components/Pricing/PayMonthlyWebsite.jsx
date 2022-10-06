@@ -27,7 +27,7 @@ const PayMonthlyWebsite = ({
         "Unlimited pages/Content",
         "Contact forms and gallaries",
         "Includes CMS Backend (Content Management System)",
-        "Free Custom Design 1-5 Pages, additional pages at extra cost",
+        "Mobile and tablet Optimized",
         "Basic on-page SEO",
         "Google Search Console Index",
         "Google Analytics",
@@ -39,8 +39,7 @@ const PayMonthlyWebsite = ({
         "Event Calendar",
         "Booking/Appointment system",
         "Sell Products/Services",
-        "Payment Gateway integration",
-        ,
+        "Payment Gateway integration"
       ],
       garyAfter: 10,
     },
@@ -66,7 +65,6 @@ const PayMonthlyWebsite = ({
         "Event Calendar",
         "Booking/Appointment system",
         "Sell Products/Services",
-        "   Email Support",
         "Payment Gateway integration",
       ],
       garyAfter: 15,
@@ -144,7 +142,7 @@ const PayMonthlyWebsite = ({
                               className="position-absolute  point-img"
                               src={ImageConstants.featureIcon}
                             />
-                            <p className="text-start point-text ">{f}</p>
+                            <p className={isDisable ?"point-text-muted" :"text-start point-text "}>{f}</p>
                           </div> 
                           {/* <div className={"d-flex px-2 position-realtive"}>
                             <img
