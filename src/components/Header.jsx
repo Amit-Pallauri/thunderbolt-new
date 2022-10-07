@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
 import routes from "../constants/routes";
-import logo from "../images/logos/thunderbolt-logo.png";
+import logo from "../images/logos/thunderbolt-logo.webp";
 import hambarIcon from "../images/icons/hambar.png";
 import headerHome from "../images/icons/header-home.png";
 import closeIcon from "../images/icons/close-icon.png";

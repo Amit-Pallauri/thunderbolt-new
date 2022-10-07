@@ -1,7 +1,6 @@
 import React from "react";
 import ClientsImages from "../../components/ClientsImages";
-import { ImageConstants } from "../../constants/imageConstants";
-import HomeBanner from "../../images/home-banner.png";
+import HomeBanner from "../../images/home-banner.webp";
 
 const HeroSection = () => {
   return (
