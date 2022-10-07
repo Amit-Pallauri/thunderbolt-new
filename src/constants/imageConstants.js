@@ -40,7 +40,7 @@ import DeskstopIcon from "../images/logos/deskstop.svg";
 import flashIcon from "../images/logos/flash.svg";
 import SearchIcon from "../images/logos/search.svg";
 import lockIcon from "../images/logos/lock.svg";
-import faviconImage from "../../src/images/logos/favicon.png";
+import faviconImage from "../../src/images/logos/favicon.ico";
 import techSupport from "../../src/images/logos/techSupport.svg";
 
 export const ImageConstants = {
