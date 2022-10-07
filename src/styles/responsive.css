@@ -251,13 +251,14 @@
     margin: 20px 0;
   }
 
-  .techs-img .picture-big img {
+  .techs-img .picture-big {
     width: 125px;
     height: 32px;
+    margin-right: 0;
     margin: 0 10px;
   }
 
-  .techs-img .picture-small img {
+  .techs-img .picture-small {
     margin: 10px 0;
     width: 52px;
     height: 30px;
@@ -392,7 +393,7 @@
 
   .web-vitals-section {
     /* min-height: 733px; */
-    background-image: url("../images/vector1-mob.png");
+    background-image: url("../images/vector1-mob.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
@@ -407,7 +408,7 @@
 
   .framework-statistics {
     min-height: 870px;
-    background-image: url("../images/vector2-mob.png");
+    background-image: url("../images/vector2-mob.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;

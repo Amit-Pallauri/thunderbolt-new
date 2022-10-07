@@ -842,7 +842,7 @@ body {
 
 .framework-statistics {
   min-height: 1125px;
-  background-image: url("../images/vector2.png");
+  background-image: url("../images/vector2.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -892,7 +892,7 @@ body {
 
 .web-vitals-section {
   min-height: 733px;
-  background-image: url("../images/vector1.png");
+  background-image: url("../images/vector1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;

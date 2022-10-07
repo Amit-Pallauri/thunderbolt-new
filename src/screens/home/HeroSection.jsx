@@ -25,7 +25,7 @@ const HeroSection = () => {
             <ClientsImages />
           </div>
           <div className="col-sm-12 col-lg-6 banner-img">
-            <img loading="lazy" src={HomeBanner} alt="" />
+            <img src={HomeBanner} alt="" />
           </div>
         </div>
       </div>
