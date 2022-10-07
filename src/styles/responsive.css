@@ -251,13 +251,13 @@
     margin: 20px 0;
   }
 
-  .techs-img .picture-big img {
+  .techs-img .picture-big {
     width: 125px;
     height: 32px;
     margin: 0 10px;
   }
 
-  .techs-img .picture-small img {
+  .techs-img .picture-small {
     margin: 10px 0;
     width: 52px;
     height: 30px;
@@ -592,7 +592,7 @@
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
-  .custom-swiper-slide {
+  .swiper-slide {
     width: 200px !important;
   }
   .smile-card {
@@ -666,8 +666,8 @@
   }
   .extra-addon-conatiner {
     margin: 0px 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left:20px;
+    padding-right: 20px;
   }
   .extra-card-width {
     width: 100% !important;
@@ -678,5 +678,34 @@
   }
   .stand {
     margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .extra-card-width {
+    width: 100% !important;
+    height: 360px !important;
+  }
+  .get-started-btn{
+    margin-bottom: 10px !important;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  .price-symbol {
+    margin-left: -85px!important;
+    
+  }
+  .price-symbol-safari{
+    margin-left: -50px !important;
+  }
+  .monthly-card{
+    width:22vw !important;
+  }
+  .pay-monthly-card{
+    width: 30vw !important;
+  }
+  .extra-card-width{
+    width: 30vw !important;
   }
 }
