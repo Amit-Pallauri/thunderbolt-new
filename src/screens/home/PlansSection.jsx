@@ -116,8 +116,8 @@ const PlansSection = () => {
             </div>
           </div>
           <div className="cards-container">
-            {plansData.map((el) => {
-              return <PlansCard data={el} isMonthly={isMonthly} />;
+            {plansData.map((el, i) => {
+              return <PlansCard key={i} data={el} isMonthly={isMonthly} />;
             })}
           </div>
           <div className="container">

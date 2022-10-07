@@ -15,7 +15,14 @@ const HeroSection = () => {
               gatsbyjs powered by react to load your platform in a matter of
               seconds.
             </h2>
-            <button className="get-started">Get Started</button>
+            <button className="get-started">
+              <a
+                target={"_blank"}
+                href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
+              >
+                Get Started
+              </a>
+            </button>
             <ClientsImages />
           </div>
           <div className="col-sm-12 col-lg-6 banner-img">

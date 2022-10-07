@@ -108,7 +108,7 @@ export const FrameworkStatistics = () => {
             <div className="thunderbolt-icon">
               <img loading="lazy" width={"70px"} src={thunderboltIcon} alt="" />
             </div>
-            <Swiper className="workslider pl-3" {...statsSlider}>
+            <Swiper className="pl-3" {...statsSlider}>
               <div className="swiper-wrapper">
                 <SwiperSlide>
                   <div className="stats-card">
