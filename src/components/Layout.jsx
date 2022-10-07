@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
           href={ImageConstants.faviconImage}
           sizes="32x32"
         />
-        <script src="https://consent.cookiefirst.com/sites/thunderboltjs.com-8db07785-6622-406d-9400-25c35cd0f103/consent.js"></script>
+        {/* <script src="https://consent.cookiefirst.com/sites/thunderboltjs.com-8db07785-6622-406d-9400-25c35cd0f103/consent.js"></script> */}
       </Helmet>
       <Header />
       {children}
