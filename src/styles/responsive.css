@@ -638,10 +638,7 @@
     padding-bottom: 56px !important;
     font-size: 12px;
   }
-  .get-started-btn {
-    width: 80%;
-    margin-bottom: 40px !important;
-  }
+  
   .monthly-cost strong {
     font-size: 36px;
   }
@@ -671,6 +668,7 @@
   }
   .extra-card-width {
     width: 100% !important;
+    height: auto !important;
   }
   .extra {
     margin: auto !important;
@@ -678,5 +676,21 @@
   }
   .stand {
     margin-left: -20px;
+  }
+  .extra-card-width-last{
+    border-radius: 24px;
+    box-shadow: 6px 4px 24px #00000038;
+    width: auto !important;
+    height: 340px !important;
+    background-color: white !important;
+  }
+  .get-started-btn{
+    width: 222px !important;
+  }
+  .extra-card-width .get-started-btn{
+    width: 222px !important;
+  }
+  .extra-card-width-last .get-started-btn {
+    width: 222px !important;
   }
 }

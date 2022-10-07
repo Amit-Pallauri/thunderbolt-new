@@ -66,7 +66,7 @@ const ExtraAddOnsCards = ({ isMonthly, currency }) => {
         const isLast = index === slides?.length - 1;
         return (
           <div key={index} className="col-md-4   mt-3 p-0 mb-5">
-            <div className="extra-card-width ">
+            <div className={!isLast ? "extra-card-width ":"extra-card-width-last"}>
               <div className=" rounded-lg ">
                 <div className="mb-2 space">{"s"}</div>
                 <p className="monthly-card-title  ">{s.title}</p>
@@ -82,12 +82,12 @@ const ExtraAddOnsCards = ({ isMonthly, currency }) => {
                 <p className={"text-black extra-card-description mt-4 px-4"}>
                   {s.des}
                 </p>
-                <br />
+                
                 <button
                   className={
                     isLast
-                      ? "get-started-btn mt-0 mb-5"
-                      : "get-started-btn mt-0 mb-3"
+                      ? "get-started-btn mt-2 "
+                      : "get-started-btn mt-0 mt-4 mb-3"
                   }
                 >
                   {s.buttonText}
