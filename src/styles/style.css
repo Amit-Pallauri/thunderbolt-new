@@ -52,12 +52,10 @@ body {
   border-radius: 20px;
 }
 
-.nav-btn a {
+.nav-btn button {
   background: none;
   border: none;
   color: white;
-  text-decoration: none;
-  margin-right: 10px;
 }
 
 .nav-btn img {
@@ -162,21 +160,17 @@ body {
   background: none;
   border: none;
   color: white;
-  text-decoration: none;
-}
-
-.buttons a {
-  margin-right: 10px;
-  border: none;
-  color: white;
-  text-decoration: none;
 }
 
 .sidebar-footer p {
   font-size: 20px;
   color: #ffffff;
 }
-
+.sidebar-footer a {
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
 /* footer */
 .site-footer {
   background: #1b03a3;
@@ -309,11 +303,6 @@ body {
   font-weight: medium;
 }
 
-.get-started a {
-  color: white;
-  text-decoration: none;
-}
-
 .clients-img {
   margin: 50px 0;
   display: flex;
@@ -400,7 +389,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: white;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1033,6 +1022,7 @@ body {
 
 .they-trust-us-section {
   margin-bottom: 100px;
+  z-index: 11111;
 }
 /* Pricing */
 
@@ -1053,7 +1043,7 @@ body {
   letter-spacing: 0px;
   text-align: center;
   font-size: 16px;
-  font-weight: 900 !important;
+  font-weight: 500 !important;
   margin-top: 30px;
 }
 .pricing--main-box {
@@ -1170,14 +1160,12 @@ body {
   box-shadow: 6px 4px 24px #00000038;
   opacity: 1;
   width: 380px !important;
+  height: 60rem !important;
 }
 .pay-monthly-card .points {
   text-align: left;
-  letter-spacing: 0px;
   color: #1b03a3;
   font-weight: 500;
-  letter-spacing: 2px !important;
-  opacity: 1;
   background-color: #f8f7ff !important;
   padding-left: 34px !important;
 }
@@ -1260,7 +1248,7 @@ body {
   color: #191414;
   font-weight: 400 !important;
   opacity: 1;
-  font-size: 12px !important;
+  font-size: 16px !important;
 }
 .get-started-btn {
   background: #1db954 0% 0% no-repeat padding-box;
@@ -1272,6 +1260,9 @@ body {
   height: 46px;
   font-weight: 600;
   margin-top: 2rem;
+}
+.get-started-btn-last{
+  margin-top: -2rem !important;
 }
 .points-box {
   /* UI Properties */
@@ -1361,15 +1352,17 @@ body {
   color: #1db954;
   opacity: 1;
   font-size: 25px;
-  margin-top: 130px;
+  margin-top: 100px;
 }
 .smile-card {
-  background: #ffffff 0% 0% no-repeat padding-box;
+  z-index: 111;
+  background: white;
   box-shadow: 6px 4px 24px #00000029;
   border-radius: 12px;
   opacity: 1;
-  height: 250px;
+  height: 220px;
   width: 220px;
+  text-align: center !important;
 }
 
 .smile-card p {
@@ -1460,12 +1453,10 @@ body {
   border-radius: 24px;
   box-shadow: 6px 4px 24px #00000038;
   width: 380px !important;
-  height: 350px !important;
+  height: 340px !important;
   background-color: white !important;
 }
-.extra-card-width .get-started-btn {
-  width: 250px !important;
-}
+
 .extra-card-width .monthly-cost-sub-description {
   font: 12px !important;
 }
@@ -1481,11 +1472,42 @@ body {
   margin-top: 12px !important;
 }
 .hero-1-card-container {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .hero-one {
   z-index: 111 !important;
 }
 .s {
   margin-top: 20px;
+}
+.active-link > a {
+  color: #049204 !important;
+}
+.point-text {
+  font-family: Montserrat sans-serif !important;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1b03a3;
+  padding-left: 17px;
+}
+.point-text-muted {
+  font-size: 14px;
+padding-left: 17px;
+  letter-spacing: 0px;
+  color: #d0d0d0;
+  opacity: 1;
+}
+.point-img {
+  margin-left: -3px !important;
+  margin-top: 3px;
+}
+.contact-sales-btn {
+  margin-bottom: 3.5rem !important;
+}
+.padding-three {
+  padding-left: 40px !important;
+}
+.features-slider-container{
+  z-index: 111111 !important;
+  margin-top: -50px !important;
 }
