@@ -485,7 +485,9 @@
 
   .footer-container {
     margin: 0;
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .links-container {
@@ -596,7 +598,7 @@
   /* .swiper-slide {
     width: 200px !important;
   } */
-  .custom-swiper-slide{
+  .custom-swiper-slide {
     width: 200px !important;
   }
   .smile-card {
@@ -625,6 +627,7 @@
   .pricing--main-box {
     /* background-color: #ecf9f1 !important; */
     /* padding-left: 44px !important; */
+    height: 870px !important;
   }
   .mb-100 {
     margin-bottom: 100px;
@@ -670,7 +673,7 @@
   }
   .extra-addon-conatiner {
     margin: 0px 10px;
-    padding-left:20px;
+    padding-left: 20px;
     padding-right: 20px;
   }
   .extra-card-width {
@@ -683,6 +686,35 @@
   .stand {
     margin-left: -20px;
   }
+  .footer-bootom-links {
+    margin-top: 22px !important;
+   margin-left: -50px !important;
+ 
+  }
+  .footer-bottom {
+    justify-content: center !important;
+    height: auto;
+  }
+  .footer-bottom p {
+    margin-right: 20vw;
+    text-align: center;
+    justify-content: center !important;
+  }
+  .footer-social-icons {
+    text-align: start !important;
+  }
+  .footer-logo-conatiner {
+    padding-left: 0 !important;
+  }
+  .footer-bootom-links a {
+    text-align: start;
+    text-decoration: none;
+    color: #9B9B9B;
+  }
+  .footer-links {
+    margin-left: -50px !important;
+  }
+  
 }
 
 @media only screen and (max-width: 360px) {
@@ -690,26 +722,45 @@
     width: 100% !important;
     height: 360px !important;
   }
-  .get-started-btn{
+  .get-started-btn {
     margin-bottom: 10px !important;
   }
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
   .price-symbol {
-    margin-left: -85px!important;
-    
+    margin-left: -85px !important;
   }
-  .price-symbol-safari{
+  .price-symbol-safari {
     margin-left: -50px !important;
   }
-  .monthly-card{
-    width:22vw !important;
+  .monthly-card {
+    width: 22vw !important;
   }
-  .pay-monthly-card{
+  .pay-monthly-card {
     width: 30vw !important;
   }
-  .extra-card-width{
+  .extra-card-width {
     width: 30vw !important;
+  }
+}
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .monthly-card {
+    width: 23vw !important;
+  }
+  .pay-monthly-card {
+    width: 30vw !important;
+  }
+  .extra-card-width {
+    width: 30vw !important;
+  }
+  .pricing-h1 {
+    margin-left: 25vw !important;
+  }
+  .pricing-h1 > span {
+    margin-left: 15vw !important;
+  }
+  .pricing-p {
+    margin-left: 20vw !important;
   }
 }

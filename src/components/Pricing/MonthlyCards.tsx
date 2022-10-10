@@ -231,7 +231,7 @@ const MonthlyCards = ({
             {" "}
             * VAT/Taxes to be charged additional as per country of purchase
           </p>
-          <p className="vat-text px-5">
+          <p className="vat-text ">
             ** One-Off Set Up Cost for migration of your existing to new
             framework - USD 250 if you have exisiting site for 5 HTML pages +
             Additional USD 10 per page

@@ -1,13 +1,13 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
 import routes from "../constants/routes";
-import logo from "../images/logos/thunderbolt-logo.webp";
 import hambarIcon from "../images/icons/hambar.png";
 import headerHome from "../images/icons/header-home.png";
 import closeIcon from "../images/icons/close-icon.png";
 import rightArrow from "../images/icons/right-arrow.svg";
 import { useLocation } from "@reach/router";
 import { useEffect } from "react";
+import ImageConstants from "../constants/imageConstants";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [pathName , setPathName]= useState()
@@ -19,7 +19,7 @@ const Header = () => {
     <header>
       <nav className="navbar navbar-expand-lg navbar-light container">
         <Link to={routes.home} className="navbar-brand">
-          <img loading="lazy" src={logo} alt="logo" />
+          <img loading="lazy" src={ImageConstants.logo} alt="logo" />
         </Link>
         <div
           className="collapse navbar-collapse nav-items-container"
@@ -107,11 +107,11 @@ const Header = () => {
               <div className="buttons">
                 <div className="btn-container active-btn">
                   <button>Get Started</button>
-                  <img loading="lazy" src={rightArrow} alt="" />
+                  {/* <img loading="lazy" src={rightArrow} alt="" /> */}
                 </div>
                 <div className="btn-container">
                   <button>Book a Call</button>
-                  <img loading="lazy" src={rightArrow} alt="" />
+                  {/* <img loading="lazy" src={rightArrow} alt="" /> */}
                 </div>
               </div>
 
