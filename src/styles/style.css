@@ -1,5 +1,5 @@
 @font-face {
-  font-family: myFirstFont;
+  font-family: AlineRegular;
   src: url("../fonts/AlineRegular-AL792.ttf");
 }
 
@@ -1085,7 +1085,7 @@ body {
 /* Pricing */
 
 .pricing-h1 {
-  font-family: myFirstFont;
+  font-family: AlineRegular;
   text-align: center;
   font-size: 40px;
   letter-spacing: -0.52px;
@@ -1388,7 +1388,7 @@ body {
   font-size: 30px;
 }
 .pricing-hero-section-two-h2 {
-  font-family: myFirstFont;
+  font-family: AlineRegular;
   font-size: 3.1rem;
   color: #1e2323;
   opacity: 1;
@@ -1437,7 +1437,7 @@ body {
   font-weight: 600;
 }
 .extra {
-  font-family: myFirstFont;
+  font-family: AlineRegular;
   margin-left: -50px !important;
   font-weight: 500;
   color: #1e2323;
