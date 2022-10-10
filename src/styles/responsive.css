@@ -732,3 +732,23 @@
     width: 30vw !important;
   }
 }
+@media (min-width: 1920px) and (max-width: 2560px)  {
+  .monthly-card{
+    width: 23vw !important;
+  }
+  .pay-monthly-card{
+    width: 30vw !important;
+  }
+  .extra-card-width {
+    width: 30vw !important;
+  }
+  .pricing-h1{
+    margin-left: 25vw !important;
+  }
+  .pricing-h1 > span {
+    margin-left: 15vw !important;
+  }
+  .pricing-p{
+    margin-left: 20vw !important;
+  }
+}

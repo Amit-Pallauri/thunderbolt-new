@@ -1,6 +1,6 @@
 @font-face {
-  font-family: AlineRegular;
-  src: url("../fonts/AlineRegular-AL792.ttf");
+  font-family: aline;
+  src: url("../fonts/aline.ttf");
 }
 
 
@@ -1085,7 +1085,7 @@ body {
 /* Pricing */
 
 .pricing-h1 {
-  font-family: AlineRegular;
+  font-family: aline;
   text-align: center;
   font-size: 40px;
   letter-spacing: -0.52px;
@@ -1388,7 +1388,7 @@ body {
   font-size: 30px;
 }
 .pricing-hero-section-two-h2 {
-  font-family: AlineRegular;
+  font-family: aline;
   font-size: 3.1rem;
   color: #1e2323;
   opacity: 1;
@@ -1405,7 +1405,7 @@ body {
   padding-left: 10rem !important;
 }
 .hero-two {
-  background-image: url("../images/logos/hero-2-bg.svg");
+  /* background-image: url("../images/logos/hero-2-bg.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 550px;
@@ -1437,7 +1437,7 @@ body {
   font-weight: 600;
 }
 .extra {
-  font-family: AlineRegular;
+  font-family: aline;
   margin-left: -50px !important;
   font-weight: 500;
   color: #1e2323;
