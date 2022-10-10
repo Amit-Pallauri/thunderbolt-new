@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import gatsbyLogo from "../../images/logos/gatsby-logo.png";
-import strapiLogo from "../../images/logos/strapi-logo.png";
-import awsLogo from "../../images/logos/aws-logo.png";
-import worldClassUserExperience from "../../images/superfast-dot-com/world-class-user-experience.jpg";
-import betterGoogleRanking from "../../images/superfast-dot-com/better-google-ranking.jpg";
-import improvedCustomerRetention from "../../images/superfast-dot-com/improved-customer-retention-rate.jpg";
-import increasedWebsiteConversion from "../../images/superfast-dot-com/increase-website-conversions.jpg";
-import lessBounceRate from "../../images/superfast-dot-com/less-bounce-rate.jpg";
-import scaleEffortlessly from "../../images/superfast-dot-com/scale-effortlessly.jpg";
-import thunderboltIcon from "../../images/icons/thunderbolt-icon.png";
+import gatsbyLogo from "../../images/logos/gatsby-logo.webp";
+import strapiLogo from "../../images/logos/strapi-logo.webp";
+import awsLogo from "../../images/logos/aws-logo.webp";
+import worldClassUserExperience from "../../images/superfast-dot-com/world-class-user-experience.webp";
+import betterGoogleRanking from "../../images/superfast-dot-com/better-google-ranking.webp";
+import improvedCustomerRetention from "../../images/superfast-dot-com/improved-customer-retention-rate.webp";
+import increasedWebsiteConversion from "../../images/superfast-dot-com/increase-website-conversions.webp";
+import lessBounceRate from "../../images/superfast-dot-com/less-bounce-rate.webp";
+import scaleEffortlessly from "../../images/superfast-dot-com/scale-effortlessly.webp";
+import thunderboltIcon from "../../images/icons/thunderbolt-icon.webp";
 
 const SuperfastDotCom = () => {
   const [activeTab, setActiveTab] = useState(1);

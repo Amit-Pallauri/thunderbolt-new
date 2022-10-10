@@ -1,7 +1,6 @@
 import React from "react";
 import ClientsImages from "../../components/ClientsImages";
-import { ImageConstants } from "../../constants/imageConstants";
-import HomeBanner from "../../images/home-banner.png";
+import HomeBanner from "../../images/home-banner.webp";
 
 const HeroSection = () => {
   return (
@@ -26,7 +25,7 @@ const HeroSection = () => {
             <ClientsImages />
           </div>
           <div className="col-sm-12 col-lg-6 banner-img">
-            <img loading="lazy" src={HomeBanner} alt="" />
+            <img src={HomeBanner} alt="" />
           </div>
         </div>
       </div>

@@ -254,6 +254,7 @@
   .techs-img .picture-big {
     width: 125px;
     height: 32px;
+    margin-right: 0;
     margin: 0 10px;
   }
 
@@ -392,7 +393,7 @@
 
   .web-vitals-section {
     /* min-height: 733px; */
-    background-image: url("../images/vector1-mob.png");
+    background-image: url("../images/vector1-mob.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
@@ -407,7 +408,7 @@
 
   .framework-statistics {
     min-height: 870px;
-    background-image: url("../images/vector2-mob.png");
+    background-image: url("../images/vector2-mob.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
