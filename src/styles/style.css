@@ -133,7 +133,6 @@ body {
   overflow-y: scroll;
 }
 .sidebar-content .title {
-
   margin-bottom: 2rem;
   margin-top: 8rem;
   line-height: 50px;
@@ -142,7 +141,6 @@ body {
   font-weight: 500;
   color: #1e2323;
   width: 80%;
-  
 }
 
 .sidebar-content .buttons {
@@ -159,7 +157,7 @@ body {
   border-radius: 7px;
   opacity: 1;
   margin-top: 20px;
-  padding:10px;
+  padding: 10px;
   color: white;
   border: none;
 }
@@ -276,15 +274,13 @@ body {
   width: 20px;
   margin-right: 10px;
 }
+
 .footer-links > ul > li {
   list-style: none !important;
   margin-bottom: 15px !important;
   font-weight: bold !important;
 }
-.footer-bootom-links {
-  position: absolute;
-  right: 5%;
-}
+
 .footer-action-btn {
   margin-bottom: 10px;
   text-align: center !important;
@@ -337,7 +333,10 @@ body {
 .footer-logo {
   width: 183px;
 }
-
+.footer-bootom-links{
+  position: absolute;
+  right: 5vw;
+}
 /* home */
 .hero-section {
   min-height: 608px;
@@ -367,6 +366,10 @@ body {
   color: white;
   font-size: 24px;
   font-weight: medium;
+}
+.get-started a {
+  text-decoration: none;
+  color: white;
 }
 
 .clients-img {

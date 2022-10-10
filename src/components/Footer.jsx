@@ -58,7 +58,7 @@ const Footer = () => {
             rendering websites basically.
           </p>
         </div>
-        <div className="col-12 mt-md-0 mt-5 col-md-4 d-flex footer-links ">
+        <div className="col-12 mt-md-0 mt-3 col-md-4 d-flex footer-links " style={{marginLeft:"-45px"}}>
           <ul>
             {Array.from(links).map((l, key) => {
               return (
@@ -81,8 +81,8 @@ const Footer = () => {
         <div className="col-12 col-md-2">
           
         </div>
-        <div className="col-md-2 col-12 px-5">
-         <div className="d-md-grid justify-content-between d-flex text-center">
+        <div className="col-md-2 col-12 px-md-5 px-3">
+         <div className="d-grid justify-content-between  text-center">
          <button className=" px-md-0 footer-action-btn">
           Get Started
          </button>
@@ -94,7 +94,10 @@ const Footer = () => {
           <a hre="#" className="mt-3 pointer"><img src={ImageConstants.InstaIcon} width="20px"/></a>
           <a hre="#" className="px-3 pointer"><img src={ImageConstants.LinkdinIcon} width="20px" /></a>
          </div>
-        
+         <div className=" d-md-none d-flex footer-bootom-links">
+        <a href={routes.privacyPolicy} className="px-5 pointer">Privacy Policy</a>
+        <a href={routes.Terms} className="pointer">Terms</a>
+        </div>
         </div>
         {/* <div className="social-links col-md-3 mt-3 footer-web">
           <div className="social-container">
@@ -144,9 +147,9 @@ const Footer = () => {
           </button>
         </div> */}
       </div>
-      <div className="footer-bottom d-md-flex ">
+      <div className="footer-bottom  d-md-flex ">
         <p>2022 @Razr Tech Sarl</p>
-        <div className=" d-md-flex footer-bootom-links">
+        <div className=" d-md-flex d-none footer-bootom-links">
         <a href={routes.privacyPolicy} className="px-5 pointer">Privacy Policy</a>
         <a href={routes.Terms} className="pointer">Terms</a>
         </div>

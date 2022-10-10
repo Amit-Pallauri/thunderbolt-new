@@ -687,10 +687,12 @@
   }
   .footer-bootom-links {
     margin-top: 22px !important;
-    right: 30vw;
+   margin-left: -50px !important;
+ 
   }
   .footer-bottom {
     justify-content: center !important;
+    height: auto;
   }
   .footer-bottom p {
     margin-right: 20vw;
@@ -698,11 +700,20 @@
     justify-content: center !important;
   }
   .footer-social-icons {
-    text-align: center !important;
+    text-align: start !important;
   }
   .footer-logo-conatiner {
     padding-left: 0 !important;
   }
+  .footer-bootom-links a {
+    text-align: start;
+    text-decoration: none;
+    color: #9B9B9B;
+  }
+  .footer-links {
+    margin-left: -50px !important;
+  }
+  
 }
 
 @media only screen and (max-width: 360px) {
@@ -732,23 +743,23 @@
     width: 30vw !important;
   }
 }
-@media (min-width: 1920px) and (max-width: 2560px)  {
-  .monthly-card{
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .monthly-card {
     width: 23vw !important;
   }
-  .pay-monthly-card{
+  .pay-monthly-card {
     width: 30vw !important;
   }
   .extra-card-width {
     width: 30vw !important;
   }
-  .pricing-h1{
+  .pricing-h1 {
     margin-left: 25vw !important;
   }
   .pricing-h1 > span {
     margin-left: 15vw !important;
   }
-  .pricing-p{
+  .pricing-p {
     margin-left: 20vw !important;
   }
 }
