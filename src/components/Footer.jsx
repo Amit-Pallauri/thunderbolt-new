@@ -1,11 +1,4 @@
 import React from "react";
-import footerLogo from "../images/logos/footer-logo.png";
-import InstaIcon from "../images/icons/insta-icon.png";
-import linkedInIcon from "../images/icons/linkedin-icon.png";
-import callIcon from "../images/icons/call-icon.png";
-import indianIcon from "../images/icons/ind-flag.png";
-import luxFlagIcon from "../images/icons/lux-flag.png";
-import ukFLagIcon from "../images/icons/uk-flag.png";
 import ImageConstants from "../constants/imageConstants";
 import routes from "../constants/routes";
 

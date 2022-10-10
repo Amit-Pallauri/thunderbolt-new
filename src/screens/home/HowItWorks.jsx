@@ -1,7 +1,7 @@
 import React from "react";
-import buildIcon from "../../images/icons/build.png";
-import customiseIcon from "../../images/icons/customise.png";
-import purchasePackageIcon from "../../images/icons/purchase-package.png";
+import buildIcon from "../../images/icons/build.webp";
+import customiseIcon from "../../images/icons/customise.webp";
+import purchasePackageIcon from "../../images/icons/purchase-package.webp";
 
 const HowItWorks = () => {
   return (
