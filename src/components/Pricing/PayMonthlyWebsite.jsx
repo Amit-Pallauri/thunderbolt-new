@@ -140,7 +140,7 @@ const PayMonthlyWebsite = ({
                            <div className="d-flex px-2 position-realtive">
                             <img
                               className="position-absolute  point-img"
-                              src={ImageConstants.featureIcon}
+                              src={isDisable ? ImageConstants.mutedFeatureIcon :ImageConstants.featureIcon}
                             />
                             <p className={isDisable ?"point-text-muted" :"text-start point-text "}>{f}</p>
                           </div> 

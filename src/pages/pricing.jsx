@@ -77,11 +77,11 @@ const Home = () => {
       <div className="hero-2 d- align-items-center justify-content-center">
         <div class="p-md-5 p-sm-3 jumbotron text-center jumbotron-fluid">
           <div class="container  ">
-            <h1 className="pricing-hero-section-two">
+            <p className="pricing-hero-section-two">
               Enrich your plan with Add-ons
-            </h1>
+            </p>
             <p class="display-4 pricing-hero-section-two-h2">
-              <strong>Pay Monthly Websites</strong>
+             Pay Monthly Websites
             </p>{" "}
             <p class="lead pricing-p2 px-5 ">
               Modern Website with flexible payment options to suit your
