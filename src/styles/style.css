@@ -3,7 +3,6 @@
   src: url("../fonts/aline.ttf");
 }
 
-
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -125,22 +124,30 @@ body {
 
 .right-sidebar {
   width: 40%;
-  background: #1b03a3;
+  background: #f7df00;
+  overflow-y: scroll;
 }
 
 .sidebar-content {
-  margin-left: 80px;
+  margin-left: 40px;
+  overflow-y: scroll;
 }
-
 .sidebar-content .title {
+
+  margin-bottom: 2rem;
+  margin-top: 8rem;
+  line-height: 50px;
+  font-family: "aline";
   font-size: 34px;
-  font-weight: 900;
-  color: white;
-  width: 70%;
-  margin: 3em 0;
+  font-weight: 500;
+  color: #1e2323;
+  width: 80%;
+  
 }
 
 .sidebar-content .buttons {
+  background: #f7df00 0% 0% no-repeat padding-box;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   width: max-content;
@@ -148,11 +155,13 @@ body {
 }
 
 .sidebar-content .buttons .btn-container {
+  background: #1664f7 0% 0% no-repeat padding-box;
+  border-radius: 7px;
+  opacity: 1;
   margin-top: 20px;
-  border-radius: 30px;
-  padding: 8px 30px;
+  padding:10px;
   color: white;
-  border: 1px solid white;
+  border: none;
 }
 
 .sidebar-content .active-btn {
@@ -168,11 +177,11 @@ body {
 
 .sidebar-footer p {
   font-size: 20px;
-  color: #ffffff;
+  color: #1e2323;
 }
 .sidebar-footer a {
   font-size: 20px;
-  color: #ffffff;
+  color: #1e2323;
   text-decoration: none;
 }
 /* footer */
@@ -260,7 +269,7 @@ body {
 .flags {
   margin: 20px 0;
 }
-.pointer{
+.pointer {
   cursor: pointer;
 }
 .flags img {
@@ -272,7 +281,7 @@ body {
   margin-bottom: 15px !important;
   font-weight: bold !important;
 }
-.footer-bootom-links{
+.footer-bootom-links {
   position: absolute;
   right: 5%;
 }
@@ -320,7 +329,6 @@ body {
   font-size: 14px;
   font-weight: normal;
 }
-
 
 .footer-mob {
   display: none;
@@ -1548,7 +1556,7 @@ body {
   margin-top: 20px;
 }
 .active-link > a {
-  color: #049204 !important;
+  color: #1664f7 !important;
 }
 .point-text {
   font-family: Montserrat sans-serif !important;

@@ -107,11 +107,11 @@ const Header = () => {
               <div className="buttons">
                 <div className="btn-container active-btn">
                   <button>Get Started</button>
-                  <img loading="lazy" src={rightArrow} alt="" />
+                  {/* <img loading="lazy" src={rightArrow} alt="" /> */}
                 </div>
                 <div className="btn-container">
                   <button>Book a Call</button>
-                  <img loading="lazy" src={rightArrow} alt="" />
+                  {/* <img loading="lazy" src={rightArrow} alt="" /> */}
                 </div>
               </div>
 
