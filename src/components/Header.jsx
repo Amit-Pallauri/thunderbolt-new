@@ -30,23 +30,19 @@ const Header = () => {
                 Pricing
               </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Log In
-              </a>
-            </li>
-            <li className="nav-item">
-              <div className="nav-btn">
-                <a
-                  target={"_blank"}
-                  href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-                >
-                  Get Started
-                </a>
-                <img loading="lazy" src={rightArrow} alt="" />
-              </div>
-            </li>
           </ul>
+        </div>
+
+        <div className="header-btns">
+          <button className="login">Log In</button>
+          <button className="get-started">
+            <a
+              target={"_blank"}
+              href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
+            >
+              Get Started
+            </a>
+          </button>
         </div>
         <div className="hambar" onClick={() => setOpen(true)}>
           <img loading="lazy" src={hambarIcon} alt="" />

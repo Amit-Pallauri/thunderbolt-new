@@ -7,12 +7,11 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="container">
         <div className="row hero-container">
-          <div className="col-sm-12 col-lg-6">
-            <h1 className="title">It’s time for a faster website</h1>
+          <div className="col-sm-12 col-lg-6 content-section">
+            <h1 className="title">It’s time to fix your web</h1>
             <h2 className="sub-title">
-              Thunderbolt is a framework built on opensource tech from strapi &
-              gatsbyjs powered by react to load your platform in a matter of
-              seconds.
+              Whether 20, or 200 pages, we are here to fix your core web vitals
+              & deliver a blazing fast experience
             </h2>
             <button className="get-started">
               <a
@@ -22,12 +21,12 @@ const HeroSection = () => {
                 Get Started
               </a>
             </button>
-            <ClientsImages />
           </div>
           <div className="col-sm-12 col-lg-6 banner-img">
             <img src={HomeBanner} alt="" />
           </div>
         </div>
+        <ClientsImages />
       </div>
     </section>
   );
