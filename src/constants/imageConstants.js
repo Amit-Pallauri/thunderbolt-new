@@ -40,10 +40,18 @@ import DeskstopIcon from "../images/logos/deskstop.svg";
 import flashIcon from "../images/logos/flash.svg";
 import SearchIcon from "../images/logos/search.svg";
 import lockIcon from "../images/logos/lock.svg";
+import mutedFeatureIcon from "../../src/images/logos/mutedFeatureIcon.svg";
+import logo from "../images/logos/thunderbolt_logo.png";
+import InstaIcon from "../images/logos/insta-icon.svg";
+import LinkdinIcon from "../images/logos/linkdin.svg";
 import faviconImage from "../../src/images/logos/favicon.ico";
 import techSupport from "../../src/images/logos/techSupport.svg";
 
 export const ImageConstants = {
+  LinkdinIcon,
+  InstaIcon,
+  logo,
+  mutedFeatureIcon,
   techSupport,
   faviconImage,
   EditIcon,
