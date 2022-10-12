@@ -7,7 +7,7 @@ import StandaredFeaturesSlider from "../components/StandaredFeaturesSlider";
 import PayMonthlyWebsite from "../components/Pricing/PayMonthlyWebsite";
 const Home = () => {
   const [isMonthly, setMonthly] = useState(true);
-  const [currency, setCurrency] = useState("pounds");
+  const [currency, setCurrency] = useState("euro");
   return (
     <Layout>
       <div className="pricing--main-box bg-white p-md-5 p-4 ">
@@ -56,10 +56,10 @@ const Home = () => {
                   setCurrency(e.target.value);
                 }}
               >
-                <option selected value="pound">
+                <option  value="pound">
                   £
                 </option>
-                <option value="euro">€</option>
+                <option selected value="euro">€</option>
               </select>
             </div>
           </div>
@@ -83,7 +83,7 @@ const Home = () => {
             <p class="display-4 pricing-hero-section-two-h2">
              Pay Monthly Websites
             </p>{" "}
-            <p class="lead pricing-p2 px-5 ">
+            <p class="lead pricing-p2  ">
               Modern Website with flexible payment options to suit your
               business, pay monthly or pay yearly with 20% off, No Set Up feesm
               No Contracts and all plans include unlimited website pages and

@@ -10,11 +10,11 @@ import { useEffect } from "react";
 import ImageConstants from "../constants/imageConstants";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
-  const [pathName , setPathName]= useState()
+  const [pathName, setPathName] = useState();
   const location = useLocation();
-  useEffect(()=>{
-    setPathName(location?.pathname)
-  },[location?.pathname])
+  useEffect(() => {
+    setPathName(location?.pathname);
+  }, [location?.pathname]);
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-light container">
@@ -26,16 +26,20 @@ const Header = () => {
           id="navbarTogglerDemo02"
         >
           <ul className="navbar-nav nav-items">
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+            <li
+              className={
+                pathName === "/how-it-works"
+                  ? "nav-item active-link"
+                  : "nav-item "
+              }
+            >
+              <Link className={"nav-link"} href={routes.howItWorks}>
                 How It Works
-              </a>
+              </Link>
             </li>
             <li
               className={
-                pathName === "/pricing"
-                  ? "nav-item active-link"
-                  : "nav-item "
+                pathName === "/pricing" ? "nav-item active-link" : "nav-item "
               }
             >
               <Link className="nav-link" to={routes.pricing}>
