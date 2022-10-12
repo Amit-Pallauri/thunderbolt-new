@@ -46,8 +46,18 @@ import LinkdinIcon from "../images/logos/linkdin.svg";
 import faviconImage from "../../src/images/logos/favicon.ico";
 import techSupport from "../../src/images/logos/techSupport.svg";
 import HowItWorks1 from "../images/how-it-works-1.webp";
+import HowItWorks2 from "../images/how-it-works-2.webp";
+import HowItWorks3 from "../images/how-it-works-3.webp";
+import HowItWorks4 from "../images/how-it-works-4.webp";
+import HowItWorks5 from "../images/how-it-works-5.webp";
+import serviceHosting from "../images/services-hosting.webp";
 
 export const ImageConstants = {
+  serviceHosting,
+  HowItWorks2,
+  HowItWorks3,
+  HowItWorks4,
+  HowItWorks5,
   HowItWorks1,
   LinkdinIcon,
   InstaIcon,

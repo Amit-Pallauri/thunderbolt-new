@@ -1644,7 +1644,6 @@ body {
   width: 80vw;
   position: relative;
   z-index: 11111;
-  background: white no-repeat padding-box;
   border-radius: 29px;
   opacity: 1;
   overflow: hidden;
@@ -1750,6 +1749,12 @@ body {
   height: 40px;
   font-weight: bold;
 }
+.user-img{
+  width: 40vw;
+}
+.hiw-oop-img{
+  width: 40vw;
+}
 .hiw-oop-img-conatiner {
   position: relative !important;
   margin-left: -150px;
@@ -1776,7 +1781,7 @@ body {
   border-image-slice: 1;
   border-left: 2px solid white;
   height: 500px;
-  margin: 0px 6.2rem;
+  margin: 0px 6.3rem;
 }
 .vl {
   width: 100px;
@@ -1792,6 +1797,22 @@ body {
   border-left: 2px solid white;
   height: 500px;
   margin: 0px 6.2rem;
+}
+.vl-last {
+  width: 100px;
+  background-color: transparent;
+  background-clip: content-box; /* so that the background color is not below the border */
+  border-left: 5px solid black;
+  border-image: linear-gradient(
+    to top,
+    #e7e7e7 50%,
+    #e7e7e7 50%
+  ); /* to top - at 50% transparent */
+  border-image-slice: 1;
+  border-left: 2px solid white;
+  height: 300px;
+  margin: 0px 6.2rem;
+  margin-bottom: 25vh;
 }
 .col-text {
   font-family: Montserrat;

@@ -57,22 +57,22 @@ const HowItWorks = () => {
     {
       heading: "Content & design customisations on the fly",
       des: "“Would you like some orange juice?” Or “How about some freshly squeezed pulpy orange juice?” You see what we did there. A well-researched content can influence your decisions and increase your website conversions. Check out our content packages for more information. Just like content, design has its own magic. Once you have your design in place, it’s not the end. You can always revisit your design before stepping into development.",
-      img: ImageConstants.HowItWorks1,
+      img: ImageConstants.HowItWorks2,
     },
     {
       heading: "Website under construction",
       des: "Your work now here is done! All you need to do is have a seat and sip your coffee while your website is getting faster. We take xx- xx days to get your website ready.",
-      img: ImageConstants.HowItWorks1,
+      img: ImageConstants.HowItWorks3,
     },
     {
       heading: "Launch",
       des: "We will share a link to review your website before we make any final tweaks. Once approved, our team will launch your website following the best industry standards.",
-      img: ImageConstants.HowItWorks1,
+      img: ImageConstants.HowItWorks4,
     },
     {
       heading: "Marketing & technical support",
       des: "We will take care of your website including code updates, hosting, maintenance, SEO, core web vitals, content updates, etc. With over a decade of experience in the industry, we can definitely help you rank higher, convert more users into customers, and increase revenue. Check out our marketing plans.",
-      img: ImageConstants.HowItWorks1,
+      img: ImageConstants.HowItWorks5,
     },
   ];
   const plansData = [
@@ -126,7 +126,8 @@ const HowItWorks = () => {
       <div className="how-it-works-card-conatiner d-none d-md-flex align-items-center justify-content-center">
         <div class="p-md-5 mx-5 p-0 m-0  mb-2 jumbotron text-center jumbotron-fluid">
           <div className="row how-it-works-hero-card">
-            <div className="col-3 p-0 m-0 how-it-works-sidebar">
+            <img src={ImageConstants.serviceHosting} />
+            {/* <div className="col-3 p-0 m-0 how-it-works-sidebar">
               <img className="mt-2" src={ImageConstants.logo} />
               <div className="how-it-works-menu-list d-block mt-5 text-start">
                 {menuList.map((i) => {
@@ -134,7 +135,9 @@ const HowItWorks = () => {
                     <a className="mb-3 pointer">
                       <img
                         className="how-it-workssidebar-icon mx-2"
-                        src={"https://www.seekpng.com/png/full/357-3576744_it-all-comes-to-you-directly-from-the.png"}
+                        src={
+                          "https://www.seekpng.com/png/full/357-3576744_it-all-comes-to-you-directly-from-the.png"
+                        }
                       />
                       <span className="menu-list-name">{i.name}</span>
                     </a>
@@ -145,14 +148,18 @@ const HowItWorks = () => {
                 <a className="mb-3 pointer">
                   <img
                     className="how-it-workssidebar-icon mx-2"
-                    src={"https://www.seekpng.com/png/full/357-3576744_it-all-comes-to-you-directly-from-the.png"}
+                    src={
+                      "https://www.seekpng.com/png/full/357-3576744_it-all-comes-to-you-directly-from-the.png"
+                    }
                   />
                   <span className="menu-list-name">{"Settings"}</span>
                 </a>
                 <a className="mb-3">
                   <img
                     className="how-it-workssidebar-icon mx-2"
-                    src={"https://www.seekpng.com/png/full/357-3576744_it-all-comes-to-you-directly-from-the.png"}
+                    src={
+                      "https://www.seekpng.com/png/full/357-3576744_it-all-comes-to-you-directly-from-the.png"
+                    }
                   />
                   <span className="menu-list-name">{"Help"}</span>
                 </a>
@@ -210,29 +217,28 @@ const HowItWorks = () => {
                   })}
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
       <div className=" mt-5 d- align-items-center justify-content-center">
         <div class="p-0 m-0  mb-2 jumbotron text-center jumbotron-fluid">
           <div className="how-it-works-hero-two">
-            <p className=" how-it-works-heading hiw-heading-hero-two mb-0">How It Works</p>
+            <p className=" how-it-works-heading hiw-heading-hero-two mb-0">
+              How It Works
+            </p>
             {howItWorksList.map((card, key) => {
               const isEven = key % 2 === 0;
+              const isLast = howItWorksList?.length - 1 === key;
+              console.log("sagar",isLast)
               return (
                 <>
                   {isEven ? (
                     <div className="row p-0 m-0">
                       <div className="col-md-5 position-md-realtive px-md-5 img-box-hero-2">
-                        <img className="mx-md-5 px-md-5 user-img" src={card.img} />
                         <img
-                          className="float-img-one"
-                          src={ImageConstants.Secure}
-                        />
-                        <img
-                          className="float-img-two"
-                          src={ImageConstants.Secure}
+                          className="mx-md-5 px-md-5 user-img"
+                          src={card.img}
                         />
                       </div>
                       <div
@@ -245,7 +251,7 @@ const HowItWorks = () => {
                         <button className="hero-btn-round-active mb-2">
                           {key + 1}
                         </button>
-                        <div className="vl-active"></div>
+                        <div className={isLast ?"vl-last" :"vl-active"}></div>
                       </div>
                       <div className="col-md-5  ">
                         <div className="collabration-conatiner mt-5 ">
@@ -264,19 +270,11 @@ const HowItWorks = () => {
                         <button className="hero-btn-round mb-2">
                           {key + 1}
                         </button>
-                        <div className="vl"></div>
+                        <div className={isLast ? "vl-last" : "vl"}></div>
                       </div>
                       <div className="col-5">
                         <div className="hiw-oop-img-conatiner position-realtive">
                           <img src={card.img} className="hiw-oop-img" />
-                          <img
-                            className="float-img-opp-one d-md-inline d-none"
-                            src={ImageConstants.Secure}
-                          />
-                          <img
-                            className="float-img-opp-two d-md-inline d-none"
-                            src={ImageConstants.Secure}
-                          />
                         </div>
                       </div>
                     </div>
@@ -287,19 +285,19 @@ const HowItWorks = () => {
           </div>
         </div>
       </div>
-      <div className="how-it-works-hero-three mb-5 position-realtive">
+      <div className="how-it-works-hero-three  position-realtive">
         <div className=" d- align-items-center justify-content-center">
           <div class="p-md-5 mx-md-5 mx-2 p-0 m-0  mb-2 jumbotron text-center jumbotron-fluid">
             <div className="hiw-hero-three-inside mt-3 ">
               <p className=" hiw-hero-three-heading">
                 High Performing Pay Monthly Managed Websites
               </p>
-             <div className="hiw-hero-three-span-parent">
-             <span className="hiw-hero-three-inside-des ">
-                We provides affordable digital solution for one monthly fees to
-                design, deploy and managed your business sites.
-              </span>
-             </div>
+              <div className="hiw-hero-three-span-parent">
+                <span className="hiw-hero-three-inside-des ">
+                  We provides affordable digital solution for one monthly fees
+                  to design, deploy and managed your business sites.
+                </span>
+              </div>
               <br />
               <button className="view-pricing-btn">View pricing</button>
             </div>
