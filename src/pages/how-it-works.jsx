@@ -230,7 +230,6 @@ const HowItWorks = () => {
             {howItWorksList.map((card, key) => {
               const isEven = key % 2 === 0;
               const isLast = howItWorksList?.length - 1 === key;
-              console.log("sagar",isLast)
               return (
                 <>
                   {isEven ? (
