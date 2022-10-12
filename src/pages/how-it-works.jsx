@@ -123,8 +123,8 @@ const HowItWorks = () => {
           </div>
         </div>
       </div>
-      <div className="how-it-works-card-conatiner d-none d-md-flex align-items-center justify-content-center">
-        <div class="p-md-5 mx-5 p-0 m-0  mb-2 jumbotron text-center jumbotron-fluid">
+      <div className="how-it-works-card-conatiner  d-md-flex align-items-center justify-content-center">
+        <div class="p-md-5 mx-md-5 p-0 m-0  mb-2 jumbotron text-center jumbotron-fluid">
           <div className="row how-it-works-hero-card">
             <img src={ImageConstants.serviceHosting} />
             {/* <div className="col-3 p-0 m-0 how-it-works-sidebar">

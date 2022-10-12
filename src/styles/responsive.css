@@ -823,28 +823,40 @@
     margin-left: 10px;
     margin-bottom: 50px;
   }
-  .hiw-oop-img-conatiner{
+  .hiw-oop-img-conatiner {
     margin: 0px;
   }
-  
-  .hiw-oop-img{
+
+  .hiw-oop-img {
     width: 20rem;
     margin-left: 1.7rem;
   }
-  .how-it-works-hero-three{
+  .how-it-works-hero-three {
     margin-top: 80px;
     height: 60vh;
   }
-  .hiw-hero-three-heading{
+  .hiw-hero-three-heading {
     margin-left: 5px;
     font-size: 28px;
     margin-bottom: 30px;
   }
-  .hiw-hero-three-span-parent{
+  .hiw-hero-three-span-parent {
     padding: 0px;
   }
-  .how-it-works-hero-two{
+  .how-it-works-hero-two {
     overflow: hidden !important;
+  }
+  .how-it-works-card-conatiner {
+    margin-top: 0px;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .how-it-works-hero-card{
+    padding: 0px 1.2rem !important;
+    width: 100% !important;
+  }
+  .how-it-works-hero-card > img {
+    width: 30rem;
   }
 }
 
