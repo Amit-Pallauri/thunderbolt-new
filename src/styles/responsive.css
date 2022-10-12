@@ -778,14 +778,14 @@
     margin-left: -50px !important;
   }
   .how-it-works-hero {
-    padding: 0px 0vw !important;
+    padding: 0px 4 vw !important;
     height: 50vh;
   }
   .how-it-works-heading {
     margin-bottom: 50px !important;
   }
   .how-it-works-main-box {
-    height: 500px !important;
+    height: 550px !important;
   }
   .float-img-one {
     margin-left: -100px;
@@ -794,12 +794,17 @@
     margin-left: -100px;
   }
   .img-box-hero-2 {
-    text-align: center;
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  .how-it-works-des {
+    padding: 0px 20px;
   }
   .img-box-hero-2 > .user-img {
-    padding-left: 2rem;
-    width: 22rem;
+    width: 20rem;
   }
   .collabration-conatiner {
     margin-left: 0px !important;
@@ -837,14 +842,15 @@
   .hiw-oop-img-conatiner {
     margin: 0px;
   }
-
+  .view-pricing-btn {
+    margin-left: 20px !important  ;
+  }
   .hiw-oop-img {
     width: 20rem;
-    margin-left: 1.7rem;
   }
   .how-it-works-hero-three {
     margin-top: 80px;
-    height: 60vh;
+    height: 470px;
   }
   .hiw-hero-three-heading {
     margin-left: 5px;
@@ -862,7 +868,7 @@
     width: 100%;
     border-radius: 0px;
   }
-  .how-it-works-hero-card{
+  .how-it-works-hero-card {
     padding: 0px 1.2rem !important;
     width: 100% !important;
   }
