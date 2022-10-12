@@ -1,19 +1,20 @@
+import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import ImageConstants from "../constants/imageConstants";
 import routes from "../constants/routes";
 import hambarIcon from "../images/icons/hambar.webp";
 import headerHome from "../images/icons/header-home.webp";
 import closeIcon from "../images/icons/close-icon.webp";
-import { useLocation } from "@reach/router";
-import { useEffect } from "react";
-import ImageConstants from "../constants/imageConstants";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [pathName, setPathName] = useState();
   const location = useLocation();
+
   useEffect(() => {
     setPathName(location?.pathname);
   }, [location?.pathname]);
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-light container">
@@ -46,19 +47,19 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+          <div className="header-btns">
+            <button className="login">Log In</button>
+            <button className="get-started">
+              <a
+                target={"_blank"}
+                href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
+              >
+                Get Started
+              </a>
+            </button>
+          </div>
         </div>
 
-        <div className="header-btns collapse">
-          <button className="login">Log In</button>
-          <button className="get-started">
-            <a
-              target={"_blank"}
-              href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-            >
-              Get Started
-            </a>
-          </button>
-        </div>
         <div className="hambar" onClick={() => setOpen(true)}>
           <img loading="lazy" src={hambarIcon} alt="" />
         </div>
@@ -73,7 +74,9 @@ const Header = () => {
         aria-labelledby="offcanvasTopLabel"
       >
         <div className="home-button" onClick={() => setOpen(false)}>
-          <img loading="lazy" src={headerHome} alt="" />
+          <Link to={routes.home}>
+            <img loading="lazy" src={headerHome} alt="" />
+          </Link>
         </div>
         <div className="close-btn-section" onClick={() => setOpen(false)}>
           <img loading="lazy" src={closeIcon} alt="" />
@@ -88,8 +91,8 @@ const Header = () => {
               <p
                 className={
                   pathName === "/pricing/"
-                    ? "nav-item active-link"
-                    : "nav-item "
+                    ? "nav-item-canvas active-link"
+                    : "nav-item-canvas"
                 }
               >
                 <Link to={routes.pricing}>Pricing</Link>

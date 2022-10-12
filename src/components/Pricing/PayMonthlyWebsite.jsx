@@ -20,7 +20,7 @@ const PayMonthlyWebsite = ({
     {
       title: "Brochure Style Website",
       des: "Launch your online platform, your way, with ease",
-      price: convertPrice(isMonthly ? 75:60),
+      price: convertPrice(isMonthly ? 75 : 60),
       features: [
         "Free Custom Design 1-5 Pages, additional pages at extra cost",
         "Terms and Privacy Pages Included",
@@ -39,14 +39,14 @@ const PayMonthlyWebsite = ({
         "Event Calendar",
         "Booking/Appointment system",
         "Sell Products/Services",
-        "Payment Gateway integration"
+        "Payment Gateway integration",
       ],
       garyAfter: 10,
     },
     {
       title: "Booking Style Website",
       des: "The complete solution for your business growth",
-      price: convertPrice(isMonthly? 125:100),
+      price: convertPrice(isMonthly ? 125 : 100),
       features: [
         "Free Custom Design 1-8 Pages, additional pages at extra cost",
         " Terms and Privacy Pages Included",
@@ -72,7 +72,7 @@ const PayMonthlyWebsite = ({
     {
       title: "E-commerce Website",
       des: "Perfect for growing your high traffic sites",
-      price: convertPrice(isMonthly?150 :120),
+      price: convertPrice(isMonthly ? 150 : 120),
       features: [
         "Free Custom Design 1-10 Pages, additional pages at extra cost ",
         "Terms and Privacy Pages Included",
@@ -137,13 +137,25 @@ const PayMonthlyWebsite = ({
                         d.garyAfter === false ? false : i >= d.garyAfter + 1;
                       return (
                         <>
-                           <div className="d-flex px-2 position-realtive">
+                          <div className="d-flex px-2 position-realtive">
                             <img
                               className="position-absolute  point-img"
-                              src={isDisable ? ImageConstants.mutedFeatureIcon :ImageConstants.featureIcon}
+                              src={
+                                isDisable
+                                  ? ImageConstants.mutedFeatureIcon
+                                  : ImageConstants.featureIcon
+                              }
                             />
-                            <p className={isDisable ?"point-text-muted" :"text-start point-text "}>{f}</p>
-                          </div> 
+                            <p
+                              className={
+                                isDisable
+                                  ? "point-text-muted"
+                                  : "text-start point-text "
+                              }
+                            >
+                              {f}
+                            </p>
+                          </div>
                           {/* <div className={"d-flex px-2 position-realtive"}>
                             <img
                               className="position-absolute point-img"

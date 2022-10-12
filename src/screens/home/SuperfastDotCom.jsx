@@ -64,9 +64,7 @@ const SuperfastDotCom = () => {
   ];
   return (
     <section className="superfast-dotcom-section">
-      <h1 className="superfast-title mb-5 mt-5">
-        Why do you need a superfast dot com
-      </h1>
+      <h1 className="superfast-title ">Why do you need a superfast dot com</h1>
       <div className="why-you-need">
         <div className="why-you-need-content">
           <div className="row">

@@ -14,7 +14,7 @@ const PlansCard = ({ data, isMonthly, bgColor = "#FFFFFF" }) => {
               <span className="price-symbol">
                 {data?.price.currency === "euro" ? "€" : "£"}
               </span>
-              {data?.price?.price}
+              <strong>{data?.price?.price}</strong>
             </p>
             <p className="price-info">{isMonthly ? "per month" : "per year"}</p>
           </>
