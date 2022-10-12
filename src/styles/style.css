@@ -1319,6 +1319,7 @@ body {
 .rounded-lg {
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
+  height: 300px !important;
 }
 .space {
   margin-top: -10px !important;
@@ -1333,7 +1334,6 @@ body {
   background: #f8f7ff 0% 0% no-repeat padding-box;
   box-shadow: 6px 4px 24px #00000038;
   opacity: 1;
-  width: 296px !important;
 }
 .pay-monthly-card {
   text-align: center;
