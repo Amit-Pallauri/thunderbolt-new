@@ -739,8 +739,11 @@
   .footer-bootom-links {
     margin-top: 22px !important;
     margin-left: -50px !important;
+    left: 8% !important;
+    margin-bottom: 20px;
   }
   .footer-bottom {
+    margin-top: 10px;
     justify-content: center !important;
     height: auto;
   }
@@ -762,6 +765,98 @@
   }
   .footer-links {
     margin-left: -50px !important;
+  }
+  .how-it-works-hero {
+    padding: 0px 0vw !important;
+    height: 50vh;
+  }
+  .how-it-works-heading {
+    margin-bottom: 50px !important;
+  }
+  .how-it-works-main-box {
+    height: 500px !important;
+  }
+  .float-img-one {
+    margin-left: -100px;
+  }
+  .float-img-two {
+    margin-left: -100px;
+  }
+  .img-box-hero-2 {
+    text-align: center;
+    width: 80%;
+  }
+  .img-box-hero-2 > .user-img {
+    padding-left: 2rem;
+    width: 22rem;
+  }
+  .collabration-conatiner {
+    margin-left: 0px !important;
+    text-align: center;
+    width: 90%;
+  }
+  .col-text {
+    padding-left: 3rem !important;
+    text-align: center;
+  }
+  .col-des {
+    padding-left: 2rem !important;
+    text-align: center;
+  }
+  .hiw-heading-hero-two {
+    margin-bottom: 0px !important;
+  }
+  .how-it-works-opp {
+    width: 90%;
+    padding: 0px 0px;
+  }
+  .how-it-works-head-opp {
+    margin-top: 50px;
+    text-align: center;
+    padding: 0px 2rem;
+    margin-left: -30px;
+  }
+  .how-it-works-des-opp {
+    text-align: center;
+    padding: 0px 2rem;
+    width: 110%;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  .hiw-oop-img-conatiner {
+    margin: 0px;
+  }
+
+  .hiw-oop-img {
+    width: 20rem;
+    margin-left: 1.7rem;
+  }
+  .how-it-works-hero-three {
+    margin-top: 80px;
+    height: 60vh;
+  }
+  .hiw-hero-three-heading {
+    margin-left: 5px;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .hiw-hero-three-span-parent {
+    padding: 0px;
+  }
+  .how-it-works-hero-two {
+    overflow: hidden !important;
+  }
+  .how-it-works-card-conatiner {
+    margin-top: 0px;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .how-it-works-hero-card{
+    padding: 0px 1.2rem !important;
+    width: 100% !important;
+  }
+  .how-it-works-hero-card > img {
+    width: 30rem;
   }
 }
 
