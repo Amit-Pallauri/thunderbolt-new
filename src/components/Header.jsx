@@ -26,10 +26,16 @@ const Header = () => {
           id="navbarTogglerDemo02"
         >
           <ul className="navbar-nav nav-items">
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+            <li
+              className={
+                pathName === "/how-it-works"
+                  ? "nav-item active-link"
+                  : "nav-item "
+              }
+            >
+              <Link className={"nav-link"} href={routes.howItWorks}>
                 How It Works
-              </a>
+              </Link>
             </li>
             <li
               className={

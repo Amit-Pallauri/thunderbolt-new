@@ -87,7 +87,7 @@ const ExtraAddOnsCards = ({ isMonthly, currency }) => {
                   className={
                     isLast
                       ? "get-started-btn get-started-btn-last mt-0 mb-5"
-                      : "get-started-btn mt-0 mb-3"
+                      : "get-started-btn mt-0 mb-5"
                   }
                 >
                   {s.buttonText}

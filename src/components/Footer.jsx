@@ -51,7 +51,7 @@ const Footer = () => {
             rendering websites basically.
           </p>
         </div>
-        <div className="col-12 mt-md-0 mt-3 col-md-4 d-flex footer-links " style={{marginLeft:"-45px"}}>
+        <div className="col-12 mt-md-0 mt-3 col-md-4 d-flex footer-links " style={{marginLeft:"0px"}}>
           <ul>
             {Array.from(links).map((l, key) => {
               return (
