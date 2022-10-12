@@ -4,7 +4,7 @@ import HighPerformanceSection from "./HighPerformanceSection";
 
 const PlansSection = () => {
   const [isMonthly, setMonthly] = useState(true);
-  const [currency, setCurrency] = useState("pounds");
+  const [currency, setCurrency] = useState("euro");
 
   const convertPrice = (price) => {
     return {
@@ -108,10 +108,10 @@ const PlansSection = () => {
                   setCurrency(e.target.value);
                 }}
               >
-                <option value="pound">£</option>
                 <option selected value="euro">
                   €
                 </option>
+                <option value="pound">£</option>
               </select>
             </div>
           </div>
