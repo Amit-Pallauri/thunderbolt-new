@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
-import PlansCard from "../components/PlansCard";
 import ImageConstants from "../constants/imageConstants";
-
+import { InView } from "react-intersection-observer";
 const HowItWorks = () => {
-  const [isMonthly, setMonthly] = useState(true);
   const [currency, setCurrency] = useState("pounds");
-
+  
   const convertPrice = (price) => {
     return {
       currency,
       price,
     };
   };
-
   const menuList = [
     {
       name: "Dashboard",
@@ -104,6 +101,8 @@ const HowItWorks = () => {
       isCustom: true,
     },
   ];
+  const [className, setClassName] = useState("");
+
   return (
     <Layout>
       <div className="how-it-works-main-box mb-5 position-realtive">
@@ -233,44 +232,97 @@ const HowItWorks = () => {
               return (
                 <>
                   {isEven ? (
-                    <div className="row p-0 m-0">
-                      <div className="col-md-5 position-md-realtive px-md-5 img-box-hero-2">
-                        <img
-                          className="mx-md-5 px-md-5 user-img"
-                          src={card.img}
-                        />
-                      </div>
-                      <div
-                        className={
-                          key === 0
-                            ? "col-md-2 d-none d-md-inline center-row-conatiner mt-5"
-                            : "col-md-2 d-none d-md-inline center-row-conatiner mt-2"
-                        }
-                      >
-                        <button className="hero-btn-round-active mb-2">
-                          {key + 1}
-                        </button>
-                        <div className={isLast ?"vl-last" :"vl-active"}></div>
-                      </div>
-                      <div className="col-md-5  ">
-                        <div className="collabration-conatiner mt-5 ">
-                          <p className="col-text">{card.heading}</p>
-                          <p className="col-des">{card.des}</p>
+                    <>
+                      <div className="row p-0 m-0">
+                        <div className="col-md-5 position-md-realtive px-md-5 img-box-hero-2">
+                          <img
+                            className="mx-md-5 px-md-5 user-img"
+                            src={card.img}
+                          />
+                        </div>
+                        <InView threshold={0.5}>
+                          {({ inView, ref, entry }) => (
+                            <div
+                              ref={ref}
+                              className={
+                                key === 0
+                                  ? "col-md-2 d-none d-md-inline center-row-conatiner mt-5"
+                                  : "col-md-2 d-none d-md-inline center-row-conatiner mt-2"
+                              }
+                            >
+                              <button className="hero-btn-round-active mb-2">
+                                {key + 1}
+                              </button>
+                              <div
+                                className={
+                                  isLast && !inView
+                                    ? "vl-last"
+                                    : inView
+                                    ? "full-vl"
+                                    : "vl"
+                                }
+                              ></div>
+                            </div>
+                          )}
+                        </InView>
+                        {/* <div
+                          className={
+                            key === 0
+                              ? "col-md-2 d-none d-md-inline center-row-conatiner mt-5"
+                              : "col-md-2 d-none d-md-inline center-row-conatiner mt-2"
+                          }
+                        >
+                          <button className="hero-btn-round-active mb-2">
+                            {key + 1}
+                          </button>
+                          <div
+                            className={
+                              isLast
+                                ? "vl-last"
+                                : className !== ""
+                                ? className
+                                : ` vl-active`
+                            }
+                          ></div>
+                        </div> */}
+                        <div className="col-md-5  ">
+                          <div className="collabration-conatiner mt-5 ">
+                            <p className="col-text">{card.heading}</p>
+                            <p className="col-des">{card.des}</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </>
                   ) : (
                     <div className="row p-0 m-0">
                       <div className="col-md-5 how-it-works-opp">
                         <p className="how-it-works-head-opp">{card.heading}</p>
                         <p className="how-it-works-des-opp">{card.des}</p>
                       </div>
-                      <div className="col-2 d-none d-md-inline center-row-conatiner-active ">
-                        <button className="hero-btn-round mb-2">
-                          {key + 1}
-                        </button>
-                        <div className={isLast ? "vl-last" : "vl"}></div>
-                      </div>
+
+                      <InView threshold={0.5}>
+                        {({ inView, ref, entry }) => (
+                          <div
+                            ref={ref}
+                            className="col-2 d-none d-md-inline center-row-conatiner-active "
+                          >
+                            <button className="hero-btn-round mb-2">
+                              {key + 1}
+                            </button>
+                            {
+                              <div
+                                className={
+                                  isLast && !inView
+                                    ? "vl-last"
+                                    : inView
+                                    ? "full-vl"
+                                    : "vl"
+                                }
+                              ></div>
+                            }
+                          </div>
+                        )}
+                      </InView>
                       <div className="col-5">
                         <div className="hiw-oop-img-conatiner position-realtive">
                           <img src={card.img} className="hiw-oop-img" />
