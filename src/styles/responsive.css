@@ -778,7 +778,7 @@
     margin-left: -50px !important;
   }
   .how-it-works-hero {
-    padding: 0px 4 vw !important;
+    padding: 0px 10vw !important;
     height: 50vh;
   }
   .how-it-works-heading {
@@ -801,7 +801,7 @@
     padding: 0px 10px;
   }
   .how-it-works-des {
-    padding: 0px 20px;
+    padding: 0px 0px;
   }
   .img-box-hero-2 > .user-img {
     width: 20rem;
@@ -864,13 +864,17 @@
     overflow: hidden !important;
   }
   .how-it-works-card-conatiner {
-    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -150px;
     width: 100%;
     border-radius: 0px;
   }
   .how-it-works-hero-card {
-    padding: 0px 1.2rem !important;
-    width: 100% !important;
+    width: 95vw;
   }
   .how-it-works-hero-card > img {
     width: 30rem;
