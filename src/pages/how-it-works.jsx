@@ -1,17 +1,10 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
 import ImageConstants from "../constants/imageConstants";
-import { useInView } from "react-intersection-observer";
-import { useRef } from "react";
 import { InView } from "react-intersection-observer";
-import { useEffect } from "react";
 const HowItWorks = () => {
-  const [isMonthly, setMonthly] = useState(true);
   const [currency, setCurrency] = useState("pounds");
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: 0,
-  });
+  
   const convertPrice = (price) => {
     return {
       currency,
