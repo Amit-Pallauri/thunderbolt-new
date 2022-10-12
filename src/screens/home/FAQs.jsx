@@ -4,7 +4,7 @@ import AccordionBody from "react-bootstrap/esm/AccordionBody";
 import AccordionItem from "react-bootstrap/esm/AccordionItem";
 
 const FAQs = () => {
-  const faqsData = [
+  const faqsData1 = [
     {
       title: "What exactly is thunderboltJS?",
       data: "ThunderboltJS is a framework, a compiler that improves your core web vitals, resulting in your site loading superfast. A new way of rendering websites.",
@@ -41,6 +41,9 @@ const FAQs = () => {
       title: "Can I use my hosting?",
       data: "You will need to use thunderboltJS as your hosting provider. We provide hosting services to all our customers. No hidden costs.",
     },
+  ];
+
+  const faqsData2 = [
     {
       title: "Will I own my website?",
       data: "Yes, after an initial period of 24 months, you will have access to everything deployed with us, including all updates delivered via GitLab/GitHub. We put great effort into your business and break payments into affordable monthly payments. This means our website comes with a 24-month contract which is agreed upon purchase.",
@@ -78,6 +81,7 @@ const FAQs = () => {
       data: "Of course. Our web hosting services are designed to meet the needs of our customers and this means that we simply require 7 working days’ notice from clients who wish to cancel the service.",
     },
   ];
+
   return (
     <section className="faq-container">
       <div className="container">
@@ -89,19 +93,38 @@ const FAQs = () => {
             <div className="accordin-container">
               <div className="about-accoudian">
                 <Accordion className="accordin-flex" defaultActiveKey={"0"}>
-                  {faqsData.map((faq, i) => {
-                    return (
-                      <Accordion.Item eventKey={i}>
-                        <AccordionButton id={`heading${i}`}>
-                          {faq.title}
-                        </AccordionButton>
+                  <div className="row">
+                    <div className="col-md-6">
+                      {faqsData1.map((faq, i) => {
+                        return (
+                          <Accordion.Item eventKey={i}>
+                            <AccordionButton id={`heading${i}`}>
+                              {faq.title}
+                            </AccordionButton>
 
-                        <AccordionBody>
-                          <p>{faq.data}</p>
-                        </AccordionBody>
-                      </Accordion.Item>
-                    );
-                  })}
+                            <AccordionBody>
+                              <p>{faq.data}</p>
+                            </AccordionBody>
+                          </Accordion.Item>
+                        );
+                      })}
+                    </div>
+                    <div className="col-md-6">
+                      {faqsData2.map((faq, i) => {
+                        return (
+                          <Accordion.Item eventKey={i + 10}>
+                            <AccordionButton id={`heading${i + 10}`}>
+                              {faq.title}
+                            </AccordionButton>
+
+                            <AccordionBody>
+                              <p>{faq.data}</p>
+                            </AccordionBody>
+                          </Accordion.Item>
+                        );
+                      })}
+                    </div>
+                  </div>
                 </Accordion>{" "}
               </div>
             </div>
