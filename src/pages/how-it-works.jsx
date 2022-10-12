@@ -235,7 +235,9 @@ const HowItWorks = () => {
                     <>
                       <div
                         className={
-                          isLast ? "row p-0 hiw-last-card m-0" : "row p-0 m-0"
+                          isLast
+                            ? "row p-0 hiw-last-card d-md-flex d-none m-0"
+                            : "row d-md-flex d-none p-0 m-0"
                         }
                       >
                         <div className="col-md-5 col-12 position-md-realtive px-md-5 img-box-hero-2">
@@ -306,7 +308,7 @@ const HowItWorks = () => {
                       </div>
                     </>
                   ) : (
-                    <div className="row p-0 m-0">
+                    <div className="d-md-flex d-none row p-0 m-0">
                       <div className="col-md-5 how-it-works-opp">
                         <p className="how-it-works-head-opp">{card.heading}</p>
                         <p className="how-it-works-des-opp">{card.des}</p>
@@ -353,6 +355,43 @@ const HowItWorks = () => {
                 </>
               );
             })}
+            <div className=" d-md-none">
+              {howItWorksList.map((card, key) => {
+                return (
+                  <>
+                    <div
+                      style={key !== 0 ? { marginTop: "-30px" } : null}
+                      className=" d-flex position-relative mx-3"
+                    >
+                      <InView threshold={0.5}>
+                        {({ inView, ref, entry }) => (
+                          <div ref={ref} className={" d-flex  mt-5"}>
+                            <button
+                              className={
+                                inView
+                                  ? "hero-btn-round-active mb-2"
+                                  : "hero-btn-round mb-2"
+                              }
+                            >
+                              {key + 1}
+                            </button>
+                            <div className={"full-vl"}></div>
+                            <div>
+                              <p className="hiw-card-heading">{card.heading}</p>
+                              <img
+                                className="hiw-card-img-mob "
+                                src={card.img}
+                              />
+                              <p className="hiw-card-des-mob">{card.des}</p>
+                            </div>
+                          </div>
+                        )}
+                      </InView>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
