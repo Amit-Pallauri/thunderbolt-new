@@ -1201,7 +1201,7 @@ body {
   align-content: center;
   position: relative;
   text-align: center;
-  background-repeat: no-repeat;
+
   background-image: url("../images/logos/hero-1-bg.svg");
   background-attachment: fixed;
   background-position: center;
@@ -1314,7 +1314,7 @@ body {
   background: #f8f7ff 0% 0% no-repeat padding-box;
   box-shadow: 6px 4px 24px #00000038;
   opacity: 1;
-  width: 380px !important;
+  width: auto !important;
   height: 60rem !important;
 }
 .pay-monthly-card .points {
@@ -1516,7 +1516,15 @@ body {
   font-size: 25px;
   margin-top: 100px;
 }
+.smile-card > img {
+  margin-top: 3rem !important;
+  width: 4rem;
+}
 .smile-card {
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
   z-index: 111;
   background: white;
   box-shadow: 6px 4px 24px #00000029;
@@ -1692,6 +1700,9 @@ body {
 .how-it-works-main-box {
   overflow: hidden !important;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   background-image: url("../images/logos/hero-1-bg.svg");
   background-color: #f7df00 !important;
   height: 90vh;
@@ -1700,8 +1711,13 @@ body {
   text-align: center !important;
   overflow: hidden !important;
   background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/logos/hero-1-bg.svg");
   background-color: #f7df00 !important;
-  height: 60vh;
+  height: 450px;
 }
 .how-it-works-heading {
   font-size: 30px;
@@ -1720,7 +1736,7 @@ body {
 .how-it-works-card-conatiner {
   padding-left: 5vw;
   z-index: 1111 !important;
-  margin-top: -360px;
+  margin-top: -50vh;
 }
 .how-it-works-hero-card {
   padding-left: 0vw;

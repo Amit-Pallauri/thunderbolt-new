@@ -46,20 +46,19 @@ const StandaredFeaturesSlider = () => {
     <section className="ml-md-5 py-md-1 px-md-5 they-trust-us-section">
       <Swiper {...PricingSkillSlider}>
         {slides.map((s, key) => {
-          const isBigTitle = s?.title?.length < 13;
-          const isGreen = s?.title.includes("free")
           return (
-            <SwiperSlide className="custom-swiper-slide" style={{background:"transparent"}}>
-              <div  className="smile-card   mt-5 mt-md-5  mb-5 ">
+            <SwiperSlide
+              className="custom-swiper-slide"
+              style={{ background: "transparent" }}
+            >
+              <div className="smile-card   mt-5 mt-md-5  mb-5 ">
                 <img
                   loading="lazy"
                   className="mt-md-4 mt-4"
                   src={s.logo}
                   alt=""
                 />
-                <p className={isBigTitle ? "mb-5 padding-three" : "mb-5 px-4"}>
-                  {s.title}
-                </p>
+                <p className={"mb-5 px-4"}>{s.title}</p>
               </div>
             </SwiperSlide>
           );
