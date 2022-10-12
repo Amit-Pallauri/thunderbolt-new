@@ -4,6 +4,11 @@
   src: url("../fonts/aline.ttf");
 }
 
+@font-face {
+  font-family: "aline";
+  src: url("../fonts/aline.ttf");
+}
+
 body {
   font-family: "Montserrat", sans-serif !important;
 }
@@ -24,11 +29,11 @@ body {
 
 .nav-items-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .nav-items {
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -64,6 +69,22 @@ body {
 
 .nav-btn img {
   width: 18px;
+}
+
+.header-btns .login {
+  background-color: #e4e4e4;
+  border-radius: 7px;
+  border: 0;
+  padding: 5px 20px;
+  margin-right: 10px;
+}
+
+.header-btns .get-started {
+  background-color: #1664f7;
+  border-radius: 7px;
+  border: 0;
+  padding: 5px 20px;
+  margin-right: 10px;
 }
 
 /* canvas */
@@ -149,14 +170,14 @@ body {
   display: flex;
   flex-direction: column;
   width: max-content;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .sidebar-content .buttons .btn-container {
   background: #1664f7 0% 0% no-repeat padding-box;
   border-radius: 7px;
   opacity: 1;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px;
   color: white;
   border: none;
@@ -343,15 +364,23 @@ body {
   margin-top: 70px;
 }
 
+.hero-section .content-section {
+  /* border: 1px solid red; */
+  padding: 70px;
+}
+
 .hero-section .title {
-  color: #1b03a3;
-  font-size: 74px;
+  font-family: "aline";
+  color: #1e2323;
+  width: 90%;
+  font-size: 54px;
   /* font-size: 64px; */
-  font-weight: 800;
+  font-weight: normal;
 }
 
 .hero-section .sub-title {
-  color: #1e2323;
+  color: #7b828c;
+  width: 90%;
   font-size: 20px;
   font-weight: normal;
   margin: 10px 0;
@@ -359,12 +388,12 @@ body {
 
 .hero-section .get-started {
   margin-top: 20px;
-  padding: 8px 60px;
-  border-radius: 34px;
+  padding: 8px 30px;
+  border-radius: 7px;
   border: 0;
-  background: #1db954;
+  background: #1664f7;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: medium;
 }
 .get-started a {
@@ -373,10 +402,10 @@ body {
 }
 
 .clients-img {
-  margin: 50px 0;
+  margin: 50px auto;
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 50%;
 }
 
 .clients-img img {
@@ -388,27 +417,37 @@ body {
   filter: unset;
 }
 
+.accordin-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+
 .about-accoudian {
   margin-top: 40px;
+  /* width: 50%; */
 }
 
 .about-accoudian .accordion-item {
+  width: 45%;
+  margin: 20px 10px;
   border: unset;
-  border-bottom: 1px solid #707070;
-  border-radius: 0;
-  padding: 10px 0;
+  padding: 5px 0;
   background-image: url("../images/icons/right-arrow.svg");
+  border-radius: 15px;
 }
 
 .about-accoudian #headingOne {
-  border-top: 1px solid #707070;
   border-radius: 0;
   box-shadow: none;
 }
 
 .about-accoudian .accordion-button {
   background: #fff !important;
-  font-size: 26px;
+  /* width: 30%; */
+  font-size: 15px;
   color: #1d1d1d;
   font-weight: medium;
 }
@@ -478,17 +517,30 @@ body {
   border-right: 0;
 }
 
+.parallax {
+  /* The image used */
+  background-image: url("../images/background.webp");
+  /* Set a specific height */
+  min-height: 1250px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .plans-section {
   padding-top: 50px;
   text-align: center;
-  background: #1b03a3;
+  /* background: #1664f7; */
   color: white;
   min-height: 1250px;
 }
 
 .plans-title {
-  font-size: 38px;
-  font-weight: bold;
+  font-size: 34px;
+  font-weight: normal;
+  font-family: "aline";
   text-align: center;
 }
 
@@ -506,11 +558,11 @@ body {
 }
 
 .plans-card-container .tag {
-  background: #1b03a3;
-  color: white;
+  background: #f8f9fa;
+  color: #7b828c;
   min-width: 120px;
   max-width: max-content;
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 5px 10px;
 }
 
@@ -537,7 +589,7 @@ body {
 .plan-price .price {
   font-size: 52px;
   font-weight: bold;
-  color: #1db954;
+  /* color: #1db954; */
   margin-right: 10px;
   position: relative;
 }
@@ -561,7 +613,6 @@ body {
 
 .custom-text {
   font-size: 43px;
-  color: #1db954;
   font-weight: bold;
 }
 
@@ -569,9 +620,9 @@ body {
   padding: 5px;
   width: 70%;
   margin: auto;
-  border-radius: 34px;
+  border-radius: 7px;
   border: 0;
-  background: #1db954;
+  background: #1664f7;
   color: white;
   font-size: 24px;
   font-weight: medium;
@@ -579,13 +630,12 @@ body {
 
 .pricing-read-more {
   margin-top: 20px;
-  color: #1db954;
   font-size: 16px;
   font-weight: bold;
 }
 
 .pricing-read-more a {
-  color: #1db954;
+  color: #1664f7;
   text-decoration: none;
   cursor: pointer;
 }
@@ -602,7 +652,7 @@ body {
 
 .plans-section .plans-subtitle {
   width: 100%;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: normal;
   color: #ffffff;
 }
@@ -610,13 +660,12 @@ body {
 .price-footer-info {
   font-size: 16px;
   font-weight: bold;
-  background: #1b03a3;
   width: 70%;
   margin: auto;
 }
 
 .currency-option-container {
-  width: 70%;
+  width: 65%;
   margin-left: auto;
   display: flex;
   justify-content: space-between;
@@ -628,7 +677,7 @@ body {
   margin: 30px 0;
   border-radius: 34px;
   /* padding: 10px 60px; */
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 381px;
   height: 55px;
   display: flex;
@@ -645,17 +694,15 @@ body {
   justify-content: center;
 }
 
-/* .select-currency-container select {
-  appearance: none !important;
-  -moz-appearance: none !important;
-  -webkit-appearance: none !important;
-} */
-
 .select-currency-container .form-select {
   width: 25%;
   background-image: url("../images/icons/down-arrow.svg");
-  background-color: #1b03a3;
+  background-color: transparent;
   color: white;
+}
+
+.select-currency-container .form-select option {
+  background-color: none !important;
 }
 
 .select-currency-container p {
@@ -680,27 +727,27 @@ body {
 .price-tab-active {
   cursor: pointer;
   margin: 0;
-  background: white;
+  background: #1664f7;
   font-size: 20px;
   font-weight: normal;
-  color: #1b03a3;
+  color: white;
   border-radius: 34px;
 }
 
 .high-performance {
-  background: #f7df00;
   min-height: 729px;
 }
 
 .high-performance h1 {
-  font-size: 38px;
-  font-weight: bold;
-  font-weight: 900;
+  font-size: 34px;
+  font-weight: normal;
   text-align: center;
   padding-top: 70px;
+  font-family: "aline";
 }
 
 .high-performance .sub-title {
+  color: #7b828c;
   font-size: 20px;
   font-weight: normal;
   text-align: center;
@@ -726,26 +773,35 @@ body {
   padding: 40px 0;
   width: 50%;
   margin: auto;
+  color: #7b828c;
+}
+
+.faq-container {
+  background-color: #f8f9fa;
+  width: 90%;
+  height: 1200px;
+  max-height: auto;
+  margin: auto;
+  border-radius: 32px;
+  padding-bottom: 30px;
 }
 
 .frequently-asked-title {
-  font-size: 38px;
-  font-weight: bold;
+  font-family: "aline";
+  font-size: 34px;
+  font-weight: normal;
   text-align: center;
   margin: 50px 0;
 }
 
 .why-you-need {
   min-height: 676px;
-  background-image: url("../images/path-img.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
 }
 
 .superfast-title {
-  font-size: 42px;
-  font-weight: 800;
+  font-size: 34px;
+  font-weight: normal;
+  font-family: "aline";
   text-align: center;
   margin: 30px 0;
 }
@@ -759,14 +815,16 @@ body {
   margin: 80px 0;
 }
 .techs-we-use .title {
-  font-size: 42px;
-  font-weight: 800;
+  font-size: 34px;
+  font-weight: normal;
+  font-family: "aline";
   text-align: center;
   margin-top: 50px;
 }
 
 .techs-we-use .subtitle {
   font-size: 16px;
+  color: #7b828c;
   font-weight: medium;
   text-align: center;
   margin-bottom: 40px;
@@ -826,24 +884,24 @@ body {
 }
 
 .list-section .list-option {
-  font-size: 28px;
   font-weight: normal;
-  font-size: 28px;
+  font-family: "aline";
+  font-size: 22px;
   cursor: pointer;
   margin: 25px 0;
 }
 
 .list-option-active {
+  font-family: "aline";
   white-space: pre;
   cursor: pointer;
   font-weight: bolder;
-  color: #1db954;
-  font-size: 28px;
+  color: #1664f7;
+  font-size: 22px;
   margin: 25px 0;
 }
 
 .how-it-works {
-  background: #f8f7ff;
   min-height: 666px;
   /* padding-top: 50px; */
   display: flex;
@@ -854,8 +912,9 @@ body {
 
 .how-it-works .section-title {
   text-align: center;
-  font-size: 42px;
-  font-weight: 900;
+  font-size: 34px;
+  font-weight: normal;
+  font-family: "aline";
   /* margin-bottom: 60px; */
 }
 
@@ -874,8 +933,9 @@ body {
   margin-top: 15px;
   width: 90%;
   text-align: center;
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "aline";
 }
 
 .how-it-works-card p {
@@ -883,35 +943,39 @@ body {
   text-align: center;
   font-size: 16px;
   font-weight: medium;
-  font-weight: 600;
+  color: #7b828c;
   margin-top: 10px;
 }
 
 .how-it-works button {
   border: 0;
-  border-radius: 34px;
+  border-radius: 7px;
   padding: 10px 40px;
-  background-color: #1db954;
-  color: white;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+.how-it-works .active-btn {
+  background-color: #1664f7;
+  color: white;
 }
 
 .framework-statistics {
+  /* background-color: #1664f7; */
   min-height: 1125px;
-  background-image: url("../images/vector2.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+  padding: 50px 0;
 }
 
 .framework-statistics .section-title {
-  font-size: 42px;
-  font-weight: 800;
+  color: white;
+  font-size: 34px;
+  font-weight: normal;
   text-align: center;
   width: 80%;
   margin: 2em auto;
+  font-family: "aline";
 }
 
 .stats-card {
@@ -930,9 +994,9 @@ body {
 }
 
 .stats-card h3 {
-  font-size: 63px;
-  font-weight: 900;
-  color: #1db954;
+  font-size: 62px;
+  font-weight: normal;
+  font-family: "aline";
 }
 
 .stats-card p {
@@ -944,16 +1008,13 @@ body {
 
 .middle-col .icon {
   display: flex;
+  visibility: hidden;
   justify-content: center;
   margin-bottom: 8em;
 }
 
 .web-vitals-section {
   min-height: 733px;
-  background-image: url("../images/vector1.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
 }
 
 .web-vitals-section .search-box {
@@ -962,12 +1023,14 @@ body {
 
 .search-webpage h3 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: normal;
+  font-family: "aline";
   text-align: center;
 }
 .web-vitals-section .title {
-  font-size: 42px;
-  font-weight: 800;
+  font-family: "aline";
+  font-size: 34px;
+  font-weight: normal;
   padding-top: 50px;
   text-align: center;
   margin-bottom: 40px;
@@ -984,7 +1047,7 @@ body {
   box-shadow: 4px 6px 12px #00000027;
   border: 1px solid #e4e4e4;
   padding: 20px 40px;
-  border-radius: 44px;
+  border-radius: 12px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   font-size: 24px;
@@ -992,14 +1055,14 @@ body {
 
 .web-vitals-section .search-box button {
   width: 20%;
-  background-color: #1b03a3;
+  background-color: #1664f7;
   padding: 20px 30px;
   color: white;
   border: 1px solid #e4e4e4;
   font-size: 24px;
 
-  border-top-right-radius: 44px;
-  border-bottom-right-radius: 44px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .stats .stats-container {
@@ -1019,6 +1082,7 @@ body {
   font-weight: medium;
   font-size: 20px;
   margin-top: 10px;
+  color: #7b828c;
 }
 
 .circle-contain .circle {
@@ -1043,15 +1107,20 @@ body {
 
 .circle-text-red {
   color: #d30303;
+  font-family: "aline";
+  font-weight: normal;
 }
 
 .circle-text-green {
   color: #049204;
+  font-family: "aline";
+  font-weight: normal;
 }
 
 .faster-stats-section {
   min-height: 299px;
-  background: #f8f7ff;
+  margin: 40px 0;
+  /* background: #f8f7ff; */
 }
 
 .faster-stats-section .stats {
@@ -1063,22 +1132,27 @@ body {
 
 .faster-stats-section .stats h3 {
   font-size: 68px;
-  font-weight: 800;
+  font-weight: normal;
+  font-family: "Aline";
 }
 
 .faster-stats-section .stats h4 {
   font-size: 34px;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: "Aline";
 }
 
 .faster-stats-section .stats p {
   font-size: 24px;
   font-weight: medium;
+  color: #7b828c;
 }
 
 .stats-container {
   padding-top: 40px;
-  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -1092,6 +1166,11 @@ body {
 .they-trust-us-section {
   margin-bottom: 100px;
   z-index: 11111;
+}
+
+.they-trust-us-section .title {
+  font-family: "aline";
+  font-size: 34px;
 }
 /* Pricing */
 
@@ -1124,6 +1203,10 @@ body {
   text-align: center;
   background-repeat: no-repeat;
   background-image: url("../images/logos/hero-1-bg.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #f7df00 !important;
   height: 730px !important;
   z-index: auto;
@@ -1643,7 +1726,7 @@ body {
   padding-left: 0vw;
   width: 80vw;
   position: relative;
-  z-index: 11111;
+  z-index: 111;
   border-radius: 29px;
   opacity: 1;
   overflow: hidden;

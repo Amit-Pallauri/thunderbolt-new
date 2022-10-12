@@ -66,7 +66,7 @@ const PlansSection = () => {
 
   return (
     <>
-      <section className="plans-section">
+      <section className="plans-section parallax">
         <div className="container">
           <div className="row">
             <div>

@@ -11,7 +11,9 @@ const HighPerformanceSection = ({ isMonthly, data }) => {
       </p>
       <div className="cards-container">
         {data.map((el) => {
-          return <PlansCard data={el} isMonthly={isMonthly} />;
+          return (
+            <PlansCard bgColor={"#F8F9FA"} data={el} isMonthly={isMonthly} />
+          );
         })}
       </div>
       <div className="high-performance-footer">

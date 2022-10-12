@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import routes from "../constants/routes";
 
-const PlansCard = ({ data, isMonthly }) => {
+const PlansCard = ({ data, isMonthly, bgColor = "#FFFFFF" }) => {
   return (
-    <div className="plans-card-container">
+    <div className="plans-card-container" style={{ backgroundColor: bgColor }}>
       <p className="tag">{data?.tag}</p>
       <p className="plans-info">{data?.info}</p>
       <div className="plan-price">
