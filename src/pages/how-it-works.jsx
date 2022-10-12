@@ -234,7 +234,7 @@ const HowItWorks = () => {
                   {isEven ? (
                     <>
                       <div className="row p-0 m-0">
-                        <div className="col-md-5 position-md-realtive px-md-5 img-box-hero-2">
+                        <div className="col-md-5 col-12 position-md-realtive px-md-5 img-box-hero-2">
                           <img
                             className="mx-md-5 px-md-5 user-img"
                             src={card.img}
@@ -291,7 +291,7 @@ const HowItWorks = () => {
                             }
                           ></div>
                         </div> */}
-                        <div className="col-md-5  ">
+                        <div className="col-md-5 col-12  ">
                           <div className="collabration-conatiner mt-5 ">
                             <p className="col-text">{card.heading}</p>
                             <p className="col-des">{card.des}</p>

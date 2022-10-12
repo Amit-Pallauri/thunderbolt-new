@@ -1735,7 +1735,7 @@ body {
   background-size: cover;
   background-image: url("../images/logos/hero-1-bg.svg");
   background-color: #f7df00 !important;
-  height: 90vh;
+  height: 650px;
 }
 .how-it-works-hero-three {
   text-align: center !important;
@@ -1764,9 +1764,8 @@ body {
   opacity: 1;
 }
 .how-it-works-card-conatiner {
-  padding-left: 5vw;
   z-index: 1111 !important;
-  margin-top: -50vh;
+  margin-top: -400px;
 }
 .how-it-works-hero-card {
   padding-left: 0vw;

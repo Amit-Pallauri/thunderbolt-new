@@ -3,9 +3,9 @@ import { Link } from "gatsby";
 import React, { useEffect, useState } from "react";
 import ImageConstants from "../constants/imageConstants";
 import routes from "../constants/routes";
-import closeIcon from "../images/icons/close-icon.png";
-import hambarIcon from "../images/icons/hambar.png";
-import headerHome from "../images/icons/header-home.png";
+import hambarIcon from "../images/icons/hambar.webp";
+import headerHome from "../images/icons/header-home.webp";
+import closeIcon from "../images/icons/close-icon.webp";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [pathName, setPathName] = useState();
