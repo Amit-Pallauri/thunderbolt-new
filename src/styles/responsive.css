@@ -782,10 +782,11 @@
     height: 50vh;
   }
   .how-it-works-heading {
-    margin-bottom: 50px !important;
+    font-size: 26px;
+    margin-bottom: 20px !important;
   }
   .how-it-works-main-box {
-    height: 550px !important;
+    height: 410px !important;
   }
   .float-img-one {
     margin-left: -100px;
@@ -801,6 +802,7 @@
     padding: 0px 10px;
   }
   .how-it-works-des {
+    font-size: 12px;
     padding: 0px 0px;
   }
   .img-box-hero-2 > .user-img {
@@ -870,7 +872,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: -150px;
+    margin-top: -130px;
     width: 100%;
     border-radius: 0px;
   }
