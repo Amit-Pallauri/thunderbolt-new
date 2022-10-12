@@ -1,10 +1,9 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
 import routes from "../constants/routes";
-import hambarIcon from "../images/icons/hambar.png";
-import headerHome from "../images/icons/header-home.png";
-import closeIcon from "../images/icons/close-icon.png";
-import rightArrow from "../images/icons/right-arrow.svg";
+import hambarIcon from "../images/icons/hambar.webp";
+import headerHome from "../images/icons/header-home.webp";
+import closeIcon from "../images/icons/close-icon.webp";
 import { useLocation } from "@reach/router";
 import { useEffect } from "react";
 import ImageConstants from "../constants/imageConstants";

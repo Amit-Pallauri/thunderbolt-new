@@ -1,7 +1,7 @@
 import React from "react";
 import thunderboltIcon from "../../images/icons/thunderbolt-icon.webp";
-import orangeClrcle from "../../images/orange-circle.png";
-import greenCircle from "../../images/green-circle.png";
+import orangeClrcle from "../../images/orange-circle.webp";
+import greenCircle from "../../images/green-circle.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   homeSkillSlider,
