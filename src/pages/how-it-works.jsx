@@ -4,7 +4,7 @@ import ImageConstants from "../constants/imageConstants";
 import { InView } from "react-intersection-observer";
 const HowItWorks = () => {
   const [currency, setCurrency] = useState("pounds");
-  
+
   const convertPrice = (price) => {
     return {
       currency,
@@ -250,7 +250,13 @@ const HowItWorks = () => {
                                   : "col-md-2 d-none d-md-inline center-row-conatiner mt-2"
                               }
                             >
-                              <button className="hero-btn-round-active mb-2">
+                              <button
+                                className={
+                                  inView
+                                    ? "hero-btn-round-active mb-2"
+                                    : "hero-btn-round mb-2"
+                                }
+                              >
                                 {key + 1}
                               </button>
                               <div
@@ -306,7 +312,13 @@ const HowItWorks = () => {
                             ref={ref}
                             className="col-2 d-none d-md-inline center-row-conatiner-active "
                           >
-                            <button className="hero-btn-round mb-2">
+                            <button
+                              className={
+                                inView
+                                  ? "hero-btn-round-active mb-2"
+                                  : "hero-btn-round mb-2"
+                              }
+                            >
                               {key + 1}
                             </button>
                             {
