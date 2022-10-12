@@ -8,6 +8,11 @@
     display: block;
   }
 
+  .mob-view .swiper-slide {
+    border-radius: 40px;
+    box-shadow: 6px 4px 24px #00000029;
+  }
+
   /* header */
   .navbar-brand img {
     margin-left: 10px;
@@ -63,6 +68,10 @@
     margin: 20px 0;
   }
 
+  .faq-container {
+    height: auto;
+  }
+
   /* slider */
   .about-accoudian .accordion-button {
     font-size: 20px;
@@ -71,10 +80,26 @@
 
   .about-accoudian .accordion-item {
     padding: 15px 0;
+    width: 100%;
   }
 
   .about-accoudian .accordion-body p {
     font-size: 14px;
+  }
+
+  /* hompage first section */
+
+  .hero-section {
+    margin-top: 20px;
+  }
+
+  .hero-section .sub-title {
+    width: 100%;
+  }
+
+  .hero-section .get-started {
+    /* margin: 10px auto; */
+    width: 60%;
   }
 
   /* homepage second section */
@@ -110,9 +135,17 @@
     width: 100%;
   }
 
+  .about-accoudian .accordion-item {
+    width: 100%;
+    margin: 5px;
+    padding: 5px 0;
+    background-image: url("../images/icons/right-arrow.svg");
+    border-radius: 15px;
+  }
+
   .how-it-works .section-title {
-    font-size: 42px;
-    font-weight: 800;
+    font-size: 32px;
+    font-weight: normal;
     margin-top: 80px;
   }
 
@@ -127,8 +160,8 @@
 
   .how-it-works-card h3 {
     width: 90%;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: normal;
   }
 
   .how-it-works-card p {
@@ -142,10 +175,22 @@
     margin-bottom: 80px;
   }
 
+  .how-it-works .btn-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-it-works button {
+    margin-bottom: 20px;
+  }
+
   /* homepage fifth section */
   .superfast-title {
-    font-size: 32px;
-    font-weight: 800;
+    width: 98%;
+    font-size: 30px;
+    font-weight: normal;
   }
 
   .price-tab-container {
@@ -180,7 +225,12 @@
 
   .content-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+  }
+
+  .hero-section .content-section {
+    padding: 20px;
   }
 
   .content-section .section-info {
@@ -221,6 +271,7 @@
   }
 
   .list-option-active {
+    white-space: initial;
     margin: 15px 0;
     font-size: 24px;
     font-weight: bold;
@@ -230,7 +281,7 @@
   .techs-we-use .title {
     margin: 20px 10px;
     font-size: 32px;
-    font-weight: 800;
+    font-weight: normal;
   }
 
   .techs-we-use .subtitle {
@@ -279,8 +330,8 @@
   }
 
   .plans-section .plans-title {
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: normal;
   }
 
   .plans-section .plans-subtitle {
@@ -291,11 +342,12 @@
 
   .custom-text {
     white-space: nowrap;
+    padding: 15px;
   }
 
   .high-performance h1 {
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: normal;
   }
 
   .high-performance .sub-title {
@@ -334,6 +386,10 @@
     width: 90%;
   }
 
+  .web-vitals-section {
+    margin-bottom: 5em;
+  }
+
   .web-vitals-section .search-box input {
     width: 60%;
     padding: 15px 30px;
@@ -346,15 +402,20 @@
     padding: 15px 30px;
   }
 
-  .stats-card {
+  .stats-card-mob {
     width: 318px;
     height: 333px;
-    box-shadow: 6px 4px 24px #00000029;
     border-radius: 32px;
     text-align: bottom;
     /* padding: 70px 20px; */
     margin: 10px;
     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: auto;
+    padding: 5px 30px;
+    text-align: start;
   }
 
   .circle-contain {
@@ -365,13 +426,14 @@
     font-size: 20px;
   }
 
-  .stats-card h3 {
+  .stats-card-mob h3 {
     font-size: 63px;
-    font-weight: 900;
-    color: #1db954;
+    font-weight: normal;
+    font-family: "aline";
+    /* color: #1db954; */
   }
 
-  .stats-card p {
+  .stats-card-mob p {
     font-size: 34px;
     font-weight: medium;
     width: 100%;
@@ -387,31 +449,19 @@
 
   .framework-statistics .section-title {
     width: 95%;
-    font-size: 32px;
-    font-weight: 800;
-  }
-
-  .web-vitals-section {
-    /* min-height: 733px; */
-    background-image: url("../images/vector1-mob.webp");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
+    font-size: 30px;
+    font-weight: normal;
   }
 
   .web-vitals-section .title {
-    width: 80%;
+    width: 95%;
     margin: auto;
-    font-size: 32px;
-    font-weight: 900;
+    font-size: 30px;
+    font-weight: normal;
   }
 
   .framework-statistics {
     min-height: 870px;
-    background-image: url("../images/vector2-mob.webp");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
   }
 
   .hero-container {
@@ -430,8 +480,8 @@
     width: 90%;
     margin: auto;
     margin-top: 30px;
-    font-size: 54px;
-    font-weight: 800;
+    font-size: 45px;
+    font-weight: normal;
   }
   .hero-section .sub-title {
     width: 90%;
@@ -688,8 +738,7 @@
   }
   .footer-bootom-links {
     margin-top: 22px !important;
-   margin-left: -50px !important;
- 
+    margin-left: -50px !important;
   }
   .footer-bottom {
     justify-content: center !important;
@@ -709,12 +758,11 @@
   .footer-bootom-links a {
     text-align: start;
     text-decoration: none;
-    color: #9B9B9B;
+    color: #9b9b9b;
   }
   .footer-links {
     margin-left: -50px !important;
   }
-  
 }
 
 @media only screen and (max-width: 360px) {

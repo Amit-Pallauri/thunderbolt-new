@@ -22,34 +22,41 @@ const SuperfastDotCom = () => {
 
     {
       id: 2,
+      title: "Struggling with marketing ROI",
+      image: worldClassUserExperience,
+      data: "No one likes to wait or stare at a loading website. A superfast website will give your users what they want fast, improving user experience and satisfaction. ",
+    },
+
+    {
+      id: 3,
       title: "Better Google Ranking",
       image: betterGoogleRanking,
       data: "Do you ever visit Google search page 2? Didn’t think so. A superfast dot com will rank up higher in Google search results, making it easier for users to find your website easily.",
     },
 
     {
-      id: 3,
+      id: 4,
       image: increasedWebsiteConversion,
       title: "Increase Website Conversions",
       data: "Converting users into customers is one of the hardest things of all. A superfast website gives your users what they want in a jiffy. ",
     },
 
     {
-      id: 4,
+      id: 5,
       image: improvedCustomerRetention,
       title: "Improved Customer Retention Rate",
       data: "Users are less likely to revisit your website if it is slower than your competitors even by 250 milliseconds. ",
     },
 
     {
-      id: 5,
+      id: 6,
       image: lessBounceRate,
       title: "Less Bounce Rate",
       data: "Faster loading website attracts organic traffic as it is more likely to be shared. Users can seamlessly move around your site if your web pages load fast giving you a much lower bounce rate.",
     },
 
     {
-      id: 6,
+      id: 7,
       image: scaleEffortlessly,
       title: "Scale effortlessly",
       data: "Faster websites consume less computational power meaning a user with 1GB Ram will have the same experience as the one with 8 GB. This allows you to cater to a larger group of users without any hassle.",

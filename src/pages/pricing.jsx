@@ -81,7 +81,7 @@ const Home = () => {
               Enrich your plan with Add-ons
             </p>
             <p class="display-4 pricing-hero-section-two-h2">
-             Pay Monthly Websites
+              Pay Monthly Websites
             </p>{" "}
             <p class="lead pricing-p2 px-5 ">
               Modern Website with flexible payment options to suit your

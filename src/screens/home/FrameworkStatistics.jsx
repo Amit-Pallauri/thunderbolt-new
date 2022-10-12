@@ -61,11 +61,11 @@ export const FrameworkStatistics = () => {
         </div>
       </section>
 
-      <section className="framework-statistics">
+      <section className="framework-statistics parallax">
         <div className="container">
           <h1 className="section-title">
-            A lightning fast framework which loads your website in
-            <span style={{ color: "#1DB954" }}> less than 2 seconds.</span>
+            A lightning fast framework which loads your website in less than 2
+            seconds.
           </h1>
           <div className="row web-view-flex">
             <div className="col-4">
@@ -105,37 +105,34 @@ export const FrameworkStatistics = () => {
           </div>
 
           <div className="mob-view">
-            <div className="thunderbolt-icon">
-              <img loading="lazy" width={"70px"} src={thunderboltIcon} alt="" />
-            </div>
             <Swiper className="pl-3" {...statsSlider}>
               <div className="swiper-wrapper">
                 <SwiperSlide>
-                  <div className="stats-card">
+                  <div className="stats-card-mob">
                     <h3>60%</h3>
                     <p>Faster Page Load Speed</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="stats-card">
+                  <div className="stats-card-mob">
                     <h3>50%</h3>
                     <p>More Time Spent</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="stats-card">
+                  <div className="stats-card-mob">
                     <h3>50%</h3>
                     <p>Less Bounce Rate</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="stats-card">
+                  <div className="stats-card-mob">
                     <h3>3x</h3>
                     <p>ROI of marketing campaigns</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="stats-card">
+                  <div className="stats-card-mob">
                     <h3>2x</h3>
                     <p>Impact of Integrated SEO</p>
                   </div>

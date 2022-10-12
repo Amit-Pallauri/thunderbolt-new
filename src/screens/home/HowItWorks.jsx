@@ -26,7 +26,10 @@ const HowItWorks = () => {
           </div>
         </div>
       </div>
-      <button>Know more</button>
+      <div className="btn-container">
+        <button className="active-btn">Get Started</button>
+        <button className="inactive-btn">Know more</button>
+      </div>
     </section>
   );
 };

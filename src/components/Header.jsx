@@ -10,11 +10,11 @@ import { useEffect } from "react";
 import ImageConstants from "../constants/imageConstants";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
-  const [pathName , setPathName]= useState()
+  const [pathName, setPathName] = useState();
   const location = useLocation();
-  useEffect(()=>{
-    setPathName(location?.pathname)
-  },[location?.pathname])
+  useEffect(() => {
+    setPathName(location?.pathname);
+  }, [location?.pathname]);
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-light container">
@@ -33,27 +33,26 @@ const Header = () => {
             </li>
             <li
               className={
-                pathName === "/pricing"
-                  ? "nav-item active-link"
-                  : "nav-item "
+                pathName === "/pricing" ? "nav-item active-link" : "nav-item "
               }
             >
               <Link className="nav-link" to={routes.pricing}>
                 Pricing
               </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Log In
-              </a>
-            </li>
-            <li className="nav-item">
-              <div className="nav-btn">
-                <button>Get Started</button>
-                <img loading="lazy" src={rightArrow} alt="" />
-              </div>
-            </li>
           </ul>
+        </div>
+
+        <div className="header-btns collapse">
+          <button className="login">Log In</button>
+          <button className="get-started">
+            <a
+              target={"_blank"}
+              href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
+            >
+              Get Started
+            </a>
+          </button>
         </div>
         <div className="hambar" onClick={() => setOpen(true)}>
           <img loading="lazy" src={hambarIcon} alt="" />
