@@ -233,7 +233,11 @@ const HowItWorks = () => {
                 <>
                   {isEven ? (
                     <>
-                      <div className="row p-0 m-0">
+                      <div
+                        className={
+                          isLast ? "row p-0 hiw-last-card m-0" : "row p-0 m-0"
+                        }
+                      >
                         <div className="col-md-5 col-12 position-md-realtive px-md-5 img-box-hero-2">
                           <img
                             className="mx-md-5 px-md-5 user-img"
@@ -261,10 +265,12 @@ const HowItWorks = () => {
                               </button>
                               <div
                                 className={
-                                  isLast && !inView
+                                  isLast && inView
                                     ? "vl-last"
-                                    : inView
+                                    : inView && !isLast
                                     ? "full-vl"
+                                    : isLast
+                                    ? "vl-last-inactive"
                                     : "vl"
                                 }
                               ></div>
@@ -324,10 +330,12 @@ const HowItWorks = () => {
                             {
                               <div
                                 className={
-                                  isLast && !inView
+                                  isLast && inView
                                     ? "vl-last"
-                                    : inView
+                                    : inView && !isLast
                                     ? "full-vl"
+                                    : isLast
+                                    ? "vl-last-inactive"
                                     : "vl"
                                 }
                               ></div>

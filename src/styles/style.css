@@ -1943,7 +1943,7 @@ body {
   height: 500px;
   margin: 0px auto;
 }
-.vl-last {
+.vl-last-inactive {
   width: 0px;
   background-color: transparent;
   background-clip: content-box; /* so that the background color is not below the border */
@@ -1955,9 +1955,18 @@ body {
   ); /* to top - at 50% transparent */
   border-image-slice: 1;
   border-left: 2px solid white;
-  height: 300px;
+  height: 330px;
   margin: 0px auto;
-  margin-bottom: 25vh;
+}
+.vl-last {
+  width: 0px;
+  background-color: transparent;
+  background-clip: content-box; /* so that the background color is not below the border */
+  border-left: 5px solid black;
+  border-image-slice: 1;
+  border-left: 2px solid #8ab1fb;
+  margin: 0px auto;
+  height: 330px;
 }
 .col-text {
   font-family: Montserrat;
@@ -2140,4 +2149,7 @@ body {
   letter-spacing: -0.34px;
   color: #1e2323;
   opacity: 1;
+}
+.hiw-last-card {
+  margin-bottom: 200px !important;
 }

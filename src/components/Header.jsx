@@ -28,7 +28,7 @@ const Header = () => {
           <ul className="navbar-nav nav-items">
             <li
               className={
-                pathName === "/how-it-works"
+                pathName === routes.howItWorks
                   ? "nav-item active-link"
                   : "nav-item "
               }
@@ -39,7 +39,9 @@ const Header = () => {
             </li>
             <li
               className={
-                pathName === "/pricing" ? "nav-item active-link" : "nav-item "
+                pathName === routes.pricing
+                  ? "nav-item active-link"
+                  : "nav-item "
               }
             >
               <Link className="nav-link" to={routes.pricing}>
@@ -85,12 +87,16 @@ const Header = () => {
         <div className="offcanvas-body">
           <div className="left-sidebar">
             <div className="container">
-              <p>
-                <Link>How it works</Link>
+              <p
+                className={
+                  pathName === routes.howItWorks ? " active-link" : " "
+                }
+              >
+                <Link to={routes.howItWorks}>How it works</Link>
               </p>
               <p
                 className={
-                  pathName === "/pricing/"
+                  pathName === routes.pricing
                     ? "nav-item-canvas active-link"
                     : "nav-item-canvas"
                 }
