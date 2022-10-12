@@ -85,8 +85,10 @@ const Header = () => {
         <div className="offcanvas-body">
           <div className="left-sidebar">
             <div className="container">
-              <p>
-                <Link>How it works</Link>
+              <p
+                className={pathName === "/how-it-works" ? " active-link" : " "}
+              >
+                <Link to={routes.howItWorks}>How it works</Link>
               </p>
               <p
                 className={
