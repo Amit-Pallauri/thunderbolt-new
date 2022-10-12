@@ -599,9 +599,11 @@
 
 @media only screen and (max-width: 600px) {
   .pricing-h1 {
-    font-size: 2.5rem;
+    font-size: 25px;
+    line-height: 32px;
   }
   .pricing-p {
+    font-size: 16px;
     margin-top: 20px;
     color: #1e2323 !important;
   }
@@ -670,8 +672,7 @@
 
   .hero-two {
     padding-right: 20px !important;
-    padding-left: 36px !important;
-    background-image: url("../images/logos/mobile-bg-standerd.svg");
+    padding-left: 36px !important;  
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 186rem;
@@ -688,7 +689,7 @@
   .pricing--main-box {
     /* background-color: #ecf9f1 !important; */
     /* padding-left: 44px !important; */
-    height: 870px !important;
+    height: 620px !important;
   }
   .mb-100 {
     margin-bottom: 100px;
@@ -901,7 +902,7 @@
     margin-top: 40px;
     margin-left: 14px;
   }
-  .vl-last{
+  .vl-last {
     margin-top: 40px;
     margin-left: 14px;
     height: calc(2em * 14.8) !important;
