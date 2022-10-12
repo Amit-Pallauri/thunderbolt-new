@@ -10,11 +10,11 @@ import { useEffect } from "react";
 import ImageConstants from "../constants/imageConstants";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
-  const [pathName , setPathName]= useState()
+  const [pathName, setPathName] = useState();
   const location = useLocation();
-  useEffect(()=>{
-    setPathName(location?.pathname)
-  },[location?.pathname])
+  useEffect(() => {
+    setPathName(location?.pathname);
+  }, [location?.pathname]);
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-light container">
@@ -33,9 +33,7 @@ const Header = () => {
             </li>
             <li
               className={
-                pathName === "/pricing"
-                  ? "nav-item active-link"
-                  : "nav-item "
+                pathName === "/pricing" ? "nav-item active-link" : "nav-item "
               }
             >
               <Link className="nav-link" to={routes.pricing}>
@@ -45,7 +43,7 @@ const Header = () => {
           </ul>
         </div>
 
-        <div className="header-btns">
+        <div className="header-btns collapse">
           <button className="login">Log In</button>
           <button className="get-started">
             <a
