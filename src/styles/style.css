@@ -1870,7 +1870,7 @@ body {
   margin-left: 2px;
 }
 .vl-active {
-  width: 100px;
+  width: 0px;
   background-color: transparent;
   background-clip: content-box; /* so that the background color is not below the border */
   border-left: 5px solid black;
@@ -1882,10 +1882,10 @@ body {
   border-image-slice: 1;
   border-left: 2px solid white;
   height: 500px;
-  margin: 0px 6.3rem;
+  margin: 0px auto;
 }
 .full-vl {
-  width: 100px;
+  width: 0px;
   background-color: transparent;
   background-clip: content-box; /* so that the background color is not below the border */
   border-left: 5px solid black;
@@ -1893,7 +1893,7 @@ body {
   border-image-slice: 1;
   border-left: 2px solid #8ab1fb;
   height: 500px;
-  margin: 0px 6.3rem;
+  margin: 0px auto;
   transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
 }
 @keyframes rotate {
@@ -1902,7 +1902,7 @@ body {
   }
 }
 .vl {
-  width: 100px;
+  width: 0px;
   background-color: transparent;
   background-clip: content-box; /* so that the background color is not below the border */
   border-left: 5px solid black;
@@ -1914,7 +1914,7 @@ body {
   border-image-slice: 1;
   border-left: 2px solid white;
   height: 500px;
-  margin: 0px 6.3rem;
+  margin: 0px auto;
 }
 .vl-last {
   width: 100px;
