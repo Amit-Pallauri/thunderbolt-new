@@ -357,6 +357,8 @@ const HowItWorks = () => {
             })}
             <div className=" d-md-none">
               {howItWorksList.map((card, key) => {
+                const isLast = howItWorksList?.length - 1 === key;
+
                 return (
                   <>
                     <div
@@ -375,7 +377,11 @@ const HowItWorks = () => {
                             >
                               {key + 1}
                             </button>
-                            <div className={"full-vl"}></div>
+                            <div
+                              className={
+                                isLast ? "vl-last" : inView ? "full-vl" : "vl"
+                              }
+                            ></div>
                             <div>
                               <p className="hiw-card-heading">{card.heading}</p>
                               <img

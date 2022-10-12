@@ -820,6 +820,7 @@
     text-align: center;
   }
   .hiw-heading-hero-two {
+    font-size: 26px;
     margin-bottom: 0px !important;
   }
   .how-it-works-opp {
@@ -898,12 +899,24 @@
     margin-top: 40px;
     margin-left: 14px;
   }
+  .vl-last{
+    margin-top: 40px;
+    margin-left: 14px;
+    height: calc(2em * 14.8) !important;
+  }
+  .vl {
+    height: inherit;
+    margin-top: 40px;
+    margin-left: 14px;
+  }
   .hiw-card-heading {
+    font-family: Montserrat;
     text-align: start;
-    font-weight: bold;
+    font-weight: 900 !important;
     font-size: 1.5rem;
     margin-left: 2.5rem;
     margin-top: -5px;
+    width: 70vw !important;
   }
   .hiw-card-img-mob {
     margin-left: -5px !important;
