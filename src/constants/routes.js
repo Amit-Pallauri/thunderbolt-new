@@ -1,7 +1,7 @@
 const routes = {
-  pricing: "/pricing",
+  pricing: "/pricing/",
   home: "/",
-  howItWorks:"/how-it-works",
+  howItWorks:"/how-it-works/",
   privacyPolicy:"/privayPolicy",
   Terms:"/terms"
 };
