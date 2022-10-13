@@ -24,7 +24,7 @@ const SuperfastDotCom = () => {
       id: 2,
       title: "Struggling with marketing ROI",
       image: worldClassUserExperience,
-      data: "No one likes to wait or stare at a loading website. A superfast website will give your users what they want fast, improving user experience and satisfaction. ",
+      data: "Often digital marketers with fancy certifications struggle with appropriate ROI on campaigns as they miss checking the core web vitals of the landing page they intend to drive traffic to.",
     },
 
     {

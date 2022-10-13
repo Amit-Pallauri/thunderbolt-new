@@ -12,13 +12,13 @@ import "../styles/responsive.css";
 
 const Layout = ({ children }) => {
   SwiperCore.use([Autoplay]);
-  React.useEffect(() => {
-    if (!window.console) window.console = {};
-    var methods = ["log", "debug", "warn", "info", "error"];
-    for (var i = 0; i < methods.length; i++) {
-      console[methods[i]] = function () {};
-    }
-  }, []);
+  // React.useEffect(() => {
+  //   if (!window.console) window.console = {};
+  //   var methods = ["log", "debug", "warn", "info", "error"];
+  //   for (var i = 0; i < methods.length; i++) {
+  //     console[methods[i]] = function () {};
+  //   }
+  // }, []);
 
   return (
     <>

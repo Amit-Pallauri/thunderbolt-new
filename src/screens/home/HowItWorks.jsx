@@ -2,6 +2,8 @@ import React from "react";
 import buildIcon from "../../images/icons/build.webp";
 import customiseIcon from "../../images/icons/customise.webp";
 import purchasePackageIcon from "../../images/icons/purchase-package.webp";
+import { navigate } from "gatsby";
+import Routes from "../../constants/routes";
 
 const HowItWorks = () => {
   return (
@@ -27,7 +29,12 @@ const HowItWorks = () => {
         </div>
       </div>
       <div className="btn-container">
-        <button className="active-btn">Get Started</button>
+        <button
+          className="active-btn"
+          onClick={() => navigate(Routes.howItWorks)}
+        >
+          Get Started
+        </button>
         <button className="inactive-btn">Know more</button>
       </div>
     </section>
