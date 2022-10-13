@@ -192,14 +192,15 @@ body {
   margin-right: 25px;
 }
 
-.sidebar-content .active-btn {
-  background-color: #1db954;
-}
-
 .buttons button {
   margin-right: 10px;
   background: none;
   border: none;
+  color: white;
+}
+
+.buttons button a {
+  text-decoration: none;
   color: white;
 }
 
@@ -327,6 +328,12 @@ body {
   border-radius: 7px;
   opacity: 1;
 }
+
+.footer-action-btn a {
+  text-decoration: none;
+  color: white;
+}
+
 .footer-links > ul > li > a {
   font-weight: 500;
   text-decoration: none;
@@ -616,7 +623,7 @@ body {
 }
 
 .price strong {
-  padding-left: 24px;
+  padding-left: 30px;
   font-weight: bold;
 }
 
@@ -879,10 +886,10 @@ body {
 }
 
 .why-you-need-content .content-section .icon {
-  width: 100px;
+  width: 140px;
   position: absolute;
-  right: 27%;
-  top: -5%;
+  right: 25%;
+  top: -11%;
 }
 
 .content-section .section-info {
@@ -1093,6 +1100,20 @@ body {
 
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+}
+
+.web-vitals-section .search-box button:disabled,
+.web-vitals-section .search-box button[disabled] {
+  background-color: #4079e2c7;
+  color: rgba(255, 255, 255, 0.611);
+}
+
+.danger-info {
+  color: red;
+  font-weight: 600;
+  text-align: start;
+  width: 60%;
+  margin: auto;
 }
 
 .stats .stats-container {
