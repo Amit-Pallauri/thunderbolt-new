@@ -379,10 +379,16 @@ body {
 /* home */
 .hero-section {
   min-height: 608px;
-  margin-top: 70px;
+  margin-top: 22px;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
 }
 
 .hero-section .content-section {
+  text-align: left;
   /* border: 1px solid red; */
   padding: 70px;
 }
@@ -489,9 +495,36 @@ body {
   color: #1d1d1d;
 }
 
+.banner-img {
+  height: 100%;
+}
+
 .banner-img img {
-  width: 550px;
   max-width: 100%;
+}
+
+.banner-img .banner1 {
+  width: 550px;
+}
+
+.banner-img .banner2 {
+  width: 490px;
+}
+
+.banner-img .banner3 {
+  width: 482px;
+}
+
+.homeslider .swiper-pagination {
+  bottom: 0px;
+  right: 40px;
+  width: 100%;
+  text-align: right;
+  left: unset;
+}
+
+.homeslider .swiper-pagination-bullet-active {
+  background: black;
 }
 
 .homeskillslider {

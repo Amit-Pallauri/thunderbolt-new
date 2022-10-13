@@ -1,7 +1,7 @@
 export const homeSlider = {
   observer: true,
   observeParents: true,
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   autoplay: {
@@ -10,6 +10,11 @@ export const homeSlider = {
   },
   pagination: {
     clickable: true,
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 };
 
