@@ -46,6 +46,10 @@
     height: auto !important;
   }
 
+  .home-button img {
+    width: 55px;
+  }
+
   .close-btn-section {
     right: 7%;
   }
@@ -60,10 +64,14 @@
     width: 100%;
   }
 
+  .right-sidebar {
+    height: 100%;
+  }
+
   .left-sidebar {
-    height: 50%;
+    height: auto;
     margin-top: 6em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
 
   .left-sidebar p {
@@ -76,8 +84,16 @@
 
   .sidebar-content .title {
     width: 95%;
-    font-size: 30px;
+    font-size: 20px;
     margin: 20px 0;
+  }
+
+  .sidebar-content .buttons {
+    flex-direction: row;
+  }
+
+  .sidebar-content .btn-container {
+    margin-right: 10px;
   }
 
   .faq-container {
@@ -105,6 +121,10 @@
     margin-top: 20px;
   }
 
+  .hero-section .title {
+    font-size: 35px;
+  }
+
   .hero-section .sub-title {
     width: 100%;
   }
@@ -123,7 +143,7 @@
   /* web vitals third section */
   .faster-stats-section .stats {
     width: 70%;
-    /* margin-bottom: 40px; */
+    margin-bottom: 2em;
   }
 
   .faster-stats-section .stats h3 {
@@ -156,23 +176,24 @@
   }
 
   .how-it-works .section-title {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: normal;
     margin-top: 80px;
+    margin-bottom: 40px;
   }
 
   .how-it-works-card {
-    margin: 40px 0;
+    margin: 24px 0;
   }
 
   .how-it-works-card img {
-    width: 86px !important;
-    height: 86px !important;
+    width: 60px !important;
+    height: 60px !important;
   }
 
   .how-it-works-card h3 {
     width: 90%;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: normal;
   }
 
@@ -204,7 +225,9 @@
   }
 
   .superfast-title {
-    width: 98%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 30px;
     font-weight: normal;
   }
@@ -245,6 +268,14 @@
     justify-content: center;
   }
 
+  .content-container {
+    flex-direction: column-reverse;
+  }
+
+  .banner-img img {
+    width: 80% !important;
+  }
+
   .hero-section .content-section {
     padding: 20px;
   }
@@ -262,7 +293,7 @@
     padding-bottom: 10px;
   }
 
-  .section-info p {
+  .content-section .section-info p {
     font-weight: normal;
     font-size: 16px;
   }
@@ -280,7 +311,7 @@
 
   .list-section .list-option {
     width: 100%;
-    margin: 15px 0;
+    margin: 25px 0;
     font-weight: normal;
     line-height: normal;
     font-size: 24px;
@@ -297,7 +328,9 @@
 
   .techs-we-use .title {
     margin: 20px 10px;
-    font-size: 32px;
+    width: 90%;
+    margin: auto;
+    font-size: 30px;
     font-weight: normal;
   }
 
@@ -399,8 +432,32 @@
     margin-left: initial;
   }
 
+  .search-webpage {
+    margin-top: 3em;
+  }
+
   .search-webpage .search-box {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-webpage h3 {
+    font-size: 30px;
+    width: 93%;
+    margin: auto;
+  }
+
+  .danger-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .web-vitals-section .title {
+    font-size: 24px;
+    line-height: 40px;
   }
 
   .web-vitals-section {
@@ -408,15 +465,18 @@
   }
 
   .web-vitals-section .search-box input {
-    width: 60%;
+    width: 95%;
     padding: 15px 30px;
     font-size: 14px;
+    border-radius: 12px;
   }
 
   .web-vitals-section .search-box button {
-    width: 40%;
+    width: 60%;
     font-size: 14px;
-    padding: 15px 30px;
+    padding: 15px 60px;
+    border-radius: 12px;
+    margin-top: 15px;
   }
 
   .stats-card-mob {
@@ -437,6 +497,10 @@
 
   .circle-contain {
     margin-bottom: 30px;
+  }
+
+  .circle-contain .circle p {
+    font-size: 34px;
   }
 
   .circle-info {
@@ -498,7 +562,7 @@
     width: 90%;
     margin: auto;
     margin-top: 30px;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: normal;
   }
   .hero-section .sub-title {
@@ -952,6 +1016,10 @@
     text-align: start;
     font-size: 14px;
     width: 80% !important;
+  }
+
+  .frequently-asked-title {
+    font-size: 30px;
   }
 }
 

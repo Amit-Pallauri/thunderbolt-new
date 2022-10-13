@@ -192,14 +192,15 @@ body {
   margin-right: 25px;
 }
 
-.sidebar-content .active-btn {
-  background-color: #1db954;
-}
-
 .buttons button {
   margin-right: 10px;
   background: none;
   border: none;
+  color: white;
+}
+
+.buttons button a {
+  text-decoration: none;
   color: white;
 }
 
@@ -334,6 +335,12 @@ body {
   border-radius: 7px;
   opacity: 1;
 }
+
+.footer-action-btn a {
+  text-decoration: none;
+  color: white;
+}
+
 .footer-links > ul > li > a {
   font-weight: 500;
   text-decoration: none;
@@ -379,10 +386,16 @@ body {
 /* home */
 .hero-section {
   min-height: 608px;
-  margin-top: 70px;
+  margin-top: 22px;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
 }
 
 .hero-section .content-section {
+  text-align: left;
   /* border: 1px solid red; */
   padding: 70px;
 }
@@ -489,10 +502,38 @@ body {
   color: #1d1d1d;
 }
 
+.banner-img {
+  height: 100%;
+}
+
 .banner-img img {
-  width: 550px !important;
+  width: auto !important;
   height: auto !important;
   max-width: 100%;
+}
+
+.banner-img .banner1 {
+  width: 550px;
+}
+
+.banner-img .banner2 {
+  width: 490px;
+}
+
+.banner-img .banner3 {
+  width: 482px;
+}
+
+.homeslider .swiper-pagination {
+  bottom: 0px;
+  right: 40px;
+  width: 100%;
+  text-align: right;
+  left: unset;
+}
+
+.homeslider .swiper-pagination-bullet-active {
+  background: black;
 }
 
 .homeskillslider {
@@ -624,7 +665,7 @@ body {
 }
 
 .price strong {
-  padding-left: 24px;
+  padding-left: 30px;
   font-weight: bold;
 }
 
@@ -888,10 +929,10 @@ body {
 }
 
 .why-you-need-content .content-section .icon {
-  width: 100px;
+  width: 140px;
   position: absolute;
-  right: 27%;
-  top: -5%;
+  right: 25%;
+  top: -11%;
 }
 
 .content-section .section-info {
@@ -1102,6 +1143,20 @@ body {
 
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+}
+
+.web-vitals-section .search-box button:disabled,
+.web-vitals-section .search-box button[disabled] {
+  background-color: #4079e2c7;
+  color: rgba(255, 255, 255, 0.611);
+}
+
+.danger-info {
+  color: red;
+  font-weight: 600;
+  text-align: start;
+  width: 60%;
+  margin: auto;
 }
 
 .stats .stats-container {

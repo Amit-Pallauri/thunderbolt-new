@@ -39,7 +39,7 @@ const Header = () => {
                   : "nav-item "
               }
             >
-              <Link className={"nav-link"} href={routes.howItWorks}>
+              <Link className={"nav-link"} to={routes.howItWorks}>
                 How It Works
               </Link>
             </li>
@@ -113,7 +113,9 @@ const Header = () => {
             <div className="container">
               <p
                 className={
-                  pathName === routes.howItWorks ? " active-link" : " "
+                  pathName === routes.howItWorks
+                    ? " active-link"
+                    : "nav-item-canvas"
                 }
               >
                 <Link to={routes.howItWorks}>How it works</Link>
@@ -127,10 +129,10 @@ const Header = () => {
               >
                 <Link to={routes.pricing}>Pricing</Link>
               </p>
-              <p>
+              <p className="nav-item-canvas">
                 <Link>Advantages</Link>
               </p>
-              <p>
+              <p className="nav-item-canvas">
                 <Link>Pagespeed Insights</Link>
               </p>
             </div>
@@ -143,7 +145,14 @@ const Header = () => {
 
               <div className="buttons">
                 <div className="btn-container active-btn">
-                  <button>Get Started</button>
+                  <button>
+                    <a
+                      href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
+                      target={"_blank"}
+                    >
+                      Get Started
+                    </a>
+                  </button>
                   {/* <img loading="lazy" src={rightArrow} alt="" /> */}
                 </div>
                 <div className="btn-container">

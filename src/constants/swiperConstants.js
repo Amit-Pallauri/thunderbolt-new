@@ -1,7 +1,7 @@
 export const homeSlider = {
   observer: true,
   observeParents: true,
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   autoplay: {
@@ -10,6 +10,11 @@ export const homeSlider = {
   },
   pagination: {
     clickable: true,
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 };
 
@@ -69,20 +74,40 @@ export const homeSkillSlider = {
   },
 };
 export const PricingSkillSlider = {
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   observer: true,
   observeParents: true,
   breakpoints: {
     640: {
       slidesPerView: 3,
       spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
     },
     768: {
       slidesPerView: 1,
       spaceBetween: 40,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
     },
     1024: {
       slidesPerView: 6.5,
       spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
     },
   },
 };
