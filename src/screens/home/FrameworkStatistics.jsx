@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { statsSlider } from "../../constants/swiperConstants";
-import greenCircle from "../../images/green-circle.png";
+import greenCircle from "../../images/green-circle.webp";
 import thunderboltIcon from "../../images/icons/thunderbolt-icon.webp";
-import orangeClrcle from "../../images/orange-circle.png";
+import orangeClrcle from "../../images/orange-circle.webp";
 import setUpQuery from "../../utils/pageSpeedInsights";
 import { isValidUrl } from "../../utils/utils";
 

@@ -3,9 +3,9 @@ import { Link } from "gatsby";
 import React, { useEffect, useState } from "react";
 import ImageConstants from "../constants/imageConstants";
 import routes from "../constants/routes";
-import closeIcon from "../images/icons/close-icon.png";
-import hambarIcon from "../images/icons/hambar.png";
-import headerHome from "../images/icons/header-home.png";
+import hambarIcon from "../images/icons/hambar.webp";
+import headerHome from "../images/icons/header-home.webp";
+import closeIcon from "../images/icons/close-icon.webp";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
   const [pathName, setPathName] = useState();
@@ -28,7 +28,7 @@ const Header = () => {
           <ul className="navbar-nav nav-items">
             <li
               className={
-                pathName === "/how-it-works"
+                pathName === routes.howItWorks
                   ? "nav-item active-link"
                   : "nav-item "
               }
@@ -39,7 +39,9 @@ const Header = () => {
             </li>
             <li
               className={
-                pathName === "/pricing" ? "nav-item active-link" : "nav-item "
+                pathName === routes.pricing
+                  ? "nav-item active-link"
+                  : "nav-item "
               }
             >
               <Link className="nav-link" to={routes.pricing}>
@@ -85,12 +87,18 @@ const Header = () => {
         <div className="offcanvas-body">
           <div className="left-sidebar">
             <div className="container">
-              <p className="nav-item-canvas">
+              <p
+                className={
+                  pathName === routes.howItWorks
+                    ? " active-link"
+                    : "nav-item-canvas"
+                }
+              >
                 <Link to={routes.howItWorks}>How it works</Link>
               </p>
               <p
                 className={
-                  pathName === "/pricing/"
+                  pathName === routes.pricing
                     ? "nav-item-canvas active-link"
                     : "nav-item-canvas"
                 }

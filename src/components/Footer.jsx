@@ -36,7 +36,7 @@ const Footer = () => {
       <div className="footer-container row">
         <div className="col-12 mt-md-0 mt-5 col-md-4 footer-logo-conatiner ">
           <img
-            className="footer-logo"
+            className="footer-logo px-3 px-md-3"
             src={ImageConstants.logo}
             style={{
               width: "250px",

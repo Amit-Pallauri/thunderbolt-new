@@ -4,7 +4,7 @@ import ImageConstants from "../constants/imageConstants";
 import { InView } from "react-intersection-observer";
 const HowItWorks = () => {
   const [currency, setCurrency] = useState("pounds");
-  
+
   const convertPrice = (price) => {
     return {
       currency,
@@ -233,8 +233,14 @@ const HowItWorks = () => {
                 <>
                   {isEven ? (
                     <>
-                      <div className="row p-0 m-0">
-                        <div className="col-md-5 position-md-realtive px-md-5 img-box-hero-2">
+                      <div
+                        className={
+                          isLast
+                            ? "row p-0 hiw-last-card d-md-flex d-none m-0"
+                            : "row d-md-flex d-none p-0 m-0"
+                        }
+                      >
+                        <div className="col-md-5 col-12 position-md-realtive px-md-5 img-box-hero-2">
                           <img
                             className="mx-md-5 px-md-5 user-img"
                             src={card.img}
@@ -250,15 +256,23 @@ const HowItWorks = () => {
                                   : "col-md-2 d-none d-md-inline center-row-conatiner mt-2"
                               }
                             >
-                              <button className="hero-btn-round-active mb-2">
+                              <button
+                                className={
+                                  inView
+                                    ? "hero-btn-round-active mb-2"
+                                    : "hero-btn-round mb-2"
+                                }
+                              >
                                 {key + 1}
                               </button>
                               <div
                                 className={
-                                  isLast && !inView
+                                  isLast && inView
                                     ? "vl-last"
-                                    : inView
+                                    : inView && !isLast
                                     ? "full-vl"
+                                    : isLast
+                                    ? "vl-last-inactive"
                                     : "vl"
                                 }
                               ></div>
@@ -285,7 +299,7 @@ const HowItWorks = () => {
                             }
                           ></div>
                         </div> */}
-                        <div className="col-md-5  ">
+                        <div className="col-md-5 col-12  ">
                           <div className="collabration-conatiner mt-5 ">
                             <p className="col-text">{card.heading}</p>
                             <p className="col-des">{card.des}</p>
@@ -294,7 +308,7 @@ const HowItWorks = () => {
                       </div>
                     </>
                   ) : (
-                    <div className="row p-0 m-0">
+                    <div className="d-md-flex d-none row p-0 m-0">
                       <div className="col-md-5 how-it-works-opp">
                         <p className="how-it-works-head-opp">{card.heading}</p>
                         <p className="how-it-works-des-opp">{card.des}</p>
@@ -306,16 +320,24 @@ const HowItWorks = () => {
                             ref={ref}
                             className="col-2 d-none d-md-inline center-row-conatiner-active "
                           >
-                            <button className="hero-btn-round mb-2">
+                            <button
+                              className={
+                                inView
+                                  ? "hero-btn-round-active mb-2"
+                                  : "hero-btn-round mb-2"
+                              }
+                            >
                               {key + 1}
                             </button>
                             {
                               <div
                                 className={
-                                  isLast && !inView
+                                  isLast && inView
                                     ? "vl-last"
-                                    : inView
+                                    : inView && !isLast
                                     ? "full-vl"
+                                    : isLast
+                                    ? "vl-last-inactive"
                                     : "vl"
                                 }
                               ></div>
@@ -333,6 +355,49 @@ const HowItWorks = () => {
                 </>
               );
             })}
+            <div className=" d-md-none">
+              {howItWorksList.map((card, key) => {
+                const isLast = howItWorksList?.length - 1 === key;
+
+                return (
+                  <>
+                    <div
+                      style={key !== 0 ? { marginTop: "-30px" } : null}
+                      className=" d-flex position-relative mx-3"
+                    >
+                      <InView threshold={0.5}>
+                        {({ inView, ref, entry }) => (
+                          <div ref={ref} className={" d-flex  mt-5"}>
+                            <button
+                              className={
+                                inView
+                                  ? "hero-btn-round-active mb-2"
+                                  : "hero-btn-round mb-2"
+                              }
+                            >
+                              {key + 1}
+                            </button>
+                            <div
+                              className={
+                                isLast ? "vl-last" : inView ? "full-vl" : "vl"
+                              }
+                            ></div>
+                            <div>
+                              <p className="hiw-card-heading">{card.heading}</p>
+                              <img
+                                className="hiw-card-img-mob "
+                                src={card.img}
+                              />
+                              <p className="hiw-card-des-mob">{card.des}</p>
+                            </div>
+                          </div>
+                        )}
+                      </InView>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

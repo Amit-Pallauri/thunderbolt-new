@@ -15,10 +15,10 @@ const Home = () => {
           <div class="p-md-5 p-0 m-0  mb-2 jumbotron text-center jumbotron-fluid">
             <div class="container  p-0 m-0 ">
               <span class="display-4  pricing-h1">
-                Plans to suit your needs -<br /> <span>Save upto 20%</span> when
-                billed annually
+                Plans to suit your needs -<br className="d-md-flex d-none" />{" "}
+                <span>Save upto 20%</span> when billed annually
               </span>{" "}
-              <p class="lead pricing-p  px-5 ">
+              <p class="lead pricing-p  px-md-5 ">
                 With Built-in Security and speed Optimizations for <br /> your
                 site performance.
               </p>
@@ -56,10 +56,10 @@ const Home = () => {
                   setCurrency(e.target.value);
                 }}
               >
-                <option  value="pound">
-                  £
+                <option value="pound">£</option>
+                <option selected value="euro">
+                  €
                 </option>
-                <option selected value="euro">€</option>
               </select>
             </div>
           </div>
@@ -92,8 +92,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="card-container hero-two text-center">
-        <div className="p-md-3">
+      <div className="card-container  text-center">
+        <div className="hero-two p-md-3">
           <PayMonthlyWebsite
             showBootom={false}
             showDescription={false}

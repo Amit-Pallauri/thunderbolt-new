@@ -647,9 +647,11 @@
 
 @media only screen and (max-width: 600px) {
   .pricing-h1 {
-    font-size: 2.5rem;
+    font-size: 25px;
+    line-height: 32px;
   }
   .pricing-p {
+    font-size: 16px;
     margin-top: 20px;
     color: #1e2323 !important;
   }
@@ -719,7 +721,6 @@
   .hero-two {
     padding-right: 20px !important;
     padding-left: 36px !important;
-    background-image: url("../images/logos/mobile-bg-standerd.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 186rem;
@@ -736,7 +737,7 @@
   .pricing--main-box {
     /* background-color: #ecf9f1 !important; */
     /* padding-left: 44px !important; */
-    height: 870px !important;
+    height: 620px !important;
   }
   .mb-100 {
     margin-bottom: 100px;
@@ -826,14 +827,15 @@
     margin-left: -50px !important;
   }
   .how-it-works-hero {
-    padding: 0px 0vw !important;
+    padding: 0px 10vw !important;
     height: 50vh;
   }
   .how-it-works-heading {
-    margin-bottom: 50px !important;
+    font-size: 26px;
+    margin-bottom: 20px !important;
   }
   .how-it-works-main-box {
-    height: 500px !important;
+    height: 410px !important;
   }
   .float-img-one {
     margin-left: -100px;
@@ -842,12 +844,18 @@
     margin-left: -100px;
   }
   .img-box-hero-2 {
-    text-align: center;
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  .how-it-works-des {
+    font-size: 12px;
+    padding: 0px 0px;
   }
   .img-box-hero-2 > .user-img {
-    padding-left: 2rem;
-    width: 22rem;
+    width: 20rem;
   }
   .collabration-conatiner {
     margin-left: 0px !important;
@@ -863,6 +871,7 @@
     text-align: center;
   }
   .hiw-heading-hero-two {
+    font-size: 26px;
     margin-bottom: 0px !important;
   }
   .how-it-works-opp {
@@ -885,14 +894,15 @@
   .hiw-oop-img-conatiner {
     margin: 0px;
   }
-
+  .view-pricing-btn {
+    margin-left: 20px !important  ;
+  }
   .hiw-oop-img {
     width: 20rem;
-    margin-left: 1.7rem;
   }
   .how-it-works-hero-three {
     margin-top: 80px;
-    height: 60vh;
+    height: 470px;
   }
   .hiw-hero-three-heading {
     margin-left: 5px;
@@ -906,16 +916,71 @@
     overflow: hidden !important;
   }
   .how-it-works-card-conatiner {
-    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -130px;
     width: 100%;
     border-radius: 0px;
   }
   .how-it-works-hero-card {
-    padding: 0px 1.2rem !important;
-    width: 100% !important;
+    width: 95vw;
   }
   .how-it-works-hero-card > img {
     width: 30rem;
+  }
+  .hero-btn-round-active {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .hero-btn-round {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .full-vl {
+    height: inherit;
+    margin-top: 40px;
+    margin-left: 14px;
+  }
+  .vl-last {
+    margin-top: 40px;
+    margin-left: 14px;
+    height: calc(2em * 14.8) !important;
+  }
+  .vl {
+    height: inherit;
+    margin-top: 40px;
+    margin-left: 14px;
+  }
+  .hiw-card-heading {
+    font-family: Montserrat;
+    text-align: start;
+    font-weight: 900 !important;
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+    margin-top: -5px;
+    width: 70vw !important;
+  }
+  .hiw-card-img-mob {
+    margin-left: -5px !important;
+    width: 80%;
+  }
+  .hiw-card-des-mob {
+    line-height: 25px;
+    color: #7b828c;
+    margin-top: 20px;
+    margin-left: 8vw;
+    text-align: start;
+    font-size: 14px;
+    width: 80% !important;
   }
 }
 

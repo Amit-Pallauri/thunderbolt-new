@@ -6,6 +6,7 @@ import worldClassUserExperience from "../../images/superfast-dot-com/world-class
 import betterGoogleRanking from "../../images/superfast-dot-com/better-google-ranking.webp";
 import improvedCustomerRetention from "../../images/superfast-dot-com/improved-customer-retention-rate.webp";
 import increasedWebsiteConversion from "../../images/superfast-dot-com/increase-website-conversions.webp";
+import strugglingMarketting from "../../images/superfast-dot-com/struggling-marketting.webp";
 import lessBounceRate from "../../images/superfast-dot-com/less-bounce-rate.webp";
 import scaleEffortlessly from "../../images/superfast-dot-com/scale-effortlessly.webp";
 import thunderboltIcon from "../../images/icons/thunderbolt-icon.webp";
@@ -23,7 +24,7 @@ const SuperfastDotCom = () => {
     {
       id: 2,
       title: "Struggling with marketing ROI",
-      image: worldClassUserExperience,
+      image: strugglingMarketting,
       data: "Often digital marketers with fancy certifications struggle with appropriate ROI on campaigns as they miss checking the core web vitals of the landing page they intend to drive traffic to.",
     },
 
