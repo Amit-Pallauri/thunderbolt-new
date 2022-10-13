@@ -261,6 +261,14 @@
     justify-content: center;
   }
 
+  .content-container {
+    flex-direction: column-reverse;
+  }
+
+  .banner-img img {
+    width: 80% !important;
+  }
+
   .hero-section .content-section {
     padding: 20px;
   }
@@ -546,7 +554,7 @@
     width: 90%;
     margin: auto;
     margin-top: 30px;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: normal;
   }
   .hero-section .sub-title {
@@ -977,7 +985,7 @@
     margin-top: -5px;
     width: 70vw !important;
   }
-  .hiw-card-img-mob {as
+  .hiw-card-img-mob {
     margin-left: -5px !important;
     width: 80%;
   }

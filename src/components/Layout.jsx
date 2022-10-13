@@ -1,5 +1,5 @@
 import React from "react";
-import SwiperCore, { Autoplay } from "swiper";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -11,7 +11,7 @@ import "../styles/style.css";
 import "../styles/responsive.css";
 
 const Layout = ({ children }) => {
-  SwiperCore.use([Autoplay]);
+  SwiperCore.use([Autoplay, Navigation, Pagination]);
   // React.useEffect(() => {
   //   if (!window.console) window.console = {};
   //   var methods = ["log", "debug", "warn", "info", "error"];
