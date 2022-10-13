@@ -268,11 +268,11 @@ const HowItWorks = () => {
                               <div
                                 className={
                                   isLast && inView
-                                    ? "vl-last"
+                                    ? "vl-last animate__animated animate__slideInDown"
                                     : inView && !isLast
-                                    ? "full-vl"
+                                    ? "full-vl animate__animated animate__slideInDown"
                                     : isLast
-                                    ? "vl-last-inactive"
+                                    ? "vl-last-inactive animate__animated animate__slideInUp"
                                     : "vl"
                                 }
                               ></div>
@@ -333,11 +333,11 @@ const HowItWorks = () => {
                               <div
                                 className={
                                   isLast && inView
-                                    ? "vl-last"
+                                    ? "vl-last animate__animated animate__slideInDown"
                                     : inView && !isLast
-                                    ? "full-vl"
+                                    ? "full-vl animate__animated animate__slideInDown"
                                     : isLast
-                                    ? "vl-last-inactive"
+                                    ? "vl-last-inactive animate__animated animate__slideInUp"
                                     : "vl"
                                 }
                               ></div>
@@ -371,15 +371,19 @@ const HowItWorks = () => {
                             <button
                               className={
                                 inView
-                                  ? "hero-btn-round-active mb-2"
-                                  : "hero-btn-round mb-2"
+                                  ? "animate__animated animate__fadeInLeft hero-btn-round-active mb-2"
+                                  : "hero-btn-round mb-2 animate__animated animate__fadeInLeft"
                               }
                             >
                               {key + 1}
                             </button>
                             <div
                               className={
-                                isLast ? "vl-last" : inView ? "full-vl" : "vl"
+                                isLast
+                                  ? "vl-last animate__animated animate__fadeInLeft"
+                                  : inView
+                                  ? " animate__animated animate__fadeInLeft full-vl"
+                                  : "vl"
                               }
                             ></div>
                             <div>
