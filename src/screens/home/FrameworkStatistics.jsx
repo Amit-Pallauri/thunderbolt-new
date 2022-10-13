@@ -19,7 +19,13 @@ export const FrameworkStatistics = () => {
             <div className="row stats-container">
               <div className="col-md-3 col-6 circle-contain">
                 <div className="circle">
-                  <img loading="lazy" src={orangeClrcle} alt="" />
+                  <img
+                    loading="lazy"
+                    src={orangeClrcle}
+                    alt=""
+                    width={"100%"}
+                    height={"100%"}
+                  />
                   <p className="circle-text-red">63</p>
                 </div>
                 <p className="circle-info">Performance</p>
@@ -27,7 +33,13 @@ export const FrameworkStatistics = () => {
               <div className="col-md-3 col-6 circle-contain">
                 {" "}
                 <div className="circle">
-                  <img loading="lazy" src={greenCircle} alt="" />
+                  <img
+                    loading="lazy"
+                    src={greenCircle}
+                    alt=""
+                    width={"100%"}
+                    height={"100%"}
+                  />
                   <p className="circle-text-green">93</p>
                 </div>
                 <p className="circle-info">Accessibiity</p>
@@ -35,7 +47,13 @@ export const FrameworkStatistics = () => {
               <div className="col-md-3 col-6 circle-contain">
                 {" "}
                 <div className="circle">
-                  <img loading="lazy" src={orangeClrcle} alt="" />
+                  <img
+                    loading="lazy"
+                    src={orangeClrcle}
+                    alt=""
+                    width={"100%"}
+                    height={"100%"}
+                  />
                   <p className="circle-text-red">83</p>
                 </div>
                 <p className="circle-info">Best Practices</p>
@@ -43,7 +61,13 @@ export const FrameworkStatistics = () => {
               <div className="col-md-3 col-6 circle-contain">
                 {" "}
                 <div className="circle">
-                  <img loading="lazy" src={orangeClrcle} alt="" />
+                  <img
+                    loading="lazy"
+                    src={orangeClrcle}
+                    alt=""
+                    width={"100%"}
+                    height={"100%"}
+                  />
                   <p className="circle-text-red">83</p>
                 </div>
                 <p className="circle-info">SEO</p>

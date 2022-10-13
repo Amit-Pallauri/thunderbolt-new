@@ -16,7 +16,8 @@
   /* header */
   .navbar-brand img {
     margin-left: 10px;
-    width: 144px;
+    width: 144px !important;
+    height: auto !important;
   }
 
   .nav-item a {
@@ -25,7 +26,8 @@
   }
 
   .hambar img {
-    width: 36px;
+    width: 36px !important;
+    height: auto !important;
     margin-right: 20px;
     cursor: pointer;
   }
@@ -36,8 +38,12 @@
   }
 
   .home-button {
-    width: 37px;
+    width: 37px !important;
     top: 2%;
+  }
+  .home-button img {
+    width: 74px !important;
+    height: auto !important;
   }
 
   .close-btn-section {
@@ -45,7 +51,8 @@
   }
 
   .close-btn-section img {
-    width: 25px;
+    width: 25px !important;
+    height: auto !important;
   }
 
   .left-sidebar,
@@ -159,8 +166,8 @@
   }
 
   .how-it-works-card img {
-    width: 86px;
-    height: 86px;
+    width: 86px !important;
+    height: 86px !important;
   }
 
   .how-it-works-card h3 {
@@ -313,16 +320,16 @@
   }
 
   .techs-img .picture-big {
-    width: 125px;
-    height: 32px;
+    width: 125px !important;
+    height: 32px !important;
     margin-right: 0;
     margin: 0 10px;
   }
 
   .techs-img .picture-small {
     margin: 10px 0;
-    width: 52px;
-    height: 30px;
+    width: 52px !important;
+    height: 30px !important;
   }
 
   /* sixxth section */
@@ -480,7 +487,8 @@
   }
 
   .banner-img img {
-    width: 80%;
+    width: 80% !important;
+    height: auto !important;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -513,7 +521,8 @@
   }
 
   .clients-img img {
-    width: 100px;
+    width: 100px !important;
+    height: auto !important;
   }
 
   .why-you-need {
@@ -522,7 +531,8 @@
   }
 
   .why-you-need-content .content-section .hero-img {
-    width: 100%;
+    width: 100% !important;
+    height: auto !important;
   }
 
   .why-you-need-content .content-section .icon {
@@ -672,7 +682,7 @@
 
   .hero-two {
     padding-right: 20px !important;
-    padding-left: 36px !important;  
+    padding-left: 36px !important;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 186rem;
@@ -766,6 +776,15 @@
   }
   .footer-social-icons {
     text-align: start !important;
+  }
+  .footer-social-icons > a > img {
+    width: 20px !important;
+    height: auto !important;
+  }
+  .footer-logo {
+    width: 250px !important;
+    height: 100px !important;
+    object-fit: contain;
   }
   .footer-logo-conatiner {
     padding-left: 0 !important;

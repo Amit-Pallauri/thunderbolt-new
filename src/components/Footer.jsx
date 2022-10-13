@@ -21,7 +21,7 @@ const Footer = () => {
       link: routes.howItWorks,
     },
   ];
-  const newLinks =[
+  const newLinks = [
     {
       name: "Check Pagespeed Insights",
       link: routes.howItWorks,
@@ -30,20 +30,17 @@ const Footer = () => {
       name: "Pricing",
       link: routes.howItWorks,
     },
-  ]
+  ];
   return (
     <footer className="site-footer">
       <div className="footer-container row">
         <div className="col-12 mt-md-0 mt-5 col-md-4 footer-logo-conatiner ">
           <img
+            loading="lazy"
             className="footer-logo px-3 px-md-3"
             src={ImageConstants.logo}
-            style={{
-              width: "250px",
-              height: "100px",
-              objectFit: "contain",
-              margiinTop: "-250px",
-            }}
+            width={"100%"}
+            height={"100%"}
           />
           <p className="footer-description px-3">
             ThunderboltJS is a framework, a compiler that improves your core web
@@ -51,7 +48,10 @@ const Footer = () => {
             rendering websites basically.
           </p>
         </div>
-        <div className="col-12 mt-md-0 mt-3 col-md-4 d-flex footer-links " style={{marginLeft:"0px"}}>
+        <div
+          className="col-12 mt-md-0 mt-3 col-md-4 d-flex footer-links "
+          style={{ marginLeft: "0px" }}
+        >
           <ul>
             {Array.from(links).map((l, key) => {
               return (
@@ -61,8 +61,8 @@ const Footer = () => {
               );
             })}
           </ul>
-          <ul >
-          {Array.from(newLinks).map((l, key) => {
+          <ul>
+            {Array.from(newLinks).map((l, key) => {
               return (
                 <li>
                   <a href={l.link}>{l.name}</a>
@@ -71,37 +71,51 @@ const Footer = () => {
             })}
           </ul>
         </div>
-        <div className="col-12 col-md-2">
-          
-        </div>
+        <div className="col-12 col-md-2"></div>
         <div className="col-md-2 col-12 px-md-5 px-3">
-         <div className="d-grid justify-content-between  text-center">
-         <button className=" px-md-0 footer-action-btn">
-          Get Started
-         </button>
-         <button className="footer-action-btn">
-         Book a call
-         </button>
-         </div>
-         <div className="mt-3 footer-social-icons justify-content-between mb-md-3 mt-md-2">
-          <a hre="#" className="mt-3 pointer"><img src={ImageConstants.InstaIcon} width="20px"/></a>
-          <a hre="#" className="px-3 pointer"><img src={ImageConstants.LinkdinIcon} width="20px" /></a>
-         </div>
-         <div className=" d-md-none d-flex footer-bootom-links">
-        <a href={routes.privacyPolicy} className="px-5 pointer">Privacy Policy</a>
-        <a href={routes.Terms} className="pointer">Terms</a>
-        </div>
+          <div className="d-grid justify-content-between  text-center">
+            <button className=" px-md-0 footer-action-btn">Get Started</button>
+            <button className="footer-action-btn">Book a call</button>
+          </div>
+          <div className="mt-3 footer-social-icons justify-content-between mb-md-3 mt-md-2">
+            <a hre="#" className="mt-3 pointer">
+              <img
+                src={ImageConstants.InstaIcon}
+                width={"100%"}
+                height={"100%"}
+              />
+            </a>
+            <a hre="#" className="px-3 pointer">
+              <img
+                src={ImageConstants.LinkdinIcon}
+                width={"100%"}
+                height={"100%"}
+              />
+            </a>
+          </div>
+          <div className=" d-md-none d-flex footer-bootom-links">
+            <a href={routes.privacyPolicy} className="px-5 pointer">
+              Privacy Policy
+            </a>
+            <a href={routes.Terms} className="pointer">
+              Terms
+            </a>
+          </div>
         </div>
       </div>
       <div className="footer-bottom  d-md-flex ">
         <p>2022 @Razr Tech Sarl</p>
         <div className=" d-md-flex d-none footer-bootom-links">
-        <a href={routes.privacyPolicy} className="px-5 pointer">Privacy Policy</a>
-        <a href={routes.Terms} className="pointer">Terms</a>
+          <a href={routes.privacyPolicy} className="px-5 pointer">
+            Privacy Policy
+          </a>
+          <a href={routes.Terms} className="pointer">
+            Terms
+          </a>
         </div>
       </div>
     </footer>
   );
-};  
+};
 
 export default Footer;

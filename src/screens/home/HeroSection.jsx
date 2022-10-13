@@ -23,7 +23,7 @@ const HeroSection = () => {
             </button>
           </div>
           <div className="col-sm-12 col-lg-6 banner-img">
-            <img src={HomeBanner} alt="" />
+            <img src={HomeBanner} alt="" width={"100%"} height={"100%"} />
           </div>
         </div>
         <ClientsImages />
