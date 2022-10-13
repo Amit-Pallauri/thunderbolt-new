@@ -12,17 +12,35 @@ const HowItWorks = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-4 how-it-works-card">
-            <img loading="lazy" src={purchasePackageIcon} alt="" />
+            <img
+              loading="lazy"
+              src={purchasePackageIcon}
+              alt=""
+              width={"100%"}
+              height={"100%"}
+            />
             <h3>Purchase a package or book a call</h3>
             <p>Simply purchase a package that suits your needs...</p>
           </div>
           <div className="col-md-4 how-it-works-card">
-            <img loading="lazy" src={customiseIcon} alt="" />
+            <img
+              loading="lazy"
+              src={customiseIcon}
+              alt=""
+              width={"100%"}
+              height={"100%"}
+            />
             <h3 className="w-50">Customise on the fly</h3>
             <p>Easy and quick design customisations on the go…</p>
           </div>
           <div className="col-md-4 how-it-works-card">
-            <img loading="lazy" src={buildIcon} alt="" />
+            <img
+              loading="lazy"
+              src={buildIcon}
+              alt=""
+              width={"100%"}
+              height={"100%"}
+            />
             <h3 className="w-50">Build & Launch</h3>
             <p>We will share a review link for your website before…</p>
           </div>

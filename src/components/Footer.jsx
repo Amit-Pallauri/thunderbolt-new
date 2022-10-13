@@ -36,14 +36,11 @@ const Footer = () => {
       <div className="footer-container row">
         <div className="col-12 mt-md-0 mt-5 col-md-4 footer-logo-conatiner ">
           <img
+            loading="lazy"
             className="footer-logo px-3 px-md-3"
             src={ImageConstants.logo}
-            style={{
-              width: "250px",
-              height: "100px",
-              objectFit: "contain",
-              margiinTop: "-250px",
-            }}
+            width={"100%"}
+            height={"100%"}
           />
           <p className="footer-description px-3">
             ThunderboltJS is a framework, a compiler that improves your core web
@@ -89,10 +86,18 @@ const Footer = () => {
           </div>
           <div className="mt-3 footer-social-icons justify-content-between mb-md-3 mt-md-2">
             <a hre="#" className="mt-3 pointer">
-              <img src={ImageConstants.InstaIcon} width="20px" />
+              <img
+                src={ImageConstants.InstaIcon}
+                width={"100%"}
+                height={"100%"}
+              />
             </a>
             <a hre="#" className="px-3 pointer">
-              <img src={ImageConstants.LinkdinIcon} width="20px" />
+              <img
+                src={ImageConstants.LinkdinIcon}
+                width={"100%"}
+                height={"100%"}
+              />
             </a>
           </div>
           <div className=" d-md-none d-flex footer-bootom-links">

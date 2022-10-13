@@ -1,16 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@font-face {
-  font-family: aline;
-  src: url("../fonts/aline.ttf");
-}
 
 @font-face {
   font-family: "aline";
   src: url("../fonts/aline.ttf");
+  font-display: swap;
 }
 
 body {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat" !important;
+  font-display: swap;
 }
 .mob-view {
   display: none;
@@ -105,7 +103,8 @@ body {
 }
 
 .home-button img {
-  width: 74px;
+  width: 74px !important;
+  height: auto !important;
 }
 
 .close-btn-section {
@@ -116,7 +115,8 @@ body {
 }
 
 .close-btn-section img {
-  width: 25px;
+  width: 25px !important;
+  height: auto !important;
 }
 
 .offcanvas-body {
@@ -221,11 +221,18 @@ body {
 .footer-logo-conatiner {
   padding-left: 60px !important;
 }
+.footer-social-icons > a > img {
+  width: 20px !important;
+  height: auto !important;
+}
 .footer-call-btn {
   display: flex;
   justify-content: center;
 }
 .footer-logo {
+  width: 250px !important;
+  height: 100px !important;
+  object-fit: contain;
   margin-top: -40px !important;
 }
 .footer-description {
@@ -500,6 +507,8 @@ body {
 }
 
 .banner-img img {
+  width: auto !important;
+  height: auto !important;
   max-width: 100%;
 }
 
@@ -900,14 +909,14 @@ body {
 }
 
 .techs-img .picture-big {
-  width: 161px;
-  height: 42px;
+  width: 161px !important;
+  height: 42px !important;
   margin-right: 30px;
 }
 
 .techs-img .picture-small {
-  width: 62px;
-  height: 37px;
+  width: 62px !important;
+  height: 37px !important; 
 }
 
 .why-you-need-content .content-section {
@@ -915,7 +924,8 @@ body {
 }
 
 .why-you-need-content .content-section .hero-img {
-  width: 400px;
+  width: 400px !important;
+  height: auto !important;
 }
 
 .why-you-need-content .content-section .icon {
@@ -1217,13 +1227,13 @@ body {
 .faster-stats-section .stats h3 {
   font-size: 68px;
   font-weight: normal;
-  font-family: "Aline";
+  font-family: "aline";
 }
 
 .faster-stats-section .stats h4 {
   font-size: 34px;
   font-weight: normal;
-  font-family: "Aline";
+  font-family: "aline";
 }
 
 .faster-stats-section .stats p {
@@ -1259,7 +1269,7 @@ body {
 /* Pricing */
 
 .pricing-h1 {
-  font-family: aline;
+  font-family: "aline";
   text-align: center;
   font-size: 40px;
   letter-spacing: -0.52px;
@@ -1569,7 +1579,7 @@ body {
   font-size: 30px;
 }
 .pricing-hero-section-two-h2 {
-  font-family: aline;
+  font-family: "aline";
   font-size: 3.1rem;
   color: #1e2323;
   opacity: 1;
@@ -1627,7 +1637,7 @@ body {
   font-weight: 600;
 }
 .extra {
-  font-family: aline;
+  font-family: "aline";
   margin-left: -50px !important;
   font-weight: 500;
   color: #1e2323;
@@ -1806,7 +1816,7 @@ body {
 .how-it-works-heading {
   font-size: 30px;
 
-  font-family: aline;
+  font-family: "aline";
   letter-spacing: -0.41px;
   color: #1e2323;
   opacity: 1;
@@ -2199,7 +2209,7 @@ body {
   text-align: center;
   font-weight: normal;
   font-size: 34px;
-  font-family: aline;
+  font-family: "aline";
   letter-spacing: -0.34px;
   color: #1e2323;
   opacity: 1;

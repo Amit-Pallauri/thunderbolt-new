@@ -90,6 +90,8 @@ export const FrameworkStatistics = () => {
                     loading="lazy"
                     src={metrics.performance < 90 ? orangeClrcle : greenCircle}
                     alt=""
+                    width={"100%"}
+                    height={"100%"}
                   />
                   <p
                     className={
@@ -112,6 +114,8 @@ export const FrameworkStatistics = () => {
                       metrics.accessibility < 90 ? orangeClrcle : greenCircle
                     }
                     alt=""
+                    width={"100%"}
+                    height={"100%"}
                   />
                   <p
                     className={
@@ -136,6 +140,8 @@ export const FrameworkStatistics = () => {
                         : greenCircle
                     }
                     alt=""
+                    width={"100%"}
+                    height={"100%"}
                   />
                   <p
                     className={
@@ -156,6 +162,8 @@ export const FrameworkStatistics = () => {
                     loading="lazy"
                     src={metrics.seo < 90 ? orangeClrcle : greenCircle}
                     alt=""
+                    width={"100%"}
+                    height={"100%"}
                   />
                   <p
                     className={
