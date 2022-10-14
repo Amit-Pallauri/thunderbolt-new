@@ -128,7 +128,7 @@ const MonthlyCards = ({
             return (
               <>
                 <div className="col-md-3  ">
-                  <div className="monthly-card m-md-2 mt-2 mb-5 mb-md-0  text-center  flex-fill">
+                  <div className="monthly-card text-center  flex-fill">
                     <div className="bg-white rounded-lg ">
                       <div className="mb-2 space">{"s"}</div>
                       <p className="monthly-card-title  ">{d.title}</p>

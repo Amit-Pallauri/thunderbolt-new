@@ -39,7 +39,7 @@ const Home = () => {
               <p
                 className={`${
                   !isMonthly
-                    ? "price-tab price-tab-active "
+                    ? "price-tab price-tab-active pricing-active-tab"
                     : "price-tab pricing-yearly"
                 }`}
                 onClick={() => setMonthly(false)}
@@ -56,17 +56,17 @@ const Home = () => {
                   setCurrency(e.target.value);
                 }}
               >
-                <option value="pound">£</option>
-                <option selected value="euro">
+                <option value="euro" selected>
                   €
                 </option>
+                <option value="pound">£</option>
               </select>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="hero-1-card-container  px-4">
+      <div className="hero-1-card-container ">
         <MonthlyCards
           showSub={false}
           currency={currency}
@@ -93,11 +93,12 @@ const Home = () => {
         </div>
       </div>
       <div className="card-container  text-center">
-        <div className="hero-two p-md-3">
+        <div className="hero-two">
           <PayMonthlyWebsite
             showBootom={false}
             showDescription={false}
             isMonthly={isMonthly}
+            currency={currency}
           />
         </div>
         <div className=" features-slider-container">
