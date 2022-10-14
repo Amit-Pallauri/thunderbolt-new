@@ -6,7 +6,7 @@ const PlansCard = ({ data, isMonthly, bgColor = "#FFFFFF" }) => {
   return (
     <div className="plans-card-container" style={{ backgroundColor: bgColor }}>
       <p className="tag">{data?.tag}</p>
-      <p className="plans-info">{data?.info}</p>
+    <p className="plans-info">{data?.info}</p>
       <div className="plan-price">
         {data?.isCustom === false ? (
           <>

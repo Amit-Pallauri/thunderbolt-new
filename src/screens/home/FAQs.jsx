@@ -26,7 +26,7 @@ const FAQs = () => {
       data: "Once the design is approved, sites with no CMS and less than 10-15 pages take less than 5 days. Sites with CMS & at least 10-15 pages take approximately 15 days including testing & deployment. Factors that usually lengthen the timeline are design revisions or client delays in approval.",
     },
     {
-      title: "I already have a website. What can I do?",
+      title: "I already have a website, what can I do?",
       data: "If you are happy with your design, simply dump your HTML via a zip file or add us to your GitLab/GitHub for us to convert it to a lightning-fast dot com. Still confused? You can contact our solution experts.",
     },
     {
@@ -49,7 +49,7 @@ const FAQs = () => {
       data: "Yes, after an initial period of 24 months, you will have access to everything deployed with us, including all updates delivered via GitLab/GitHub. We put great effort into your business and break payments into affordable monthly payments. This means our website comes with a 24-month contract which is agreed upon purchase.",
     },
     {
-      title: "I have my test link. How should we take the website LIVE?",
+      title: "I have my test link, how should we take the website LIVE?",
       data: "Once your site is ready, our team will send you domains to be pointed out in simple, easy-to-understand, and secure steps. Don't worry, our customer success team will be with you every step of the way.",
     },
     {

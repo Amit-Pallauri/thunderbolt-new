@@ -51,15 +51,15 @@ const PlansSection = () => {
       isCustom: false,
     },
     {
-      tag: "Brochure Style Website",
+      tag: "Booking Style Website",
       price: convertPrice(125),
-      pages: "Free Custom Design 1-5 Pages, additional pages at extra cost",
+      pages: "Free Custom Design 1-8 Pages, additional pages at extra cost",
       isCustom: false,
     },
     {
-      tag: "Brochure Style Website",
+      tag: "Booking Style Website",
       price: convertPrice(150),
-      pages: "Free Custom Design 1-5 Pages, additional pages at extra cost",
+      pages: "Free Custom Design 1-10 Pages, additional pages at extra cost",
       isCustom: false,
     },
   ];
