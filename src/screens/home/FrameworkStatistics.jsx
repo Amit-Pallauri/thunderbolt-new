@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { statsSlider } from "../../constants/swiperConstants";
-import greenCircle from "../../images/green-circle.webp";
+import greenCircle from "../../images/green90-circle.webp";
+import orangeCircle from "../../images/orange80-circle.webp";
+import red20Circle from "../../images/red20-circle.webp";
+import red40Circle from "../../images/red40-circle.webp";
+import green100Circle from "../../images/green100-circle.webp";
 import thunderboltIcon from "../../images/icons/thunderbolt-icon.webp";
-import orangeClrcle from "../../images/orange-circle.webp";
 import setUpQuery from "../../utils/pageSpeedInsights";
 import { isValidUrl } from "../../utils/utils";
 
@@ -14,6 +17,7 @@ export const FrameworkStatistics = () => {
   const [error, setError] = useState(false);
   const [clicked, setClicked] = useState(false);
   const [categories, setCategories] = useState(false);
+
   const [metrics, setMetrics] = useState({
     performance: 63,
     accessibility: 93,
@@ -48,6 +52,28 @@ export const FrameworkStatistics = () => {
           setDisabled(false);
           setError(true);
         });
+    }
+  };
+
+  const checkProgress = (value) => {
+    if (value === 100 || value > 90) {
+      return "circle-text-green";
+    } else if (value < 90) {
+      return "circle-text-red";
+    }
+  };
+
+  const checkProgressImage = (value) => {
+    if (value === 100) {
+      return green100Circle;
+    } else if (value > 90 && value < 100) {
+      return greenCircle;
+    } else if (value < 90 && value > 60) {
+      return orangeCircle;
+    } else if (value < 60 && value > 40) {
+      return red40Circle;
+    } else {
+      return red20Circle;
     }
   };
 
@@ -88,18 +114,12 @@ export const FrameworkStatistics = () => {
                 <div className="circle">
                   <img
                     loading="lazy"
-                    src={metrics.performance < 90 ? orangeClrcle : greenCircle}
+                    src={checkProgressImage(metrics.performance)}
                     alt=""
                     width={"100%"}
                     height={"100%"}
                   />
-                  <p
-                    className={
-                      metrics.performance < 90
-                        ? "circle-text-red"
-                        : "circle-text-green"
-                    }
-                  >
+                  <p className={checkProgress(metrics.performance)}>
                     {metrics.performance}
                   </p>
                 </div>
@@ -110,20 +130,12 @@ export const FrameworkStatistics = () => {
                 <div className="circle">
                   <img
                     loading="lazy"
-                    src={
-                      metrics.accessibility < 90 ? orangeClrcle : greenCircle
-                    }
+                    src={checkProgressImage(metrics.accessibility)}
                     alt=""
                     width={"100%"}
                     height={"100%"}
                   />
-                  <p
-                    className={
-                      metrics.accessibility < 90
-                        ? "circle-text-red"
-                        : "circle-text-green"
-                    }
-                  >
+                  <p className={checkProgress(metrics.accessibility)}>
                     {metrics.accessibility}
                   </p>
                 </div>
@@ -134,22 +146,12 @@ export const FrameworkStatistics = () => {
                 <div className="circle">
                   <img
                     loading="lazy"
-                    src={
-                      metrics["best-practices"] < 90
-                        ? orangeClrcle
-                        : greenCircle
-                    }
+                    src={checkProgressImage(metrics["best-practices"])}
                     alt=""
                     width={"100%"}
                     height={"100%"}
                   />
-                  <p
-                    className={
-                      metrics["best-practices"] < 90
-                        ? "circle-text-red"
-                        : "circle-text-green"
-                    }
-                  >
+                  <p className={checkProgress(metrics["best-practices"])}>
                     {metrics["best-practices"]}
                   </p>
                 </div>
@@ -160,18 +162,12 @@ export const FrameworkStatistics = () => {
                 <div className="circle">
                   <img
                     loading="lazy"
-                    src={metrics.seo < 90 ? orangeClrcle : greenCircle}
+                    src={checkProgressImage(metrics.seo)}
                     alt=""
                     width={"100%"}
                     height={"100%"}
                   />
-                  <p
-                    className={
-                      metrics.seo < 90 ? "circle-text-red" : "circle-text-green"
-                    }
-                  >
-                    {metrics.seo}
-                  </p>
+                  <p className={checkProgress(metrics.seo)}>{metrics.seo}</p>
                 </div>
                 <p className="circle-info">SEO</p>
               </div>

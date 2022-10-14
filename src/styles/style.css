@@ -342,6 +342,7 @@ body {
 }
 
 .footer-links > ul > li > a {
+  font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   color: #1e2323;
@@ -482,23 +483,28 @@ body {
 .about-accoudian .accordion-button {
   background: #fff !important;
   /* width: 30%; */
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 15px;
   color: #1d1d1d;
   font-weight: medium;
 }
 
 .about-accoudian .accordion-button:focus {
+  font-weight: 600;
   box-shadow: unset;
-  color: #1db954;
+  color: #1b6de6;
 }
 
 .about-accoudian .accordion-button svg {
   margin-right: 20px;
 }
 
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/icons/accordin-arrow.webp");
+}
+
 .about-accoudian .accordion-body p {
-  font-size: 18px;
+  font-size: 15px;
   color: #1d1d1d;
 }
 
@@ -638,7 +644,6 @@ body {
 }
 
 .plans-info {
-  color: #1b03a3;
   font-size: 14px;
   font-weight: normal;
   text-align: left;
@@ -763,7 +768,7 @@ body {
 }
 
 .select-currency-container .form-select {
-  width: 25%;
+  width: 70px;
   background-image: url("../images/icons/down-arrow.svg");
   background-color: transparent;
   color: white;
@@ -1014,7 +1019,7 @@ body {
 }
 
 .how-it-works-card p {
-  width: 50%;
+  width: 80%;
   text-align: center;
   font-size: 16px;
   font-weight: medium;
@@ -1136,7 +1141,7 @@ body {
 .web-vitals-section .search-box button {
   width: 20%;
   background-color: #1664f7;
-  padding: 20px 30px;
+  padding: 20px 0;
   color: white;
   border: 1px solid #e4e4e4;
   font-size: 24px;

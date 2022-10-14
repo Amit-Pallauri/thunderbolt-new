@@ -133,7 +133,7 @@ const Header = () => {
                 <Link>Advantages</Link>
               </p>
               <p className="nav-item-canvas">
-                <Link>Pagespeed Insights</Link>
+                <Link>Check Pagespeed Insights</Link>
               </p>
             </div>
           </div>
