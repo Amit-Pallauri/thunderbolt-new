@@ -61,11 +61,11 @@ const ExtraAddOnsCards = ({ isMonthly, currency }) => {
     },
   ];
   return (
-    <div className="row  m-0 p-0 ">
+    <div className="row addon-container">
       {slides.map((s, index) => {
         const isLast = index === slides?.length - 1;
         return (
-          <div key={index} className="col-md-4   mt-3 p-0 mb-5">
+          <div key={index} className="col-md-4 mt-3 p-0 mb-3">
             <div className="extra-card-width ">
               <div className=" rounded-lg ">
                 <div className="mb-2 space">{"s"}</div>

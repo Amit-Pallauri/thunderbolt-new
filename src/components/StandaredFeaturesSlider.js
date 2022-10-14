@@ -44,14 +44,14 @@ const StandaredFeaturesSlider = () => {
   ];
   return (
     <section className="ml-md-5 py-md-1 px-md-5 they-trust-us-section">
-      <Swiper {...PricingSkillSlider}>
+      <Swiper {...PricingSkillSlider} className="smileCardSlider">
         {slides.map((s, key) => {
           return (
             <SwiperSlide
               className="custom-swiper-slide"
               style={{ background: "transparent" }}
             >
-              <div className="smile-card   mt-5 mt-md-5  mb-5 ">
+              <div className="smile-card mt-4 mt-md-5  mb-5 ">
                 <img
                   loading="lazy"
                   className="mt-md-4 mt-4"
