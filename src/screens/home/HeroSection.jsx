@@ -31,7 +31,13 @@ const HeroSection = () => {
                     </button>
                   </div>
                   <div className="col-sm-12 col-lg-6 banner-img">
-                    <img className="banner1" src={HomeBanner} alt="" />
+                    <img
+                      className="banner1"
+                      src={HomeBanner}
+                      alt=""
+                      width={"100%"}
+                      height={"100%"}
+                    />
                   </div>
                 </div>
               </SwiperSlide>
@@ -53,7 +59,13 @@ const HeroSection = () => {
                     </button>
                   </div>
                   <div className="col-sm-12 col-lg-6 banner-img">
-                    <img className="banner2" src={HomeBanner2} alt="" />
+                    <img
+                      className="banner2"
+                      src={HomeBanner2}
+                      alt=""
+                      width={"100%"}
+                      height={"100%"}
+                    />
                   </div>
                 </div>
               </SwiperSlide>
@@ -75,7 +87,13 @@ const HeroSection = () => {
                     </button>
                   </div>
                   <div className="col-sm-12 col-lg-6 banner-img">
-                    <img className="banner3" src={HomeBanner3} alt="" />
+                    <img
+                      className="banner3"
+                      src={HomeBanner3}
+                      alt=""
+                      width={"100%"}
+                      height={"100%"}
+                    />
                   </div>
                 </div>
               </SwiperSlide>

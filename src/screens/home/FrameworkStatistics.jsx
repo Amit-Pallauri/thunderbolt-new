@@ -122,6 +122,8 @@ export const FrameworkStatistics = () => {
                     loading="lazy"
                     src={checkProgressImage(metrics.performance)}
                     alt=""
+                    width={"100%"}
+                    height={"100%"}
                   />
                   <p className={checkProgress(metrics.performance)}>
                     {metrics.performance}
@@ -136,6 +138,8 @@ export const FrameworkStatistics = () => {
                     loading="lazy"
                     src={checkProgressImage(metrics.accessibility)}
                     alt=""
+                    width={"100%"}
+                    height={"100%"}
                   />
                   <p className={checkProgress(metrics.accessibility)}>
                     {metrics.accessibility}
@@ -150,6 +154,8 @@ export const FrameworkStatistics = () => {
                     loading="lazy"
                     src={checkProgressImage(metrics["best-practices"])}
                     alt=""
+                    width={"100%"}
+                    height={"100%"}
                   />
                   <p className={checkProgress(metrics["best-practices"])}>
                     {metrics["best-practices"]}
@@ -164,6 +170,8 @@ export const FrameworkStatistics = () => {
                     loading="lazy"
                     src={checkProgressImage(metrics.seo)}
                     alt=""
+                    width={"100%"}
+                    height={"100%"}
                   />
                   <p className={checkProgress(metrics.seo)}>{metrics.seo}</p>
                 </div>

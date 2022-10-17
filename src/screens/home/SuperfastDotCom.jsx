@@ -124,15 +124,26 @@ const SuperfastDotCom = () => {
               className="picture-big"
               src={gatsbyLogo}
               alt=""
+              height={"100%"}
+              width={"100%"}
             />
             <img
               loading="lazy"
               className="picture-big"
               src={strapiLogo}
               alt=""
+              height={"100%"}
+              width={"100%"}
             />
           </div>
-          <img loading="lazy" className="picture-small" src={awsLogo} alt="" />
+          <img
+            loading="lazy"
+            className="picture-small"
+            src={awsLogo}
+            alt=""
+            height={"100%"}
+            width={"100%"}
+          />
         </div>
       </div>
     </section>

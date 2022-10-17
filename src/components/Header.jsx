@@ -19,7 +19,13 @@ const Header = () => {
     <header>
       <nav className="navbar navbar-expand-lg navbar-light container">
         <Link to={routes.home} className="navbar-brand">
-          <img loading="lazy" src={ImageConstants.logo} alt="logo" />
+          <img
+            loading="lazy"
+            src={ImageConstants.logo}
+            alt="logo"
+            width={"100%"}
+            height={"100%"}
+          />
         </Link>
         <div
           className="collapse navbar-collapse nav-items-container"
@@ -70,7 +76,13 @@ const Header = () => {
         </div>
 
         <div className="hambar" onClick={() => setOpen(true)}>
-          <img loading="lazy" src={hambarIcon} alt="" />
+          <img
+            loading="lazy"
+            src={hambarIcon}
+            alt=""
+            width={"100%"}
+            height={"100%"}
+          />
         </div>
       </nav>
 
@@ -84,11 +96,23 @@ const Header = () => {
       >
         <div className="home-button" onClick={() => setOpen(false)}>
           <Link to={routes.home}>
-            <img loading="lazy" src={headerHome} alt="" />
+            <img
+              loading="lazy"
+              src={headerHome}
+              alt=""
+              width={"100%"}
+              height={"100%"}
+            />
           </Link>
         </div>
         <div className="close-btn-section" onClick={() => setOpen(false)}>
-          <img loading="lazy" src={closeIcon} alt="" />
+          <img
+            loading="lazy"
+            src={closeIcon}
+            alt=""
+            width={"100%"}
+            height={"100%"}
+          />
         </div>
 
         <div className="offcanvas-body">
@@ -147,7 +171,12 @@ const Header = () => {
               <div className="sidebar-footer">
                 <p>Privacy Policy</p>
                 <p>Terms</p>
-                <a href="#">Login</a>
+                <a
+                  target={"_blank"}
+                  href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
+                >
+                  Login
+                </a>
               </div>
             </div>
           </div>
