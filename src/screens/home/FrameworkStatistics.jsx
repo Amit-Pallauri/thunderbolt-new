@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { statsSlider } from "../../constants/swiperConstants";
-import greenCircle from "../../images/green90-circle.webp";
-import orangeCircle from "../../images/orange80-circle.webp";
-import red20Circle from "../../images/red20-circle.webp";
-import red40Circle from "../../images/red40-circle.webp";
-import green100Circle from "../../images/green100-circle.webp";
 import thunderboltIcon from "../../images/icons/thunderbolt-icon.webp";
 import setUpQuery from "../../utils/pageSpeedInsights";
 import { isValidUrl } from "../../utils/utils";
+import zero from "../../images/circles/0.webp";
+import ten from "../../images/circles/10.webp";
+import twenty from "../../images/circles/20.webp";
+import thirty from "../../images/circles/30.webp";
+import fourty from "../../images/circles/40.webp";
+import fifty from "../../images/circles/50.webp";
+import sixty from "../../images/circles/60.webp";
+import seventy from "../../images/circles/70.webp";
+import eighty from "../../images/circles/80.webp";
+import ninety from "../../images/circles/90.webp";
+import hundred from "../../images/circles/100.webp";
 
 export const FrameworkStatistics = () => {
   const [baseUrl, setBaseUrl] = useState("");
@@ -64,17 +70,17 @@ export const FrameworkStatistics = () => {
   };
 
   const checkProgressImage = (value) => {
-    if (value === 100) {
-      return green100Circle;
-    } else if (value > 90 && value < 100) {
-      return greenCircle;
-    } else if (value < 90 && value > 60) {
-      return orangeCircle;
-    } else if (value < 60 && value > 40) {
-      return red40Circle;
-    } else {
-      return red20Circle;
-    }
+    if (value === 100) return hundred;
+    else if (value >= 90 && value < 100) return ninety;
+    else if (value >= 80 && value < 90) return eighty;
+    else if (value >= 70 && value < 80) return seventy;
+    else if (value >= 60 && value < 70) return sixty;
+    else if (value >= 50 && value < 60) return fifty;
+    else if (value >= 40 && value < 50) return fourty;
+    else if (value >= 30 && value < 40) return thirty;
+    else if (value >= 20 && value < 30) return twenty;
+    else if (value >= 0 && value < 20) return ten;
+    else return zero;
   };
 
   useEffect(() => {
@@ -105,7 +111,7 @@ export const FrameworkStatistics = () => {
 
   return (
     <>
-      <section className="web-vitals-section">
+      <section className="web-vitals-section" id="page-speed">
         <h2 className="title">Discover your core web vitals</h2>
         <div className="stats">
           <div className="container">

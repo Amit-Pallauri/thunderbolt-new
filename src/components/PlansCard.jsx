@@ -6,16 +6,16 @@ const PlansCard = ({ data, isMonthly, bgColor = "#FFFFFF" }) => {
   return (
     <div className="plans-card-container" style={{ backgroundColor: bgColor }}>
       <p className="tag">{data?.tag}</p>
-    <p className="plans-info">{data?.info}</p>
+      <p className="plans-info">{data?.info}</p>
       <div className="plan-price">
         {data?.isCustom === false ? (
           <>
-            <p className="price">
-              <span className="price-symbol">
+            <div className="price">
+              <p className="price-symbol">
                 {data?.price.currency === "euro" ? "€" : "£"}
-              </span>
-              <strong>{data?.price?.price}</strong>
-            </p>
+              </p>
+              <p className="price-value">{data?.price?.price}</p>
+            </div>
             <p className="price-info">{isMonthly ? "per month" : "per year"}</p>
           </>
         ) : (

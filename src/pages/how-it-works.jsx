@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Layout from "../components/Layout";
 import ImageConstants from "../constants/imageConstants";
 import { InView } from "react-intersection-observer";
+import routes from "../constants/routes";
+import { navigate } from "gatsby";
 const HowItWorks = () => {
   const [currency, setCurrency] = useState("pounds");
 
@@ -415,7 +417,12 @@ const HowItWorks = () => {
                 </span>
               </div>
               <br />
-              <button className="view-pricing-btn">View pricing</button>
+              <button
+                className="view-pricing-btn"
+                onClick={() => navigate(routes.pricing)}
+              >
+                View pricing
+              </button>
             </div>
           </div>
         </div>

@@ -64,26 +64,28 @@ const SuperfastDotCom = () => {
     },
   ];
   return (
-    <section className="superfast-dotcom-section">
+    <section className="superfast-dotcom-section" id="why-thunderbolt">
       <h1 className="superfast-title ">Why do you need a superfast dot com</h1>
       <div className="why-you-need">
         <div className="why-you-need-content">
           <div className="row">
             <div className="col-md-6 content-section">
-              <img
-                loading="lazy"
-                className="icon"
-                src={thunderboltIcon}
-                alt=""
-              />
-              <img
-                loading="lazy"
-                className="hero-img"
-                src={data.find((el) => el.id === activeTab).image}
-                alt=""
-              />
-              <div className="section-info">
-                <p>{data.find((el) => el.id === activeTab).data}</p>
+              <div className="img-contaiers">
+                <img
+                  loading="lazy"
+                  className="icon"
+                  src={thunderboltIcon}
+                  alt=""
+                />
+                <img
+                  loading="lazy"
+                  className="hero-img"
+                  src={data.find((el) => el.id === activeTab).image}
+                  alt=""
+                />
+                <div className="section-info">
+                  <p>{data.find((el) => el.id === activeTab).data}</p>
+                </div>
               </div>
             </div>
             <div className="col-md-6 list-section">

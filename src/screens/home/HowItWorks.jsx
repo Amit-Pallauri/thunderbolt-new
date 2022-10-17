@@ -29,13 +29,20 @@ const HowItWorks = () => {
         </div>
       </div>
       <div className="btn-container">
+        <button className="active-btn">
+          <a
+            target={"_blank"}
+            href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
+          >
+            Get Started
+          </a>
+        </button>
         <button
-          className="active-btn"
+          className="inactive-btn"
           onClick={() => navigate(Routes.howItWorks)}
         >
-          Get Started
+          Know more
         </button>
-        <button className="inactive-btn">Know more</button>
       </div>
     </section>
   );
