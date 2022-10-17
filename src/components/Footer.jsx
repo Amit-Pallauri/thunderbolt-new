@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import ImageConstants from "../constants/imageConstants";
 import routes from "../constants/routes";
@@ -10,25 +11,25 @@ const Footer = () => {
     },
     {
       name: "Why ThunderboltJS",
-      link: routes.howItWorks,
+      link: `${routes.home}#why-thunderbolt`,
     },
-    {
-      name: "Who Uses",
-      link: routes.howItWorks,
-    },
-    {
-      name: "Advantages",
-      link: routes.howItWorks,
-    },
+    // {
+    //   name: "Who Uses",
+    //   link: routes.howItWorks,
+    // },
+    // {
+    //   name: "Advantages",
+    //   link: routes.howItWorks,
+    // },
   ];
   const newLinks = [
     {
       name: "Check Pagespeed Insights",
-      link: routes.howItWorks,
+      link: `${routes.home}#page-speed`,
     },
     {
       name: "Pricing",
-      link: routes.howItWorks,
+      link: routes.pricing,
     },
   ];
   return (
@@ -56,7 +57,7 @@ const Footer = () => {
             {Array.from(links).map((l, key) => {
               return (
                 <li>
-                  <a href={l.link}>{l.name}</a>
+                  <Link to={l.link}>{l.name}</Link>
                 </li>
               );
             })}
@@ -65,7 +66,7 @@ const Footer = () => {
             {Array.from(newLinks).map((l, key) => {
               return (
                 <li>
-                  <a href={l.link}>{l.name}</a>
+                  <Link to={l.link}>{l.name}</Link>
                 </li>
               );
             })}

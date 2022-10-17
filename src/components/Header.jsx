@@ -56,7 +56,14 @@ const Header = () => {
             </li>
           </ul>
           <div className="header-btns">
-            <button className="login">Log In</button>
+            <button className="login">
+              <a
+                target={"_blank"}
+                href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
+              >
+                Log In
+              </a>
+            </button>
             <button className="get-started">
               <a
                 target={"_blank"}
@@ -164,7 +171,12 @@ const Header = () => {
               <div className="sidebar-footer">
                 <p>Privacy Policy</p>
                 <p>Terms</p>
-                <a href="#">Login</a>
+                <a
+                  target={"_blank"}
+                  href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
+                >
+                  Login
+                </a>
               </div>
             </div>
           </div>

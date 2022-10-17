@@ -41,6 +41,7 @@
     width: 37px !important;
     top: 2%;
   }
+
   .home-button img {
     width: 74px !important;
     height: auto !important;
@@ -66,6 +67,7 @@
 
   .right-sidebar {
     height: 100%;
+    overflow-y: scroll;
   }
 
   .left-sidebar {
@@ -242,6 +244,7 @@
     font-size: 16px;
     font-weight: normal;
   }
+
   .select-currency-container {
     margin: 10px 0;
     height: 100%;
@@ -280,20 +283,24 @@
     padding: 20px;
   }
 
-  .content-section .section-info {
+  .why-you-need .content-section .img-contaiers {
+    width: 100%;
+  }
+
+  .content-section .img-contaiers .section-info {
     width: 285px;
     min-height: 162px;
     border-radius: 26px;
     box-shadow: 6px 4px 24px #00000029;
     background-color: white;
     position: absolute;
-    bottom: -35%;
-    right: -5%;
+    bottom: -30%;
+    right: -10%;
     padding: 20px;
     padding-bottom: 10px;
   }
 
-  .content-section .section-info p {
+  .content-section .img-contaiers .section-info p {
     font-weight: normal;
     font-size: 16px;
   }
@@ -565,6 +572,7 @@
     font-size: 40px;
     font-weight: normal;
   }
+
   .hero-section .sub-title {
     width: 90%;
     margin: 10px auto;
@@ -676,11 +684,13 @@
     font-size: 25px;
     line-height: 32px;
   }
+
   .pricing-p {
     font-size: 16px;
     margin-top: 20px;
     color: #1e2323 !important;
   }
+
   .tab-btn .pricing-selector {
     right: auto;
     margin-top: 90px;
@@ -688,22 +698,27 @@
     margin-bottom: 10px;
     z-index: 1111111 !important;
   }
+
   .pricing-switch-btn {
     width: 300px;
     margin: auto;
     margin-top: -10px;
     margin-bottom: 15px;
   }
+
   .monthly-card-title {
     margin-top: 0px;
   }
+
   .monthly-card {
     height: auto;
     margin: auto;
   }
+
   .round-borders {
     padding: 1px;
   }
+
   .monthly-card-description {
     color: #160091;
     font-size: 10px;
@@ -715,27 +730,33 @@
   .vat-box p {
     font-size: 14px !important;
   }
+
   .vat-text {
     font-size: 16px !important;
     padding-left: 21px !important;
     padding-right: 21px !important;
   }
+
   .pricing-hero-section-two {
     font-size: 22px !important;
   }
+
   .pricing-hero-section-two-h2 {
     font-size: 30px;
   }
+
   .pricing-p2 {
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
+
   /* .swiper-slide {
     width: 200px !important;
   } */
   .custom-swiper-slide {
     width: 200px !important;
   }
+
   .smile-card {
     width: 180px;
     height: 250px;
@@ -746,22 +767,27 @@
     padding-right: 20px !important;
     padding-left: 36px !important;
   }
+
   .pricing-selector label {
     color: #1b03a3;
     font-weight: bolder;
   }
+
   .pricing--main-box {
     /* background-color: #ecf9f1 !important; */
     /* padding-left: 44px !important; */
     height: 620px !important;
   }
+
   .mb-100 {
     margin-bottom: 100px;
   }
+
   .tab-btn {
     margin-top: 40px;
     margin-bottom: 120px;
   }
+
   .points {
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
@@ -771,103 +797,129 @@
     padding-bottom: 56px !important;
     font-size: 12px;
   }
+
   .get-started-btn {
     width: 80%;
     margin-bottom: 40px !important;
   }
+
   .monthly-cost strong {
     font-size: 36px;
   }
+
   .monthly-cost span {
     font-size: 16px !important;
   }
+
   .monthly-cost .price-symbol {
     font-size: 20px !important;
     position: absolute;
     margin-top: 8px;
     margin-left: -20px;
   }
+
   .hero-1-card-container {
     margin-top: -180px;
     /* padding-left: 2.5rem !important; */
   }
+
   .pricing-monthly {
     height: 44px !important;
   }
+
   .pricing-yearly {
     height: 44px !important;
   }
+
   .extra-addon-conatiner {
     margin: 0px 10px;
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .extra-card-width {
     width: 100% !important;
   }
+
   .extra {
     margin: auto !important;
     margin-bottom: 40px !important;
   }
+
   .stand {
     margin-left: -20px;
   }
+
   .footer-bootom-links {
     margin-top: 22px !important;
     margin-left: -50px !important;
     left: 8% !important;
     margin-bottom: 20px;
   }
+
   .footer-bottom {
     margin-top: 10px;
     justify-content: center !important;
     height: auto;
   }
+
   .footer-bottom p {
     margin-right: 20vw;
     text-align: center;
     justify-content: center !important;
   }
+
   .footer-social-icons {
     text-align: start !important;
   }
-  .footer-social-icons > a > img {
+
+  .footer-social-icons>a>img {
     width: 20px !important;
     height: auto !important;
   }
+
   .footer-logo {
     width: 250px !important;
     height: 100px !important;
     object-fit: contain;
   }
+
   .footer-logo-conatiner {
     padding-left: 0 !important;
   }
+
   .footer-bootom-links a {
     text-align: start;
     text-decoration: none;
     color: #9b9b9b;
   }
+
   .footer-links {
     margin-left: -50px !important;
   }
+
   .how-it-works-hero {
     padding: 0px 10vw !important;
     height: 50vh;
   }
+
   .how-it-works-heading {
     font-size: 26px;
     margin-bottom: 20px !important;
   }
+
   .how-it-works-main-box {
     height: 410px !important;
   }
+
   .float-img-one {
     margin-left: -100px;
   }
+
   .float-img-two {
     margin-left: -100px;
   }
+
   .img-box-hero-2 {
     display: flex;
     flex-direction: column;
@@ -875,40 +927,49 @@
     align-items: center;
     padding: 0px 10px;
   }
+
   .how-it-works-des {
     font-size: 12px;
     padding: 0px 0px;
   }
-  .img-box-hero-2 > .user-img {
+
+  .img-box-hero-2>.user-img {
     width: 20rem;
   }
+
   .collabration-conatiner {
     margin-left: 0px !important;
     text-align: center;
     width: 90%;
   }
+
   .col-text {
     padding-left: 3rem !important;
     text-align: center;
   }
+
   .col-des {
     padding-left: 2rem !important;
     text-align: center;
   }
+
   .hiw-heading-hero-two {
     font-size: 26px;
     margin-bottom: 0px !important;
   }
+
   .how-it-works-opp {
     width: 90%;
     padding: 0px 0px;
   }
+
   .how-it-works-head-opp {
     margin-top: 50px;
     text-align: center;
     padding: 0px 2rem;
     margin-left: -30px;
   }
+
   .how-it-works-des-opp {
     text-align: center;
     padding: 0px 2rem;
@@ -916,30 +977,38 @@
     margin-left: 10px;
     margin-bottom: 50px;
   }
+
   .hiw-oop-img-conatiner {
     margin: 0px;
   }
+
   .view-pricing-btn {
-    margin-left: 20px !important  ;
+    margin-left: 20px !important;
   }
+
   .hiw-oop-img {
     width: 20rem;
   }
+
   .how-it-works-hero-three {
     margin-top: 80px;
     height: 470px;
   }
+
   .hiw-hero-three-heading {
     margin-left: 5px;
     font-size: 28px;
     margin-bottom: 30px;
   }
+
   .hiw-hero-three-span-parent {
     padding: 0px;
   }
+
   .how-it-works-hero-two {
     overflow: hidden !important;
   }
+
   .how-it-works-card-conatiner {
     display: flex;
     flex-direction: column;
@@ -950,12 +1019,15 @@
     width: 100%;
     border-radius: 0px;
   }
+
   .how-it-works-hero-card {
     width: 95vw;
   }
-  .how-it-works-hero-card > img {
+
+  .how-it-works-hero-card>img {
     width: 30rem;
   }
+
   .hero-btn-round-active {
     position: absolute;
     width: 30px;
@@ -963,6 +1035,7 @@
     margin-top: 0px;
     margin-left: 0px;
   }
+
   .hero-btn-round {
     position: absolute;
     width: 30px;
@@ -970,21 +1043,25 @@
     margin-top: 0px;
     margin-left: 0px;
   }
+
   .full-vl {
     height: inherit;
     margin-top: 40px;
     margin-left: 14px;
   }
+
   .vl-last {
     margin-top: 40px;
     margin-left: 14px;
     height: calc(2em * 14.8) !important;
   }
+
   .vl {
     height: inherit;
     margin-top: 40px;
     margin-left: 14px;
   }
+
   .hiw-card-heading {
     font-family: Montserrat;
     text-align: start;
@@ -994,10 +1071,12 @@
     margin-top: -5px;
     width: 70vw !important;
   }
+
   .hiw-card-img-mob {
     margin-left: -5px !important;
     width: 80%;
   }
+
   .hiw-card-des-mob {
     line-height: 25px;
     color: #7b828c;
@@ -1018,6 +1097,7 @@
     width: 100% !important;
     height: 360px !important;
   }
+
   .get-started-btn {
     margin-bottom: 10px !important;
   }
@@ -1027,38 +1107,48 @@
   .price-symbol {
     margin-left: -85px !important;
   }
+
   .price-symbol-safari {
     margin-left: -50px !important;
   }
+
   .monthly-card {
     height: auto;
     /* width: 22vw !important; */
   }
+
   .pay-monthly-card {
     width: 30vw !important;
   }
+
   .extra-card-width {
     width: 30vw !important;
   }
 }
+
 @media (min-width: 1920px) and (max-width: 2560px) {
   .monthly-card {
     height: auto;
 
     /* width: 23vw !important; */
   }
+
   .pay-monthly-card {
     width: 30vw !important;
   }
+
   .extra-card-width {
     width: 30vw !important;
   }
+
   .pricing-h1 {
     margin-left: 25vw !important;
   }
-  .pricing-h1 > span {
+
+  .pricing-h1>span {
     margin-left: 15vw !important;
   }
+
   .pricing-p {
     margin-left: 20vw !important;
   }
