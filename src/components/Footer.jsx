@@ -99,24 +99,24 @@ const Footer = () => {
             </a>
           </div>
           <div className=" d-md-none d-flex footer-bootom-links">
-            <a href={routes.privacyPolicy} className="px-5 pointer">
+            <Link to={routes.privacyPolicy} className="px-5 pointer">
               Privacy Policy
-            </a>
-            <a href={routes.Terms} className="pointer">
+            </Link>
+            <Link to={routes.Terms} className="pointer">
               Terms
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="footer-bottom  d-md-flex ">
         <p>2022 @Razr Tech Sarl</p>
         <div className=" d-md-flex d-none footer-bootom-links">
-          <a href={routes.privacyPolicy} className="px-5 pointer">
+          <Link to={routes.privacyPolicy} className="px-5 pointer">
             Privacy Policy
-          </a>
-          <a href={routes.Terms} className="pointer">
+          </Link>
+          <Link to={routes.Terms} className="pointer">
             Terms
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

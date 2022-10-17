@@ -1,5 +1,5 @@
 import { useLocation } from "@reach/router";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import React, { useEffect, useState } from "react";
 import ImageConstants from "../constants/imageConstants";
 import routes from "../constants/routes";
@@ -155,8 +155,15 @@ const Header = () => {
               </div>
 
               <div className="sidebar-footer">
-                <p>Privacy Policy</p>
-                <p>Terms</p>
+                <p
+                  role={"button"}
+                  onClick={() => navigate(routes.privacyPolicy)}
+                >
+                  Privacy Policy
+                </p>
+                <p role={"button"} onClick={() => navigate(routes.Terms)}>
+                  Terms
+                </p>
                 <a
                   target={"_blank"}
                   href="https://dashboard.thunderboltjs.com/"
