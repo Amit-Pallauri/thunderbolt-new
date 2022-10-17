@@ -75,14 +75,11 @@ const Footer = () => {
         <div className="col-12 col-md-2"></div>
         <div className="col-md-2 col-12 px-md-5 px-3">
           <div className="d-grid justify-content-between  text-center">
-            <button className=" px-md-0 footer-action-btn">
-              <a
-                href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-                target={"_blank"}
-              >
+            <a href="https://dashboard.thunderboltjs.com/" target={"_blank"}>
+              <button className=" px-md-0 footer-action-btn">
                 Get Started
-              </a>
-            </button>
+              </button>
+            </a>
             <button className="footer-action-btn">Book a call</button>
           </div>
           <div className="mt-3 footer-social-icons justify-content-between mb-md-3 mt-md-2">

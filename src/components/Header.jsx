@@ -56,22 +56,12 @@ const Header = () => {
             </li>
           </ul>
           <div className="header-btns">
-            <button className="login">
-              <a
-                target={"_blank"}
-                href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-              >
-                Log In
-              </a>
-            </button>
-            <button className="get-started">
-              <a
-                target={"_blank"}
-                href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-              >
-                Get Started
-              </a>
-            </button>
+            <a target={"_blank"} href="https://dashboard.thunderboltjs.com/">
+              <button className="login">Log In</button>
+            </a>
+            <a target={"_blank"} href="https://dashboard.thunderboltjs.com/">
+              <button className="get-started">Get Started</button>
+            </a>
           </div>
         </div>
 
@@ -151,20 +141,16 @@ const Header = () => {
               </h2>
 
               <div className="buttons">
-                <div className="btn-container active-btn">
-                  <button>
-                    <a
-                      href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-                      target={"_blank"}
-                    >
-                      Get Started
-                    </a>
-                  </button>
-                  {/* <img loading="lazy" src={rightArrow} alt="" /> */}
-                </div>
+                <a
+                  href="https://dashboard.thunderboltjs.com/"
+                  target={"_blank"}
+                >
+                  <div className="btn-container active-btn">
+                    <button>Get Started</button>
+                  </div>
+                </a>
                 <div className="btn-container">
                   <button>Book a Call</button>
-                  {/* <img loading="lazy" src={rightArrow} alt="" /> */}
                 </div>
               </div>
 
@@ -173,7 +159,7 @@ const Header = () => {
                 <p>Terms</p>
                 <a
                   target={"_blank"}
-                  href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
+                  href="https://dashboard.thunderboltjs.com/"
                 >
                   Login
                 </a>

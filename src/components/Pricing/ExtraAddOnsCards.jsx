@@ -65,7 +65,7 @@ const ExtraAddOnsCards = ({ isMonthly, currency }) => {
       {slides.map((s, index) => {
         const isLast = index === slides?.length - 1;
         return (
-          <div key={index} className="col-md-4 mt-3 p-0 mb-3">
+          <div key={index} className="col-md-4 addon-cards">
             <div className="extra-card-width ">
               <div className=" rounded-lg ">
                 <div className="mb-2 space">{"s"}</div>
@@ -83,20 +83,20 @@ const ExtraAddOnsCards = ({ isMonthly, currency }) => {
                   {s.des}
                 </p>
                 <br />
-                <button
-                  className={
-                    isLast
-                      ? "get-started-btn get-started-btn-last mt-0 mb-5"
-                      : "get-started-btn mt-0 mb-5"
-                  }
+                <a
+                  target={"_blank"}
+                  href="https://dashboard.thunderboltjs.com/"
                 >
-                  <a
-                    target={"_blank"}
-                    href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
+                  <button
+                    className={
+                      isLast
+                        ? "get-started-btn get-started-btn-last mt-0 mb-5"
+                        : "get-started-btn mt-0 mb-5"
+                    }
                   >
                     {s.buttonText}
-                  </a>
-                </button>
+                  </button>
+                </a>
               </div>
             </div>
           </div>

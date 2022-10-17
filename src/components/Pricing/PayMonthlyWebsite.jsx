@@ -125,14 +125,14 @@ const PayMonthlyWebsite = ({
                     <br />
                   </p>
 
-                  <button className=" mt-3 get-started-btn mt-0 mb-5">
-                    <a
-                      target={"_blank"}
-                      href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-                    >
+                  <a
+                    target={"_blank"}
+                    href="https://dashboard.thunderboltjs.com/"
+                  >
+                    <button className=" mt-3 get-started-btn mt-0 mb-5">
                       Get Started
-                    </a>
-                  </button>
+                    </button>
+                  </a>
                 </div>
                 {showFeaturs && (
                   <div className="points p-3  mb-5 ">
