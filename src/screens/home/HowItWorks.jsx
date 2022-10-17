@@ -47,14 +47,9 @@ const HowItWorks = () => {
         </div>
       </div>
       <div className="btn-container">
-        <button className="active-btn">
-          <a
-            target={"_blank"}
-            href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-          >
-            Get Started
-          </a>
-        </button>
+        <a target={"_blank"} href="https://dashboard.thunderboltjs.com/">
+          <button className="active-btn">Get Started</button>
+        </a>
         <button
           className="inactive-btn"
           onClick={() => navigate(Routes.howItWorks)}

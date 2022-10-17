@@ -21,14 +21,12 @@ const HeroSection = () => {
                       Whether 20, or 200 pages, we are here to fix your core web
                       vitals & deliver a blazing fast experience
                     </h2>
-                    <button className="get-started">
-                      <a
-                        href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-                        target={"_blank"}
-                      >
-                        Get Started
-                      </a>
-                    </button>
+                    <a
+                      href="https://dashboard.thunderboltjs.com/"
+                      target={"_blank"}
+                    >
+                      <button className="get-started">Get Started</button>
+                    </a>
                   </div>
                   <div className="col-sm-12 col-lg-6 banner-img">
                     <img
@@ -49,14 +47,12 @@ const HeroSection = () => {
                       Your team will love you for upto 3X more conversions on
                       your digital campaigns.
                     </h2>
-                    <button className="get-started">
-                      <a
-                        href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-                        target={"_blank"}
-                      >
-                        Get Started
-                      </a>
-                    </button>
+                    <a
+                      href="https://dashboard.thunderboltjs.com/"
+                      target={"_blank"}
+                    >
+                      <button className="get-started">Get Started</button>
+                    </a>
                   </div>
                   <div className="col-sm-12 col-lg-6 banner-img">
                     <img
@@ -77,14 +73,12 @@ const HeroSection = () => {
                       In the age of thunderbolt, fast enough is simply not
                       enough.
                     </h2>
-                    <button className="get-started">
-                      <a
-                        href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-                        target={"_blank"}
-                      >
-                        Get Started
-                      </a>
-                    </button>
+                    <a
+                      href="https://dashboard.thunderboltjs.com/"
+                      target={"_blank"}
+                    >
+                      <button className="get-started">Get Started</button>
+                    </a>
                   </div>
                   <div className="col-sm-12 col-lg-6 banner-img">
                     <img

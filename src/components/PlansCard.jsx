@@ -23,14 +23,9 @@ const PlansCard = ({ data, isMonthly, bgColor = "#FFFFFF" }) => {
         )}
       </div>
       <p className="price-info-bold">{data?.pages}</p>
-      <button className="get-started">
-        <a
-          target={"_blank"}
-          href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-        >
-          Get started
-        </a>
-      </button>
+      <a target={"_blank"} href="https://dashboard.thunderboltjs.com/">
+        <button className="get-started">Get started</button>
+      </a>
       <p className="pricing-read-more">
         <Link to={routes.pricing}>Read more</Link>
       </p>

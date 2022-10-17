@@ -1090,6 +1090,65 @@
   .frequently-asked-title {
     font-size: 30px;
   }
+
+  .privacy-content {
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .header-section h1 {
+    font-size: 44px;
+  }
+
+  .header-section p {
+    font-size: 18px;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .privacy-content .section .title {
+    font-size: 32px;
+  }
+
+  .privacy-content .section .sub-title {
+    font-size: 24px;
+    font-weight: medium;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  /* terms */
+  .terms-container .header-section {
+    min-height: 450px;
+  }
+
+  .terms-content {
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .header-section h1 {
+    font-size: 44px;
+  }
+
+  .header-section p {
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .terms-content .section .title {
+    font-size: 32px;
+  }
+
+  .terms-content .section .sub-title {
+    font-size: 24px;
+    font-weight: medium;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
