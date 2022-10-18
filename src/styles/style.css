@@ -162,6 +162,11 @@ body {
 }
 
 .sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
   margin-left: 40px;
 }
 
@@ -1504,7 +1509,7 @@ body {
   opacity: 1;
   font-size: 22px;
   font-weight: 800 !important;
-      margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .monthly-card-description {
@@ -1550,7 +1555,7 @@ body {
   padding-right: 4rem;
   padding-left: 4rem;
   position: relative; */
-   min-height: 60px;
+  min-height: 60px;
 }
 
 .contact-sales {
@@ -1574,7 +1579,7 @@ body {
   color: #1e2323 !important;
   font-size: 38px;
   font-weight: 900;
-  
+
 }
 
 .monthly-cost span {
@@ -1596,14 +1601,16 @@ body {
   height: 46px; */
   font-weight: 600;
   /* margin-top: 2rem; */
-      padding: 8px 40px;
-          margin-bottom: 30px;
-          display: inline-block;
-    text-decoration: none;
+  padding: 8px 40px;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-decoration: none;
 }
-.get-started-btn:hover{
+
+.get-started-btn:hover {
   color: #fff;
 }
+
 .get-started-btn a {
   text-decoration: none;
   color: white;
@@ -1884,8 +1891,8 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #1664f7;
- padding-left: 10px;
-    width: 95%;
+  padding-left: 10px;
+  width: 95%;
 }
 
 .point-text-muted {
@@ -2578,32 +2585,37 @@ body {
 }
 
 /*New Css*/
-.pricing-container{
-      margin-top: -265px;
-    z-index: auto !important;
-    position: relative;
+.pricing-container {
+  margin-top: -265px;
+  z-index: auto !important;
+  position: relative;
 }
-.suptext{
+
+.suptext {
   font-size: 30px;
-    color: #1e2323 !important;
-    font-weight: 900;
+  color: #1e2323 !important;
+  font-weight: 900;
 }
-.monthlycardsub{
+
+.monthlycardsub {
   padding: 20px
 }
-.pointMain{
-      display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+
+.pointMain {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.pointImg{
+
+.pointImg {
   width: 5%;
 }
-header{
+
+header {
   width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #fff;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 999;
 }
