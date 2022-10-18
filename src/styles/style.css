@@ -132,6 +132,11 @@ body {
   margin: 0;
 }
 
+.canvas-btns {
+  display: flex;
+  flex-direction: column;
+}
+
 .left-sidebar {
   width: 60%;
   display: flex;
