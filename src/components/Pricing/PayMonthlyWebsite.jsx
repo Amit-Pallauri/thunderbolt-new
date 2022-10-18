@@ -105,18 +105,19 @@ const PayMonthlyWebsite = ({
               <div className="monthly-card pay-monthly-card text-center flex-fill">
                 <div className="bg-white rounded-lg ">
                   <div className="mb-2 space">{"s"}</div>
-                  <p className="monthly-card-title  ">{d.title}</p>
+                  <p className="monthly-card-title mb-2  ">{d.title}</p>
                   <p
                     className={
                       d?.symbol === false
                         ? "contact-sales "
-                        : "monthly-cost px-5 "
+                        : "monthly-cost"
                     }
                   >
                     {d?.symbol !== false && (
-                      <strong className="price-symbol">
-                        {d?.price.currency === "euro" ? "€" : "£"}
-                      </strong>
+                      <sup className="suptext">
+                          {d?.price.currency === "euro" ? "€" : "£"}
+                          </sup>
+                   
                     )}
                     <strong>{d.price.price}</strong>
 
@@ -128,22 +129,23 @@ const PayMonthlyWebsite = ({
                   <a
                     target={"_blank"}
                     href="https://dashboard.thunderboltjs.com/"
+                    className=" mt-3 get-started-btn"
                   >
-                    <button className=" mt-3 get-started-btn mt-0 mb-5">
+                    
                       Get Started
-                    </button>
+                    
                   </a>
                 </div>
                 {showFeaturs && (
-                  <div className="points p-3  mb-5 ">
+                  <div className="points p-3">
                     {d.features.map((f, i) => {
                       const isDisable =
                         d.garyAfter === false ? false : i >= d.garyAfter + 1;
                       return (
                         <>
-                          <div className="d-flex px-2 position-realtive">
+                          <div className="pointMain">
                             <img
-                              className="position-absolute  point-img"
+                              className="pointImg"
                               src={
                                 isDisable
                                   ? ImageConstants.mutedFeatureIcon

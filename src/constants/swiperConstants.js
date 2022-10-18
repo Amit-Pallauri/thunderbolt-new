@@ -74,6 +74,8 @@ export const homeSkillSlider = {
   },
 };
 export const PricingSkillSlider = {
+  slidesPerView: 2,
+  spaceBetween: 20,
   loop: true,
   autoplay: {
     delay: 2500,

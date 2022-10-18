@@ -167,13 +167,13 @@ body {
 
 .sidebar-content .title {
   margin-bottom: 2rem;
-  margin-top: 8rem;
+  margin-top: 3rem;
   line-height: 50px;
   font-family: "aline";
   font-size: 34px;
   font-weight: 500;
   color: #1e2323;
-  width: 80%;
+  width: 90%;
 }
 
 .sidebar-content .buttons {
@@ -1446,7 +1446,7 @@ body {
 }
 
 .monthly-card {
-  width: 95%;
+  /* width: 95%; */
   height: 1050px;
   margin: auto;
   text-align: center;
@@ -1484,11 +1484,12 @@ body {
 
 .monthly-card-title {
   text-align: center;
-  letter-spacing: 0px;
+  /* letter-spacing: 0px; */
   color: #1664f7;
   opacity: 1;
   font-size: 22px;
   font-weight: 800 !important;
+      margin-bottom: 4px;
 }
 
 .monthly-card-description {
@@ -1496,9 +1497,10 @@ body {
   font-size: 12px;
   line-height: -5px;
   color: #7b828c;
-  margin-top: -10px;
+  min-height: 40px;
+  /* margin-top: -10px;
   padding-left: 30px !important;
-  padding-right: 30px !important;
+  padding-right: 30px !important; */
 }
 
 .extra-card-description {
@@ -1513,53 +1515,56 @@ body {
 
 .contact-align {
   font-family: Montserrat !important;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   font-size: 12px;
-  line-height: -5px;
+  /* line-height: -5px; */
   color: #7b828c;
-  margin-top: -10px;
+  /* margin-top: -10px;
   padding-left: 30px !important;
-  padding-right: 30px !important;
+  padding-right: 30px !important; */
 }
 
 .monthly-cost {
-  text-align: left;
+  text-align: center;
   letter-spacing: -0.38px;
   color: #1db954;
   opacity: 1;
   font-weight: 900;
   font-size: 20px;
-  display: contents;
+  /* display: contents;
   padding-right: 4rem;
   padding-left: 4rem;
-  position: relative;
+  position: relative; */
+   min-height: 60px;
 }
 
 .contact-sales {
-  margin-top: -10px !important;
-  margin-bottom: 20px !important;
-  text-align: left;
-  letter-spacing: -0.38px;
+  /* margin-top: -10px !important;
+  margin-bottom: 20px !important; */
+  text-align: center;
+  /* letter-spacing: -0.38px; */
   color: #1e2323;
   opacity: 1;
   font-weight: 900;
-  font-size: 25px;
-  display: contents;
+  font-size: 32px;
+  /* display: contents;
   padding-right: 4rem;
   padding-left: 4rem;
-  position: relative;
+  position: relative; */
+  min-height: 60px;
 }
 
 .monthly-cost strong {
-  padding-left: 15px;
+  /* padding-left: 15px; */
   color: #1e2323 !important;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 900;
+  
 }
 
 .monthly-cost span {
   text-align: left;
-  letter-spacing: 0px;
+  /* letter-spacing: 0px; */
   color: #1e2323;
   opacity: 1;
   font-weight: 400 !important;
@@ -1570,14 +1575,20 @@ body {
   background: #1664f7 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
-  color: white;
+  color: #fff;
   border: none;
-  width: 222px;
-  height: 46px;
+  /* width: 222px;
+  height: 46px; */
   font-weight: 600;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+      padding: 8px 40px;
+          margin-bottom: 30px;
+          display: inline-block;
+    text-decoration: none;
 }
-
+.get-started-btn:hover{
+  color: #fff;
+}
 .get-started-btn a {
   text-decoration: none;
   color: white;
@@ -1701,7 +1712,7 @@ body {
   display: flex;
   z-index: 111;
   background: white;
-  box-shadow: 6px 4px 24px #00000029;
+  box-shadow: 0px 0px 13px #00000029;
   border-radius: 12px;
   opacity: 1;
   height: 220px;
@@ -1858,7 +1869,8 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #1664f7;
-  padding-left: 17px;
+ padding-left: 10px;
+    width: 95%;
 }
 
 .point-text-muted {
@@ -1874,9 +1886,9 @@ body {
   margin-top: 3px;
 }
 
-.contact-sales-btn {
+/* .contact-sales-btn {
   margin-bottom: 3.5rem !important;
-}
+} */
 
 .padding-three {
   padding-left: 40px !important;
@@ -2544,4 +2556,35 @@ body {
   font-weight: medium;
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+/*New Css*/
+.pricing-container{
+      margin-top: -265px;
+    z-index: auto !important;
+    position: relative;
+}
+.suptext{
+  font-size: 30px;
+    color: #1e2323 !important;
+    font-weight: 900;
+}
+.monthlycardsub{
+  padding: 20px
+}
+.pointMain{
+      display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.pointImg{
+  width: 5%;
+}
+header{
+  width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 999;
 }
