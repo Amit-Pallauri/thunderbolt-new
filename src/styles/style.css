@@ -674,6 +674,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 80px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .plan-price .price {
@@ -1023,15 +1025,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .how-it-works-card img {
+  margin-bottom: 12px;
   width: 46px;
+  height: 46px;
 }
 
 .how-it-works-card h3 {
-  margin-top: 15px;
+  margin-top: 20px;
   width: 90%;
   text-align: center;
   font-size: 24px;
@@ -1045,7 +1049,7 @@ body {
   font-size: 16px;
   font-weight: medium;
   color: #7b828c;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .how-it-works button {
@@ -2083,6 +2087,15 @@ body {
   width: 40px;
   height: 40px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero-btn-round-active h1 {
+  margin: 0;
+  font-size: 25px;
 }
 
 .user-img {
@@ -2106,7 +2119,18 @@ body {
   width: 40px;
   height: 40px;
   font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
+
+.hero-btn-round h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
 
 .vl-active {
   width: 0px;

@@ -13,6 +13,7 @@ const HowItWorks = () => {
       price,
     };
   };
+
   const menuList = [
     {
       name: "Dashboard",
@@ -47,6 +48,7 @@ const HowItWorks = () => {
       icon: ImageConstants.InstaIcon,
     },
   ];
+
   const howItWorksList = [
     {
       heading: "Collaboration",
@@ -74,6 +76,7 @@ const HowItWorks = () => {
       img: ImageConstants.HowItWorks5,
     },
   ];
+
   const plansData = [
     {
       tag: "Economy",
@@ -128,97 +131,6 @@ const HowItWorks = () => {
         <div class="p-md-5 mx-md-5 p-0 m-0  mb-2 jumbotron text-center jumbotron-fluid">
           <div className="row how-it-works-hero-card">
             <img src={ImageConstants.serviceHosting} />
-            {/* <div className="col-3 p-0 m-0 how-it-works-sidebar">
-              <img className="mt-2" src={ImageConstants.logo} />
-              <div className="how-it-works-menu-list d-block mt-5 text-start">
-                {menuList.map((i) => {
-                  return (
-                    <a className="mb-3 pointer">
-                      <img
-                        className="how-it-workssidebar-icon mx-2"
-                        src={
-                          "https://www.seekpng.com/png/full/357-3576744_it-all-comes-to-you-directly-from-the.png"
-                        }
-                      />
-                      <span className="menu-list-name">{i.name}</span>
-                    </a>
-                  );
-                })}
-              </div>
-              <div className="menu-bottom-links">
-                <a className="mb-3 pointer">
-                  <img
-                    className="how-it-workssidebar-icon mx-2"
-                    src={
-                      "https://www.seekpng.com/png/full/357-3576744_it-all-comes-to-you-directly-from-the.png"
-                    }
-                  />
-                  <span className="menu-list-name">{"Settings"}</span>
-                </a>
-                <a className="mb-3">
-                  <img
-                    className="how-it-workssidebar-icon mx-2"
-                    src={
-                      "https://www.seekpng.com/png/full/357-3576744_it-all-comes-to-you-directly-from-the.png"
-                    }
-                  />
-                  <span className="menu-list-name">{"Help"}</span>
-                </a>
-              </div>
-            </div>
-            <div className="col-9 p-0 m-0">
-              <div className="hiw-topbar">
-                <button className="how-it-works-top-bar-add-btn">Add +</button>
-                <button className="how-it-works-top-bar-book-call">
-                  Book a call
-                </button>
-                <img src={ImageConstants.Bulb} />
-                <img src={ImageConstants.Bulb} />
-                <img className="profile-img" src={ImageConstants.Bulb} />
-                <span className="profile-name">Berry Allen</span>
-                <span className="profile-des">Berry Allen</span>
-              </div>
-              <div className="fill-div py-2">
-                <div className="inside-card-menu d-flex">
-                  <p className="inside-card-menu-title px-4 mt-2 ">Services</p>
-                  <div className="checkbox-div">
-                    <input type="radio" />
-                    <span className="check-box-span">
-                      Hosting For Exisiting sites
-                    </span>
-                  </div>
-                  <div className="checkbox-div px-3">
-                    <input type="radio" />
-                    <span className="check-box-span text-muted">
-                      Managed Website Hosting
-                    </span>
-                  </div>
-                  <div className="checkbox-div px-3">
-                    <input type="radio" />
-                    <span className="check-box-span text-muted">Add-Ons</span>
-                  </div>
-                </div>
-                <div className="row">
-                  {plansData.map((card) => {
-                    return (
-                      <div className="col-6 mb-3 px-5 mx-5 mt-2 how-it-works-pricing-card">
-                        <button className=" how-it-works-pricing-btn">
-                          {card.tag}
-                        </button>
-                        <p className="how-it-works-pricing-des">{card.info}</p>
-                        <span className="hiw-currency-icon">
-                          {card?.price?.currency === "pounds" ? "€" : "£"}
-                        </span>
-                        <span className="hiw-amount">{card?.price?.price}</span>{" "}
-                        <span className="hiw-duration">{"per month"}</span>
-                        <p className="hiw-pricing-point">{card.pages}</p>
-                        <button className="hiw-added-btn">Added</button>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
@@ -258,15 +170,15 @@ const HowItWorks = () => {
                                   : "col-md-2 d-none d-md-inline center-row-conatiner mt-2"
                               }
                             >
-                              <button
+                              <div
                                 className={
                                   inView
                                     ? "hero-btn-round-active mb-2"
                                     : "hero-btn-round mb-2"
                                 }
                               >
-                                {key + 1}
-                              </button>
+                                <h1>{key + 1}</h1>
+                              </div>
                               <div
                                 className={
                                   isLast && inView
@@ -322,15 +234,15 @@ const HowItWorks = () => {
                             ref={ref}
                             className="col-2 d-none d-md-inline center-row-conatiner-active "
                           >
-                            <button
+                            <div
                               className={
                                 inView
                                   ? "hero-btn-round-active mb-2"
                                   : "hero-btn-round mb-2"
                               }
                             >
-                              {key + 1}
-                            </button>
+                              <h1>{key + 1}</h1>
+                            </div>
                             {
                               <div
                                 className={
@@ -370,15 +282,15 @@ const HowItWorks = () => {
                       <InView threshold={0.5}>
                         {({ inView, ref, entry }) => (
                           <div ref={ref} className={" d-flex  mt-5"}>
-                            <button
+                            <div
                               className={
                                 inView
                                   ? "hero-btn-round-active mb-2"
                                   : "hero-btn-round mb-2"
                               }
                             >
-                              {key + 1}
-                            </button>
+                              <h1>{key + 1}</h1>
+                            </div>
                             <div
                               className={
                                 isLast ? "vl-last" : inView ? "full-vl" : "vl"
