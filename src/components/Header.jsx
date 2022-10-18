@@ -1,5 +1,5 @@
 import { useLocation } from "@reach/router";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import React, { useEffect, useState } from "react";
 import ImageConstants from "../constants/imageConstants";
 import routes from "../constants/routes";
@@ -56,15 +56,12 @@ const Header = () => {
             </li>
           </ul>
           <div className="header-btns">
-            <button className="login">Log In</button>
-            <button className="get-started">
-              <a
-                target={"_blank"}
-                href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-              >
-                Get Started
-              </a>
-            </button>
+            <a target={"_blank"} href="https://dashboard.thunderboltjs.com/">
+              <button className="login">Log In</button>
+            </a>
+            <a target={"_blank"} href="https://dashboard.thunderboltjs.com/">
+              <button className="get-started">Get Started</button>
+            </a>
           </div>
         </div>
 
@@ -129,11 +126,16 @@ const Header = () => {
               >
                 <Link to={routes.pricing}>Pricing</Link>
               </p>
-              <p className="nav-item-canvas">
+              {/* <p className="nav-item-canvas">
                 <Link>Advantages</Link>
-              </p>
+              </p> */}
               <p className="nav-item-canvas">
-                <Link>Check Pagespeed Insights</Link>
+                <Link
+                  to={`${routes.home}#page-speed`}
+                  onClick={() => setOpen(false)}
+                >
+                  Check Pagespeed Insights
+                </Link>
               </p>
             </div>
           </div>
@@ -144,27 +146,39 @@ const Header = () => {
               </h2>
 
               <div className="buttons">
-                <div className="btn-container active-btn">
-                  <button>
-                    <a
-                      href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-                      target={"_blank"}
-                    >
-                      Get Started
-                    </a>
-                  </button>
-                  {/* <img loading="lazy" src={rightArrow} alt="" /> */}
-                </div>
+                <a
+                  href="https://dashboard.thunderboltjs.com/"
+                  target={"_blank"}
+                >
+                  <div className="btn-container active-btn">
+                    <button>Get Started</button>
+                  </div>
+                </a>
                 <div className="btn-container">
-                  <button>Book a Call</button>
-                  {/* <img loading="lazy" src={rightArrow} alt="" /> */}
+                  <a href="https://calendly.com/razrco" target={"_blank"}>
+                    <button className="footer-action-btn p-0 m-0">
+                      Book a call
+                    </button>
+                  </a>
                 </div>
               </div>
 
               <div className="sidebar-footer">
-                <p>Privacy Policy</p>
-                <p>Terms</p>
-                <a href="#">Login</a>
+                <p
+                  role={"button"}
+                  onClick={() => navigate(routes.privacyPolicy)}
+                >
+                  Privacy Policy
+                </p>
+                <p role={"button"} onClick={() => navigate(routes.Terms)}>
+                  Terms
+                </p>
+                <a
+                  target={"_blank"}
+                  href="https://dashboard.thunderboltjs.com/"
+                >
+                  Login
+                </a>
               </div>
             </div>
           </div>

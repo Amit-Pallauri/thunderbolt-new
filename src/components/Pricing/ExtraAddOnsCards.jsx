@@ -65,15 +65,15 @@ const ExtraAddOnsCards = ({ isMonthly, currency }) => {
       {slides.map((s, index) => {
         const isLast = index === slides?.length - 1;
         return (
-          <div key={index} className="col-md-4 mt-3 p-0 mb-3">
+          <div key={index} className="col-md-4 addon-cards">
             <div className="extra-card-width ">
               <div className=" rounded-lg ">
                 <div className="mb-2 space">{"s"}</div>
-                <p className="monthly-card-title  ">{s.title}</p>
+                <p className="monthly-card-title mb-3">{s.title}</p>
                 <p className="monthly-cost px-5 ">
-                  <strong className="price-symbol price-symbol-safari">
+                  <sup className="suptext">
                     {s?.cost?.currency === "euro" ? "€" : "£"}
-                  </strong>
+                  </sup>
                   <strong>{s?.cost?.price}</strong>
                   {/* <span> per {isMonthly ? "month":"year"}</span> */}
                   <br />
@@ -83,15 +83,20 @@ const ExtraAddOnsCards = ({ isMonthly, currency }) => {
                   {s.des}
                 </p>
                 <br />
-                <button
-                  className={
-                    isLast
-                      ? "get-started-btn get-started-btn-last mt-0 mb-5"
-                      : "get-started-btn mt-0 mb-5"
-                  }
+                <a
+                  target={"_blank"}
+                  href="https://dashboard.thunderboltjs.com/"
                 >
-                  {s.buttonText}
-                </button>
+                  <button
+                    className={
+                      isLast
+                        ? "get-started-btn get-started-btn-last mt-0 mb-5"
+                        : "get-started-btn mt-0 mb-5"
+                    }
+                  >
+                    {s.buttonText}
+                  </button>
+                </a>
               </div>
             </div>
           </div>

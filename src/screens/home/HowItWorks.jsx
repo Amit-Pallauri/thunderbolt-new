@@ -47,13 +47,15 @@ const HowItWorks = () => {
         </div>
       </div>
       <div className="btn-container">
+        <a target={"_blank"} href="https://dashboard.thunderboltjs.com/">
+          <button className="active-btn">Get Started</button>
+        </a>
         <button
-          className="active-btn"
+          className="inactive-btn"
           onClick={() => navigate(Routes.howItWorks)}
         >
-          Get Started
+          Know more
         </button>
-        <button className="inactive-btn">Know more</button>
       </div>
     </section>
   );

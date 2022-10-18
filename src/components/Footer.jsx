@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 import ImageConstants from "../constants/imageConstants";
 import routes from "../constants/routes";
@@ -10,25 +11,25 @@ const Footer = () => {
     },
     {
       name: "Why ThunderboltJS",
-      link: routes.howItWorks,
+      link: `${routes.home}#why-thunderbolt`,
     },
-    {
-      name: "Who Uses",
-      link: routes.howItWorks,
-    },
-    {
-      name: "Advantages",
-      link: routes.howItWorks,
-    },
+    // {
+    //   name: "Who Uses",
+    //   link: routes.howItWorks,
+    // },
+    // {
+    //   name: "Advantages",
+    //   link: routes.howItWorks,
+    // },
   ];
   const newLinks = [
     {
       name: "Check Pagespeed Insights",
-      link: routes.howItWorks,
+      link: `${routes.home}#page-speed`,
     },
     {
       name: "Pricing",
-      link: routes.howItWorks,
+      link: routes.pricing,
     },
   ];
   return (
@@ -56,7 +57,9 @@ const Footer = () => {
             {Array.from(links).map((l, key) => {
               return (
                 <li>
-                  <a href={l.link}>{l.name}</a>
+                  <Link className="footer-link" to={l.link}>
+                    {l.name}
+                  </Link>
                 </li>
               );
             })}
@@ -65,7 +68,9 @@ const Footer = () => {
             {Array.from(newLinks).map((l, key) => {
               return (
                 <li>
-                  <a href={l.link}>{l.name}</a>
+                  <Link className="footer-link" to={l.link}>
+                    {l.name}
+                  </Link>
                 </li>
               );
             })}
@@ -73,26 +78,31 @@ const Footer = () => {
         </div>
         <div className="col-12 col-md-2"></div>
         <div className="col-md-2 col-12 px-md-5 px-3">
-          <div className="d-grid justify-content-between  text-center">
-            <button className=" px-md-0 footer-action-btn">
-              <a
-                href="https://7femb23k3scb.upmind.app/order/shop?catid=57052d13-7e08-d241-11a7-495163789e68"
-                target={"_blank"}
-              >
-                Get Started
-              </a>
-            </button>
-            <button className="footer-action-btn">Book a call</button>
+          <div className="canvas-btns">
+            <a href="https://dashboard.thunderboltjs.com/" target={"_blank"}>
+              <button className="px-md-0 footer-action-btn">Get Started</button>
+            </a>
+            <a href="https://calendly.com/razrco" target={"_blank"}>
+              <button className="footer-action-btn">Book a call</button>
+            </a>
           </div>
           <div className="mt-3 footer-social-icons justify-content-between mb-md-3 mt-md-2">
-            <a hre="#" className="mt-3 pointer">
+            <a
+              href="https://www.linkedin.com/company/88646989/admin/"
+              target={"_blank"}
+              className="mt-3 pointer"
+            >
               <img
                 src={ImageConstants.InstaIcon}
                 width={"100%"}
                 height={"100%"}
               />
             </a>
-            <a hre="#" className="px-3 pointer">
+            <a
+              href="https://www.linkedin.com/company/88646989/admin/"
+              target={"_blank"}
+              className="px-3 pointer"
+            >
               <img
                 src={ImageConstants.LinkdinIcon}
                 width={"100%"}
@@ -101,24 +111,24 @@ const Footer = () => {
             </a>
           </div>
           <div className=" d-md-none d-flex footer-bootom-links">
-            <a href={routes.privacyPolicy} className="px-5 pointer">
+            <Link to={routes.privacyPolicy} className="px-5 pointer">
               Privacy Policy
-            </a>
-            <a href={routes.Terms} className="pointer">
+            </Link>
+            <Link to={routes.Terms} className="pointer">
               Terms
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="footer-bottom  d-md-flex ">
         <p>2022 @Razr Tech Sarl</p>
         <div className=" d-md-flex d-none footer-bootom-links">
-          <a href={routes.privacyPolicy} className="px-5 pointer">
+          <Link to={routes.privacyPolicy} className="px-5 pointer">
             Privacy Policy
-          </a>
-          <a href={routes.Terms} className="pointer">
+          </Link>
+          <Link to={routes.Terms} className="pointer">
             Terms
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
