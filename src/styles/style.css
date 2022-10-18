@@ -10,6 +10,7 @@ body {
   font-family: "Montserrat" !important;
   font-display: swap;
 }
+
 .mob-view {
   display: none;
 }
@@ -158,6 +159,7 @@ body {
 .sidebar-content {
   margin-left: 40px;
 }
+
 .sidebar-content .title {
   margin-bottom: 2rem;
   margin-top: 8rem;
@@ -208,11 +210,13 @@ body {
   font-size: 20px;
   color: #1e2323;
 }
+
 .sidebar-footer a {
   font-size: 20px;
   color: #1e2323;
   text-decoration: none;
 }
+
 /* footer */
 .site-footer {
   background: #f8f9fa;
@@ -221,20 +225,24 @@ body {
 .footer-logo-conatiner {
   padding-left: 60px !important;
 }
-.footer-social-icons > a > img {
+
+.footer-social-icons>a>img {
   width: 20px !important;
   height: auto !important;
 }
+
 .footer-call-btn {
   display: flex;
   justify-content: center;
 }
+
 .footer-logo {
   width: 250px !important;
   height: 100px !important;
   object-fit: contain;
   margin-top: -40px !important;
 }
+
 .footer-description {
   color: #9b9b9b;
   letter-spacing: 0px;
@@ -243,6 +251,7 @@ body {
   text-align: left;
   font-size: 15px;
 }
+
 .footer-container {
   width: 100%;
   /* height: 333px; */
@@ -306,15 +315,17 @@ body {
 .flags {
   margin: 20px 0;
 }
+
 .pointer {
   cursor: pointer;
 }
+
 .flags img {
   width: 20px;
   margin-right: 10px;
 }
 
-.footer-links > ul > li {
+.footer-links>ul>li {
   list-style: none !important;
   margin-bottom: 15px !important;
   font-weight: bold !important;
@@ -341,7 +352,7 @@ body {
   color: white;
 }
 
-.footer-links > ul > li > a {
+.footer-links>ul>li>a {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
@@ -366,6 +377,7 @@ body {
   font-size: 14px;
   font-weight: normal;
 }
+
 .footer-bottom a {
   text-decoration: none;
   color: #9b9b9b;
@@ -380,10 +392,12 @@ body {
 .footer-logo {
   width: 183px;
 }
+
 .footer-bootom-links {
   position: absolute;
   right: 5vw;
 }
+
 /* home */
 .hero-section {
   min-height: 608px;
@@ -428,6 +442,7 @@ body {
   font-size: 20px;
   font-weight: medium;
 }
+
 .get-started a {
   text-decoration: none;
   color: white;
@@ -701,6 +716,21 @@ body {
   font-weight: medium;
 }
 
+.pricing-header-section {
+  margin: 4em 0;
+}
+
+.pricing-header-section>h1 {
+  font-family: "aline";
+  font-size: 34px;
+  color: #1E2323;
+}
+
+.pricing-header-section>.sub-title {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
 .pricing-read-more {
   margin-top: 20px;
   font-size: 16px;
@@ -887,9 +917,11 @@ body {
   width: 75%;
   margin: auto;
 }
+
 .techs-we-use {
   margin: 80px 0;
 }
+
 .techs-we-use .title {
   font-size: 34px;
   font-weight: normal;
@@ -921,7 +953,7 @@ body {
 
 .techs-img .picture-small {
   width: 62px !important;
-  height: 37px !important; 
+  height: 37px !important;
 }
 
 .why-you-need-content .content-section {
@@ -1112,6 +1144,7 @@ body {
   font-family: "aline";
   text-align: center;
 }
+
 .web-vitals-section .title {
   font-family: "aline";
   font-size: 34px;
@@ -1271,6 +1304,7 @@ body {
   font-family: "aline";
   font-size: 34px;
 }
+
 /* Pricing */
 
 .pricing-h1 {
@@ -1281,10 +1315,12 @@ body {
   color: #1e2323;
   font-weight: 500;
 }
+
 .pricing-h1 span {
   color: #1e2323;
   font-weight: 500 !important;
 }
+
 .pricing-p {
   color: #1e2323;
   opacity: 1;
@@ -1294,6 +1330,7 @@ body {
   font-weight: 500 !important;
   margin-top: 30px;
 }
+
 .pricing--main-box {
   justify-content: center;
   align-items: center;
@@ -1310,6 +1347,7 @@ body {
   height: 730px !important;
   z-index: auto;
 }
+
 .pricing-switch-btn {
   width: 381px;
   height: 50px;
@@ -1322,6 +1360,7 @@ body {
   margin-bottom: 30px;
   border: 1px solid #160091;
 }
+
 .pricing-yearly {
   background-color: #1b03a3;
   color: white;
@@ -1332,6 +1371,7 @@ body {
   height: 48px !important;
   border: none !important;
 }
+
 .pricing-yearly span {
   text-align: left;
   font: normal normal normal 20px/24px Montserrat;
@@ -1339,6 +1379,7 @@ body {
   color: #d0d0d0;
   opacity: 1;
 }
+
 .pricing-monthly {
   background-color: white;
   color: #1b03a3;
@@ -1349,6 +1390,7 @@ body {
   height: 48px !important;
   border: none !important;
 }
+
 .pricing-monthly span {
   text-align: left;
   font: normal normal normal 20px/24px Montserrat;
@@ -1369,9 +1411,11 @@ body {
   text-align: center;
   font-weight: 600;
 }
+
 .pricing-selector:focus {
   border: none;
 }
+
 .pricing-selector label {
   text-align: center;
   letter-spacing: -0.18px;
@@ -1380,6 +1424,7 @@ body {
   font-weight: 500 !important;
   font-size: 18px;
 }
+
 .pricing-selector select {
   color: #1b03a3 !important;
   width: 40px;
@@ -1396,10 +1441,12 @@ body {
   border-top-right-radius: 24px;
   /* height: 300px !important; */
 }
+
 .space {
   margin-top: -10px !important;
   color: white;
 }
+
 .monthly-card {
   width: 95%;
   height: 1050px;
@@ -1410,6 +1457,7 @@ body {
   box-shadow: 6px 4px 24px #00000038;
   opacity: 1;
 }
+
 .pay-monthly-card {
   text-align: center;
   border-radius: 24px;
@@ -1418,6 +1466,7 @@ body {
   opacity: 1;
   width: 100%;
 }
+
 .pay-monthly-card .points {
   text-align: left;
   color: #1b03a3;
@@ -1425,6 +1474,7 @@ body {
   background-color: #f8f7ff !important;
   padding-left: 34px !important;
 }
+
 .monthly-card h1 {
   text-align: center;
   font-size: 19px;
@@ -1433,6 +1483,7 @@ body {
   color: #1b03a3;
   opacity: 1;
 }
+
 .monthly-card-title {
   text-align: center;
   letter-spacing: 0px;
@@ -1451,6 +1502,7 @@ body {
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
+
 .extra-card-description {
   opacity: 0.9;
   font-size: 12px;
@@ -1460,6 +1512,7 @@ body {
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
+
 .contact-align {
   font-family: Montserrat !important;
   margin-bottom: 50px;
@@ -1470,6 +1523,7 @@ body {
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
+
 .monthly-cost {
   text-align: left;
   letter-spacing: -0.38px;
@@ -1482,6 +1536,7 @@ body {
   padding-left: 4rem;
   position: relative;
 }
+
 .contact-sales {
   margin-top: -10px !important;
   margin-bottom: 20px !important;
@@ -1496,12 +1551,14 @@ body {
   padding-left: 4rem;
   position: relative;
 }
+
 .monthly-cost strong {
   padding-left: 15px;
   color: #1e2323 !important;
   font-size: 40px;
   font-weight: 900;
 }
+
 .monthly-cost span {
   text-align: left;
   letter-spacing: 0px;
@@ -1510,6 +1567,7 @@ body {
   font-weight: 400 !important;
   font-size: 16px !important;
 }
+
 .get-started-btn {
   background: #1664f7 0% 0% no-repeat padding-box;
   border-radius: 10px;
@@ -1521,9 +1579,11 @@ body {
   font-weight: 600;
   margin-top: 2rem;
 }
+
 .get-started-btn-last {
   margin-top: -3rem !important;
 }
+
 .points-box {
   /* UI Properties */
   background: #f8f7ff 0% 0% no-repeat padding-box;
@@ -1533,12 +1593,14 @@ body {
   margin-bottom: 50px;
   width: 92%;
 }
+
 .s {
   background-color: #f8f7ff !important;
   padding: 0px;
   margin: 0px;
   width: 100%;
 }
+
 .points {
   text-align: left !important;
   background: #f8f7ff;
@@ -1548,6 +1610,7 @@ body {
   border-radius: 24px !important;
   font-size: 12px;
 }
+
 .points span {
   color: #1b03a3;
   letter-spacing: 0px;
@@ -1557,9 +1620,11 @@ body {
   display: inline;
   margin-left: 6px !important;
 }
+
 .card-container {
   background-color: white;
 }
+
 .vat-box {
   text-align: center;
   font-size: 16px;
@@ -1567,6 +1632,7 @@ body {
   color: #7b828c;
   opacity: 1;
 }
+
 .vat-text {
   text-align: center;
   font-size: 16px;
@@ -1577,6 +1643,7 @@ body {
   padding-left: 12rem !important;
   padding-right: 10.9rem !important;
 }
+
 .pricing-hero-section-two {
   text-align: center;
   letter-spacing: -0.26px;
@@ -1584,6 +1651,7 @@ body {
   opacity: 1;
   font-size: 30px;
 }
+
 .pricing-hero-section-two-h2 {
   font-family: "aline";
   font-size: 3.1rem;
@@ -1591,6 +1659,7 @@ body {
   opacity: 1;
   font-weight: 500 !important;
 }
+
 .pricing-p2 {
   font-weight: normal !important;
   font: normal normal normal 16px/28px Montserrat;
@@ -1602,10 +1671,12 @@ body {
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
+
 .hero-two {
   width: 90%;
   margin: auto;
 }
+
 .stand {
   text-align: center;
   letter-spacing: -0.26px;
@@ -1614,10 +1685,12 @@ body {
   font-size: 25px;
   margin-top: 100px;
 }
-.smile-card > img {
+
+.smile-card>img {
   margin-top: 3rem !important;
   width: 4rem;
 }
+
 .smile-card {
   align-items: center;
   flex-direction: column;
@@ -1640,12 +1713,14 @@ body {
   font-size: 12px;
   font-weight: normal;
 }
+
 .extra {
   font-family: "aline";
   margin-left: -50px !important;
   font-weight: 500;
   color: #1e2323;
 }
+
 .round-borders {
   border-radius: 24px;
 }
@@ -1667,6 +1742,7 @@ body {
   font-weight: 600;
   font-size: 20px;
 }
+
 .extra-card p {
   width: 210px;
   height: 23px;
@@ -1677,6 +1753,7 @@ body {
   opacity: 1;
   font-size: 16px;
 }
+
 .extra-card span {
   text-align: center;
   letter-spacing: -0.38px;
@@ -1696,13 +1773,16 @@ body {
   padding-left: 10px;
   margin-bottom: 10px;
 }
+
 .mySwiper {
   align-items: flex-end !important;
 }
+
 .tab-btn {
   margin: 0;
   z-index: 111 !important;
 }
+
 .monthly-cost .price-symbol {
   font-size: 22px !important;
   position: absolute;
@@ -1741,6 +1821,7 @@ body {
 .extra-card-width .monthly-cost-sub-description {
   font: 12px !important;
 }
+
 .disbale-text span {
   letter-spacing: 0px;
   opacity: 1;
@@ -1752,15 +1833,19 @@ body {
   opacity: 0.5 !important;
   margin-top: 12px !important;
 }
+
 .hero-one {
   z-index: 111 !important;
 }
+
 .s {
   margin-top: 20px;
 }
-.active-link > a {
+
+.active-link>a {
   color: #1664f7 !important;
 }
+
 .point-text {
   font-family: Montserrat !important;
   font-size: 14px;
@@ -1768,6 +1853,7 @@ body {
   color: #1664f7;
   padding-left: 17px;
 }
+
 .point-text-muted {
   font-size: 14px;
   padding-left: 17px;
@@ -1775,33 +1861,42 @@ body {
   color: #d0d0d0;
   opacity: 1;
 }
+
 .point-img {
   margin-left: -3px !important;
   margin-top: 3px;
 }
+
 .contact-sales-btn {
   margin-bottom: 3.5rem !important;
 }
+
 .padding-three {
   padding-left: 40px !important;
 }
+
 .features-slider-container {
   z-index: 111111 !important;
   margin-top: -21px !important;
 }
+
 .how-it-works-hero {
   padding: 0px 12vw;
 }
+
 .how-it-works-hero-two {
   padding: 0px -5vw;
 }
+
 .hiw-hero-three-inside {
   margin-top: 3rem !important;
   padding: 0px -5vw;
 }
+
 .img-box-hero-2 {
   margin-top: 5rem;
 }
+
 .how-it-works-main-box {
   overflow: hidden !important;
   background-repeat: no-repeat;
@@ -1812,6 +1907,7 @@ body {
   background-color: #f7df00 !important;
   height: 650px;
 }
+
 .how-it-works-hero-three {
   text-align: center !important;
   overflow: hidden !important;
@@ -1824,6 +1920,7 @@ body {
   background-color: #f7df00 !important;
   height: 450px;
 }
+
 .how-it-works-heading {
   font-size: 30px;
 
@@ -1832,16 +1929,19 @@ body {
   color: #1e2323;
   opacity: 1;
 }
+
 .how-it-works-des {
   font-size: 18px;
   letter-spacing: 0px;
   color: #1e2323;
   opacity: 1;
 }
+
 .how-it-works-card-conatiner {
   z-index: 1111 !important;
   margin-top: -400px;
 }
+
 .how-it-works-hero-card {
   padding-left: 0vw;
   width: 80vw;
@@ -1851,6 +1951,7 @@ body {
   opacity: 1;
   overflow: hidden;
 }
+
 .how-it-works-sidebar {
   width: 25%;
   height: 100%;
@@ -1858,39 +1959,47 @@ body {
   border-bottom-left-radius: 24px;
   background-color: #1b03a3;
 }
-.how-it-works-sidebar > img {
+
+.how-it-works-sidebar>img {
   margin-left: -70px;
   width: 170px;
 }
+
 .menu-list-name {
   margin-top: -30px !important;
 }
-.how-it-works-menu-list > a {
+
+.how-it-works-menu-list>a {
   font-size: 14px;
   color: white;
   text-decoration: none;
   margin-left: 30px !important;
 }
+
 .how-it-works-menu-list {
   display: grid !important;
   margin-top: 20px;
   color: white !important;
   margin-left: -10px;
 }
+
 .how-it-workssidebar-icon {
   width: 18px !important;
 }
-.menu-bottom-links > a {
+
+.menu-bottom-links>a {
   font-size: 14px;
   color: white;
   text-decoration: none;
   margin-left: 20px !important;
 }
+
 .menu-bottom-links {
   margin-top: 100px;
   text-align: start;
   display: grid !important;
 }
+
 .how-it-works-top-bar {
   height: 100px !important;
   width: 50vw;
@@ -1901,10 +2010,12 @@ body {
   bottom: 90%;
   border-top-right-radius: 50px;
 }
-.how-it-works-top-bar > img {
+
+.how-it-works-top-bar>img {
   margin-left: 10px;
   width: 30px;
 }
+
 .how-it-works-top-bar-add-btn {
   margin-bottom: 10px;
   width: 6vw;
@@ -1914,6 +2025,7 @@ body {
   border-radius: 24px;
   background-color: #1b03a3;
 }
+
 .how-it-works-top-bar-book-call {
   font-family: Montserrat;
   margin-left: 10px;
@@ -1921,14 +2033,17 @@ body {
   border: none;
   color: black;
 }
+
 .menu-list-inside {
   width: 90%;
 }
+
 .profile-img {
   object-fit: cover;
   border-radius: 2rem !important;
   width: 40px !important;
 }
+
 .profile-name {
   margin-top: 7px;
   position: absolute;
@@ -1936,6 +2051,7 @@ body {
   margin-left: 4px;
   font-size: 13px;
 }
+
 .profile-des {
   position: absolute;
   margin-top: 25px !important;
@@ -1943,6 +2059,7 @@ body {
   margin-left: 4px;
   font-size: 10px;
 }
+
 .hero-btn-round-active {
   border: none;
   background-color: #1664f7;
@@ -1952,16 +2069,20 @@ body {
   height: 40px;
   font-weight: bold;
 }
+
 .user-img {
   width: 40vw;
 }
+
 .hiw-oop-img {
   width: 40vw;
 }
+
 .hiw-oop-img-conatiner {
   position: relative !important;
   margin-left: -150px;
 }
+
 .hero-btn-round {
   border: none;
   background-color: #d0d0d0;
@@ -1971,78 +2092,88 @@ body {
   height: 40px;
   font-weight: bold;
 }
+
 .vl-active {
   width: 0px;
   background-color: transparent;
-  background-clip: content-box; /* so that the background color is not below the border */
+  background-clip: content-box;
+  /* so that the background color is not below the border */
   border-left: 5px solid black;
-  border-image: linear-gradient(
-    to top,
-    #e7e7e7 50%,
-    #8ab1fb 50%
-  ); /* to top - at 50% transparent */
+  border-image: linear-gradient(to top,
+      #e7e7e7 50%,
+      #8ab1fb 50%);
+  /* to top - at 50% transparent */
   border-image-slice: 1;
   border-left: 2px solid white;
   height: 500px;
   margin: 0px auto;
 }
+
 .full-vl {
   width: 0px;
   background-color: transparent;
-  background-clip: content-box; /* so that the background color is not below the border */
+  background-clip: content-box;
+  /* so that the background color is not below the border */
   border-left: 5px solid black;
-  border-image: #8ab1fb; /* to top - at 50% transparent */
+  border-image: #8ab1fb;
+  /* to top - at 50% transparent */
   border-image-slice: 1;
   border-left: 2px solid #8ab1fb;
   height: 500px;
   margin: 0px auto;
   transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
 }
+
 @keyframes rotate {
   to {
     --angle: 360deg;
   }
 }
+
 .vl {
   width: 0px;
   background-color: transparent;
-  background-clip: content-box; /* so that the background color is not below the border */
+  background-clip: content-box;
+  /* so that the background color is not below the border */
   border-left: 5px solid black;
-  border-image: linear-gradient(
-    to top,
-    #e7e7e7 50%,
-    #e7e7e7 50%
-  ); /* to top - at 50% transparent */
+  border-image: linear-gradient(to top,
+      #e7e7e7 50%,
+      #e7e7e7 50%);
+  /* to top - at 50% transparent */
   border-image-slice: 1;
   border-left: 2px solid white;
   height: 500px;
   margin: 0px auto;
 }
+
 .vl-last-inactive {
   width: 0px;
   background-color: transparent;
-  background-clip: content-box; /* so that the background color is not below the border */
+  background-clip: content-box;
+  /* so that the background color is not below the border */
   border-left: 5px solid black;
-  border-image: linear-gradient(
-    to top,
-    #e7e7e7 50%,
-    #e7e7e7 50%
-  ); /* to top - at 50% transparent */
+  border-image: linear-gradient(to top,
+      #e7e7e7 50%,
+      #e7e7e7 50%);
+  /* to top - at 50% transparent */
   border-image-slice: 1;
   border-left: 2px solid white;
   height: 330px;
   margin: 0px auto;
 }
+
 .vl-last {
   width: 0px;
   background-color: transparent;
-  background-clip: content-box; /* so that the background color is not below the border */
+  background-clip: content-box;
+  /* so that the background color is not below the border */
   border-left: 5px solid black;
   border-image-slice: 1;
   border-left: 2px solid #8ab1fb;
   margin: 0px auto;
   height: 330px;
 }
+
 .col-text {
   font-family: Montserrat;
   font-weight: bold;
@@ -2052,14 +2183,17 @@ body {
   color: #1e2323;
   opacity: 1;
 }
+
 .center-row-conatiner-active {
   margin-top: 100px !important;
   position: relative;
 }
+
 .center-row-conatiner-active {
   margin-top: 10px !important;
   position: relative;
 }
+
 .collabration-conatiner {
   text-align: start;
   margin-left: -20px;
@@ -2080,6 +2214,7 @@ body {
   color: #1e2323;
   opacity: 1;
 }
+
 .how-it-works-des-opp {
   line-height: 30px;
   padding: 0px 6rem;
@@ -2090,26 +2225,31 @@ body {
   color: #7b828c;
   opacity: 1;
 }
+
 .float-img-one {
   position: absolute;
   margin-top: -200px;
   margin-left: -170px;
 }
+
 .float-img-two {
   position: absolute;
   margin-top: -120px;
   margin-left: 240px;
 }
+
 .float-img-opp-one {
   position: absolute;
   margin-left: -445px;
   margin-top: 150px;
 }
+
 .float-img-opp-two {
   position: absolute;
   margin-left: -120px;
   margin-top: 240px;
 }
+
 .fill-div {
   background-color: #f8f7ff !important;
   height: 500px;
@@ -2117,22 +2257,27 @@ body {
   overflow-y: scroll;
   overflow-x: hidden !important;
 }
+
 .inside-card-menu {
   text-align: start;
 }
+
 .inside-card-menu-title {
   color: #160091;
   font-weight: bold;
   font-size: 18px;
 }
+
 .checkbox-div {
   margin-top: 10px;
 }
+
 .check-box-span {
   font-size: 15px !important;
   margin-left: 10px;
   margin-top: -5px;
 }
+
 .how-it-works-pricing-card {
   position: relative;
   background-color: white;
@@ -2141,6 +2286,7 @@ body {
   border-radius: 24px;
   border: 1px solid #1664f7;
 }
+
 .how-it-works-pricing-btn {
   margin-left: -150px;
   margin-top: 10px;
@@ -2153,6 +2299,7 @@ body {
   width: 8vw;
   height: 5vh;
 }
+
 .how-it-works-pricing-des {
   margin-top: 5px;
   margin-left: -30px !important;
@@ -2160,6 +2307,7 @@ body {
   color: #160091;
   text-align: start;
 }
+
 .hiw-currency-icon {
   margin-left: -18px;
   position: absolute;
@@ -2168,11 +2316,13 @@ body {
   font-size: 20px;
   color: #049204;
 }
+
 .hiw-amount {
   font-weight: bold;
   font-size: 40px;
   color: #049204;
 }
+
 .hiw-added-btn {
   margin-left: -20px;
   text-align: center;
@@ -2185,13 +2335,16 @@ body {
   background-color: #160091;
   border-radius: 24px;
 }
+
 .hiw-pricing-point {
   font-size: 12px;
   font-weight: bold;
 }
+
 .hiw-topbar {
   margin-left: 10rem;
 }
+
 .view-pricing-btn {
   margin-top: 1.5rem;
   width: 11rem;
@@ -2203,6 +2356,7 @@ body {
   border-radius: 7px;
   opacity: 1;
 }
+
 .hiw-hero-three-inside-des {
   text-align: center !important;
   font-weight: normal;
@@ -2212,10 +2366,12 @@ body {
   color: #1e2323;
   opacity: 0.9;
 }
+
 .hiw-hero-three-span-parent {
   padding-left: 17vw;
   padding-right: 17vw;
 }
+
 .hiw-hero-three-heading {
   text-align: center;
   font-weight: normal;
@@ -2225,6 +2381,7 @@ body {
   color: #1e2323;
   opacity: 1;
 }
+
 .hiw-last-card {
   margin-bottom: 200px !important;
 }

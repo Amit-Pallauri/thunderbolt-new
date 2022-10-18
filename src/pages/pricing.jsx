@@ -11,57 +11,53 @@ const Home = () => {
   return (
     <Layout>
       <div className="pricing--main-box bg-white p-md-5 p-4 ">
-        <div className=" d- align-items-center justify-content-center">
-          <div class="p-md-5 p-0 m-0  mb-2 jumbotron text-center jumbotron-fluid">
-            <div class="container  p-0 m-0 ">
-              <span class="display-4  pricing-h1">
-                Plans to suit your needs -<br className="d-md-flex d-none" />{" "}
-                <span>Save upto 20%</span> when billed annually
-              </span>{" "}
-              <p class="lead pricing-p  px-md-5 ">
-                With Built-in Security and speed Optimizations for <br /> your
-                site performance.
-              </p>
-            </div>
+        <div class="pricing-header-section">
+          <h1 class="title">
+            Plans to suit your needs -<br className="d-md-flex d-none" /> Save
+            upto 20% when billed annually
+          </h1>{" "}
+          <p class="sub-title">
+            With Built-in Security and speed Optimizations for <br /> your site
+            performance.
+          </p>
+        </div>
+        <div className="tab-btn d-md-flex  mb-100 position-relative  align-items-center justify-content-center  position-realtive">
+          <div className="price-tab-container  pricing-switch-btn">
+            <p
+              className={`${
+                isMonthly
+                  ? "price-tab price-tab-active pricing-monthly"
+                  : "price-tab text-white"
+              }`}
+              onClick={() => setMonthly(true)}
+            >
+              Monthly
+            </p>
+            <p
+              className={`${
+                !isMonthly
+                  ? "price-tab price-tab-active pricing-active-tab"
+                  : "price-tab pricing-yearly"
+              }`}
+              onClick={() => setMonthly(false)}
+            >
+              Yearly
+            </p>
           </div>
-          <div className="tab-btn d-md-flex  mb-100 position-relative  align-items-center justify-content-center  position-realtive">
-            <div className="price-tab-container  pricing-switch-btn">
-              <p
-                className={`${
-                  isMonthly
-                    ? "price-tab price-tab-active pricing-monthly"
-                    : "price-tab text-white"
-                }`}
-                onClick={() => setMonthly(true)}
-              >
-                Monthly
-              </p>
-              <p
-                className={`${
-                  !isMonthly
-                    ? "price-tab price-tab-active pricing-active-tab"
-                    : "price-tab pricing-yearly"
-                }`}
-                onClick={() => setMonthly(false)}
-              >
-                Yearly
-              </p>
-            </div>
-            <div className="pricing-selector px-5 d-flex">
-              <label className="form-label mx-3 ">Select Currency</label>
-              <select
-                class=""
-                aria-label=".form-select-sm example"
-                onChange={(e) => {
-                  setCurrency(e.target.value);
-                }}
-              >
-                <option value="euro" selected>
-                  €
-                </option>
-                <option value="pound">£</option>
-              </select>
-            </div>
+          <div className="pricing-selector px-5 d-flex">
+            <label className="form-label mx-3 ">Select Currency</label>
+            <select
+              class=""
+              aria-label=".form-select-sm example"
+              onChange={(e) => {
+                setCurrency(e.target.value);
+              }}
+            >
+              <option value="euro" selected>
+                €
+              </option>
+              <option value="pound">£</option>
+            </select>
           </div>
         </div>
       </div>
