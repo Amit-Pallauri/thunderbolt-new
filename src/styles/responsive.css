@@ -71,7 +71,7 @@
   }
 
   .left-sidebar {
-    padding: 20px 0;
+    padding: 0 30px;
     height: auto;
     margin-top: 6em;
     margin-bottom: 3em;
@@ -82,7 +82,10 @@
   }
 
   .sidebar-content {
+    display: block;
+
     margin-left: 40px;
+
   }
 
   .sidebar-content .title {
@@ -713,9 +716,11 @@
     margin-bottom: 10px;
     /* z-index: 1111111 !important; */
   }
-.pricing-container{
-  margin-top: -205px;
-}
+
+  .pricing-container {
+    margin-top: -205px;
+  }
+
   .pricing-switch-btn {
     width: 300px;
     margin: auto;
@@ -730,7 +735,7 @@
   .monthly-card {
     height: auto;
     margin: auto;
-        margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   .round-borders {
@@ -738,16 +743,18 @@
   }
 
   .monthly-card-description {
-    color: #160091;
+    color: #7b828c;
     font-size: 10px;
     min-height: unset;
     /* padding-left: 60px !important;
     padding-right: 60px !important;
     margin-top: -10px; */
   }
-.monthly-cost{
-      min-height: unset;
-}
+
+  .monthly-cost {
+    min-height: unset;
+  }
+
   .vat-box p {
     font-size: 14px !important;
   }
