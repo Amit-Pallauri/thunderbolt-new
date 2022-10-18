@@ -9,12 +9,30 @@ const HighPerformanceSection = ({ isMonthly, data }) => {
         We provide affordable digital solution for one monthly fees to design,
         deploy and managed your business sites.
       </p>
-      <div className="cards-container">
+      {/* <div className="cards-container">
         {data.map((el) => {
           return (
             <PlansCard bgColor={"#F8F9FA"} data={el} isMonthly={isMonthly} />
           );
         })}
+      </div> */}
+
+      <div className="container">
+        <div className="row justify-content-center">
+          {data.map((el) => {
+            return (
+              <div className="col-md-3">
+                <div className="cards-container">
+                  <PlansCard
+                    bgColor={"#F8F9FA"}
+                    data={el}
+                    isMonthly={isMonthly}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <div className="high-performance-footer">
         <p>

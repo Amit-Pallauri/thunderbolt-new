@@ -155,7 +155,9 @@ const Header = () => {
                   </div>
                 </a>
                 <div className="btn-container">
-                  <button>Book a Call</button>
+                  <a href="https://calendly.com/razrco" target={"_blank"}>
+                    <button className="footer-action-btn">Book a call</button>
+                  </a>
                 </div>
               </div>
 

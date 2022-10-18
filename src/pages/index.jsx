@@ -14,14 +14,14 @@ const Home = () => {
   return (
     <Layout>
       <HeroSection />
-      {/* <FasterStats />
+      <FasterStats />
       <FrameworkStatistics />
       <HowItWorks />
       <SuperfastDotCom />
       <PlansSection />
       <FAQs />
-      <TheyTrustUs /> */}
-      <InView threshold={1} triggerOnce>
+      <TheyTrustUs />
+      {/* <InView threshold={1} triggerOnce>
         {({ inView, ref, entry }) => (
           <div ref={ref}>{inView && <FasterStats />}</div>
         )}
@@ -53,7 +53,7 @@ const Home = () => {
         {({ inView, ref, entry }) => (
           <div ref={ref}>{inView && <TheyTrustUs />}</div>
         )}
-      </InView>
+      </InView> */}
     </Layout>
   );
 };
