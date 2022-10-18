@@ -1130,6 +1130,10 @@
     overflow: hidden;
   }
 
+  .privacy-content a {
+    word-break: break-all;
+  }
+
   .header-section h1 {
     font-size: 44px;
   }
@@ -1157,6 +1161,10 @@
   }
 
   /* terms */
+  .terms-container a {
+    word-break: break-all;
+  }
+
   .terms-container .header-section {
     min-height: 450px;
   }
