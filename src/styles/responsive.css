@@ -121,7 +121,7 @@
   /* hompage first section */
 
   .hero-section {
-    margin-top: 20px;
+    margin-top: 90px;
   }
 
   .hero-section .title {
@@ -714,7 +714,7 @@
     /* z-index: 1111111 !important; */
   }
 .pricing-container{
-  margin-top: -205px;
+  margin-top: -115px;
 }
   .pricing-switch-btn {
     width: 300px;
@@ -798,6 +798,7 @@
     /* background-color: #ecf9f1 !important; */
     /* padding-left: 44px !important; */
     height: 620px !important;
+    padding-top: 90px !important;
   }
 
   .mb-100 {
@@ -1047,6 +1048,7 @@
 
   .how-it-works-hero-card>img {
     width: 30rem;
+        margin-top: 30px;
   }
 
   .hero-btn-round-active {
@@ -1207,9 +1209,9 @@
     /* width: 22vw !important; */
   }
 
-  .pay-monthly-card {
+  /* .pay-monthly-card {
     width: 30vw !important;
-  }
+  } */
 
   .extra-card-width {
     width: 30vw !important;
