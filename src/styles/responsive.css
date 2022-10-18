@@ -670,6 +670,10 @@
     margin-bottom: 30px;
   }
 
+  .footer-action-btn {
+    margin-right: 10px;
+  }
+
   .book-call-btn {
     background-color: transparent;
     color: white;

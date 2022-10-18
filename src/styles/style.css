@@ -338,11 +338,11 @@ body {
 
 
 .footer-action-btn {
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
   text-align: center !important;
   width: 116px;
   border: none;
-  /* padding: 8px; */
+  padding: 8px;
   text-align: left;
   letter-spacing: 0px;
   color: #ffffff;
@@ -352,6 +352,7 @@ body {
   border-radius: 7px;
   opacity: 1;
 }
+
 
 .footer-action-btn a {
   text-decoration: none;
