@@ -426,7 +426,7 @@ body {
 /* home */
 .hero-section {
   min-height: 608px;
-  margin-top: 22px;
+  margin-top: 60px;
 }
 
 .content-container {
@@ -1364,6 +1364,7 @@ body {
   background-color: #f7df00 !important;
   height: 730px !important;
   z-index: auto;
+   padding-top: 70px !important;
 }
 
 .pricing-switch-btn {
@@ -1445,7 +1446,7 @@ body {
 
 .pricing-selector select {
   color: #1b03a3 !important;
-  width: 40px;
+    padding: 5px;
   background: #ffffff 0% 0% no-repeat padding-box !important;
   border: 1px solid #1b03a3 !important;
   opacity: 1 !important;
@@ -1738,7 +1739,7 @@ body {
   border-radius: 12px;
   opacity: 1;
   height: 220px;
-  width: 220px;
+  width: 100%;
   text-align: center !important;
 }
 
@@ -1947,6 +1948,7 @@ body {
   background-image: url("../images/logos/hero-1-bg.svg");
   background-color: #f7df00 !important;
   height: 650px;
+      padding-top: 30px;
 }
 
 .how-it-works-hero-three {
