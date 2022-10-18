@@ -69,9 +69,9 @@ const ExtraAddOnsCards = ({ isMonthly, currency }) => {
             <div className="extra-card-width ">
               <div className=" rounded-lg ">
                 <div className="mb-2 space">{"s"}</div>
-                <p className="monthly-card-title  ">{s.title}</p>
+                <p className="monthly-card-title mb-3">{s.title}</p>
                 <p className="monthly-cost px-5 ">
-                   <sup className="suptext">
+                  <sup className="suptext">
                     {s?.cost?.currency === "euro" ? "€" : "£"}
                   </sup>
                   <strong>{s?.cost?.price}</strong>
