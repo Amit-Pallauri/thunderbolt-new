@@ -126,11 +126,16 @@ const Header = () => {
               >
                 <Link to={routes.pricing}>Pricing</Link>
               </p>
-              <p className="nav-item-canvas">
+              {/* <p className="nav-item-canvas">
                 <Link>Advantages</Link>
-              </p>
+              </p> */}
               <p className="nav-item-canvas">
-                <Link>Check Pagespeed Insights</Link>
+                <Link
+                  to={`${routes.home}#page-speed`}
+                  onClick={() => setOpen(false)}
+                >
+                  Check Pagespeed Insights
+                </Link>
               </p>
             </div>
           </div>

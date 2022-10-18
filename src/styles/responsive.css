@@ -474,7 +474,7 @@
   .web-vitals-section .search-box input {
     width: 95%;
     padding: 15px 30px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 12px;
   }
 
@@ -1042,6 +1042,12 @@
     height: 30px;
     margin-top: 0px;
     margin-left: 0px;
+  }
+
+  .hero-btn-round,
+  .hero-btn-round-active h1 {
+    margin: 0;
+    font-size: 22px;
   }
 
   .full-vl {

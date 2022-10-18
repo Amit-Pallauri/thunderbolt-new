@@ -28,6 +28,11 @@ const Layout = ({ children }) => {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+
+        <meta
           name="description"
           content="It's time for a super fast dotcom. Thunderbolt is a framework built on open source tech powered by react to load your website in less than 2 seconds."
         />
