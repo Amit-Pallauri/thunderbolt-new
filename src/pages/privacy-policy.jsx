@@ -114,7 +114,7 @@ const PrivacyPolicy = () => {
                 identifiable information may include, but is not limited to:
               </p>
 
-              <ul className="list-section">
+              <ul className="privacy-list-section">
                 <li className="text-bold">Email address</li>
                 <li className="text-bold">First name and last name</li>
                 <li className="text-bold">Phone number</li>
@@ -182,20 +182,20 @@ const PrivacyPolicy = () => {
                 <li className="text-normal mt-2">
                   Examples of Cookies we use:
                 </li>
-                <li className="d-flex">
+                <li className="list-flex">
                   <span className="text-bold">Session Cookies. </span>
                   <span className="text-normal">
                     We use Session Cookies to operate our Service.
                   </span>
                 </li>
-                <li className="d-flex">
+                <li className="list-flex">
                   <span className="text-bold">Preference Cookies.  </span>
                   <span className="text-normal">
                     We use Preference Cookies to remember your preferences and
                     various settings.
                   </span>
                 </li>
-                <li className="d-flex">
+                <li className="list-flex">
                   <span className="text-bold">Security Cookies.  </span>
                   <span className="text-normal">
                     We use Security Cookies for security purposes.

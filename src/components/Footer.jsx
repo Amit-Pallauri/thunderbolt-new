@@ -57,7 +57,9 @@ const Footer = () => {
             {Array.from(links).map((l, key) => {
               return (
                 <li>
-                  <Link to={l.link}>{l.name}</Link>
+                  <Link className="footer-link" to={l.link}>
+                    {l.name}
+                  </Link>
                 </li>
               );
             })}
@@ -66,7 +68,9 @@ const Footer = () => {
             {Array.from(newLinks).map((l, key) => {
               return (
                 <li>
-                  <Link to={l.link}>{l.name}</Link>
+                  <Link className="footer-link" to={l.link}>
+                    {l.name}
+                  </Link>
                 </li>
               );
             })}
@@ -74,23 +78,31 @@ const Footer = () => {
         </div>
         <div className="col-12 col-md-2"></div>
         <div className="col-md-2 col-12 px-md-5 px-3">
-          <div className="d-grid justify-content-between  text-center">
+          <div className="canvas-btns">
             <a href="https://dashboard.thunderboltjs.com/" target={"_blank"}>
-              <button className=" px-md-0 footer-action-btn">
-                Get Started
-              </button>
+              <button className="px-md-0 footer-action-btn">Get Started</button>
             </a>
-            <button className="footer-action-btn">Book a call</button>
+            <a href="https://calendly.com/razrco" target={"_blank"}>
+              <button className="footer-action-btn">Book a call</button>
+            </a>
           </div>
           <div className="mt-3 footer-social-icons justify-content-between mb-md-3 mt-md-2">
-            <a hre="#" className="mt-3 pointer">
+            <a
+              href="https://www.linkedin.com/company/88646989/admin/"
+              target={"_blank"}
+              className="mt-3 pointer"
+            >
               <img
                 src={ImageConstants.InstaIcon}
                 width={"100%"}
                 height={"100%"}
               />
             </a>
-            <a hre="#" className="px-3 pointer">
+            <a
+              href="https://www.linkedin.com/company/88646989/admin/"
+              target={"_blank"}
+              className="px-3 pointer"
+            >
               <img
                 src={ImageConstants.LinkdinIcon}
                 width={"100%"}

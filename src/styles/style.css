@@ -336,12 +336,13 @@ body {
   font-weight: bold !important;
 }
 
+
 .footer-action-btn {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   text-align: center !important;
   width: 116px;
   border: none;
-  padding: 8px;
+  /* padding: 8px; */
   text-align: left;
   letter-spacing: 0px;
   color: #ffffff;
@@ -357,11 +358,22 @@ body {
   color: white;
 }
 
-.footer-links>ul>li>a {
+.footer-links>ul>li {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   color: #1e2323;
+}
+
+.footer-links>ul>li>a {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #4D5763;
+}
+
+.footer-links>ul>li :hover {
+  color: black;
 }
 
 .footer-bottom {
@@ -402,6 +414,8 @@ body {
   position: absolute;
   right: 5vw;
 }
+
+
 
 /* home */
 .hero-section {
@@ -849,10 +863,10 @@ body {
 .high-performance .cards-container {
   /* width: 70%;
   margin: auto; */
-  justify-content: center;
+  /* justify-content: center;
   display: grid;
-  grid-template-columns: repeat(3, 296px);
-  gap: 30px;
+  grid-template-columns: repeat(3, 296px); */
+
 }
 
 .high-performance .cards-container .plans-card-container {
@@ -2462,6 +2476,10 @@ body {
 .privacy-content ul {
   list-style: none;
   padding: 0;
+}
+
+.list-flex {
+  display: flex;
 }
 
 .privacy-content .text-normal {
