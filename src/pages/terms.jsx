@@ -80,11 +80,16 @@ const terms = () => {
               </h2>
               <p className="text-normal">
                 whose registered office is at 33, Prince Henri Boulevard,
-                Luxembourg-1724 . 2.2 You may contact us by telephoning our
-                customer service team by e-mailing us at
-                support@thunderboltjs.com. If you wish to give us formal notice
-                of any matter in accordance with these Terms and Conditions,
-                please see Clause 13.
+                Luxembourg-1724 .
+              </p>
+              <p className="text-normal">
+                2.2 You may contact us by telephoning our customer service team
+                by e-mailing us at{" "}
+                <a href="mailto:support@thunderboltjs.com">
+                  support@thunderboltjs.com.
+                </a>{" "}
+                If you wish to give us formal notice of any matter in accordance
+                with these Terms and Conditions, please see Clause 13.
               </p>
             </div>
           </div>
@@ -134,8 +139,14 @@ const terms = () => {
                 particular domain name if registration lapses. We are a Nominet
                 registrar. For further information on domain names, please see
                 Nominet’s terms and conditions available here:
-                http://www.nominet.org.uk/uk-domain-names/registering-uk-domain/legal-details/terms-and-conditions-domain-name-registration.
-                b) Up to five separate professional e-mail forwarders: The
+                <a
+                  target="_blank"
+                  href="http://www.nominet.org.uk/uk-domain-names/registering-uk-domain/legal-details/terms-and-conditions-domain-name-registration"
+                >
+                  {" "}
+                  http://www.nominet.org.uk/uk-domain-names/registering-uk-domain/legal-details/terms-and-conditions-domain-name-registration
+                </a>
+                . b) Up to five separate professional e-mail forwarders: The
                 Website Package includes up to five separate, individual e-mail
                 forwarders. E-mail forwarders are created, managed and renewed
                 by us. E-mail forwarding services on your domain name are
@@ -225,15 +236,11 @@ const terms = () => {
                 <h2 className="sub-title">
                   5.3 We will confirm our acceptance to you by e-mail.
                 </h2>
+
                 <p className="text-normal">
-                  our shopping pages will guide you through the steps you need
-                  to take to place an order with us. Our order process allows
-                  you to check and amend any errors before submitting your order
-                  to us. Please take the time to read and check your order on
-                  each page of the order process. Where you make your order by
-                  telephone, our operatives will guide you through the order
-                  process and will review your order with you before the process
-                  is concluded.
+                  The Contract between us will only be formed when we send you
+                  our acceptance e-mail. The date on which our acceptance e-mail
+                  is sent will be the Sales Date.
                 </p>
 
                 <h2 className="sub-title">
@@ -609,7 +616,10 @@ const terms = () => {
                 </h2>
                 <p className="text-normal">
                   acknowledgement of any customer service request made via our
-                  contact address support@thunderboltjs.com.
+                  contact address{" "}
+                  <a href="mailto:support@thunderboltjs.com">
+                    support@thunderboltjs.com.
+                  </a>{" "}
                 </p>
 
                 <h2 className="sub-title">
@@ -654,10 +664,12 @@ const terms = () => {
                   11.2 Please send all complaints to
                 </h2>
                 <p className="text-normal">
-                  support@thunderboltjs.com. We will endeavour to respond to
-                  complaints within 24 hours of receipt by us. Where this is not
-                  possible, we will endeavour to respond within a maximum of 5
-                  days.
+                  <a href="mailto:support@thunderboltjs.com">
+                    support@thunderboltjs.com.
+                  </a>{" "}
+                  We will endeavour to respond to complaints within 24 hours of
+                  receipt by us. Where this is not possible, we will endeavour
+                  to respond within a maximum of 5 days.
                 </p>
 
                 <h2 className="sub-title">
@@ -665,10 +677,13 @@ const terms = () => {
                   etc.)
                 </h2>
                 <p className="text-normal">
-                  please send all complaints to support@thunderboltjs.com. We
-                  will endeavour to respond to complaints within 24 hours. Where
-                  this is not possible, we will endeavour to respond within a
-                  maximum of 5 days.
+                  please send all complaints to{" "}
+                  <a href="mailto:support@thunderboltjs.com">
+                    support@thunderboltjs.com.
+                  </a>{" "}
+                  We will endeavour to respond to complaints within 24 hours.
+                  Where this is not possible, we will endeavour to respond
+                  within a maximum of 5 days.
                 </p>
 
                 <h2 className="sub-title">
@@ -678,7 +693,10 @@ const terms = () => {
                 <p className="text-normal">
                   you may make a formal complaint about a registrar to Nominet
                   (the UK registry) here:
-                  <a href="http://www.nominet.uk/resources/complaints">
+                  <a
+                    target="_blank"
+                    href="http://www.nominet.uk/resources/complaints"
+                  >
                     http://www.nominet.uk/resources/complaints
                   </a>
                   . For any other complaints, you may contact the relevant
@@ -755,6 +773,14 @@ const terms = () => {
                   address of the addressee. 13.5 The provisions of this Clause
                   shall not apply to the service of any proceedings or other
                   documents in any legal action.
+                </p>
+
+                <h2 className="sub-title">
+                  13.5 The provisions of this Clause
+                </h2>
+                <p className="text-normal">
+                  shall not apply to the service of any proceedings or other
+                  documents in any legal action
                 </p>
               </div>
             </div>
