@@ -123,95 +123,95 @@ const MonthlyCards = ({
   return (
     <>
       <div className="row">
-        <div className="d-md-flex   " style={{ zIndex: "111" }}>
-          {cards?.map((d, key) => {
-            return (
-              <>
-                <div className="col-md-3  ">
-                  <div className="monthly-card text-center  flex-fill">
-                    <div className="bg-white rounded-lg ">
-                      <div className="mb-2 space">{"s"}</div>
-                      <p className="monthly-card-title  ">{d.title}</p>
-                      {showDescription && (
-                        <p
-                          className={
-                            d.symbol === false
-                              ? "contact-align"
-                              : key === 2
-                              ? "monthly-card-description  "
-                              : key === 0
-                              ? "monthly-card-description"
-                              : "monthly-card-description px-4"
-                          }
-                        >
-                          {d.des}
-                        </p>
-                      )}
+
+        {cards?.map((d, key) => {
+          return (
+            <>
+              <div className="col-md-3">
+                <div className="monthly-card text-center  flex-fill">
+                  <div className="bg-white rounded-lg monthlycardsub ">
+                    <div className="mb-2 space">{"s"}</div>
+                    <p className="monthly-card-title  ">{d.title}</p>
+                    {showDescription && (
                       <p
                         className={
-                          d?.symbol === false
-                            ? "contact-sales "
-                            : "monthly-cost px-5 "
+                          d.symbol === false
+                            ? "monthly-card-description"
+                            : key === 2
+                              ? "monthly-card-description  "
+                              : key === 0
+                                ? "monthly-card-description"
+                                : "monthly-card-description px-4"
                         }
                       >
-                        {d?.symbol !== false && (
-                          <strong className="price-symbol">
-                            {d?.price.currency === "euro" ? "€" : "£"}
-                          </strong>
-                        )}
-                        <strong>{d.price.price}</strong>
-                        {showFeaturs && d?.symbol !== false && (
-                          <span> per {isMonthly ? "month" : "year"}</span>
-                        )}
-                        <br />
-                        {showSub && (
-                          <span className="monthly-cost-sub-description">
-                            One-off Cost. Works with all Plans
-                          </span>
-                        )}
+                        {d.des}
                       </p>
-                      {showSub && (
-                        <p
-                          className={
-                            isExtraAddOn
-                              ? "text-black monthly-card-description mt-4 px-4"
-                              : "monthly-card-description mt-4 px-4"
-                          }
-                        >
-                          We set up and add a newsletter subscription form to
-                          your website from any 3rd party provider such as
-                          Mailchimp.
-                        </p>
+                    )}
+                    <p
+                      className={
+                        d?.symbol === false
+                          ? "contact-sales "
+                          : "monthly-cost"
+                      }
+                    >
+                      {d?.symbol !== false && (
+                        <sup className="suptext">
+                          {d?.price.currency === "euro" ? "€" : "£"}
+                        </sup>
+
                       )}
-                      <br />
-                      <a
-                        target={"_blank"}
-                        href="https://dashboard.thunderboltjs.com/"
+                      <strong>{d.price.price}</strong>
+                      {showFeaturs && d?.symbol !== false && (
+                        <span> per {isMonthly ? "month" : "year"}</span>
+                      )}
+
+                      {showSub && (
+                        <span className="monthly-cost-sub-description">
+                          One-off Cost. Works with all Plans
+                        </span>
+                      )}
+                    </p>
+                    {showSub && (
+                      <p
+                        className={
+                          isExtraAddOn
+                            ? "text-black monthly-card-description mt-4 px-4"
+                            : "monthly-card-description mt-4 px-4"
+                        }
                       >
-                        <button
-                          className={
-                            d.symbol === false
-                              ? "get-started-btn mt-0 mb-5 contact-sales-btn"
-                              : "get-started-btn mt-0 mb-5 "
-                          }
-                        >
-                          Get Started
-                        </button>
-                      </a>
-                    </div>
-                    {showFeaturs && (
-                      <div className="points p-3 mb-5 ">
-                        {d.features.map((f, i) => {
-                          return (
-                            <>
-                              <div className="d-flex px-2 position-realtive">
-                                <img
-                                  className="position-absolute point-img"
-                                  src={ImageConstants.featureIcon}
-                                />
-                                <p className="text-start point-text ">{f}</p>
-                              </div>
-                              {/* <div className={i === 0 ? "mt-0" : "mt-2"}>
+                        We set up and add a newsletter subscription form to
+                        your website from any 3rd party provider such as
+                        Mailchimp.
+                      </p>
+                    )}
+
+                    <a
+                      target={"_blank"}
+                      href="https://dashboard.thunderboltjs.com/"
+                      className={
+                        d.symbol === false
+                          ? "get-started-btn contact-sales-btn"
+                          : "get-started-btn "
+                      }
+                    >
+
+                      Get Started
+
+                    </a>
+                  </div>
+                  {showFeaturs && (
+                    <div className="points p-3">
+                      {d.features.map((f, i) => {
+                        return (
+                          <>
+                            <div className="pointMain">
+                              <img
+                                className="pointImg"
+                                src={ImageConstants.featureIcon}
+                              />
+                              <p className="text-start point-text ">{f}</p>
+                            </div>
+                            {/* <div className={i === 0 ? "mt-0" : "mt-2"}>
                                 <img
                                   loading="lazy"
                                   src={ImageConstants.featureIcon}
@@ -219,17 +219,17 @@ const MonthlyCards = ({
                                 />
                                 <span>{f}</span>
                               </div> */}
-                            </>
-                          );
-                        })}
-                      </div>
-                    )}
-                  </div>
+                          </>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
-              </>
-            );
-          })}
-        </div>
+              </div>
+            </>
+          );
+        })}
+
       </div>
 
       {showBootom && (

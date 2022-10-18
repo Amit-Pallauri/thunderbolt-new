@@ -66,7 +66,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="hero-1-card-container ">
+      <div className="container pricing-container">
         <MonthlyCards
           showSub={false}
           currency={currency}

@@ -71,9 +71,9 @@ const ExtraAddOnsCards = ({ isMonthly, currency }) => {
                 <div className="mb-2 space">{"s"}</div>
                 <p className="monthly-card-title  ">{s.title}</p>
                 <p className="monthly-cost px-5 ">
-                  <strong className="price-symbol price-symbol-safari">
+                   <sup className="suptext">
                     {s?.cost?.currency === "euro" ? "€" : "£"}
-                  </strong>
+                  </sup>
                   <strong>{s?.cost?.price}</strong>
                   {/* <span> per {isMonthly ? "month":"year"}</span> */}
                   <br />
