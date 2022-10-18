@@ -692,13 +692,15 @@
   }
 
   .tab-btn .pricing-selector {
-    right: auto;
+    /* right: auto;
     margin-top: 90px;
-    position: absolute;
+    position: absolute; */
     margin-bottom: 10px;
-    z-index: 1111111 !important;
+    /* z-index: 1111111 !important; */
   }
-
+.pricing-container{
+  margin-top: -205px;
+}
   .pricing-switch-btn {
     width: 300px;
     margin: auto;
@@ -713,6 +715,7 @@
   .monthly-card {
     height: auto;
     margin: auto;
+        margin-bottom: 40px;
   }
 
   .round-borders {
@@ -722,11 +725,14 @@
   .monthly-card-description {
     color: #160091;
     font-size: 10px;
-    padding-left: 60px !important;
+    min-height: unset;
+    /* padding-left: 60px !important;
     padding-right: 60px !important;
-    margin-top: -10px;
+    margin-top: -10px; */
   }
-
+.monthly-cost{
+      min-height: unset;
+}
   .vat-box p {
     font-size: 14px !important;
   }
@@ -753,9 +759,9 @@
   /* .swiper-slide {
     width: 200px !important;
   } */
-  .custom-swiper-slide {
+  /* .custom-swiper-slide {
     width: 200px !important;
-  }
+  } */
 
   .smile-card {
     width: 180px;
@@ -800,7 +806,7 @@
 
   .get-started-btn {
     width: 80%;
-    margin-bottom: 40px !important;
+    /* margin-bottom: 40px !important; */
   }
 
   .monthly-cost strong {
